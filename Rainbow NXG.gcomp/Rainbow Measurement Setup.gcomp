@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="E4845FC106A81255A961CEB921DB6E1DB0C1454F40099CFDE16BFA252642B2DAAEAE6B30CFE585C2DBA1B6F3BC34F6EFDAB15A022DB459AB5032389FE6E831BD" Timestamp="1D6AED1638E771B" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="7a1167627ddb43b1bd2f5f50730df42a" RootNamespaceId="a1ffb1700fc844e798cc277a57195e82" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="6f11d84f131e45db8084d0d9dcd9206c" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="ff2292ed4d7c4497919e8a640e6ff41c" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="7cbee88476554e96986288e32944cf34" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="fc1cba21dd014307b208f44c6d9be2b2" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration ComponentSubtypeIdentifier="Application" Id="33b6eb7855f64e8eb03819459ecc7f1f" Name="Configuration1">
+			<CompilerSymbolTable Id="248903c3ce014366b7c0c52bf8a7c5c1" xmlns="http://www.ni.com/PlatformFramework" />
+			<NativeApplicationOutputTypeProperties Id="d202345b68f84bb88e9a999d2a7dc807" />
+			<ComponentItemProperties AssociatedEnvoyId="bf951a0106a9401f9dc6d6e2b244774b" Id="b641bd562bc94df1a5b770ea38119021" TopLevel="True" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="223694340b9b408ba675e6afb0fc53e4" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="d6990e143edd4c528820ccebad9851f3" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Id="9267f6b6557546be8c7e3a1f37613f13" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="a1ffb1700fc844e798cc277a57195e82" Name="Rainbow Measurement Setup">
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="d0f147bc629b423e94a4db260711f9b3" Name="Main Functions">
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="78b570dee4044dc823fdc506c62990d" Name="Initialize App">
+						<SourceFileReference Bindings="EnvoyManager" Id="30a2bc59923044b38c08418aae78cb3f" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Initialize app subroutine states.gtype" StoragePath="Main Functions\Initialize App\Initialize app subroutine states.gtype\Initialize app subroutine states.gtype" />
+						<SourceFileReference Id="9355463f27c94486bf9091751763d17b" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Instruction Extractor.gvi" StoragePath="Main Functions\Initialize App\Instruction Extractor.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="c29c0abff0ce4cf89c12d70ec15ffa75" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Initialize app subroutine.gvi" StoragePath="Main Functions\Initialize App\Initialize app subroutine.gvi" />
+						<NameScopingEnvoy AutomaticallyResolveUp="True" Id="cd63fb3ff1944211891e1021185a9f8e" Name="Instrument Detection">
+							<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="49b4f019687d46bf971d2c262ce1c40f" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Instrument Detector.gvi" StoragePath="Main Functions\Initialize App\Instrument Detection\Instrument Detector.gvi" />
+							<SourceFileReference Bindings="EnvoyManager" Id="53affb92077141daae241839600e280e" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Instruments To Detect control.gtype" StoragePath="Main Functions\Initialize App\Instrument Detection\Instruments To Detect control.gtype\Instruments To Detect control.gtype" />
+							<NameScopingEnvoy AutomaticallyResolveUp="True" Id="b229529e1e1d490d88de1e589607cbb6" Name="Arduino">
+								<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="6a0a11b7587d4ef087f1d560ae686653" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Arduino initialize check connection prompt generator.gvi" StoragePath="Main Functions\Initialize App\Instrument Detection\Arduino\Arduino initialize check connection prompt generator.gvi" />
+								<SourceFileReference Bindings="EnvoyManager" Id="cb86c544b3e6413db2c448156d8ed69b" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Arduino Detection cluster control.gtype" StoragePath="Main Functions\Initialize App\Instrument Detection\Arduino\Arduino Detection cluster control.gtype\Arduino Detection cluster control.gtype" />
+								<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="9e593b42883f48cb922dd79ec6b3429b" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Arduino Detector.gvi" StoragePath="Main Functions\Initialize App\Instrument Detection\Arduino\Arduino Detector.gvi" />
+							</NameScopingEnvoy>
+							<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="650862771c794687acd7708ac5c34115" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Photodetector Detection Subroutine.gvi" StoragePath="Main Functions\Initialize App\Instrument Detection\Photodetector Detection Subroutine.gvi" />
+							<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="f55a55d55c65405cba45821c1ecee147" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Keithley Detection Subroutine.gvi" StoragePath="Main Functions\Initialize App\Instrument Detection\Keithley Detection Subroutine.gvi" />
+							<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="9028c15e3463451796d8fe3ef410d39c" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Arduino Detection Subroutine.gvi" StoragePath="Main Functions\Initialize App\Instrument Detection\Arduino Detection Subroutine.gvi" />
+							<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="44b63403939c4148be4ffe80c5841c39" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Thorlabs motor Detector.gvi" StoragePath="Main Functions\Initialize App\Instrument Detection\Thorlabs motor Detector.gvi" />
+						</NameScopingEnvoy>
+					</NameScopingEnvoy>
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="da497ea908a64ea9afe2445d82151ee1" Name="Instruction Queue">
+						<SourceFileReference Bindings="EnvoyManager" Id="6262413028e04ade8b4500249fe860ab" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Queue Instructions Control.gtype" StoragePath="Main Functions\Instruction Queue\Queue Instructions Control.gtype\Queue Instructions Control.gtype" />
+						<NameScopingEnvoy AutomaticallyResolveUp="True" Id="2127375da3dd41cba127d9c91f35b1d3" Name="Current State">
+							<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="c6f2433b51ab4714a7d8fcb282f4ad3b" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FGV Current State.gvi" StoragePath="Main Functions\Instruction Queue\Current State\FGV Current State.gvi" />
+							<SourceFileReference Bindings="EnvoyManager" Id="f9a27627edc740929a47c7519d09c3c6" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Current State Instructions.gtype" StoragePath="Main Functions\Instruction Queue\Current State\Current State Instructions.gtype\Current State Instructions.gtype" />
+						</NameScopingEnvoy>
+					</NameScopingEnvoy>
+				</NameScopingEnvoy>
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="75577cdf3ed74db994ab28685d73b21a" Name="Side Functions">
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="250f729d743c44488520da34364e4f56" Name="Global Abort">
+						<SourceFileReference Id="af82d2d9257c46118527992143a6a31b" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="FGV Global Abort.gvi" StoragePath="Side Functions\Global Abort\FGV Global Abort.gvi" />
+						<SourceFileReference Bindings="EnvoyManager" Id="69c02b5bd01419684821c3d012827f5" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Global Abort Instructions.gtype" StoragePath="Side Functions\Global Abort\Global Abort Instructions.gtype\Global Abort Instructions.gtype" />
+					</NameScopingEnvoy>
+				</NameScopingEnvoy>
+				<SourceFileReference Id="bf951a0106a9401f9dc6d6e2b244774b" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Main Window.gvi" StoragePath="Main Window.gvi" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="1deff7ab3c2444efb3d5bcd03081de11" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="Rainbow Measurement Setup.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="33b6eb7855f64e8eb03819459ecc7f1f" Id="4cacaaf15b61444692cd8a8d1ed4c628" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>
