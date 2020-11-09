@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="105BDDA40210F75BF99EB2E3B5E666C77712CC9EE73848A019FB189C2E061287666D4D6902A7171C748A16301710290FD517F7C9C07CBDE46E022E2EA2BAD789" Timestamp="1D6AED1639CC8F9" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="22C4E7D2D8B2DD79E76128D2695B4B0C9EFC85C9F781844D5BD483B4F283954EAC4407FC360FEE4A779F10C6F060BB5079C0EA792DB4DDCEC9ADCB47E9E9CB52" Timestamp="1D6B6A8F55677E8" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -34,7 +34,14 @@
 			<ConnectorPaneTerminal Hotspot="15 40" />
 			<ConnectorPaneTerminal Hotspot="25 40" />
 		</ConnectorPane>
-		<DiagramUnplacedItems Id="5b95579a11f84266acde362981c67606" xmlns="http://www.ni.com/MocCommon" />
+		<DiagramUnplacedItems Id="5b95579a11f84266acde362981c67606" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="0 0 40 15" DataItem="d3f6d3637fa84a1a83502f67f8ee7c14" Id="c345993cf4ea4e55b353f3ce9305d45d" Label="b5641883a5844176a84bf8447e9fe8a3">
+				<Terminal DataType="@b842f0cedf55434198ac0b9593bca7c5" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="c345993cf4ea4e55b353f3ce9305d45d" Bounds="-35 0 30 15" Id="b5641883a5844176a84bf8447e9fe8a3" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Thorlabs Motors</p.Text>
+			</NodeLabel>
+		</DiagramUnplacedItems>
 		<FrontPanelUnplacedItems Id="64f8028d4a8d409ca1106bc7093b435a" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
 		<BlockDiagram Id="4e817487911a477f8d1942fb507d3c26">
 			<CaseStructure Bounds="505 155 1135 600" DataType="Error" Default="d5a1c54af2804b0ba4ed4bb7ebec77d8" Id="ed94988f66fd45ec869b0c124fc49b2e" Selected="7b1344d767434980b12e5eeac22ef2df" UserSelectorBounds="514 0 106 17">
@@ -86,6 +93,13 @@
 				<p4:Label Height="[float]16" Id="798555aadb5f4ebbb15968dea5997afa" LabelOwner="[UIModel]ae55dd140b314b6d9e867222e73bd8dd" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
 			</Cluster>
 			<Label Height="[float]16" Id="33ae339745a847f3a9f8677e70ffb203" LabelOwner="[UIModel]a4779465c5864bf3a0fd5bc71b438ed0" Left="[float]612" Text="[string]Error Out" Top="[float]288" Width="[float]49" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b842f0cedf55434198ac0b9593bca7c5" Height="[float]120" Id="cb29c6abf06847f8bdeebadc233ab9a2" Label="[UIModel]da17d95ee34545c98d44a7b148ff6a0f" Left="[float]308" TabIndex="[int]2" Top="[float]64" Value="{DataItemBinding Id=d3f6d3637fa84a1a83502f67f8ee7c14}" Width="[float]136" xmlns="http://www.ni.com/PanelCommon">
+				<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="c526603d9524d8f8cb6909df4db5929" Label="[UIModel]259523ff51e548e78f4e58c1af0530bf" Left="[float]4" MinHeight="[float]24" TabIndex="[int]0" Text="{ClusterBinding FieldName=Thorlabs\ Blue\ Motor}" Top="[float]20" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Height="[float]16" Id="259523ff51e548e78f4e58c1af0530bf" LabelOwner="[UIModel]c526603d9524d8f8cb6909df4db5929" Left="[float]4" Text="[string]Thorlabs Blue Motor" Top="[float]0" Width="[float]108" />
+				<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="b91a16af4d8b4c469643d6d9e7ebab44" Label="[UIModel]1a966c9f778644498dc0cfad7fd58786" Left="[float]4" MinHeight="[float]24" TabIndex="[int]1" Text="{ClusterBinding FieldName=Thorlabs\ Red\ Motor}" Top="[float]68" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Height="[float]16" Id="1a966c9f778644498dc0cfad7fd58786" LabelOwner="[UIModel]b91a16af4d8b4c469643d6d9e7ebab44" Left="[float]4" Text="[string]Thorlabs Red Motor" Top="[float]48" Width="[float]106" />
+			</Cluster>
+			<Label Height="[float]16" Id="da17d95ee34545c98d44a7b148ff6a0f" LabelOwner="[UIModel]cb29c6abf06847f8bdeebadc233ab9a2" Left="[float]308" Text="[string]Thorlabs Motors" Top="[float]44" Width="[float]87" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="0" DataType="Error" Id="2dbce58698847049b6db4ce33456f79" Name="Error In" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
@@ -111,5 +125,23 @@
 				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
+		<DataItem DataType="@b842f0cedf55434198ac0b9593bca7c5" Id="d3f6d3637fa84a1a83502f67f8ee7c14" Name="Thorlabs Motors" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>""</Field1>
+					<Field2>""</Field2>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
 	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="b842f0cedf55434198ac0b9593bca7c5">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Thorlabs Blue Motor" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Thorlabs Red Motor" DataType="String" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
 </SourceFile>
