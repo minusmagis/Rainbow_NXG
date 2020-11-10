@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2528F34EE6392702481F61AF508C326165ADCAA1CEE0965663696C2229A42522A18CB6424ACD479C5659AC177179F2E14F126C19F80DDF7B84927464A28DA8FE" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D0EB549FF87C9F6D9B2F5E82992E2EABBBC0A7D19D759A44BCCB0D08B9797365CE10FE0AE095E2AD69C57882BDD09BA8911C970153245CB621E87455CBA12EF3" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
@@ -114,8 +114,6 @@
 						<WeakDefaultComponentConfigurationReference Id="4b048d63d9e547d7accce31b169c81e5" PackageName="ni-analysis-advanced-src-1.0.8.2.niaddon" Target="AAL_Zeros.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="cdc09b570e214288a4fd91740fe5d00c" PackageName="ni-instrumentdriver-keysight344xx-src-17.5.1.niaddon" Target="Keysight344XX.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="e6cb3303810944f590781c374a5cb585" PackageName="ni-visa-base-src-18.5.0.niaddon" Target="VISA.gcomp" />
-						<ComponentConfigurationReferenceDependencySource Id="1802f5b3ff1c458baf5d233cadc7ded1" Target="Keithley 2450 NXG Library.gcomp::Configuration1" />
-						<ComponentConfigurationReferenceDependencySource Id="62ae3da16a248f08144bf386994b1a3" Target="TLPM PM100.gcomp::Default" />
 						<WeakDefaultComponentConfigurationReference Id="ef6c87af30074baa80e093c95dff35c2" PackageName="ni-instrumentdriver-ividefault-src-18.5.0.niaddon" Target="IviDefault.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="18d18394e4c4cb1ad02bf88f59bef31" PackageName="ni-instrumentdriver-ividmm-src-18.5.0.niaddon" Target="IviDmm.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="3971bbd2853f425a956fab1e0f540902" PackageName="ni-instrumentdriver-ividownconverter-src-18.5.0.niaddon" Target="IviDownconverter.gcomp" />
@@ -146,6 +144,8 @@
 						<WeakDefaultComponentConfigurationReference Id="d76f276610044b7782a319782e21b571" PackageName="ni-instrumentdriver-iviswtch-src-18.5.0.niaddon" Target="IviSwtch.gcomp" />
 						<ComponentConfigurationReferenceDependencySource Id="bc8dd4fb22c64123b8519444063b194d" Target="Rainbow NXG.gcomp::Configuration1" />
 						<ComponentConfigurationReferenceDependencySource Id="8eb1657049fb4fd196f4be50f692b97e" Target="Thorlabs KCube Control.gcomp::Default" />
+						<ComponentConfigurationReferenceDependencySource Id="42623817bf974a3f9e9f1f1f6839fcbd" Target="TLPM PM100.gcomp::Default" />
+						<ComponentConfigurationReferenceDependencySource Id="ea812b6b3a6042f9b7aaf107b6b1c525" Target="Keithley 2450 NXG Library.gcomp::Configuration1" />
 					</BuildSpecificationDefinition>
 					<EmbeddedDefinitionReference Id="32" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 						<PackageReferencesDefinition />
@@ -215,10 +215,10 @@
 					<EmbeddedDefinitionReference Id="45" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Native" Reparentable="False">
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
 					</EmbeddedDefinitionReference>
-					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library" Id="6be08afb5f1346dfa705c9bbd4da8095" ModelDefinitionType="ComponentDefinition" Name="Keithley 2450 NXG Library.gcomp" StoragePath="Extra Libraries\Keithley 2450 NXG\Keithley 2450 NXG Library.gcomp\Keithley 2450 NXG Library.gcomp" />
-					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library" Id="a3c701b5be1c4d22b7c464e3caceab9a" ModelDefinitionType="ComponentDefinition" Name="TLPM PM100.gcomp" StoragePath="Extra Libraries\Photodetector software labview\TLPM\TLPM.lvproject\TLPM PM100.gcomp\TLPM PM100.gcomp" />
 					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Application,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="709251c6bf9f4324a43091f0ebb4e992" ModelDefinitionType="ComponentDefinition" Name="Rainbow NXG.gcomp" StoragePath="Rainbow NXG.gcomp\Rainbow NXG.gcomp" />
 					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library" Id="e99536dddff24c4580210a8532df4817" ModelDefinitionType="ComponentDefinition" Name="Thorlabs KCube Control.gcomp" StoragePath="Extra Libraries\Thorlabs motors KCube\Thorlabs KCube Control.gcomp" />
+					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library" Id="f9db2596e3b04d6880302b47275cec2f" ModelDefinitionType="ComponentDefinition" Name="TLPM PM100.gcomp" StoragePath="Extra Libraries\LabView_NXG_Thorlabs_PM100\TLPM PM100.gcomp" />
+					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library" Id="4c0ce4c6cfd94a07bc37d3dc1cbfe662" ModelDefinitionType="ComponentDefinition" Name="Keithley 2450 NXG Library.gcomp" StoragePath="Extra Libraries\Labview_NXG_Keithley_SMU_2450_2460_2461\Keithley 2450 NXG Library.gcomp" />
 				</NameScopingEnvoy>
 				<EmbeddedDefinitionReference Id="37" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Fpga" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
