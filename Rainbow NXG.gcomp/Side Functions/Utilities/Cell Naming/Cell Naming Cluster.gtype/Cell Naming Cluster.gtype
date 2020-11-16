@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="CE6113E42FD8EF89BADC39A2D5293912E2F14E548540CCFD383A51A8DD63D0A6FC86AD5D7385B94543876896F14456EE3463C4730BC4AD3A94F66903D91FBBDF" Timestamp="1D6B8E921012969" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@f9be521eb8794c4eb69cfb0c65b9a60e" Id="abf4f39cc9eb42c79bd202e0ce00df4a" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="30086af470a430f9b07346c7e6d3f6b" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="23621548998a451aa9e112487624dc23" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="f0f77881b78b4e18b04883abf7db749b" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@f9be521eb8794c4eb69cfb0c65b9a60e" Id="b6e8d359a1a746f981b4af5bcc9c2f36" Name="Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>""</Field1>
+					<Field2>""</Field2>
+					<Field3>""</Field3>
+					<Field4>""</Field4>
+					<Field5>""</Field5>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="98419150d8d74d048bb90e4d4ae602f8" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="c52865189f39452abe1af20c0d39b33d" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="679baee6dc86435c81ce3c03ad86d19c" Name="Cell Naming Cluster.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="238faa5a3a9240b68da38d29d0764e70" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="4e587d27225a45268ae2b2fac79c7c9d" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f9be521eb8794c4eb69cfb0c65b9a60e" Height="[float]268" Id="80871143be6b4101ae92c3073ffb0884" Label="[UIModel]fbedb08012344612974b2bd304db780b" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=b6e8d359a1a746f981b4af5bcc9c2f36}" Width="[float]116" xmlns="http://www.ni.com/PanelCommon">
+						<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="52aab1807d08432dab35e099b5144540" Label="[UIModel]bf68a4bb2f94cb7ba86e796f2c8d2e2" Left="[float]4" Text="{ClusterBinding FieldName=Cell\ Label}" Top="[float]24" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="bf68a4bb2f94cb7ba86e796f2c8d2e2" LabelOwner="[UIModel]52aab1807d08432dab35e099b5144540" Left="[float]4" Text="[string]Cell Label" Top="[float]4" Width="[float]51" />
+						<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="29360a3fe8524c3c923487f36b6e600b" Label="[UIModel]88e32ddccf1744beb3b109ba3ade6c77" Left="[float]4" Text="{ClusterBinding FieldName=Sample\ Prefix}" Top="[float]76" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="88e32ddccf1744beb3b109ba3ade6c77" LabelOwner="[UIModel]29360a3fe8524c3c923487f36b6e600b" Left="[float]4" Text="[string]Sample Prefix" Top="[float]56" Width="[float]72" />
+						<ComboboxSelector AllowDifferentText="[bool]False" AllowUndefinedValueEntry="[bool]True" BaseName="[string]Combo Box" Height="[float]24" Id="caac858f894447e584498c8adc479c8f" IsTypeAheadEnabled="[bool]True" Label="[UIModel]6c2ac51f280f4fbda5ad360bc4dd36c2" Left="[float]4" Top="[float]128" Value="{ClusterBinding FieldName=Author\ Initials}" ValueType="[Type]String" VisualMode="[SelectorVisualMode]ComboBoxStyle" Width="[float]104" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<ComboboxSelectorInfo DisplayValue="[string]Anonymous" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[string]Anonymous" ValueType="[Type]String" />
+							<ComboboxSelectorInfo DisplayValue="[string]MGR" Value="[string]MGR" ValueType="[Type]String" />
+							<ComboboxSelectorInfo DisplayValue="[string]MCV" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[string]MCV" ValueType="[Type]String" />
+							<ComboboxSelectorInfo DisplayValue="[string]JPJ" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[string]JPJ" ValueType="[Type]String" />
+							<ComboboxSelectorInfo DisplayValue="[string]LCi" Value="[string]LCi" ValueType="[Type]String" />
+							<ComboboxSelectorInfo DisplayValue="[string]AHB" Value="[string]AHB" ValueType="[Type]String" />
+							<ComboboxSelectorInfo DisplayValue="[string]BDö" Value="[string]BDö" ValueType="[Type]String" />
+							<ComboboxSelectorInfo DisplayValue="[string]MSZ" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[string]MSZ" ValueType="[Type]String" />
+						</ComboboxSelector>
+						<Label Height="[float]16" Id="6c2ac51f280f4fbda5ad360bc4dd36c2" LabelOwner="[UIModel]caac858f894447e584498c8adc479c8f" Left="[float]4" Text="[string]Author Initials" Top="[float]108" Width="[float]74" />
+						<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="aa9f5b7353994ee0a7a90013470a09cd" Label="[UIModel]392ea1e99c1947c6bfc23e0d332cc97d" Left="[float]4" Text="{ClusterBinding FieldName=Current\ Date}" Top="[float]180" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="392ea1e99c1947c6bfc23e0d332cc97d" LabelOwner="[UIModel]aa9f5b7353994ee0a7a90013470a09cd" Left="[float]4" Text="[string]Current Date" Top="[float]160" Width="[float]68" />
+						<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="8a99a6ee1d5145e198ab7965a61564c5" Label="[UIModel]89c85102039542bf915406f23946ae81" Left="[float]4" Text="{ClusterBinding FieldName=Batch\ Name}" Top="[float]232" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="89c85102039542bf915406f23946ae81" LabelOwner="[UIModel]8a99a6ee1d5145e198ab7965a61564c5" Left="[float]4" Text="[string]Batch Name" Top="[float]212" Width="[float]64" />
+					</Cluster>
+					<Label Height="[float]16" Id="fbedb08012344612974b2bd304db780b" LabelOwner="[UIModel]80871143be6b4101ae92c3073ffb0884" Left="[float]100" Text="[string]Cluster" Top="[float]80" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="f9be521eb8794c4eb69cfb0c65b9a60e">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell Label" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sample Prefix" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Author Initials" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Date" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Batch Name" DataType="String" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

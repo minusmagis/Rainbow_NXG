@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="A6083CDC8F23688B2A2B308F6D9D012B0B160203496618610EBD7E55DFB2C16F49E03A0DCD9B311253F93ADF8DC71B770530C265DE9A66D362AA9196A8A8EBF3" Timestamp="1D6B6BFE04C2FEA" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="849602CDD9D009E942B94060A6A22D30D28FCEF3782257E797CC7B870DDCF05B659BF1C241EA2B0396C7C27CF02C87E0E9D412220260931DFFA42DD509B8905B" Timestamp="1D6B93FB8332EE3" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
-		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Native target compiler" Name="http://www.ni.com/LabVIEW.NativeBackEndCompiler" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
 	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="7a1167627ddb43b1bd2f5f50730df42a" RootNamespaceId="a1ffb1700fc844e798cc277a57195e82" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="6f11d84f131e45db8084d0d9dcd9206c" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -15,12 +16,12 @@
 		<CompilerSymbolTable Id="fc1cba21dd014307b208f44c6d9be2b2" xmlns="http://www.ni.com/PlatformFramework" />
 		<ComponentConfiguration ComponentSubtypeIdentifier="Application" Id="33b6eb7855f64e8eb03819459ecc7f1f" Name="Configuration1">
 			<CompilerSymbolTable Id="248903c3ce014366b7c0c52bf8a7c5c1" xmlns="http://www.ni.com/PlatformFramework" />
-			<NativeApplicationOutputTypeProperties Id="d202345b68f84bb88e9a999d2a7dc807" />
+			<NativeApplicationOutputTypeProperties Id="d202345b68f84bb88e9a999d2a7dc807" xmlns="http://www.ni.com/LabVIEW.NativeBackEndCompiler" />
 			<ComponentItemProperties AssociatedEnvoyId="bf951a0106a9401f9dc6d6e2b244774b" Id="b641bd562bc94df1a5b770ea38119021" TopLevel="True" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="223694340b9b408ba675e6afb0fc53e4" xmlns="http://www.ni.com/PlatformFramework">
-		<ProjectSettings Id="d6990e143edd4c528820ccebad9851f3" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EnvoyManagerRootEnvoy Id="d6990e143edd4c528820ccebad9851f3" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
 		<EmbeddedDefinitionReference Id="9267f6b6557546be8c7e3a1f37613f13" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
 			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="a1ffb1700fc844e798cc277a57195e82" Name="Rainbow Measurement Setup">
@@ -37,6 +38,10 @@
 							<SourceFileReference Bindings="EnvoyManager" Id="f9a27627edc740929a47c7519d09c3c6" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Current State Instructions.gtype" StoragePath="Main Functions\Instruction Queue\Current State\Current State Instructions.gtype\Current State Instructions.gtype" />
 						</NameScopingEnvoy>
 					</NameScopingEnvoy>
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="eecc7b56e9f84763af56ea78c37ff854" Name="Modify TXT file">
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="6211bc01a85f494fb84ef5eabbda4518" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Modify TXT File.gvi" StoragePath="Main Functions\Modify TXT file\Modify TXT File.gvi" />
+						<SourceFileReference Bindings="EnvoyManager" Id="4349ed37c3d449d58a4776cb222452bb" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Modify File Operation.gtype" StoragePath="Main Functions\Modify TXT file\Modify File Operation.gtype\Modify File Operation.gtype" />
+					</NameScopingEnvoy>
 				</NameScopingEnvoy>
 				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="75577cdf3ed74db994ab28685d73b21a" Name="Side Functions">
 					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="250f729d743c44488520da34364e4f56" Name="Global Abort">
@@ -52,6 +57,14 @@
 					</NameScopingEnvoy>
 					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="22304125c0d243c788f770f929f2ab5b" Name="Path Manipulation">
 						<SourceFileReference Bindings="EnvoyManager" Id="8786bfa57b0c4d69b52d0f0c96aadb27" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="All Paths Cluster.gtype" StoragePath="Side Functions\Path Manipulation\All Paths Cluster.gtype\All Paths Cluster.gtype" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="ba8b9d9cff0c4a6db86aca0e953bf922" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Path Check &amp; Generation.gvi" StoragePath="Side Functions\Path Manipulation\Path Check &amp; Generation.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="e400dbdb8d85409889943f6caccb2b15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Create or Open Folder.gvi" StoragePath="Side Functions\Path Manipulation\Create or Open Folder.gvi" />
+						<SourceFileReference Bindings="EnvoyManager" Id="b27cf83af3534d799001b1ecbc8ba1c0" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Measurement File Type.gtype" StoragePath="Side Functions\Path Manipulation\Measurement File Type.gtype\Measurement File Type.gtype" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="d3c6ae6a8e9c4fb2b95a05e30f888816" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Header info merger.gvi" StoragePath="Side Functions\Path Manipulation\Header info merger.gvi" />
+						<SourceFileReference Id="b771e335da0c4c9e9636eee12b40a96b" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Rename Window.gvi" StoragePath="Side Functions\Path Manipulation\Rename Window.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="63643ba47567453696eef8c74e4254f3" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Path Already Exists prompt.gvi" StoragePath="Side Functions\Path Manipulation\Path Already Exists prompt.gvi" />
+						<SourceFileReference Bindings="EnvoyManager" Id="b9c9c256562f4d728195f30fd8ea129c" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Existing File Instruction.gtype" StoragePath="Side Functions\Path Manipulation\Existing File Instruction.gtype\Existing File Instruction.gtype" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="f25f36cd0fe242cc8e254e42f91ef328" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Measurement File Header Generator.gvi" StoragePath="Side Functions\Path Manipulation\Measurement File Header Generator.gvi" />
 					</NameScopingEnvoy>
 					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="b2c5bf891f754ceebee2b49b5bf6997f" Name="Instrument Control">
 						<NameScopingEnvoy AutomaticallyResolveUp="True" Id="d5c55a97b5884dfb9390b272b0a00e97" Name="Arduino">
@@ -79,13 +92,17 @@
 					</NameScopingEnvoy>
 					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="cf3057a929d04a3882c348e1be8a2fbd" Name="Utilities">
 						<SourceFileReference Bindings="EnvoyManager" Id="de1990d8220b40e0b797c32bc5efe770" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="General FGV Instructions.gtype" StoragePath="Side Functions\Utilities\General FGV Instructions.gtype\General FGV Instructions.gtype" />
+						<NameScopingEnvoy AutomaticallyResolveUp="True" Id="fa99a2f648f74d5aa32d9b5ed6c08ebc" Name="Cell Naming">
+							<SourceFileReference Bindings="EnvoyManager" Id="5278b88fdd6a4c31ada3ec1cd36d2dfd" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Cell Naming Cluster.gtype" StoragePath="Side Functions\Utilities\Cell Naming\Cell Naming Cluster.gtype\Cell Naming Cluster.gtype" />
+							<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2d5599c752d14ebcb751e06543672335" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="txt Extension adder.gvi" StoragePath="Side Functions\Utilities\Cell Naming\txt Extension adder.gvi" />
+						</NameScopingEnvoy>
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="431078b94f774ecf84199a26eeca95f5" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Header Extractor.gvi" StoragePath="Side Functions\Utilities\Header Extractor.gvi" />
 					</NameScopingEnvoy>
 				</NameScopingEnvoy>
 				<SourceFileReference Id="bf951a0106a9401f9dc6d6e2b244774b" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Main Window.gvi" StoragePath="Main Window.gvi" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
-		<NameScopingEnvoy Id="1deff7ab3c2444efb3d5bcd03081de11" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="Rainbow NXG.gcomp" NameTracksFileName="True">
-			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+		<NameScopingEnvoy Id="1deff7ab3c2444efb3d5bcd03081de11" Name="Rainbow NXG.gcomp" NameTracksFileName="True">
 			<ContentReference ContentIdentifier="33b6eb7855f64e8eb03819459ecc7f1f" Id="4cacaaf15b61444692cd8a8d1ed4c628" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>

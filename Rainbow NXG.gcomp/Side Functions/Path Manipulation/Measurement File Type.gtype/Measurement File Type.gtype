@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="A221336E59608D67AC8B3D5EB9DC86AF587F072781607B63EDE67879CDD229009CD941ED5A9FF7DEAC3989A606D67251811A918D21D4DB6B28A71440142E7A64" Timestamp="1D6B8EA30DDC6B7" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@7fe710ca85b44693863c3d5890224bab" Id="39ed7d66405c49baacc4507127f3de51" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="256cf773fd1542d2905c13280dc1b338" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="5fb00112fa834973bd073a24de0a91d6" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="ed05d22890c4ca588ee266dcd075755" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@7fe710ca85b44693863c3d5890224bab" Id="467c265ce1c34f03a26f1add44565937" Name="Measurement File Type">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="9dc21aa0fc944c1a99b6a66b9f2d8062" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="5472b1bef7904d6d94042177ca78342e" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="cda5f5216cbd45b19d0cd3d162f1281e" Name="Measurement File Type.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="a52ba00f45b41ac9f4e591ece02452f" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="5fc81bda124a422f918ba2e09f77f270" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Path type" Height="[float]24" Id="9147437e75f848338813174a9aad8212" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]cd0a6656e87c49c8a2a21cfa1ff9890d" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=467c265ce1c34f03a26f1add44565937}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]328" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Single Cell Rainbow" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Multiple Cell Rainbow" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Light Calibration Irradiance" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Light Calibration Spectral Density" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Light Calibration Power Density" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="cd0a6656e87c49c8a2a21cfa1ff9890d" LabelOwner="[UIModel]9147437e75f848338813174a9aad8212" Left="[float]100" Text="[string]Measurement File Type" Top="[float]80" Width="[float]123" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="7fe710ca85b44693863c3d5890224bab">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Single Cell Rainbow" />
+					<EnumerationMember Value="1" Name="Multiple Cell Rainbow" />
+					<EnumerationMember Value="2" Name="Light Calibration Irradiance" />
+					<EnumerationMember Value="3" Name="Light Calibration Spectral Density" />
+					<EnumerationMember Value="4" Name="Light Calibration Power Density" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
