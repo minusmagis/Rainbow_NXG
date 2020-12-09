@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="A9970EB7979BDDE418893C363E2EDECB08CC012A7DB90AFFDF5C4950D00FC32C56E490A0B0E02D3800C74A5E91F8ED9C0C7762F83B2ACE802781E2319309C027" Timestamp="1D6CE3239A1F9D0" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="79583c3e24c44865adf776865fa5c348" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="8d0f4774aa4464bf89e855cf6d0b77" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="68808ec87dc41b1833283d82a2ef753" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="ebc424f368884d33b5fc9664b0f9d9fe" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="63c430f1cbad450183b4c8feeee9763c" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="b333f2dcac6c444084155d2bf7907ba9" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="e4839dbe966840a88281a5a8e3533863" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Scan Points Generator" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="54a5d8321f6348fe853452dd4950372d" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="8e3ac4cd8bb47e197541f1e165580b6" ListViewHeight="115" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 65" Parameter="460d55a0b9084ed491a9d78ee211d442" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="2dbce58698847049b6db4ce33456f79" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 80" Parameter="7dd721a712d44a0819410d1c7a73694" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 95" Parameter="4202acfe8a50402fb7f0941c7c66fe9b" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="e0f9a4f8d414ad0a60104fccd05e210" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="5b95579a11f84266acde362981c67606" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="64f8028d4a8d409ca1106bc7093b435a" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
+			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]24" Id="f16258cee4c04710b478f60a3e6c999c" IsReadOnly="[bool]True" Left="[float]0" Name="[string]All In Range?" Shape="[LEDShape]Square" TabIndex="[int]0" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=4202acfe8a50402fb7f0941c7c66fe9b}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="4e817487911a477f8d1942fb507d3c26">
+			<CaseStructure Bounds="485 110 290 125" DataType="Error" Default="d5a1c54af2804b0ba4ed4bb7ebec77d8" Id="ed94988f66fd45ec869b0c124fc49b2e" Selected="7b1344d767434980b12e5eeac22ef2df" UserSelectorBounds="92 0 106 17">
+				<CaseStructure.Case Bounds="5 5 280 115" Id="d5a1c54af2804b0ba4ed4bb7ebec77d8" Pattern="Error">
+					<Wire Id="d4bb0716dff24200941de6cbe034410e" Joints="N(446cf0251a0c445ab42d0a73d4e8e180:d5a1c54af2804b0ba4ed4bb7ebec77d8)|(4,90) h(261) v(-10) N(e326bf31562c4ca68a1b8a62f4851460:d5a1c54af2804b0ba4ed4bb7ebec77d8)|(276,80)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 280 115" Id="7b1344d767434980b12e5eeac22ef2df" Pattern="No Error">
+					<MethodCall Bounds="25 55 40 40" Id="dbf81b9ea56248dba7f7b17deeb23286" ResolveFailedHint="&quot;C:\\Users\\minus\\Documents\\LabVIEW Projects\\Rainbow_NXG\\Rainbow NXG.gcomp\\Side Functions\\Scanning Calculations\\Scan Parameters Calculator.gvi&quot;" Signature="@796377b403524d4e98a03737c22589c9" Target="Rainbow Measurement Setup::Side Functions::Scanning Calculations::Scan Parameters Calculator.gvi" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="XZ Scan Parameters In" />
+								<Parameter Id="L3" Desc="Error In" />
+								<Parameter Id="R0" Desc="XZ Scan Parameters Out" />
+								<Parameter Id="R3" Desc="Error Out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@42eb79fe22914b649d8fc7644f69b758" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@42eb79fe22914b649d8fc7644f69b758" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="5fdc4ba6fec248e3a098b76f43ec704e" Joints="N(2386fae18481463f9ce629e3e3ca5ec3:7b1344d767434980b12e5eeac22ef2df)|(4,60) N(dbf81b9ea56248dba7f7b17deeb23286:L0)|(25,60)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="33ff04b59a1740b4a0dec4572dce0b38" Joints="N(446cf0251a0c445ab42d0a73d4e8e180:7b1344d767434980b12e5eeac22ef2df)|(4,90) N(dbf81b9ea56248dba7f7b17deeb23286:L3)|(25,90)" xmlns="http://www.ni.com/PlatformFramework" />
+					<MethodCall Bounds="85 55 40 40" Id="1ab55938513a42118ef6e5295b80d124" ResolveFailedHint="&quot;C:\\Users\\minus\\Documents\\LabVIEW Projects\\Rainbow_NXG\\Rainbow NXG.gcomp\\Side Functions\\Scanning Calculations\\Scan Parameters Check.gvi&quot;" Signature="@a34c68efaf5f4a0fb66850a5163a1aef" Target="Rainbow Measurement Setup::Side Functions::Scanning Calculations::Scan Parameters Check.gvi" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="XZ Scan Parameters" />
+								<Parameter Id="L3" Desc="Error In" />
+								<Parameter Id="R0" Desc="All In Range?" />
+								<Parameter Id="R3" Desc="Error Out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@42eb79fe22914b649d8fc7644f69b758" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="92bb1abbf4354737bb5d2487035f391e" Joints="N(dbf81b9ea56248dba7f7b17deeb23286:R3)|(65,90) N(1ab55938513a42118ef6e5295b80d124:L3)|(85,90)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="6fe43ba21f8483abc42f65eb7be3467" Joints="N(dbf81b9ea56248dba7f7b17deeb23286:R0)|(65,60) h(10) B(1) N(1ab55938513a42118ef6e5295b80d124:L0)|(85,60) B(1) v(-10) N(c92c0f34ba144ddbc95d62d0e049ff1:L0)|(155,50)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1b1d851ddf63442f968fd14fd1b4a599" Joints="N(1ab55938513a42118ef6e5295b80d124:R0)|(125,60) h(20) v(35) N(d214fed287e74e888893bdca9399b152:7b1344d767434980b12e5eeac22ef2df)|(276,95)" xmlns="http://www.ni.com/PlatformFramework" />
+					<MethodCall Bounds="155 45 40 40" Id="c92c0f34ba144ddbc95d62d0e049ff1" ResolveFailedHint="&quot;C:\\Users\\minus\\Documents\\LabVIEW Projects\\Rainbow_NXG\\Rainbow NXG.gcomp\\Side Functions\\Scanning Calculations\\Scan Point Calculator.gvi&quot;" Signature="@672c598264be4abda74d9d25248039ce" Target="Rainbow Measurement Setup::Side Functions::Scanning Calculations::Scan Point Calculator.gvi" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="XZ Scan Parameters In" />
+								<Parameter Id="L3" Desc="Error In" />
+								<Parameter Id="T0" Desc="Scan Type" />
+								<Parameter Id="R0" Desc="Coordinate Array" />
+								<Parameter Id="R3" Desc="Error Out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@42eb79fe22914b649d8fc7644f69b758" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@6ffcc59facdc426398af81e8b5a22d70" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@53ea2298cce84bd6861c21250fb55c6a" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="23cacea2cbfa4c7bbd078c660125645f" Joints="N(1ab55938513a42118ef6e5295b80d124:R3)|(125,90) h(10) v(-10) N(c92c0f34ba144ddbc95d62d0e049ff1:L3)|(155,80)" xmlns="http://www.ni.com/PlatformFramework" />
+					<MethodCall Bounds="215 45 40 40" Id="cd697efc83eb4de7b161e6167e34b092" ResolveFailedHint="&quot;C:\\Users\\minus\\Documents\\LabVIEW Projects\\Rainbow_NXG\\Rainbow NXG.gcomp\\Side Functions\\Scanning Calculations\\Scan XZ Coordinate to Gcode.gvi&quot;" Signature="@4db31b3025ee4efd87ec83150a89d471" Target="Rainbow Measurement Setup::Side Functions::Scanning Calculations::Scan XZ Coordinate to Gcode.gvi" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="XZ Coordinate Array In" />
+								<Parameter Id="L3" Desc="Error In" />
+								<Parameter Id="R0" Desc="XZ Coordinate Array Out" />
+								<Parameter Id="R3" Desc="Error Out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@53ea2298cce84bd6861c21250fb55c6a" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@53ea2298cce84bd6861c21250fb55c6a" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="8c541e796b424ff58707dfb229a02cca" Joints="N(c92c0f34ba144ddbc95d62d0e049ff1:R3)|(195,80) N(cd697efc83eb4de7b161e6167e34b092:L3)|(215,80)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="30bc456cb0304e1990dd48d8ec7d1c37" Joints="N(cd697efc83eb4de7b161e6167e34b092:R3)|(255,80) N(e326bf31562c4ca68a1b8a62f4851460:7b1344d767434980b12e5eeac22ef2df)|(276,80)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="4efd29e9aef545209be57805b477cb1b" Joints="N(c92c0f34ba144ddbc95d62d0e049ff1:R0)|(195,50) N(cd697efc83eb4de7b161e6167e34b092:L0)|(215,50)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="497bfc120c174580a0dbdfaf0df6c6fb" Joints="N(cd697efc83eb4de7b161e6167e34b092:R0)|(255,50) N(8820f9095344478ae4553b7d24de23d:7b1344d767434980b12e5eeac22ef2df)|(276,50)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 90 13 10" Docking="Left" Id="446cf0251a0c445ab42d0a73d4e8e180" Terminals="ed94988f66fd45ec869b0c124fc49b2e=6a8abbad51f64dfeb36c239fcd33016a, d5a1c54af2804b0ba4ed4bb7ebec77d8=d4bb0716dff24200941de6cbe034410e, 7b1344d767434980b12e5eeac22ef2df=33ff04b59a1740b4a0dec4572dce0b38" />
+				<CaseStructure.Tunnel Bounds="281 80 13 10" Docking="Right" Id="e326bf31562c4ca68a1b8a62f4851460" Terminals="ed94988f66fd45ec869b0c124fc49b2e=7e6e9eabfa1b455187ccfddc25c4d130, d5a1c54af2804b0ba4ed4bb7ebec77d8=d4bb0716dff24200941de6cbe034410e, 7b1344d767434980b12e5eeac22ef2df=30bc456cb0304e1990dd48d8ec7d1c37" />
+				<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="2386fae18481463f9ce629e3e3ca5ec3" Terminals="ed94988f66fd45ec869b0c124fc49b2e=fe79cdcb16a747e8b83f008e83b0ebda, d5a1c54af2804b0ba4ed4bb7ebec77d8, 7b1344d767434980b12e5eeac22ef2df=5fdc4ba6fec248e3a098b76f43ec704e" />
+				<CaseStructure.Tunnel Bounds="281 95 13 10" DefaultIfUnwired="True" Docking="Right" Id="d214fed287e74e888893bdca9399b152" Terminals="ed94988f66fd45ec869b0c124fc49b2e=768cf9513f6c4e0e8e7eec3e0c0f4672, d5a1c54af2804b0ba4ed4bb7ebec77d8, 7b1344d767434980b12e5eeac22ef2df=1b1d851ddf63442f968fd14fd1b4a599" />
+				<CaseStructure.Tunnel Bounds="281 50 13 10" DefaultIfUnwired="True" Docking="Right" Id="8820f9095344478ae4553b7d24de23d" Terminals="ed94988f66fd45ec869b0c124fc49b2e=d331f3178cb346b2aa7c498e9c9d1f36, d5a1c54af2804b0ba4ed4bb7ebec77d8, 7b1344d767434980b12e5eeac22ef2df=497bfc120c174580a0dbdfaf0df6c6fb" />
+			</CaseStructure>
+			<DataAccessor Bounds="425 200 40 15" DataItem="2dbce58698847049b6db4ce33456f79" Id="e390adb927304c9ba96f279e4c08acba" Label="b512d4ff8d454f5fbdfbeaf40dc20513" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="e390adb927304c9ba96f279e4c08acba" Bounds="376 200 44 14" Id="b512d4ff8d454f5fbdfbeaf40dc20513" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Error In</p.Text>
+			</NodeLabel>
+			<Wire Id="6a8abbad51f64dfeb36c239fcd33016a" Joints="N(e390adb927304c9ba96f279e4c08acba:Value)|(465,205) N(446cf0251a0c445ab42d0a73d4e8e180:ed94988f66fd45ec869b0c124fc49b2e)|(481,205)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="815 190 40 15" DataItem="e0f9a4f8d414ad0a60104fccd05e210" Id="d8fb557156b34642bf6a6289b525e161" Label="995bbaf11715488396f5ba2d0e7262f1" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="d8fb557156b34642bf6a6289b525e161" Bounds="860 190 52 14" Id="995bbaf11715488396f5ba2d0e7262f1" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Error Out</p.Text>
+			</NodeLabel>
+			<Wire Id="7e6e9eabfa1b455187ccfddc25c4d130" Joints="N(e326bf31562c4ca68a1b8a62f4851460:ed94988f66fd45ec869b0c124fc49b2e)|(779,195) N(d8fb557156b34642bf6a6289b525e161:Value)|(818,195)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="425 170 40 15" DataItem="460d55a0b9084ed491a9d78ee211d442" Id="c8594e9143ba4edabaec2e2640a961c7" Label="d5332834ad434326a3c499a76d09be69" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@42eb79fe22914b649d8fc7644f69b758" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="c8594e9143ba4edabaec2e2640a961c7" Bounds="292 170 128 14" Id="d5332834ad434326a3c499a76d09be69" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>XZ Scan Parameters In</p.Text>
+			</NodeLabel>
+			<Wire Id="fe79cdcb16a747e8b83f008e83b0ebda" Joints="N(c8594e9143ba4edabaec2e2640a961c7:Value)|(465,175) N(2386fae18481463f9ce629e3e3ca5ec3:ed94988f66fd45ec869b0c124fc49b2e)|(481,175)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="815 205 40 15" DataItem="4202acfe8a50402fb7f0941c7c66fe9b" Id="9f33a7b612e74ca28f2f980345bc46f9" Label="661f8eb04ef844558e5fbf03c30abc58" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="9f33a7b612e74ca28f2f980345bc46f9" Bounds="860 205 74 14" Id="661f8eb04ef844558e5fbf03c30abc58" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>All In Range?</p.Text>
+			</NodeLabel>
+			<Wire Id="768cf9513f6c4e0e8e7eec3e0c0f4672" Joints="N(d214fed287e74e888893bdca9399b152:ed94988f66fd45ec869b0c124fc49b2e)|(779,210) N(9f33a7b612e74ca28f2f980345bc46f9:Value)|(818,210)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="525 55 360 55" Id="8859024c4b4a40d0a1746d32289c295f" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"This subVI takes the XZ Scan Parameters \r\nCalculates the needed parameters and also checks \r\nif they are within the XZ Stage Range and finally \r\ncalculates the exact points where the scan will be performed."</p.Text>
+			</Comment>
+			<DataAccessor Bounds="815 160 40 15" DataItem="7dd721a712d44a0819410d1c7a73694" Id="d205d58189404aa8ac13598ea842e059" Label="69b15dd96bef4d9b8fbee0fa64eb409a" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@53ea2298cce84bd6861c21250fb55c6a" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="d205d58189404aa8ac13598ea842e059" Bounds="860 160 113 14" Id="69b15dd96bef4d9b8fbee0fa64eb409a" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>XZ Coordinate Array</p.Text>
+			</NodeLabel>
+			<Wire Id="d331f3178cb346b2aa7c498e9c9d1f36" Joints="N(8820f9095344478ae4553b7d24de23d:ed94988f66fd45ec869b0c124fc49b2e)|(779,165) N(d205d58189404aa8ac13598ea842e059:Value)|(818,165)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<NativeFrontPanel AllowMaximize="[bool]False" Background="[SMSolidColorBrush]#ffffffff" EnforceMaximumSize="[bool]False" Height="[float]575" HtmlPanel="[bool]False" Id="43135abf31c940b08e60d12d49d88cff" Left="[float]0" MaxHeight="[float]575" MaxWidth="[float]800" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]755" WindowTitleOption="[WindowTitleOption]None">
+			<PanelExecutionWindow Id="9fc444568919411592fdba6d35136a23" />
+			<Cluster BaseName="[string]Error" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Enabled="[bool]True" Height="[float]176" Id="5e912a89b37a4a67b2adbdf636875cea" IsTabStop="[bool]True" Label="[UIModel]1deff7fff4d7403ea751003149a686af" LabelLinked="[bool]True" Left="[float]20" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]390" Value="{DataItemBinding Id=2dbce58698847049b6db4ce33456f79}" Width="[float]176" p4:ControlDefinitionChecksum="J+f/EiASvnzghyjtgi4nEE7z+0udh8Z1+KU2hWC1ppw=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Enabled="[bool]True" Height="[float]22" Id="3f74f43498b45c4bdda6afa35834808" Label="[UIModel]b82615bdad21477aa8d8da3611b0a2ea" Left="[float]3" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="b82615bdad21477aa8d8da3611b0a2ea" LabelOwner="[UIModel]3f74f43498b45c4bdda6afa35834808" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="abcc39d09c49be8e0d2215c7b37ada" Interval="[int]1" Label="[UIModel]bcdd8408770b44a5aff7826ddba93b75" Left="[float]54" Maximum="[int]2147483647" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="bcdd8408770b44a5aff7826ddba93b75" LabelOwner="[UIModel]abcc39d09c49be8e0d2215c7b37ada" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]95" HorizontalScrollBarVisibility="[ScrollBarVisibility]Disabled" Id="baf4cb84264b4c21931cf899d9e5a8a1" Label="[UIModel]e0dad404703942e989538e4a7f8c2676" Left="[float]3" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]70" TypeToReplace="[bool]False" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="e0dad404703942e989538e4a7f8c2676" LabelOwner="[UIModel]baf4cb84264b4c21931cf899d9e5a8a1" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="1deff7fff4d7403ea751003149a686af" LabelOwner="[UIModel]5e912a89b37a4a67b2adbdf636875cea" Left="[float]20" Text="[string]Error In" Top="[float]370" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BaseName="[string]Error" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Enabled="[bool]True" Height="[float]176" Id="a4779465c5864bf3a0fd5bc71b438ed0" IsTabStop="[bool]True" Label="[UIModel]33ae339745a847f3a9f8677e70ffb203" LabelLinked="[bool]True" Left="[float]590" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]1" Top="[float]390" Value="{DataItemBinding Id=e0f9a4f8d414ad0a60104fccd05e210}" Width="[float]176" p4:ControlDefinitionChecksum="J+f/EiASvnzghyjtgi4nEE7z+0udh8Z1+KU2hWC1ppw=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Enabled="[bool]True" Height="[float]22" Id="31dd7aabbcb743d7a3dc991fc1ef39cd" IsReadOnly="[bool]True" Label="[UIModel]4606a569657a41848c9250c2969256bd" Left="[float]3" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="4606a569657a41848c9250c2969256bd" LabelOwner="[UIModel]31dd7aabbcb743d7a3dc991fc1ef39cd" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="62cac5219d7a433f9ccbfbf5598f5214" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]d7dd1f457cce419cb83a425fbf0f6bd5" Left="[float]54" Maximum="[int]2147483647" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="d7dd1f457cce419cb83a425fbf0f6bd5" LabelOwner="[UIModel]62cac5219d7a433f9ccbfbf5598f5214" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]95" HorizontalScrollBarVisibility="[ScrollBarVisibility]Disabled" Id="bf91078682f645ce9f006071e3500127" IsReadOnly="[bool]True" Label="[UIModel]21e3e5be29384aebb29a1c257f1d4cd1" Left="[float]3" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]70" TypeToReplace="[bool]False" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="21e3e5be29384aebb29a1c257f1d4cd1" LabelOwner="[UIModel]bf91078682f645ce9f006071e3500127" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="33ae339745a847f3a9f8677e70ffb203" LabelOwner="[UIModel]a4779465c5864bf3a0fd5bc71b438ed0" Left="[float]590" Text="[string]Error Out" Top="[float]370" Width="[float]49" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]XZ Scan Parameters" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@42eb79fe22914b649d8fc7644f69b758" Enabled="[bool]True" Height="[float]114" Id="12912ae0992248caa291671351b1fa73" IsTabStop="[bool]True" Label="[UIModel]bcd83324097c45bfb80ac55075c448a2" LabelLinked="[bool]True" Left="[float]20" TabIndex="[int]2" Top="[float]28" Value="{DataItemBinding Id=460d55a0b9084ed491a9d78ee211d442}" Width="[float]675" p4:ControlDefinitionChecksum="5HLjPByA5RokQhcplAv+c6S1m95l7SYXTlsuZGI6PgA=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Scanning Calculations::XZ Scan Parameters.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="6bbb619f7d34b8783d9629c8cebef46" Interval="[double]1" Label="[UIModel]139d83ec0772408ea6a0647c63feb3fa" Left="[float]94" Maximum="[double]1000" Minimum="[double]0" TabIndex="[int]0" Top="[float]25" Value="{ClusterBinding FieldName=X\ Scan\ Range\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="4d1f45d2e954442aa1f782a955c471ac" Interval="[double]1" Label="[UIModel]2f5e0e62e0334ec5a2e44722d89e8e38" Left="[float]94" Maximum="[double]1000" Minimum="[double]0" TabIndex="[int]1" Top="[float]78" Value="{ClusterBinding FieldName=Z\ Scan\ Range\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="5fe4ac71c8954702bd78baa639a39ca2" Interval="[double]1" Label="[UIModel]9da2c3ff8dd142abb2d6387c3460afe8" Left="[float]4" Maximum="[double]1000" Minimum="[double]1" TabIndex="[int]2" Top="[float]25" Value="{ClusterBinding FieldName=X\ Steps}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="1be5d6ecfd8d4bca828a152fac5a9dd4" Interval="[double]1" Label="[UIModel]3252db7718014f3aa874f7e397490ac6" Left="[float]4" Maximum="[double]1000" Minimum="[double]1" TabIndex="[int]3" Top="[float]78" Value="{ClusterBinding FieldName=Z\ Steps}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="9734100824e84fb7ac4384927ccfb201" Interval="[double]1" Label="[UIModel]ec4f83d85d364ecbb9c3228a0ee96809" Left="[float]184" Maximum="[double]1000" Minimum="[double]0" TabIndex="[int]4" Top="[float]25" Value="{ClusterBinding FieldName=Center\ Coordinate\ X}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="112b0197ed6f491297c04a617eb18108" Interval="[double]1" Label="[UIModel]209576b6a73944af81159354a00f8d8b" Left="[float]185" Maximum="[double]1000" Minimum="[double]0" TabIndex="[int]5" Top="[float]78" Value="{ClusterBinding FieldName=Center\ Coordinate\ Z}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="139d83ec0772408ea6a0647c63feb3fa" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]6bbb619f7d34b8783d9629c8cebef46" Left="[float]62" Text="[string]X Scan Range (mm)" Top="[float]5" Width="[float]104" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="2f5e0e62e0334ec5a2e44722d89e8e38" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]4d1f45d2e954442aa1f782a955c471ac" Left="[float]63" Text="[string]Z Scan Range (mm)" Top="[float]58" Width="[float]103" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="9da2c3ff8dd142abb2d6387c3460afe8" LabelOwner="[UIModel]5fe4ac71c8954702bd78baa639a39ca2" Left="[float]4" Text="[string]X Steps" Top="[float]5" Width="[float]39" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="3252db7718014f3aa874f7e397490ac6" LabelOwner="[UIModel]1be5d6ecfd8d4bca828a152fac5a9dd4" Left="[float]4" Text="[string]Z Steps" Top="[float]58" Width="[float]39" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="ec4f83d85d364ecbb9c3228a0ee96809" LabelOwner="[UIModel]9734100824e84fb7ac4384927ccfb201" Left="[float]184" Text="[string]Center Coordinate X" Top="[float]5" Width="[float]108" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="209576b6a73944af81159354a00f8d8b" LabelOwner="[UIModel]112b0197ed6f491297c04a617eb18108" Left="[float]185" Text="[string]Center Coordinate Z" Top="[float]58" Width="[float]108" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="b31f8882d54b496fac16215fee3298a7" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]4cd99982ce7740c6b80cbfd6bf9f24a0" Left="[float]591" Maximum="[double]Infinity" Minimum="[double]-Infinity" TabIndex="[int]6" Top="[float]78" Value="{ClusterBinding FieldName=Z\ Step\ size}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="4cd99982ce7740c6b80cbfd6bf9f24a0" LabelOwner="[UIModel]b31f8882d54b496fac16215fee3298a7" Left="[float]591" Text="[string]Z Step size" Top="[float]58" Width="[float]57" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="520d096a721a4b5e9f586e2023d2a5a9" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]189113daeb8e4ff98a6b947e9b10a9fa" Left="[float]590" Maximum="[double]Infinity" Minimum="[double]-Infinity" TabIndex="[int]7" Top="[float]24" Value="{ClusterBinding FieldName=X\ Step\ size}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="189113daeb8e4ff98a6b947e9b10a9fa" LabelOwner="[UIModel]520d096a721a4b5e9f586e2023d2a5a9" Left="[float]590" Text="[string]X Step size" Top="[float]4" Width="[float]57" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="7c3854e2cd8c4c3d96eb404238cbc85f" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]fc2004d944d4f98a562c4e054d53567" Left="[float]304" Maximum="[double]10000000" Minimum="[double]0" TabIndex="[int]8" Top="[float]47" Value="{ClusterBinding FieldName=Total\ Steps}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="fc2004d944d4f98a562c4e054d53567" LabelOwner="[UIModel]7c3854e2cd8c4c3d96eb404238cbc85f" Left="[float]304" Text="[string]Total Steps" Top="[float]27" Width="[float]57" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="bc604342965440c99e178fc537419357" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]22b0cc9c666148899912907fc65b18a6" Left="[float]401" Maximum="[double]Infinity" Minimum="[double]-Infinity" TabIndex="[int]9" Top="[float]78" Value="{ClusterBinding FieldName=Z\ Starting\ Point}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="22b0cc9c666148899912907fc65b18a6" LabelOwner="[UIModel]bc604342965440c99e178fc537419357" Left="[float]401" Text="[string]Z Starting Point" Top="[float]58" Width="[float]82" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="2a091f9d51d8419088dcbf158f735c3e" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]3f84089232ee41b19e9791a3ae5e5ff7" Left="[float]401" Maximum="[double]Infinity" Minimum="[double]-Infinity" TabIndex="[int]10" Top="[float]24" Value="{ClusterBinding FieldName=X\ Starting\ Point}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="3f84089232ee41b19e9791a3ae5e5ff7" LabelOwner="[UIModel]2a091f9d51d8419088dcbf158f735c3e" Left="[float]401" Text="[string]X Starting Point" Top="[float]4" Width="[float]82" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="4b06028bfcf5498e8289bb98a654cbb8" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]95af7ae52d514fa394457c815bdf70d3" Left="[float]496" Maximum="[double]Infinity" Minimum="[double]-Infinity" TabIndex="[int]11" Top="[float]78" Value="{ClusterBinding FieldName=Z\ End\ Point}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="c3bf856e4eb5411e93dc9a944d132ed8" Interval="[double]1" IsReadOnly="[bool]False" Label="[UIModel]62996e917294dcea9b7932e571b108e" Left="[float]496" Maximum="[double]Infinity" Minimum="[double]-Infinity" TabIndex="[int]12" Top="[float]24" Value="{ClusterBinding FieldName=X\ End\ Point}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="95af7ae52d514fa394457c815bdf70d3" LabelOwner="[UIModel]4b06028bfcf5498e8289bb98a654cbb8" Left="[float]496" Text="[string]Z End Point" Top="[float]58" Width="[float]61" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="62996e917294dcea9b7932e571b108e" LabelOwner="[UIModel]c3bf856e4eb5411e93dc9a944d132ed8" Left="[float]496" Text="[string]X End Point" Top="[float]4" Width="[float]61" />
+			</Cluster>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="bcd83324097c45bfb80ac55075c448a2" LabelOwner="[UIModel]12912ae0992248caa291671351b1fa73" Left="[float]20" Text="[string]XZ Scan Parameters In" Top="[float]8" Width="[float]118" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]7e4aa06395cb4ea983a6a4d5174fbc39" BaseName="[string]Array" Columns="[int]6" Dimensions="[int]1" Enabled="[bool]True" FirstIndex="[ArrayElementIndex]94" Height="[float]192" HorizontalScrollBarVisibility="[ScrollBarVisibility]Visible" Id="edb406d4ea844dc9b14162e2d171c8aa" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]49a418758f894534999cfbbbd19b35e3" Left="[float]20" Orientation="[SMOrientation]Horizontal" Rows="[int]1" TabIndex="[int]3" Top="[float]170" Value="{DataItemBinding Id=7dd721a712d44a0819410d1c7a73694}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]746" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>
+					<Cluster>
+						<Field1>0x0</Field1>
+						<Field2>0x0</Field2>
+						<Field3>""</Field3>
+					</Cluster>
+				</p.DefaultElementValue>
+				<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]XZ Coordinate Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@83c2b7cce2f042159f9ebac55c2f18db" Height="[float]160" Id="7e4aa06395cb4ea983a6a4d5174fbc39" IsTabStop="[bool]True" Label="[UIModel]e0f56cca90ba40a7835a73023ec80e33" LabelLinked="[bool]True" TabIndex="[int]0" Width="[float]119" p5:ControlDefinitionChecksum="BZbc3UT5HXa1vpkh7Rp2snhHv98YuvSpnk4P1Tjox3A=" xmlns:p5="http://www.ni.com/PanelCommon">
+					<p5:p.TypeDefinitionTargets>
+						<p5:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Scanning Calculations::XZ Coordinate Cluster.gtype::ControlDefinition" />
+					</p5:p.TypeDefinitionTargets>
+					<NumericText BaseName="[string]Numeric" Height="[float]24" Id="38d3efd88635445e8d1fe68ae19e150a" IsReadOnly="[bool]True" Label="[UIModel]31c15e2e4fcc4d98aae528f713cd62d0" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ Coordinate}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p5:Label Height="[float]16" Id="31c15e2e4fcc4d98aae528f713cd62d0" LabelOwner="[UIModel]38d3efd88635445e8d1fe68ae19e150a" Left="[float]4" Text="[string]X Coordinate" Top="[float]4" Width="[float]69" />
+					<NumericText BaseName="[string]Numeric" Height="[float]24" Id="dbfcae8a60e9422290a978310438f63c" IsReadOnly="[bool]True" Label="[UIModel]4a47a3d861343d5befeaa24c2168cbd" Left="[float]4" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=Z\ Coordinate}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p5:Label Height="[float]16" Id="4a47a3d861343d5befeaa24c2168cbd" LabelOwner="[UIModel]dbfcae8a60e9422290a978310438f63c" Left="[float]4" Text="[string]Z Coordinate" Top="[float]56" Width="[float]69" />
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="ddc76f4a220b4fa8bce434af1d29b39f" IsReadOnly="[bool]True" Label="[UIModel]e633696dcf4340978f69a2585b88c726" Left="[float]6" TabIndex="[int]2" Text="{ClusterBinding FieldName=Coordinate\ Gcode}" Top="[float]124" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]101" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p5:Label Height="[float]16" Id="e633696dcf4340978f69a2585b88c726" LabelOwner="[UIModel]ddc76f4a220b4fa8bce434af1d29b39f" Left="[float]6" Text="[string]Coordinate Gcode" Top="[float]104" Width="[float]97" />
+					<p5:Label Height="[float]16" Id="e0f56cca90ba40a7835a73023ec80e33" IsVisualChild="[bool]False" LabelOwner="[UIModel]7e4aa06395cb4ea983a6a4d5174fbc39" Left="[float]498" Text="[string]XZ Coordinate Cluster" Top="[float]-14" Width="[float]116" />
+				</Cluster>
+			</ArrayViewer>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="49a418758f894534999cfbbbd19b35e3" LabelOwner="[UIModel]edb406d4ea844dc9b14162e2d171c8aa" Left="[float]20" Text="[string]XZ Coordinate Array" Top="[float]150" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
+		</NativeFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="0" DataType="Error" Id="2dbce58698847049b6db4ce33456f79" Name="Error In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="0" DataType="Error" Id="e0f9a4f8d414ad0a60104fccd05e210" Name="Error Out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" DataType="@42eb79fe22914b649d8fc7644f69b758" Id="460d55a0b9084ed491a9d78ee211d442" Name="XZ Scan Parameters In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Scanning Calculations::XZ Scan Parameters.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" DataType="Boolean" Id="4202acfe8a50402fb7f0941c7c66fe9b" Name="All In Range?" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="@53ea2298cce84bd6861c21250fb55c6a" Id="7dd721a712d44a0819410d1c7a73694" Name="XZ Coordinate Array" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Scanning Calculations::XZ Coordinate Cluster.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="796377b403524d4e98a03737c22589c9">
+			<Attributed AttributedType="@cbc9ba5ba37c44f48c585b504e0382a8">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="42eb79fe22914b649d8fc7644f69b758">
+			<Attributed AttributedType="@00b68fb2f34a402187f7f2637d458b39">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Scanning Calculations" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="a34c68efaf5f4a0fb66850a5163a1aef">
+			<Attributed AttributedType="@736bdc5626b34851abcc8b636c3091af">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="672c598264be4abda74d9d25248039ce">
+			<Attributed AttributedType="@3a50038edc1c4f7b88e7edd97f7a6fd7">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6ffcc59facdc426398af81e8b5a22d70">
+			<Attributed AttributedType="@cd301e225e714406ac4269cec953110a">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Scanning Calculations" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="53ea2298cce84bd6861c21250fb55c6a">
+			<VariableArray DereferenceType="@83c2b7cce2f042159f9ebac55c2f18db" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="4db31b3025ee4efd87ec83150a89d471">
+			<Attributed AttributedType="@f8074374f3a04fa28e8b0f12861bf641">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="83c2b7cce2f042159f9ebac55c2f18db">
+			<Attributed AttributedType="@2a97e46b0a08482a915bc78331222c7c">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Scanning Calculations" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="cbc9ba5ba37c44f48c585b504e0382a8">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Scan Parameters Calculator.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@8969bd7e2ae44d6886d43d7b1b2e7796">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]XZ Scan Parameters In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@dca973fdf6284241b373112a2542cf48">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@08c3e48a93354b51beaebd1a89b98e89">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]XZ Scan Parameters Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@48192eddcd5e42f4a9e9348153e4eacb">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="00b68fb2f34a402187f7f2637d458b39">
+			<Typedef TypedefName="XZ Scan Parameters.gtype" UnderlyingType="@b705775792294725b22af879dea9b619" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="736bdc5626b34851abcc8b636c3091af">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Scan Parameters Check.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@8969bd7e2ae44d6886d43d7b1b2e7796">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]XZ Scan Parameters" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@dca973fdf6284241b373112a2542cf48">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@67e60d76886c4f23b53f80870eea99e5">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]All In Range?" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@48192eddcd5e42f4a9e9348153e4eacb">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3a50038edc1c4f7b88e7edd97f7a6fd7">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Scan Point Calculator.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@8969bd7e2ae44d6886d43d7b1b2e7796">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]XZ Scan Parameters In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@dca973fdf6284241b373112a2542cf48">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@cace3f119db4411abf920f3b157c3eec">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Scan Type" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@ff90971e4ab24c3ea324d9fba96eadcf">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Coordinate Array" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@48192eddcd5e42f4a9e9348153e4eacb">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="cd301e225e714406ac4269cec953110a">
+			<Typedef TypedefName="Scan Type.gtype" UnderlyingType="@83744f93ea75467aadc6886fdb50a531" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="f8074374f3a04fa28e8b0f12861bf641">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Scan XZ Coordinate to Gcode.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@c206f1336cd34b119118c3653c17e9de">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]XZ Coordinate Array In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@dca973fdf6284241b373112a2542cf48">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@ff90971e4ab24c3ea324d9fba96eadcf">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]XZ Coordinate Array Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@48192eddcd5e42f4a9e9348153e4eacb">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2a97e46b0a08482a915bc78331222c7c">
+			<Typedef TypedefName="XZ Coordinate Cluster.gtype" UnderlyingType="@3448b4cb14c3408185b262dd41f99645" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="8969bd7e2ae44d6886d43d7b1b2e7796">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@42eb79fe22914b649d8fc7644f69b758" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="dca973fdf6284241b373112a2542cf48">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Error" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="08c3e48a93354b51beaebd1a89b98e89">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="@42eb79fe22914b649d8fc7644f69b758" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="48192eddcd5e42f4a9e9348153e4eacb">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Error" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="b705775792294725b22af879dea9b619">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="X Scan Range (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Scan Range (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X Steps" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Steps" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Center Coordinate X" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Center Coordinate Z" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Step size" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X Step size" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Total Steps" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Starting Point" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X Starting Point" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z End Point" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X End Point" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="67e60d76886c4f23b53f80870eea99e5">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="cace3f119db4411abf920f3b157c3eec">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T0" DataType="@6ffcc59facdc426398af81e8b5a22d70" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="ff90971e4ab24c3ea324d9fba96eadcf">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="@53ea2298cce84bd6861c21250fb55c6a" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="83744f93ea75467aadc6886fdb50a531">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Horizontal Scan" />
+					<EnumerationMember Value="1" Name="Vertical Scan" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c206f1336cd34b119118c3653c17e9de">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@53ea2298cce84bd6861c21250fb55c6a" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="3448b4cb14c3408185b262dd41f99645">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="X Coordinate" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Coordinate" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Coordinate Gcode" DataType="String" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="Rainbow Measurement Setup::Side Functions::Scanning Calculations::Scan Parameters Calculator.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Scan Parameters Calculator" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Rainbow NXG.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rainbow Measurement Setup::Side Functions::Scanning Calculations::Scan Parameters Check.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Scan Parameters Check" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Rainbow NXG.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rainbow Measurement Setup::Side Functions::Scanning Calculations::Scan Point Calculator.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Scan Point Calculator" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Rainbow NXG.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rainbow Measurement Setup::Side Functions::Scanning Calculations::Scan XZ Coordinate to Gcode.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Scan XZ Coordinate to Gcode" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Rainbow NXG.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

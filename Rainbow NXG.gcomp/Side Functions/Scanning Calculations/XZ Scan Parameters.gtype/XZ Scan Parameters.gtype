@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="159A7FF47C5B7485A85788F26BBA3C833599257DD9D311F3A46645CEC1B68777AA0FCE0F05D0DF06A3DF2E06BDC7F5E96E7289854979153716510D8786356D05" Timestamp="1D6CE26943AA0F8" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@b705775792294725b22af879dea9b619" Id="df5bc463444c406e85bdefeca3377f1c" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="8939619d13d443f1822775812dc4bcda" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="cc3838e4ebac43e293e8e30ab979deea" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="c91f1d7acef6400f8ff8fa25d4aef6b0" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@b705775792294725b22af879dea9b619" Id="2444925b2fd6410980ac242defffb349" Name="XZ Scan Parameters">
+			<p.DefaultValue>0x3FF0000000000000_0x3FF0000000000000_0x4008000000000000_0x4008000000000000_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="ea1a54c528374031a2c2ede5d0e9e5de" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="faa971c351bf4178adf0a12056f852fc" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="77194cf1ad914b22921f76ff38a168f1" Name="XZ Scan Parameters.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="f2308c65c67a4e569e79a39b69ab4798" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="d33b3725e3a142208d949c2fd7dc2bf5" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b705775792294725b22af879dea9b619" Height="[float]114" Id="a770de94985a4a48bebc9d3da7b4ab01" Label="[UIModel]82220461a75e4e5fb93a88140e2bc21c" Left="[float]110" TabIndex="[int]0" Top="[float]125" Value="{DataItemBinding Id=2444925b2fd6410980ac242defffb349}" Width="[float]675" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="26e1f60b9b5c498b9a1f8f2907d2bddb" Label="[UIModel]64392138c1ee41868fad40863a50b51b" Left="[float]94" Maximum="[double]1000" Minimum="[double]0" TabIndex="[int]0" Top="[float]25" Value="{ClusterBinding FieldName=X\ Scan\ Range\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="b21e9771814241e09649473c83176687" Label="[UIModel]e1de9a4ec3774801a306022cd51720ce" Left="[float]94" Maximum="[double]1000" Minimum="[double]0" TabIndex="[int]1" Top="[float]78" Value="{ClusterBinding FieldName=Z\ Scan\ Range\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="274e3e29403d44c488558ef9ca33a30c" Label="[UIModel]fc37f325127d4dd69a86f36738cad792" Left="[float]4" Maximum="[double]1000" Minimum="[double]1" TabIndex="[int]2" Top="[float]25" Value="{ClusterBinding FieldName=X\ Steps}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="97f906bfc15c44d4b49871d876dd83c1" Label="[UIModel]6a9a89e9b6f2464db3de3005073ae12a" Left="[float]4" Maximum="[double]1000" Minimum="[double]1" TabIndex="[int]3" Top="[float]78" Value="{ClusterBinding FieldName=Z\ Steps}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="7c9655400af74a5c9b5e9aaf1eab343b" Label="[UIModel]4b00dd1417e74f0abe3c23291e9c43ea" Left="[float]184" Maximum="[double]1000" Minimum="[double]0" TabIndex="[int]4" Top="[float]25" Value="{ClusterBinding FieldName=Center\ Coordinate\ X}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="b22f4ff61b844c8c94c010a9ed5648af" Label="[UIModel]f9016542620d4ed8bcf5848c437a397e" Left="[float]185" Maximum="[double]1000" Minimum="[double]0" TabIndex="[int]5" Top="[float]78" Value="{ClusterBinding FieldName=Center\ Coordinate\ Z}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="64392138c1ee41868fad40863a50b51b" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]26e1f60b9b5c498b9a1f8f2907d2bddb" Left="[float]62" Text="[string]X Scan Range (mm)" Top="[float]5" Width="[float]103" />
+						<Label Height="[float]16" Id="e1de9a4ec3774801a306022cd51720ce" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]b21e9771814241e09649473c83176687" Left="[float]63" Text="[string]Z Scan Range (mm)" Top="[float]58" Width="[float]103" />
+						<Label Height="[float]16" Id="fc37f325127d4dd69a86f36738cad792" LabelOwner="[UIModel]274e3e29403d44c488558ef9ca33a30c" Left="[float]4" Text="[string]X Steps" Top="[float]5" Width="[float]39" />
+						<Label Height="[float]16" Id="6a9a89e9b6f2464db3de3005073ae12a" LabelOwner="[UIModel]97f906bfc15c44d4b49871d876dd83c1" Left="[float]4" Text="[string]Z Steps" Top="[float]58" Width="[float]39" />
+						<Label Height="[float]16" Id="4b00dd1417e74f0abe3c23291e9c43ea" LabelOwner="[UIModel]7c9655400af74a5c9b5e9aaf1eab343b" Left="[float]184" Text="[string]Center Coordinate X" Top="[float]5" Width="[float]108" />
+						<Label Height="[float]16" Id="f9016542620d4ed8bcf5848c437a397e" LabelOwner="[UIModel]b22f4ff61b844c8c94c010a9ed5648af" Left="[float]185" Text="[string]Center Coordinate Z" Top="[float]58" Width="[float]107" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="2cf14412e418478bbd0b0de6e2b561c1" IsReadOnly="[bool]False" Label="[UIModel]e2c99fd586ef46ef89c7a979080dab45" Left="[float]591" TabIndex="[int]6" Top="[float]78" Value="{ClusterBinding FieldName=Z\ Step\ size}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="e2c99fd586ef46ef89c7a979080dab45" LabelOwner="[UIModel]2cf14412e418478bbd0b0de6e2b561c1" Left="[float]591" Text="[string]Z Step size" Top="[float]58" Width="[float]57" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="c3e56277aceb4a8d9f748b11f82ac804" IsReadOnly="[bool]False" Label="[UIModel]e30b7958d2d24b52ba8ba369f5ca15d4" Left="[float]590" TabIndex="[int]7" Top="[float]24" Value="{ClusterBinding FieldName=X\ Step\ size}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="e30b7958d2d24b52ba8ba369f5ca15d4" LabelOwner="[UIModel]c3e56277aceb4a8d9f748b11f82ac804" Left="[float]590" Text="[string]X Step size" Top="[float]4" Width="[float]57" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="c3d41d6795514db88d6fe48f510bf1ef" IsReadOnly="[bool]False" Label="[UIModel]f55e1d1420354fbb8f0018ce95a69c3d" Left="[float]304" Maximum="[double]10000000" Minimum="[double]0" TabIndex="[int]8" Top="[float]47" Value="{ClusterBinding FieldName=Total\ Steps}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="f55e1d1420354fbb8f0018ce95a69c3d" LabelOwner="[UIModel]c3d41d6795514db88d6fe48f510bf1ef" Left="[float]304" Text="[string]Total Steps" Top="[float]27" Width="[float]57" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="215653b8d0454472979dc2852c48d9bd" IsReadOnly="[bool]False" Label="[UIModel]119d459699b94ff6bb26f25a753cb056" Left="[float]401" TabIndex="[int]9" Top="[float]78" Value="{ClusterBinding FieldName=Z\ Starting\ Point}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="119d459699b94ff6bb26f25a753cb056" LabelOwner="[UIModel]215653b8d0454472979dc2852c48d9bd" Left="[float]401" Text="[string]Z Starting Point" Top="[float]58" Width="[float]82" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="6266ea4594c741a8a626aa019aafcec8" IsReadOnly="[bool]False" Label="[UIModel]860d65e978c41e895d5d8053d8ff3fe" Left="[float]401" TabIndex="[int]10" Top="[float]24" Value="{ClusterBinding FieldName=X\ Starting\ Point}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="860d65e978c41e895d5d8053d8ff3fe" LabelOwner="[UIModel]6266ea4594c741a8a626aa019aafcec8" Left="[float]401" Text="[string]X Starting Point" Top="[float]4" Width="[float]82" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="995a37931b6447f89a4630da8a4f0796" IsReadOnly="[bool]False" Label="[UIModel]29c731844924453f8756115ef11d9d8c" Left="[float]496" TabIndex="[int]11" Top="[float]78" Value="{ClusterBinding FieldName=Z\ End\ Point}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="ff9e60bc6566426197c72623f0dc6d55" IsReadOnly="[bool]False" Label="[UIModel]72b94a9bd0c34464a9089f91865dd996" Left="[float]496" TabIndex="[int]12" Top="[float]24" Value="{ClusterBinding FieldName=X\ End\ Point}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="29c731844924453f8756115ef11d9d8c" LabelOwner="[UIModel]995a37931b6447f89a4630da8a4f0796" Left="[float]496" Text="[string]Z End Point" Top="[float]58" Width="[float]60" />
+						<Label Height="[float]16" Id="72b94a9bd0c34464a9089f91865dd996" LabelOwner="[UIModel]ff9e60bc6566426197c72623f0dc6d55" Left="[float]496" Text="[string]X End Point" Top="[float]4" Width="[float]61" />
+					</Cluster>
+					<Label Height="[float]16" Id="82220461a75e4e5fb93a88140e2bc21c" LabelOwner="[UIModel]a770de94985a4a48bebc9d3da7b4ab01" Left="[float]110" Text="[string]XZ Scan Parameters" Top="[float]105" Width="[float]104" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="b705775792294725b22af879dea9b619">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="X Scan Range (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Scan Range (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X Steps" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Steps" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Center Coordinate X" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Center Coordinate Z" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Step size" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X Step size" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Total Steps" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Starting Point" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X Starting Point" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z End Point" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X End Point" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

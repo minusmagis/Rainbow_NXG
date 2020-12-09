@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="46C5BDA5720DCDAED45483B497B2AE7C1B84F183BD48C8E31CD737A3D1F7BCAC7F9597397C16EC0E4C1B12E52019E926ACB87CF37A14D871297A3659B1F8DF3D" Timestamp="1D6CE2E90E0F13D" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@3448b4cb14c3408185b262dd41f99645" Id="25bb628cb208494b95a9da6fe0e226e3" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="e3c593c10a9d4d34b7b606cf08b36393" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="a201e6a91e844fcb9983837c72edd53b" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="6a732ba7159f412b81ca747a9d016201" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@3448b4cb14c3408185b262dd41f99645" Id="2256ce3c6dc54535955203f91807cbe7" Name="XZ Coordinate Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>0x0</Field1>
+					<Field2>0x0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="80e061f4088041c5a72c75f6f0ddda31" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="131244d237dc475c8658882afaed30c9" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="dca5c364d2a24ada989a2dec57c9be11" Name="XZ Coordinate Cluster.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="92b7beb84e6749b696370c3e4df5dd3f" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Indicator" Id="4583ab6b8724068a271a71922c136e7" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@3448b4cb14c3408185b262dd41f99645" Height="[float]160" Id="3f0d6b804ad4ece969b4fe4e4fd12a7" Label="[UIModel]4076cb2bd1bc4ea0b03ddff108505da7" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=2256ce3c6dc54535955203f91807cbe7}" Width="[float]119" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="15678324cc8444b7bc040b4cfadb8f8b" IsReadOnly="[bool]True" Label="[UIModel]6defbcc92efe4213a0ec4d6d7ce08f91" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ Coordinate}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="6defbcc92efe4213a0ec4d6d7ce08f91" LabelOwner="[UIModel]15678324cc8444b7bc040b4cfadb8f8b" Left="[float]4" Text="[string]X Coordinate" Top="[float]4" Width="[float]69" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="3e713a36482c4273b35404778dfba2f4" IsReadOnly="[bool]True" Label="[UIModel]c02756b1a59a497386e2eff3e2ee2637" Left="[float]4" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=Z\ Coordinate}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="c02756b1a59a497386e2eff3e2ee2637" LabelOwner="[UIModel]3e713a36482c4273b35404778dfba2f4" Left="[float]4" Text="[string]Z Coordinate" Top="[float]56" Width="[float]69" />
+						<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="6df17251a0d4933aaf3d7578fe52580" IsReadOnly="[bool]True" Label="[UIModel]b6442bbaad524f12af2a92181ea3c1f9" Left="[float]6" TabIndex="[int]2" Text="{ClusterBinding FieldName=Coordinate\ Gcode}" Top="[float]124" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]101" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="b6442bbaad524f12af2a92181ea3c1f9" LabelOwner="[UIModel]6df17251a0d4933aaf3d7578fe52580" Left="[float]6" Text="[string]Coordinate Gcode" Top="[float]104" Width="[float]97" />
+					</Cluster>
+					<Label Height="[float]16" Id="4076cb2bd1bc4ea0b03ddff108505da7" LabelOwner="[UIModel]3f0d6b804ad4ece969b4fe4e4fd12a7" Left="[float]100" Text="[string]XZ Coordinate Cluster" Top="[float]80" Width="[float]116" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="3448b4cb14c3408185b262dd41f99645">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="X Coordinate" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Coordinate" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Coordinate Gcode" DataType="String" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
