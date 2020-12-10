@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5AE409B15D38A88B37F7AA01150E000C1CCD378D2B12A90C175ED73709B97DDA369BBBF38230649D5AE79D501E3F03ABD2FAD8EF703DF89BC0AF50411E2CA63B" Timestamp="1D6B6BCDEF779AC" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B3C062117815B4E38C53E92D68A4282D363FB9B2358FA5168440CA1775B1DD176050DB02B6A6AB33C865665D549124926A444FC165274FB6188D2F10D012B2E1" Timestamp="1D6CE4A139B2972" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
-		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@92d0149d193f4b6b9e0da8d7242f5477" Id="dc64600422ef417a99cea41deb2ff0ae" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@da5d7d8a2ca54cf3a1f3d16f2a6a5ee6" Id="dc64600422ef417a99cea41deb2ff0ae" xmlns="http://www.ni.com/MocCommon">
 		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 			<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr" />
 		</p.TypeDefinitionTargets>
@@ -16,7 +16,7 @@
 				<IconTemplate Height="[float]40" Id="b1cadbbb01484079ba83727d92705d61" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@92d0149d193f4b6b9e0da8d7242f5477" Id="b1e9d06d49834a49b1a7a95a721ee2e1" Name="Cluster">
+		<DataItem DataType="@da5d7d8a2ca54cf3a1f3d16f2a6a5ee6" Id="b1e9d06d49834a49b1a7a95a721ee2e1" Name="Arduino coms cluster">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>""</Field1>
@@ -24,6 +24,8 @@
 					<Field3>False</Field3>
 					<Field4>""</Field4>
 					<Field5>null</Field5>
+					<Field6>""</Field6>
+					<Field7>""</Field7>
 				</Cluster>
 			</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
@@ -32,18 +34,18 @@
 		</DataItem>
 	</TypeDefinition>
 	<EnvoyManagerFile Id="a788da8a778643f78031a02564095277" xmlns="http://www.ni.com/PlatformFramework">
-		<ProjectSettings Id="5172db8ad53f49d198619d9e1aae5551" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EnvoyManagerRootEnvoy Id="5172db8ad53f49d198619d9e1aae5551" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
 		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="5cb00cbf762f4763beca469da70cd6de" Name="Arduino Detection cluster control.gtype" NameTracksFileName="True">
-			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="cad5e35db11341ab91536eb7a4935ce9" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="cad5e35db11341ab91536eb7a4935ce9" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="ceb4e9f8e32e445ba6e81c759f6cd989" xmlns="http://www.ni.com/MocCommon">
-					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@92d0149d193f4b6b9e0da8d7242f5477" Height="[float]272" Id="9ff2e95da50a4e64be0ab77c13596262" Label="[UIModel]b1a6bb4c828242c9aedf7fae339c7401" Left="[float]100" TabIndex="[int]0" Top="[float]89" Value="{DataItemBinding Id=b1e9d06d49834a49b1a7a95a721ee2e1}" Width="[float]316" xmlns="http://www.ni.com/PanelCommon">
-						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Height="[float]24" Id="dc64042e9bd2493fbd415c2a9f977b64" Label="[UIModel]abb0608be16e4b79bf3c2e7cdd0314d5" Left="[float]4" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=XZ\ Stage\ Arduino\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]0" Top="[float]35" UdrClass="[string]Instr" UdrNamespace="[string]Visa" Width="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@da5d7d8a2ca54cf3a1f3d16f2a6a5ee6" Height="[float]272" Id="9ff2e95da50a4e64be0ab77c13596262" Label="[UIModel]b1a6bb4c828242c9aedf7fae339c7401" Left="[float]100" TabIndex="[int]0" Top="[float]89" Value="{DataItemBinding Id=b1e9d06d49834a49b1a7a95a721ee2e1}" Width="[float]316" xmlns="http://www.ni.com/PanelCommon">
+						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="dc64042e9bd2493fbd415c2a9f977b64" Label="[UIModel]abb0608be16e4b79bf3c2e7cdd0314d5" Left="[float]4" SelectedResource="{ClusterBinding FieldName=XZ\ Stage\ Arduino\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]0" Top="[float]35" Width="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 								<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
 							</p.TypeDefinitionTargets>
 						</IONameControl>
-						<Label Height="[float]16" Id="abb0608be16e4b79bf3c2e7cdd0314d5" LabelOwner="[UIModel]dc64042e9bd2493fbd415c2a9f977b64" Left="[float]4" Text="[string]XZ Stage Arduino Address" Top="[float]15" Width="[float]139" />
-						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Height="[float]24" Id="e5f0badfeb314348b679b1d8970d5bca" Label="[UIModel]d893222084484d54966baa2afdd1759a" Left="[float]4" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=Multiplexer\ Arduino\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]2" Top="[float]92" UdrClass="[string]Instr" UdrNamespace="[string]Visa" Width="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<Label Height="[float]16" Id="abb0608be16e4b79bf3c2e7cdd0314d5" LabelOwner="[UIModel]dc64042e9bd2493fbd415c2a9f977b64" Left="[float]4" Text="[string]XZ Stage Arduino Address" Top="[float]15" Width="[float]138" />
+						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="e5f0badfeb314348b679b1d8970d5bca" Label="[UIModel]d893222084484d54966baa2afdd1759a" Left="[float]4" SelectedResource="{ClusterBinding FieldName=Multiplexer\ Arduino\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]2" Top="[float]92" Width="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 								<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
 							</p.TypeDefinitionTargets>
@@ -57,43 +59,49 @@
 								</Cluster>
 							</p.DefaultElementValue>
 							<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@32b4f6f8e3384dd7acd49a8d30a8ff00" Height="[float]108" Id="71add374fe034538bc88b5ed127fde5f" Width="[float]112">
-								<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Height="[float]24" Id="13f4cf20b11841a090f96c7eee865320" Label="[UIModel]ccd97e59acf84a3eba03e79cec42dbd2" Left="[float]4" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=Element\ 1}" ShowType="[bool]False" ShowUserRefresh="[bool]True" Top="[float]24" UdrClass="[string]Instr" UdrNamespace="[string]Visa" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="13f4cf20b11841a090f96c7eee865320" Label="[UIModel]ccd97e59acf84a3eba03e79cec42dbd2" Left="[float]4" SelectedResource="{ClusterBinding FieldName=Element\ 1}" ShowType="[bool]False" ShowUserRefresh="[bool]True" Top="[float]24" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 									<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 										<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
 									</p.TypeDefinitionTargets>
 								</IONameControl>
 								<Label Id="ccd97e59acf84a3eba03e79cec42dbd2" LabelOwner="[UIModel]13f4cf20b11841a090f96c7eee865320" Left="[float]4" Text="[string]Element 1" Top="[float]4" />
-								<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="1682589e87e64f27b58cae07a1baaf33" Label="[UIModel]77ef244e0ff946569f07f13b59e1b48d" Left="[float]4" MinHeight="[float]24" Text="{ClusterBinding FieldName=Element\ 2}" Top="[float]76" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]52" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="1682589e87e64f27b58cae07a1baaf33" Label="[UIModel]77ef244e0ff946569f07f13b59e1b48d" Left="[float]4" Text="{ClusterBinding FieldName=Element\ 2}" Top="[float]76" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]52" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 								<Label Id="77ef244e0ff946569f07f13b59e1b48d" LabelOwner="[UIModel]1682589e87e64f27b58cae07a1baaf33" Left="[float]4" Text="[string]Element 2" Top="[float]56" />
 							</Cluster>
 						</ArrayViewer>
 						<Label Height="[float]16" Id="5fd45c1191e8454d847cecb16d7b6fe9" LabelOwner="[UIModel]4243c367092d4f36b855a4d03dd47c48" Left="[float]160" Text="[string]Arduinos List" Top="[float]0" Width="[float]69" />
-						<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]31" Id="2aa946162bed486bbc6fc6d5654d2240" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]a0fc08cd12547dfb1f5fe6bccbd85ba" Left="[float]204" MinHeight="[float]24" MinWidth="[float]44" Shape="[LEDShape]Square" TabIndex="[int]4" Top="[float]227" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Multiplexer\ Arduino\ Detected?}" Width="[float]99" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Id="a0fc08cd12547dfb1f5fe6bccbd85ba" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]2aa946162bed486bbc6fc6d5654d2240" Left="[float]140" Text="[string]Multiplexer Arduino Detected?" Top="[float]207" />
-						<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]30" Id="b7adfdf6534c460d8805215a51f52f8a" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]de560063bdf34c9288fd28cd6b6737eb" Left="[float]204" MinHeight="[float]24" MinWidth="[float]44" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]171" TrueContent="[string]Online" Value="{ClusterBinding FieldName=XZ\ Stage\ Arduino\ Detected?}" Width="[float]98" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Id="de560063bdf34c9288fd28cd6b6737eb" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]b7adfdf6534c460d8805215a51f52f8a" Left="[float]152" Text="[string]XZ Stage Arduino Detected?" Top="[float]151" />
+						<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]31" Id="2aa946162bed486bbc6fc6d5654d2240" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]a0fc08cd12547dfb1f5fe6bccbd85ba" Left="[float]204" Shape="[LEDShape]Square" TabIndex="[int]4" Top="[float]227" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Multiplexer\ Arduino\ Detected?}" Width="[float]99" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="a0fc08cd12547dfb1f5fe6bccbd85ba" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]2aa946162bed486bbc6fc6d5654d2240" Left="[float]140" Text="[string]Multiplexer Arduino Detected?" Top="[float]207" Width="[float]162" />
+						<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]30" Id="b7adfdf6534c460d8805215a51f52f8a" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]de560063bdf34c9288fd28cd6b6737eb" Left="[float]204" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]171" TrueContent="[string]Online" Value="{ClusterBinding FieldName=XZ\ Stage\ Arduino\ Detected?}" Width="[float]98" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="de560063bdf34c9288fd28cd6b6737eb" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]b7adfdf6534c460d8805215a51f52f8a" Left="[float]152" Text="[string]XZ Stage Arduino Detected?" Top="[float]151" Width="[float]149" />
+						<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]43" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="6e3aa975a9734ee1863e81d782f250bd" Label="[UIModel]ff12b0b8f20d45ddb3f977702d565cb0" Left="[float]5" TabIndex="[int]5" Text="{ClusterBinding FieldName=XZ\ Stage\ Log}" Top="[float]140" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]131" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="ff12b0b8f20d45ddb3f977702d565cb0" LabelOwner="[UIModel]6e3aa975a9734ee1863e81d782f250bd" Left="[float]5" Text="[string]XZ Stage Log" Top="[float]120" Width="[float]70" />
+						<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]51" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="221e2a4b8e714da6b0fbf023f8853789" Label="[UIModel]42f541b41d23462eb28bcc3c3abb7ff9" Left="[float]5" TabIndex="[int]6" Text="{ClusterBinding FieldName=Multiplexer\ Log}" Top="[float]205" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]130" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="42f541b41d23462eb28bcc3c3abb7ff9" LabelOwner="[UIModel]221e2a4b8e714da6b0fbf023f8853789" Left="[float]5" Text="[string]Multiplexer Log" Top="[float]185" Width="[float]83" />
 					</Cluster>
-					<Label Height="[float]16" Id="b1a6bb4c828242c9aedf7fae339c7401" LabelOwner="[UIModel]9ff2e95da50a4e64be0ab77c13596262" Left="[float]100" Text="[string]Cluster" Top="[float]69" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+					<Label Height="[float]16" Id="b1a6bb4c828242c9aedf7fae339c7401" LabelOwner="[UIModel]9ff2e95da50a4e64be0ab77c13596262" Left="[float]100" Text="[string]Arduino coms cluster" Top="[float]69" Width="[float]112" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="92d0149d193f4b6b9e0da8d7242f5477">
+		<p.TypeReference TypeId="da5d7d8a2ca54cf3a1f3d16f2a6a5ee6">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Arduino Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Arduino Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
 					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Arduino Detected?" DataType="Boolean" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Multiplexer Arduino Detected?" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Multiplexer Arduino Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Multiplexer Arduino Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Arduinos List" DataType="@09f62b7eab82450e83a48e3038b677a5" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Log" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Multiplexer Log" DataType="String" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
 		<p.TypeReference TypeId="32b4f6f8e3384dd7acd49a8d30a8ff00">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Element 1" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 1" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Element 2" DataType="String" />
 				</Members>
 			</Composite>
