@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="A6E1744DB9C9E7BA81FC7EC062F1A7CC02B5C23C8FAB6CE8939772A8DEFFB4BA5967D4D6FA3C06F1627A131E4123C1339270151994B8D0D2E1E5E9C8C17579C8" Timestamp="1D6D3C2A2EA5B01" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6A8E15E7988552D73B95BF9F08B6E923B1F75B897AC692C194A952569F4B5D8DD9AFA6689A91B6714F39B641930F9B15A1C42A2FB9F826CC37D0E3677CDC89CF" Timestamp="1D6D3CD4600383D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -14,7 +14,7 @@
 			</IconPanel>
 		</Icon>
 		<DataItem DataType="@64ed0b21f81444deb1f35fedeb8ef933" Id="466ad0c4c8f1458c981104f3b6080e07" Name="Cluster">
-			<p.DefaultValue>0x0_0x0_0x0_</p.DefaultValue>
+			<p.DefaultValue>0x0_0x4024000000000000_0x3FB999999999999A_</p.DefaultValue>
 		</DataItem>
 	</TypeDefinition>
 	<EnvoyManagerFile Id="9d034149592a4078b51d1b783acd164e" xmlns="http://www.ni.com/PlatformFramework">
@@ -23,11 +23,11 @@
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="9e758798549a49d6872622ad529f4351" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="649c778af112411c96743fa096ba2f61" xmlns="http://www.ni.com/MocCommon">
 					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@64ed0b21f81444deb1f35fedeb8ef933" Height="[float]164" Id="c4e501dc032c4c808ae48ba82dc6c30d" Label="[UIModel]b6abc1151bc54124abe92a3915a53768" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=466ad0c4c8f1458c981104f3b6080e07}" Width="[float]140" xmlns="http://www.ni.com/PanelCommon">
-						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="6f255e645212461ab422faa368c7cc1d" Label="[UIModel]6f5667c7ee64494a9356fc213b81f9bb" Left="[float]4" Top="[float]24" Value="{ClusterBinding FieldName=Min\ Position\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="6f255e645212461ab422faa368c7cc1d" Label="[UIModel]6f5667c7ee64494a9356fc213b81f9bb" Left="[float]4" Maximum="[double]50" Minimum="[double]0" Top="[float]24" Value="{ClusterBinding FieldName=Min\ Position\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="6f5667c7ee64494a9356fc213b81f9bb" LabelOwner="[UIModel]6f255e645212461ab422faa368c7cc1d" Left="[float]4" Text="[string]Min Position (mm)" Top="[float]4" Width="[float]97" />
-						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="7706f8e0b2f54777a93863b0a9fa3b0e" Label="[UIModel]f881ded478284400ad7fc9c4c1e46748" Left="[float]4" Top="[float]76" Value="{ClusterBinding FieldName=Max\ Position\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="7706f8e0b2f54777a93863b0a9fa3b0e" Label="[UIModel]f881ded478284400ad7fc9c4c1e46748" Left="[float]4" Maximum="[double]50" Minimum="[double]0" Top="[float]76" Value="{ClusterBinding FieldName=Max\ Position\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="f881ded478284400ad7fc9c4c1e46748" LabelOwner="[UIModel]7706f8e0b2f54777a93863b0a9fa3b0e" Left="[float]4" Text="[string]Max Position (mm)" Top="[float]56" Width="[float]99" />
-						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="e2a2dbc9150746bb8969bf3d465bff18" Label="[UIModel]bcecaaf7ae8b4cb8a5f46404cf97c394" Left="[float]4" Top="[float]128" Value="{ClusterBinding FieldName=Position\ step\ size\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="e2a2dbc9150746bb8969bf3d465bff18" Label="[UIModel]bcecaaf7ae8b4cb8a5f46404cf97c394" Left="[float]4" Maximum="[double]50" Minimum="[double]0.001" Top="[float]128" Value="{ClusterBinding FieldName=Position\ step\ size\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="bcecaaf7ae8b4cb8a5f46404cf97c394" LabelOwner="[UIModel]e2a2dbc9150746bb8969bf3d465bff18" Left="[float]4" Text="[string]Position step size (mm)" Top="[float]108" Width="[float]122" />
 					</Cluster>
 					<Label Height="[float]16" Id="b6abc1151bc54124abe92a3915a53768" LabelOwner="[UIModel]c4e501dc032c4c808ae48ba82dc6c30d" Left="[float]100" Text="[string]Cluster" Top="[float]80" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
