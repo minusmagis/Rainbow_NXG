@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="F5F8727093605C47D08AC3C39ED4926D2525DFA33CA87E1AC25696AA606021C27B3641A6B8AED446D4A097F9FB26ED0B97210D2A28679B896EAD1C82C745F025" Timestamp="1D6D3C26BB4B884" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@7df7b554a682471fa9d57f57cceb04a7" Id="d0f54f58e68f4c9bb185f87e4f29528f" xmlns="http://www.ni.com/MocCommon">
+		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Beam Spectrum Data.gtype" />
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Types.gtype" />
+		</p.TypeDefinitionTargets>
+		<Icon Id="42d3ca77f18a40018e19588cfa89d21b" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="400ecc8b63ed407e84809eeb64f2f798" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="bfddeb46714c4406add6dd246765dec0" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@7df7b554a682471fa9d57f57cceb04a7" Id="5d8afaa42bdd42959b290a942849152d" Name="Full Beam Multispectral Data">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>0</Field2>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Beam Spectrum Data.gtype" />
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Types.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="3e9db858103a4c8da038a77bf9048ded" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="d39880e77e0447c29a65b21897ce4613" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="6993b8cc423a43bd83146dc76eafeec4" Name="Full Beam Multispectral Data.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="bacd0658d2a048fcbd093d8352596160" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="b654934599b34835b7c8b094889a5c2a" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@7df7b554a682471fa9d57f57cceb04a7" Height="[float]546" Id="7762c5e0e448a9958567741782e92c" Label="[UIModel]bc6cd6f4e4a24e94a140462bb439369a" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=5d8afaa42bdd42959b290a942849152d}" Width="[float]201" xmlns="http://www.ni.com/PanelCommon">
+						<ArrayViewer ArrayElement="[UIModel]2f5d6c2edded45d5b79cfd4a48e77e51" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]465" Id="c3671f60f10541b497fd36bc1c861fe1" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]6c0c2cd5f92a4eaebf6479f0ab9c116e" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Spectrum\ Data\ Array}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]189">
+							<p.DefaultElementValue>
+								<Cluster>
+									<Field1>
+										<Cluster>
+											<Field1>null</Field1>
+											<Field2>null</Field2>
+										</Cluster>
+									</Field1>
+									<Field2>0x0</Field2>
+									<Field3>0x0</Field3>
+								</Cluster>
+							</p.DefaultElementValue>
+							<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Beam Spectrum Data" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@e7664509d5e24918be7f3c39018f5d4f" Height="[float]453" Id="2f5d6c2edded45d5b79cfd4a48e77e51" IsTabStop="[bool]True" Label="[UIModel]314e84c58e454334baf955d5ba522313" LabelLinked="[bool]True" TabIndex="[int]0" Width="[float]157" p8:ControlDefinitionChecksum="WlSCi/NOdT2MvVbmrttcSi+GNOJiUtIe71Np/W3CsHM=" xmlns:p8="http://www.ni.com/PanelCommon">
+								<p8:p.TypeDefinitionTargets>
+									<p8:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Beam Spectrum Data.gtype::ControlDefinition" />
+								</p8:p.TypeDefinitionTargets>
+								<p8:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@9a50897e1d594b78aaeb52316391381a" Height="[float]316" Id="ef31be547ab54daf9a6572dfa952206c" Label="[UIModel]f492d50b20a44cc6ab160d1cd920e7c2" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Spectrum}" Width="[float]127">
+									<p8:ArrayViewer ArrayElement="[UIModel]f847da63995048a7a8662fffab34006e" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="626b3502b3304b888c454337b9c0b2b1" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]6863e7b0ed6a4f9293ab52d0e49e4723" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" Top="[float]24" Value="{ClusterBinding FieldName=Wavelength}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+										<p.DefaultElementValue>0x0</p.DefaultElementValue>
+										<NumericText BaseName="[string]Numeric" Height="[float]24" Id="f847da63995048a7a8662fffab34006e" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+									</p8:ArrayViewer>
+									<p8:Label Height="[float]16" Id="6863e7b0ed6a4f9293ab52d0e49e4723" LabelOwner="[UIModel]626b3502b3304b888c454337b9c0b2b1" Left="[float]4" Text="[string]Wavelength" Top="[float]4" Width="[float]63" />
+									<p8:ArrayViewer ArrayElement="[UIModel]616669d95b204475b31bae5d1b246b7f" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="f499beb7a7fd48eeb2ee5eaf7c10c881" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]f153cf8863034dd28a86e2be37c02848" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" Top="[float]178" Value="{ClusterBinding FieldName=Counts}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+										<p.DefaultElementValue>0x0</p.DefaultElementValue>
+										<NumericText BaseName="[string]Numeric" Height="[float]24" Id="616669d95b204475b31bae5d1b246b7f" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+									</p8:ArrayViewer>
+									<p8:Label Height="[float]16" Id="f153cf8863034dd28a86e2be37c02848" LabelOwner="[UIModel]f499beb7a7fd48eeb2ee5eaf7c10c881" Left="[float]4" Text="[string]Counts" Top="[float]158" Width="[float]37" />
+								</p8:Cluster>
+								<p8:Label Height="[float]16" Id="f492d50b20a44cc6ab160d1cd920e7c2" LabelOwner="[UIModel]ef31be547ab54daf9a6572dfa952206c" Left="[float]4" Text="[string]Beam Spectrum" Top="[float]4" Width="[float]84" />
+								<NumericText BaseName="[string]Numeric" Height="[float]24" Id="2c6bae0dd4304cc9bb5f3543aa0b6509" Label="[UIModel]1ac577a91dc44ba39bbc0dbc4a26134c" Left="[float]9" TabIndex="[int]1" Top="[float]363" Value="{ClusterBinding FieldName=Blue\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p8:Label Height="[float]16" Id="1ac577a91dc44ba39bbc0dbc4a26134c" LabelOwner="[UIModel]2c6bae0dd4304cc9bb5f3543aa0b6509" Left="[float]9" Text="[string]Blue Motor Position (mm)" Top="[float]343" Width="[float]136" />
+								<NumericText BaseName="[string]Numeric" Height="[float]24" Id="55d15ae7c93a4c169007f13c11e39974" Label="[UIModel]c0ee29f934ef44c8b1a6c4e59dc5dfe3" Left="[float]7" TabIndex="[int]2" Top="[float]417" Value="{ClusterBinding FieldName=Red\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p8:Label Height="[float]16" Id="c0ee29f934ef44c8b1a6c4e59dc5dfe3" LabelOwner="[UIModel]55d15ae7c93a4c169007f13c11e39974" Left="[float]7" Text="[string]Red Motor Position (mm)" Top="[float]397" Width="[float]134" />
+								<p8:Label Height="[float]16" Id="314e84c58e454334baf955d5ba522313" IsVisualChild="[bool]False" LabelOwner="[UIModel]2f5d6c2edded45d5b79cfd4a48e77e51" Left="[float]6" Text="[string]Cluster" Top="[float]-14" Width="[float]112" />
+							</Cluster>
+						</ArrayViewer>
+						<Label Height="[float]16" Id="6c0c2cd5f92a4eaebf6479f0ab9c116e" LabelOwner="[UIModel]c3671f60f10541b497fd36bc1c861fe1" Left="[float]4" Text="[string]Beam Spectrum Data Array" Top="[float]4" Width="[float]143" />
+						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Rainbow Sweep Types" Height="[float]24" Id="9058f90889ca456a99a259ed3d18c952" IsTypeAheadEnabled="[bool]True" Label="[UIModel]4dead5317ca243328987bdfbac603540" Left="[float]3" TabIndex="[int]0" Top="[float]514" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Types}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]140" p7:ControlDefinitionChecksum="Z0CUrsWH7z5SPFAjCBTyjXfDUdKtTyBXRZWevSB3l/E=" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<p7:p.TypeDefinitionTargets>
+								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Types.gtype::ControlDefinition" />
+							</p7:p.TypeDefinitionTargets>
+							<EnumSelectorInfo DisplayValue="[string]Red Sweep Closing" Value="[ushort]0" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]Red Sweep Opening" Value="[ushort]1" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]Blue Sweep Closing" Value="[ushort]2" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]Blue Sweep Opening" Value="[ushort]3" ValueType="[Type]UInt16" />
+						</EnumSelector>
+						<Label Height="[float]16" Id="4dead5317ca243328987bdfbac603540" LabelOwner="[UIModel]9058f90889ca456a99a259ed3d18c952" Left="[float]3" Text="[string]Rainbow Sweep Types" Top="[float]494" Width="[float]117" />
+					</Cluster>
+					<Label Height="[float]16" Id="bc6cd6f4e4a24e94a140462bb439369a" LabelOwner="[UIModel]7762c5e0e448a9958567741782e92c" Left="[float]100" Text="[string]Full Beam Multispectral Data" Top="[float]80" Width="[float]152" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="7df7b554a682471fa9d57f57cceb04a7">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Beam Spectrum Data Array" DataType="@7d573e58c4cc45eda986a0914983e68c" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Types" DataType="@8d8d7bab4880447083786326c799ad41" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e7664509d5e24918be7f3c39018f5d4f">
+			<Attributed AttributedType="@94d6db99bf7e4656b82237342305d387">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9a50897e1d594b78aaeb52316391381a">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Wavelength" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Counts" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="7d573e58c4cc45eda986a0914983e68c">
+			<VariableArray DereferenceType="@e7664509d5e24918be7f3c39018f5d4f" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="8d8d7bab4880447083786326c799ad41">
+			<Attributed AttributedType="@cb26bcd9a16d4f339fa1c95b75463f9c">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Rainbow Sweep" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="94d6db99bf7e4656b82237342305d387">
+			<Typedef TypedefName="Beam Spectrum Data.gtype" UnderlyingType="@888fbab1df224bf4b6442aa7f3a39d62" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="cb26bcd9a16d4f339fa1c95b75463f9c">
+			<Typedef TypedefName="Rainbow Sweep Types.gtype" UnderlyingType="@ddd71e4459794372988289171abd37f2" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="888fbab1df224bf4b6442aa7f3a39d62">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Beam Spectrum" DataType="@9a50897e1d594b78aaeb52316391381a" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Blue Motor Position (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Red Motor Position (mm)" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ddd71e4459794372988289171abd37f2">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Red Sweep Closing" />
+					<EnumerationMember Value="1" Name="Red Sweep Opening" />
+					<EnumerationMember Value="2" Name="Blue Sweep Closing" />
+					<EnumerationMember Value="3" Name="Blue Sweep Opening" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

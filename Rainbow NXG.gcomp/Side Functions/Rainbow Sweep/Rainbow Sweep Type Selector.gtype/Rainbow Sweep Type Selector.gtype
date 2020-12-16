@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="D3243E92046279DC69CE013D4DF50AF763B260120E0576CE3508D9F642A608C0E06BA54E50B17B0BFC438F5CD9F74D662D147A37B9B1C16E418B3D273D64B95F" Timestamp="1D6CFA2C70DC351" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@44479811cd984cdba84e1c59509d665f" Id="59447004c9bc40dcbf0a318b18994a3d" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="4f085fafcf434885ab4e566b95f457bc" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="34104c1be1a0478da58f082e7e853bf2" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="9004a688c089420aa60035f8003c1829" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@44479811cd984cdba84e1c59509d665f" Id="cab0aa3425d840999236a022c566b3f9" Name="Rainbow Sweep Type Selector">
+			<p.DefaultValue>1_0_</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="3bbb5b8621354a8dae7a664f8e7f91a8" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="763c014ae4424657bbc297b67cf05192" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="a7c893cf9eec41ac8efbcf18dd4930ac" Name="Rainbow Sweep Types.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="87e18f2776c04d13a013b6d5a7b092d0" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="3d4ffdc1793a459fade2c2f5badba79d" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@44479811cd984cdba84e1c59509d665f" Height="[float]104" Id="34f3a98b8cab4730aa0cc4336c0d714f" Label="[UIModel]5bb9a11dee634e9a8eea2b2fe41ddbc3" Left="[float]260" TabIndex="[int]0" Top="[float]215" Value="{DataItemBinding Id=cab0aa3425d840999236a022c566b3f9}" Width="[float]171" xmlns="http://www.ni.com/PanelCommon">
+						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="eedb17c48f254088a01b74fe4e7f9f07" IsTypeAheadEnabled="[bool]True" Label="[UIModel]7968af86e6b44bcba2cad49b4876256d" Left="[float]4" TabIndex="[int]0" Top="[float]19" Value="{ClusterBinding FieldName=Red\ Sweep\ Mode}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]155" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<EnumSelectorInfo DisplayValue="[string]Red Sweep Closing" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]Red Sweep Opening" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						</EnumSelector>
+						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="c2400d2627e145798c743cfa67702e59" IsTypeAheadEnabled="[bool]True" Label="[UIModel]29a7ee5b68ba40a083563dc89b1e9a64" Left="[float]4" TabIndex="[int]1" Top="[float]68" Value="{ClusterBinding FieldName=Blue\ Sweep\ Mode}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]155" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<EnumSelectorInfo DisplayValue="[string]Blue Sweep Opening" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]Blue Sweep Closing" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						</EnumSelector>
+						<Label Height="[float]16" Id="7968af86e6b44bcba2cad49b4876256d" LabelOwner="[UIModel]eedb17c48f254088a01b74fe4e7f9f07" Left="[float]4" Text="[string]Red Sweep Mode" Top="[float]-1" Width="[float]92" />
+						<Label Height="[float]16" Id="29a7ee5b68ba40a083563dc89b1e9a64" LabelOwner="[UIModel]c2400d2627e145798c743cfa67702e59" Left="[float]4" Text="[string]Blue Sweep Mode" Top="[float]48" Width="[float]95" />
+					</Cluster>
+					<Label Height="[float]16" Id="5bb9a11dee634e9a8eea2b2fe41ddbc3" LabelOwner="[UIModel]34f3a98b8cab4730aa0cc4336c0d714f" Left="[float]260" Text="[string]Rainbow Sweep Type Selector" Top="[float]195" Width="[float]158" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="44479811cd984cdba84e1c59509d665f">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Red Sweep Mode" DataType="@3537a2c9695e4b479f2d329b5da514e9" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Blue Sweep Mode" DataType="@165bd91f33584c06953b31700c61ba53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3537a2c9695e4b479f2d329b5da514e9">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Red Sweep Closing" />
+					<EnumerationMember Value="1" Name="Red Sweep Opening" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="165bd91f33584c06953b31700c61ba53">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Blue Sweep Opening" />
+					<EnumerationMember Value="1" Name="Blue Sweep Closing" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="B2EA7BBC09107B43A5763822EA428A6721BC540C34F8C4E57A27A3A4FFED69CC0F119E0F8F35683C924FDABF2D9E91119AB5593E4243853510E6CE40F8663051" Timestamp="1D6CFB065126999" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@11429d9d3f764a27b14189ef2a0c4add" Id="a498b90cd81348a185972fd290250423" xmlns="http://www.ni.com/MocCommon">
+		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Power Density::XZ Coordinate Array.gtype" />
+		</p.TypeDefinitionTargets>
+		<Icon Id="5686f75fbb824313b064af9115e4f7dc" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="356832b4f9ed4498b9e9d31f5a8a0f99" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="2fa1f2350a8945fb972c80e65e7c6e32" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@11429d9d3f764a27b14189ef2a0c4add" Id="76068d637a064818a7089f54c30d4456" Name="Beam Power Density Data Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>0x0</Field2>
+					<Field3>null</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Power Density::XZ Coordinate Array.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="ec634606dc654329bd50df1cde022310" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="3b78135ec60c45258ee967c91ffdb7ac" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="4924ab8bb022474b8aa4064b9b732e9f" Name="Beam Power Density Data Cluster.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="238e7a5f691547d88184d1d1a4f70008" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="56b6be50ebe34487bcc915a2b9ebe1ea" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@11429d9d3f764a27b14189ef2a0c4add" Height="[float]415" Id="5f6ff635692948fdac848d232811c578" Label="[UIModel]648bc00187204e0c9f830e92954cc50a" Left="[float]143" TabIndex="[int]0" Top="[float]68" Value="{DataItemBinding Id=76068d637a064818a7089f54c30d4456}" Width="[float]762" xmlns="http://www.ni.com/PanelCommon">
+						<ArrayViewer ArrayElement="[UIModel]126dde24010b44fa90ec66bc4bc092fe" BaseName="[string]Array" Columns="[int]2" Dimensions="[int]2" Height="[float]64" Id="8ba206878742409c979159756d046d20" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Label="[UIModel]950a0401e13243dfa6a6542d3b072219" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]2" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Power\ Density}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]235">
+							<p.DefaultElementValue>0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="126dde24010b44fa90ec66bc4bc092fe" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="950a0401e13243dfa6a6542d3b072219" LabelOwner="[UIModel]8ba206878742409c979159756d046d20" Left="[float]4" Text="[string]Beam Power Density" Top="[float]4" Width="[float]108" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="ce3e37a29934ce79f6d0a132ea2a691" Label="[UIModel]e406562450dc4472b9497f9381498c1f" Left="[float]4" TabIndex="[int]1" Top="[float]118" Value="{ClusterBinding FieldName=Dividing\ Wavelength}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="e406562450dc4472b9497f9381498c1f" LabelOwner="[UIModel]ce3e37a29934ce79f6d0a132ea2a691" Left="[float]4" Text="[string]Dividing Wavelength" Top="[float]98" Width="[float]110" />
+						<ArrayViewer ArrayElement="[UIModel]30d074cdc12548b298ce3c65ef8a83b5" BaseName="[string]XZ Coordinate Array" Columns="[int]6" Dimensions="[int]1" Enabled="[bool]True" FirstIndex="[ArrayElementIndex]0" Height="[float]239" HorizontalScrollBarVisibility="[ScrollBarVisibility]Visible" Id="1ff76b8fc92a4bc18b96abdc0165fe31" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]3a7f7f016b0e485b8779dbd34e2f4c67" Left="[float]4" Orientation="[SMOrientation]Horizontal" Rows="[int]1" TabIndex="[int]2" Top="[float]164" Value="{ClusterBinding FieldName=XZ\ Array}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]746" p7:ControlDefinitionChecksum="4e+r8xi3GgY/iVfqRiB+OHvHYe7P6rRtFf2idaWx0sQ=" xmlns:p7="http://www.ni.com/PanelCommon">
+							<p.DefaultElementValue>
+								<Cluster>
+									<Field1>0x0</Field1>
+									<Field2>0x0</Field2>
+									<Field3>""</Field3>
+									<Field4>0x0</Field4>
+								</Cluster>
+							</p.DefaultElementValue>
+							<p7:p.TypeDefinitionTargets>
+								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Power Density::XZ Coordinate Array.gtype::ControlDefinition" />
+							</p7:p.TypeDefinitionTargets>
+							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]XZ Coordinate Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@2b8b80da22034fd29b2423b50d82eced" Height="[float]207" Id="30d074cdc12548b298ce3c65ef8a83b5" IsTabStop="[bool]True" Label="[UIModel]89b8fa8a92034ea38d6831d7a480928e" LabelLinked="[bool]True" TabIndex="[int]0" Width="[float]119" p7:ControlDefinitionChecksum="fMxjyw1O1F//Hi6LsNyaaT3IRqXItTqq8KJ1CIcF6vY=">
+								<p7:p.TypeDefinitionTargets>
+									<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Scanning Calculations::XZ Coordinate Cluster.gtype::ControlDefinition" />
+								</p7:p.TypeDefinitionTargets>
+								<NumericText BaseName="[string]Numeric" Height="[float]24" Id="25f9ea0c88ec4eb5b011f8e5609bce91" IsReadOnly="[bool]False" Label="[UIModel]a351e66daf8f409b84f6f1dedd1918e8" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ Coordinate\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="a351e66daf8f409b84f6f1dedd1918e8" LabelOwner="[UIModel]25f9ea0c88ec4eb5b011f8e5609bce91" Left="[float]4" Text="[string]X Coordinate (mm)" Top="[float]4" Width="[float]101" />
+								<NumericText BaseName="[string]Numeric" Height="[float]24" Id="a4c1096a104841aa9e8d314be41add39" IsReadOnly="[bool]False" Label="[UIModel]7a780d516e6d4bb7a6b3abbbc4b07fd4" Left="[float]4" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=Z\ Coordinate\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="7a780d516e6d4bb7a6b3abbbc4b07fd4" LabelOwner="[UIModel]a4c1096a104841aa9e8d314be41add39" Left="[float]4" Text="[string]Z Coordinate (mm)" Top="[float]56" Width="[float]101" />
+								<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="ca998fb27c664cde9b0bbda33b9ae1ce" IsReadOnly="[bool]False" Label="[UIModel]b79daeec80e04ae5917452cf5aa749bc" Left="[float]6" TabIndex="[int]2" Text="{ClusterBinding FieldName=Coordinate\ Gcode}" Top="[float]124" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]101" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="b79daeec80e04ae5917452cf5aa749bc" LabelOwner="[UIModel]ca998fb27c664cde9b0bbda33b9ae1ce" Left="[float]6" Text="[string]Coordinate Gcode" Top="[float]104" Width="[float]96" />
+								<NumericText BaseName="[string]Numeric" Height="[float]24" Id="79cd9eee836a4bd0918e7c8bb74e1c88" IsReadOnly="[bool]False" Label="[UIModel]67fc6a6595924653bdd4b71be07ca2ff" Left="[float]7" TabIndex="[int]3" Top="[float]171" Value="{ClusterBinding FieldName=Beam\ Power\ (W)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="67fc6a6595924653bdd4b71be07ca2ff" LabelOwner="[UIModel]79cd9eee836a4bd0918e7c8bb74e1c88" Left="[float]7" Text="[string]Beam Power (W)" Top="[float]151" Width="[float]88" />
+								<p7:Label Height="[float]16" Id="89b8fa8a92034ea38d6831d7a480928e" IsVisualChild="[bool]False" LabelOwner="[UIModel]30d074cdc12548b298ce3c65ef8a83b5" Left="[float]621" Text="[string]XZ Coordinate Cluster" Top="[float]-14" Width="[float]116" />
+							</p7:Cluster>
+						</ArrayViewer>
+						<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="3a7f7f016b0e485b8779dbd34e2f4c67" LabelOwner="[UIModel]1ff76b8fc92a4bc18b96abdc0165fe31" Left="[float]4" Text="[string]XZ Array" Top="[float]144" Width="[float]45" />
+					</Cluster>
+					<Label Height="[float]16" Id="648bc00187204e0c9f830e92954cc50a" LabelOwner="[UIModel]5f6ff635692948fdac848d232811c578" Left="[float]143" Text="[string]Beam Power Density Data Cluster" Top="[float]48" Width="[float]176" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="11429d9d3f764a27b14189ef2a0c4add">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Beam Power Density" DataType="Double[,]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Dividing Wavelength" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Array" DataType="@f3d0ff9b84694a13a02552d4839d946a" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2b8b80da22034fd29b2423b50d82eced">
+			<Attributed AttributedType="@48ca8526e0b141ddbb01981ffadf9105">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Scanning Calculations" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f3d0ff9b84694a13a02552d4839d946a">
+			<Attributed AttributedType="@39ef09e5374e4df5b97ce37c032b4815">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Power Density" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="48ca8526e0b141ddbb01981ffadf9105">
+			<Typedef TypedefName="XZ Coordinate Cluster.gtype" UnderlyingType="@b3718d20cb304610be30b610c72b662f" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="39ef09e5374e4df5b97ce37c032b4815">
+			<Typedef TypedefName="XZ Coordinate Array.gtype" UnderlyingType="@6dc6d6715fc1430bb82e13f9ebac1c58" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="b3718d20cb304610be30b610c72b662f">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="X Coordinate (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Coordinate (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Coordinate Gcode" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Beam Power (W)" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6dc6d6715fc1430bb82e13f9ebac1c58">
+			<VariableArray DereferenceType="@2b8b80da22034fd29b2423b50d82eced" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
