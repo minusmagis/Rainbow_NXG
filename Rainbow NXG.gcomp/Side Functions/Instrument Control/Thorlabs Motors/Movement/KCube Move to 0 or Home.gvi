@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="2A65E5127E8144E6C895CBBE1F4F608B33D25327CC653E83C6C6FD65F34B2AB45286143A3B1F5EFEDF48B351E7D0937EE607B82A9C0705291ADE9ACD18019644" Timestamp="1D6E818D460EA19" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="79583c3e24c44865adf776865fa5c348" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="8d0f4774aa4464bf89e855cf6d0b77" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="68808ec87dc41b1833283d82a2ef753" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="ebc424f368884d33b5fc9664b0f9d9fe" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="63c430f1cbad450183b4c8feeee9763c" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="b333f2dcac6c444084155d2bf7907ba9" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="e4839dbe966840a88281a5a8e3533863" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]KCube Move to 0 or Home" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="54a5d8321f6348fe853452dd4950372d" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="8e3ac4cd8bb47e197541f1e165580b6" ListViewHeight="100" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 65" Parameter="34da5f5d333d4c96bc4e3b4fe1a37976" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="2dbce58698847049b6db4ce33456f79" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 80" Parameter="2c93471e105d4d4bb1e9d3518bbde3cf" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="e0f9a4f8d414ad0a60104fccd05e210" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="5b95579a11f84266acde362981c67606" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="64f8028d4a8d409ca1106bc7093b435a" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
+		<BlockDiagram Id="4e817487911a477f8d1942fb507d3c26">
+			<CaseStructure Bounds="470 155 645 155" DataType="Error" Default="d5a1c54af2804b0ba4ed4bb7ebec77d8" Id="ed94988f66fd45ec869b0c124fc49b2e" Selected="7b1344d767434980b12e5eeac22ef2df" UserSelectorBounds="270 0 106 17">
+				<CaseStructure.Case Bounds="5 5 635 145" Id="d5a1c54af2804b0ba4ed4bb7ebec77d8" Pattern="Error">
+					<Wire Id="d4bb0716dff24200941de6cbe034410e" Joints="N(446cf0251a0c445ab42d0a73d4e8e180:d5a1c54af2804b0ba4ed4bb7ebec77d8)|(4,70) N(e326bf31562c4ca68a1b8a62f4851460:d5a1c54af2804b0ba4ed4bb7ebec77d8)|(631,70)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="806888bd84584bc6be0d8b4c985c06b5" Joints="N(88d2e8a3637945abba364f66e09d8087:d5a1c54af2804b0ba4ed4bb7ebec77d8)|(4,20) h(616) v(20) N(fc91e76eb278496aa5423d08cb7f4c15:d5a1c54af2804b0ba4ed4bb7ebec77d8)|(631,40)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 635 145" Id="7b1344d767434980b12e5eeac22ef2df" Pattern="No Error">
+					<PropertyNode Bounds="25 15 320 50" HasErrorTerminals="False" Id="c12a05d4b8134044a044d918951f01d1" InstanceDataType="@0a99da08b03e415791f64b2e570dc0f3" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+						<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+							<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Instrument Coms Info.gtype" />
+							<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Detection::Thorlabs Motors Serial Number In.gtype" />
+						</p.TypeDefinitionTargets>
+						<PropertyItemTerminal DataType="Boolean" Hotspot="320 15" Id="c0t0v" Path="Thorlabs Motors Serial Number:Blue Motor Homed?" PathElementMemberKinds="Field:Field" Usage="Optional" />
+						<PropertyItemTerminal DataType="Boolean" Hotspot="320 30" Id="c1t0v" Path="Thorlabs Motors Serial Number:Red Motor Homed?" PathElementMemberKinds="Field:Field" Usage="Optional" />
+					</PropertyNode>
+					<Wire Id="39a03f5f41524bca8501717038accf98" Joints="N(88d2e8a3637945abba364f66e09d8087:7b1344d767434980b12e5eeac22ef2df)|(4,20) N(c12a05d4b8134044a044d918951f01d1:instance in)|(25,20)" xmlns="http://www.ni.com/PlatformFramework" />
+					<CaseStructure Bounds="445 15 100 110" Id="46f8f47635344134b7ac7cadddc0be56" Selected="306cffa68ffd4973919580a56b7775f6" UserSelectorBounds="6 0 88 17">
+						<CaseStructure.Case Bounds="5 5 90 100" Id="913d844083f546b78c22934fec5353ab" Pattern="True">
+							<MethodCall Bounds="25 15 40 40" Id="42f5dc741dcf4b56baa7c17961b1e99f" ResolveFailedHint="&quot;C:\\Users\\minus\\Documents\\LabVIEW Projects\\Rainbow_NXG\\Rainbow NXG.gcomp\\Side Functions\\Instrument Control\\Thorlabs Motors\\Movement\\KCube Motors Move to Position.gvi&quot;" Signature="@3ae7aa7246db46ed99dee64b9b22f75e" Target="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Movement::KCube Motors Move to Position.gvi" xmlns="http://www.ni.com/MocCommon">
+								<p.MethodDeclaration>
+									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+										<Parameter Id="L0" Desc="Instrument Coms Info In" />
+										<Parameter Id="L1" Desc="Blue Motor Position to move to (mm)" />
+										<Parameter Id="L2" Desc="Red Motor Position to move to (mm)" />
+										<Parameter Id="L3" Desc="Error In" />
+										<Parameter Id="R0" Desc="Instrument Coms Info Out" />
+										<Parameter Id="R3" Desc="Error Out" />
+									</MethodDeclaration>
+								</p.MethodDeclaration>
+								<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Double" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+							</MethodCall>
+							<Wire Id="40d6a789ec7649079cd1d180e71d28a0" Joints="N(f5cf706a785c4423a6c7d55de483284f:913d844083f546b78c22934fec5353ab)|(4,50) N(42f5dc741dcf4b56baa7c17961b1e99f:L3)|(25,50)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="a9be713654f243eea21ef81f785f3e08" Joints="N(5de75de78caa4b9cbb6f04ec1bfe00cd:913d844083f546b78c22934fec5353ab)|(4,20) N(42f5dc741dcf4b56baa7c17961b1e99f:L0)|(25,20)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="4b260c3be3ec4f9d8634be17e709f918" Joints="N(42f5dc741dcf4b56baa7c17961b1e99f:R0)|(65,20) N(acfedf3079c6482982f36a20f4fe0b96:913d844083f546b78c22934fec5353ab)|(86,20)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="8efbc9ee6cc7432aa89c3531ec5fe71e" Joints="N(42f5dc741dcf4b56baa7c17961b1e99f:R3)|(65,50) N(d9de75b7c23648f5af4da61c4b80a90f:913d844083f546b78c22934fec5353ab)|(86,50)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Case Bounds="5 5 90 100" Id="306cffa68ffd4973919580a56b7775f6" Pattern="False">
+							<MethodCall Bounds="25 15 40 40" Id="a7d246f9f94ec7818530a744853ee1" ResolveFailedHint="&quot;C:\\Users\\minus\\Documents\\LabVIEW Projects\\Rainbow_NXG\\Rainbow NXG.gcomp\\Side Functions\\Instrument Control\\Thorlabs Motors\\Movement\\KCube Motors Home sequence.gvi&quot;" Signature="@e0b233fb9da84473b60505878fd360e1" Target="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Movement::KCube Motors Home sequence.gvi" xmlns="http://www.ni.com/MocCommon">
+								<p.MethodDeclaration>
+									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+										<Parameter Id="L0" Desc="Instrument Coms Info In" />
+										<Parameter Id="L3" Desc="Error In" />
+										<Parameter Id="R0" Desc="Instrument Coms Info Out" />
+										<Parameter Id="R1" Desc="Homed?" />
+										<Parameter Id="R3" Desc="Error Out" />
+									</MethodDeclaration>
+								</p.MethodDeclaration>
+								<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Boolean" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+							</MethodCall>
+							<Wire Id="f82c63cced2041ccb7d59f65fe23c1cc" Joints="N(a7d246f9f94ec7818530a744853ee1:R3)|(65,50) N(d9de75b7c23648f5af4da61c4b80a90f:306cffa68ffd4973919580a56b7775f6)|(86,50)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="54d5917c8360414eaeb1b77836dfd325" Joints="N(5de75de78caa4b9cbb6f04ec1bfe00cd:306cffa68ffd4973919580a56b7775f6)|(4,20) N(a7d246f9f94ec7818530a744853ee1:L0)|(25,20)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="fb5f33393fe44326bdf766a07f6f3bed" Joints="N(a7d246f9f94ec7818530a744853ee1:R0)|(65,20) N(acfedf3079c6482982f36a20f4fe0b96:306cffa68ffd4973919580a56b7775f6)|(86,20)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="d369e2f634b54b6981b07afc0d148e5d" Joints="N(f5cf706a785c4423a6c7d55de483284f:306cffa68ffd4973919580a56b7775f6)|(4,50) N(a7d246f9f94ec7818530a744853ee1:L3)|(25,50)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Selector Bounds="-4 70 13 10" Docking="Left" Id="d407fcfdda6d45d3a947371be7a7fbc5" Terminals="46f8f47635344134b7ac7cadddc0be56=e5f0851575674e998f5f4f3c2dc6a318, 913d844083f546b78c22934fec5353ab, 306cffa68ffd4973919580a56b7775f6" />
+						<CaseStructure.Tunnel Bounds="-4 50 13 10" Docking="Left" Id="f5cf706a785c4423a6c7d55de483284f" Terminals="46f8f47635344134b7ac7cadddc0be56=797c03e1493246ee9de827c3a3b874c9, 913d844083f546b78c22934fec5353ab=40d6a789ec7649079cd1d180e71d28a0, 306cffa68ffd4973919580a56b7775f6=d369e2f634b54b6981b07afc0d148e5d" />
+						<CaseStructure.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="5de75de78caa4b9cbb6f04ec1bfe00cd" Terminals="46f8f47635344134b7ac7cadddc0be56=dc38bb3931a84ef5a3226ed7209e378f, 913d844083f546b78c22934fec5353ab=a9be713654f243eea21ef81f785f3e08, 306cffa68ffd4973919580a56b7775f6=54d5917c8360414eaeb1b77836dfd325" />
+						<CaseStructure.Tunnel Bounds="91 20 13 10" Docking="Right" Id="acfedf3079c6482982f36a20f4fe0b96" Terminals="46f8f47635344134b7ac7cadddc0be56=3f8b50b9b3824384bb626be2a673c48e, 913d844083f546b78c22934fec5353ab=4b260c3be3ec4f9d8634be17e709f918, 306cffa68ffd4973919580a56b7775f6=fb5f33393fe44326bdf766a07f6f3bed" />
+						<CaseStructure.Tunnel Bounds="91 50 13 10" Docking="Right" Id="d9de75b7c23648f5af4da61c4b80a90f" Terminals="46f8f47635344134b7ac7cadddc0be56=bdf7b88d0955498591b3154a691cdcb7, 913d844083f546b78c22934fec5353ab=8efbc9ee6cc7432aa89c3531ec5fe71e, 306cffa68ffd4973919580a56b7775f6=f82c63cced2041ccb7d59f65fe23c1cc" />
+					</CaseStructure>
+					<Wire Id="26c32f2f31ad4eb68c76424d049f7332" Joints="N(c12a05d4b8134044a044d918951f01d1:c0t0v)|(345,30) h(20) v(55) N(257f94dae8154d3ba1ca1b5d5aeba23c:c0t0v)|(390,85)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="bd72da37a21e40c1b62fe07fc64d7d45" Joints="N(c12a05d4b8134044a044d918951f01d1:c1t0v)|(345,45) h(10) v(50) N(257f94dae8154d3ba1ca1b5d5aeba23c:c1t0v)|(390,95)" xmlns="http://www.ni.com/PlatformFramework" />
+					<LogicalAnd Bounds="390 80 25 20" Id="257f94dae8154d3ba1ca1b5d5aeba23c" Terminals="o=e5f0851575674e998f5f4f3c2dc6a318, c0t0v=26c32f2f31ad4eb68c76424d049f7332, c1t0v=bd72da37a21e40c1b62fe07fc64d7d45" />
+					<Wire Id="e5f0851575674e998f5f4f3c2dc6a318" Joints="N(257f94dae8154d3ba1ca1b5d5aeba23c:o)|(415,90) N(d407fcfdda6d45d3a947371be7a7fbc5:46f8f47635344134b7ac7cadddc0be56)|(441,90)" xmlns="http://www.ni.com/PlatformFramework" />
+					<MethodCall Bounds="385 35 40 40" Id="28090e146f724c77b3d789a34efafeef" ResolveFailedHint="&quot;C:\\Users\\minus\\Documents\\LabVIEW Projects\\Rainbow_NXG\\Rainbow NXG.gcomp\\Side Functions\\Instrument Control\\Thorlabs Motors\\Movement\\KCube Motors Initialize.gvi&quot;" Signature="@b667906cf7f441008623e361619ecd0f" Target="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Movement::KCube Motors Initialize.gvi" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Instrument Coms Info In" />
+								<Parameter Id="L3" Desc="Error In" />
+								<Parameter Id="R0" Desc="Instrument Coms Info Out" />
+								<Parameter Id="R3" Desc="Error Out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="797c03e1493246ee9de827c3a3b874c9" Joints="N(28090e146f724c77b3d789a34efafeef:R3)|(425,70) N(f5cf706a785c4423a6c7d55de483284f:46f8f47635344134b7ac7cadddc0be56)|(441,70)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="dc38bb3931a84ef5a3226ed7209e378f" Joints="N(28090e146f724c77b3d789a34efafeef:R0)|(425,40) N(5de75de78caa4b9cbb6f04ec1bfe00cd:46f8f47635344134b7ac7cadddc0be56)|(441,40)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="ea09874fc7ed4300bfc6b1350007f6d6" Joints="N(446cf0251a0c445ab42d0a73d4e8e180:7b1344d767434980b12e5eeac22ef2df)|(4,70) N(28090e146f724c77b3d789a34efafeef:L3)|(385,70)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="5641255d72c44145984c461814d5cccd" Joints="N(c12a05d4b8134044a044d918951f01d1:instance out)|(345,20) h(30) v(20) N(28090e146f724c77b3d789a34efafeef:L0)|(385,40)" xmlns="http://www.ni.com/PlatformFramework" />
+					<MethodCall Bounds="570 35 40 40" Id="e610c499f2c24f589b9797066dc35ee6" ResolveFailedHint="&quot;C:\\Users\\minus\\Documents\\LabVIEW Projects\\Rainbow_NXG\\Rainbow NXG.gcomp\\Side Functions\\Instrument Control\\Thorlabs Motors\\Movement\\KCube Motors Close.gvi&quot;" Signature="@1a8db548033f45edaf251458636536f6" Target="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Movement::KCube Motors Close.gvi" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Instrument Coms Info In" />
+								<Parameter Id="L3" Desc="Error In" />
+								<Parameter Id="R0" Desc="Instrument Coms Info Out" />
+								<Parameter Id="R3" Desc="Error Out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="3f8b50b9b3824384bb626be2a673c48e" Joints="N(acfedf3079c6482982f36a20f4fe0b96:46f8f47635344134b7ac7cadddc0be56)|(549,40) N(e610c499f2c24f589b9797066dc35ee6:L0)|(570,40)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="bdf7b88d0955498591b3154a691cdcb7" Joints="N(d9de75b7c23648f5af4da61c4b80a90f:46f8f47635344134b7ac7cadddc0be56)|(549,70) N(e610c499f2c24f589b9797066dc35ee6:L3)|(570,70)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="7fc8af7f71b0498caf7f1f277ba7c5e5" Joints="N(e610c499f2c24f589b9797066dc35ee6:R3)|(610,70) N(e326bf31562c4ca68a1b8a62f4851460:7b1344d767434980b12e5eeac22ef2df)|(631,70)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="a232abb0a30547c1a03b0d7f7eb76464" Joints="N(e610c499f2c24f589b9797066dc35ee6:R0)|(610,40) N(fc91e76eb278496aa5423d08cb7f4c15:7b1344d767434980b12e5eeac22ef2df)|(631,40)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 70 13 10" Docking="Left" Id="446cf0251a0c445ab42d0a73d4e8e180" Terminals="ed94988f66fd45ec869b0c124fc49b2e=6a8abbad51f64dfeb36c239fcd33016a, d5a1c54af2804b0ba4ed4bb7ebec77d8=d4bb0716dff24200941de6cbe034410e, 7b1344d767434980b12e5eeac22ef2df=ea09874fc7ed4300bfc6b1350007f6d6" />
+				<CaseStructure.Tunnel Bounds="636 70 13 10" Docking="Right" Id="e326bf31562c4ca68a1b8a62f4851460" Terminals="ed94988f66fd45ec869b0c124fc49b2e=7e6e9eabfa1b455187ccfddc25c4d130, d5a1c54af2804b0ba4ed4bb7ebec77d8=d4bb0716dff24200941de6cbe034410e, 7b1344d767434980b12e5eeac22ef2df=7fc8af7f71b0498caf7f1f277ba7c5e5" />
+				<CaseStructure.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="88d2e8a3637945abba364f66e09d8087" Terminals="ed94988f66fd45ec869b0c124fc49b2e=e271457c79c94451b76aba03e3cc89b2, d5a1c54af2804b0ba4ed4bb7ebec77d8=806888bd84584bc6be0d8b4c985c06b5, 7b1344d767434980b12e5eeac22ef2df=39a03f5f41524bca8501717038accf98" />
+				<CaseStructure.Tunnel Bounds="636 40 13 10" Docking="Right" Id="fc91e76eb278496aa5423d08cb7f4c15" Terminals="ed94988f66fd45ec869b0c124fc49b2e=95d561fd94474da4be3016e67fbe76eb, d5a1c54af2804b0ba4ed4bb7ebec77d8=806888bd84584bc6be0d8b4c985c06b5, 7b1344d767434980b12e5eeac22ef2df=a232abb0a30547c1a03b0d7f7eb76464" />
+			</CaseStructure>
+			<DataAccessor Bounds="410 225 40 15" DataItem="2dbce58698847049b6db4ce33456f79" Id="e390adb927304c9ba96f279e4c08acba" Label="b512d4ff8d454f5fbdfbeaf40dc20513" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="e390adb927304c9ba96f279e4c08acba" Bounds="361 225 44 14" Id="b512d4ff8d454f5fbdfbeaf40dc20513" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Error In</p.Text>
+			</NodeLabel>
+			<Wire Id="6a8abbad51f64dfeb36c239fcd33016a" Joints="N(e390adb927304c9ba96f279e4c08acba:Value)|(450,230) N(446cf0251a0c445ab42d0a73d4e8e180:ed94988f66fd45ec869b0c124fc49b2e)|(466,230)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1140 225 40 15" DataItem="e0f9a4f8d414ad0a60104fccd05e210" Id="d8fb557156b34642bf6a6289b525e161" Label="995bbaf11715488396f5ba2d0e7262f1" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="d8fb557156b34642bf6a6289b525e161" Bounds="1185 225 52 14" Id="995bbaf11715488396f5ba2d0e7262f1" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Error Out</p.Text>
+			</NodeLabel>
+			<Wire Id="7e6e9eabfa1b455187ccfddc25c4d130" Joints="N(e326bf31562c4ca68a1b8a62f4851460:ed94988f66fd45ec869b0c124fc49b2e)|(1119,230) N(d8fb557156b34642bf6a6289b525e161:Value)|(1143,230)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="410 175 40 15" DataItem="34da5f5d333d4c96bc4e3b4fe1a37976" Id="b1593e6aec3d414aad58609d859b5cc5" Label="25a6053a56a544f888f98f95d882f8dd" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="b1593e6aec3d414aad58609d859b5cc5" Bounds="267 175 138 14" Id="25a6053a56a544f888f98f95d882f8dd" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Instrument Coms Info In</p.Text>
+			</NodeLabel>
+			<Wire Id="e271457c79c94451b76aba03e3cc89b2" Joints="N(b1593e6aec3d414aad58609d859b5cc5:Value)|(450,180) N(88d2e8a3637945abba364f66e09d8087:ed94988f66fd45ec869b0c124fc49b2e)|(466,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1140 195 40 15" DataItem="2c93471e105d4d4bb1e9d3518bbde3cf" Id="5cf49e75dbba436bad9c9dccd91fd3d5" Label="b4573e46873c4a199dfd784c2c7f3a5a" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@0a99da08b03e415791f64b2e570dc0f3" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="5cf49e75dbba436bad9c9dccd91fd3d5" Bounds="1185 195 147 14" Id="b4573e46873c4a199dfd784c2c7f3a5a" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Instrument Coms Info Out</p.Text>
+			</NodeLabel>
+			<Wire Id="95d561fd94474da4be3016e67fbe76eb" Joints="N(fc91e76eb278496aa5423d08cb7f4c15:ed94988f66fd45ec869b0c124fc49b2e)|(1119,200) N(5cf49e75dbba436bad9c9dccd91fd3d5:Value)|(1143,200)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="510 105 475 28" Id="20e2f994a6c34a0299c451e184a14c96" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"This subVI moves the motors to 0 or homes them in case they are not homed yet \r\nto reset the position of the guillotine"</p.Text>
+			</Comment>
+		</BlockDiagram>
+		<NativeFrontPanel AllowMaximize="[bool]False" Background="[SMSolidColorBrush]#ffffffff" EnforceMaximumSize="[bool]False" Height="[float]692" HtmlPanel="[bool]False" Id="43135abf31c940b08e60d12d49d88cff" Left="[float]0" MaxHeight="[float]692" MaxWidth="[float]1000" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]936" WindowTitleOption="[WindowTitleOption]None">
+			<PanelExecutionWindow Id="9fc444568919411592fdba6d35136a23" />
+			<Cluster BaseName="[string]Error" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Enabled="[bool]True" Height="[float]176" Id="5e912a89b37a4a67b2adbdf636875cea" IsTabStop="[bool]True" Label="[UIModel]1deff7fff4d7403ea751003149a686af" LabelLinked="[bool]True" Left="[float]740" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]36" Value="{DataItemBinding Id=2dbce58698847049b6db4ce33456f79}" Width="[float]176" p4:ControlDefinitionChecksum="J+f/EiASvnzghyjtgi4nEE7z+0udh8Z1+KU2hWC1ppw=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Enabled="[bool]True" Height="[float]22" Id="3f74f43498b45c4bdda6afa35834808" Label="[UIModel]b82615bdad21477aa8d8da3611b0a2ea" Left="[float]3" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="b82615bdad21477aa8d8da3611b0a2ea" LabelOwner="[UIModel]3f74f43498b45c4bdda6afa35834808" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="abcc39d09c49be8e0d2215c7b37ada" Interval="[int]1" Label="[UIModel]bcdd8408770b44a5aff7826ddba93b75" Left="[float]54" Maximum="[int]2147483647" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="bcdd8408770b44a5aff7826ddba93b75" LabelOwner="[UIModel]abcc39d09c49be8e0d2215c7b37ada" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]95" HorizontalScrollBarVisibility="[ScrollBarVisibility]Disabled" Id="baf4cb84264b4c21931cf899d9e5a8a1" Label="[UIModel]e0dad404703942e989538e4a7f8c2676" Left="[float]3" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]70" TypeToReplace="[bool]False" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="e0dad404703942e989538e4a7f8c2676" LabelOwner="[UIModel]baf4cb84264b4c21931cf899d9e5a8a1" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="1deff7fff4d7403ea751003149a686af" LabelOwner="[UIModel]5e912a89b37a4a67b2adbdf636875cea" Left="[float]740" Text="[string]Error In" Top="[float]16" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BaseName="[string]Error" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Enabled="[bool]True" Height="[float]176" Id="a4779465c5864bf3a0fd5bc71b438ed0" IsTabStop="[bool]True" Label="[UIModel]33ae339745a847f3a9f8677e70ffb203" LabelLinked="[bool]True" Left="[float]740" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]1" Top="[float]496" Value="{DataItemBinding Id=e0f9a4f8d414ad0a60104fccd05e210}" Width="[float]176" p4:ControlDefinitionChecksum="J+f/EiASvnzghyjtgi4nEE7z+0udh8Z1+KU2hWC1ppw=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Enabled="[bool]True" Height="[float]22" Id="31dd7aabbcb743d7a3dc991fc1ef39cd" IsReadOnly="[bool]True" Label="[UIModel]4606a569657a41848c9250c2969256bd" Left="[float]3" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="4606a569657a41848c9250c2969256bd" LabelOwner="[UIModel]31dd7aabbcb743d7a3dc991fc1ef39cd" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="62cac5219d7a433f9ccbfbf5598f5214" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]d7dd1f457cce419cb83a425fbf0f6bd5" Left="[float]54" Maximum="[int]2147483647" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="d7dd1f457cce419cb83a425fbf0f6bd5" LabelOwner="[UIModel]62cac5219d7a433f9ccbfbf5598f5214" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]95" HorizontalScrollBarVisibility="[ScrollBarVisibility]Disabled" Id="bf91078682f645ce9f006071e3500127" IsReadOnly="[bool]True" Label="[UIModel]21e3e5be29384aebb29a1c257f1d4cd1" Left="[float]3" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]70" TypeToReplace="[bool]False" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="21e3e5be29384aebb29a1c257f1d4cd1" LabelOwner="[UIModel]bf91078682f645ce9f006071e3500127" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="33ae339745a847f3a9f8677e70ffb203" LabelOwner="[UIModel]a4779465c5864bf3a0fd5bc71b438ed0" Left="[float]740" Text="[string]Error Out" Top="[float]476" Width="[float]49" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Instrument Coms Info" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@0a99da08b03e415791f64b2e570dc0f3" Enabled="[bool]True" Height="[float]636" Id="caaff0538a2e4bc2896fa3090123a489" IsTabStop="[bool]True" Label="[UIModel]bcc5a7c708714ccbaa0486e00ad098f4" LabelLinked="[bool]True" Left="[float]20" TabIndex="[int]2" Top="[float]36" Value="{DataItemBinding Id=34da5f5d333d4c96bc4e3b4fe1a37976}" Width="[float]332" p4:ControlDefinitionChecksum="GigXazLcOdxOwIT+XWuxUHCOL58up/ooIwI/vVKs10I=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Instrument Coms Info.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<p4:Cluster BaseName="[string]Arduino coms cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@d66bc535623f4a57894c819644446d96" Height="[float]272" Id="48746e538f9c45b687e71789aa04dba3" IsTabStop="[bool]True" Label="[UIModel]b3df7743483946268146df0098ffeab0" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Arduino\ Coms\ Info}" Width="[float]316" p4:ControlDefinitionChecksum="g75wDRXROIpdLXhN5qr4badykn4cnkRIgpwmvLe6OHU=">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Arduino::Arduino Detection cluster control.gtype::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+					<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="7f449fd3aef648b5a33cdac4572facae" Label="[UIModel]6c2c24d74ef542a08f70a5994f0ab45a" Left="[float]4" SelectedResource="{ClusterBinding FieldName=XZ\ Stage\ Arduino\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]0" Top="[float]35" Width="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<p4:p.TypeDefinitionTargets>
+							<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+						</p4:p.TypeDefinitionTargets>
+					</IONameControl>
+					<p4:Label Height="[float]16" Id="6c2c24d74ef542a08f70a5994f0ab45a" LabelOwner="[UIModel]7f449fd3aef648b5a33cdac4572facae" Left="[float]4" Text="[string]XZ Stage Arduino Address" Top="[float]15" Width="[float]139" />
+					<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="f10805589bad4563886ab91ecc91ace2" Label="[UIModel]c2ccdde24e7d48e9a3b7ce901c764b53" Left="[float]4" SelectedResource="{ClusterBinding FieldName=Multiplexer\ Arduino\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]2" Top="[float]92" Width="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<p4:p.TypeDefinitionTargets>
+							<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+						</p4:p.TypeDefinitionTargets>
+					</IONameControl>
+					<p4:Label Height="[float]16" Id="c2ccdde24e7d48e9a3b7ce901c764b53" LabelOwner="[UIModel]f10805589bad4563886ab91ecc91ace2" Left="[float]4" Text="[string]Multiplexer Arduino Address" Top="[float]72" Width="[float]152" />
+					<p4:ArrayViewer ArrayElement="[UIModel]8918e42be1974035b451234bea287177" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="fa05aacd32f54c85bc79839ecef6dd20" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]1ef2dea8e20e44c596c253d22fb2f280" Left="[float]160" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]3" Top="[float]20" Value="{ClusterBinding FieldName=Arduinos\ List}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]144">
+						<p.DefaultElementValue>
+							<Cluster>
+								<Field1>""</Field1>
+								<Field2>""</Field2>
+							</Cluster>
+						</p.DefaultElementValue>
+						<p4:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@32b4f6f8e3384dd7acd49a8d30a8ff00" Height="[float]108" Id="8918e42be1974035b451234bea287177" Width="[float]112">
+							<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="34c9286880034da38bc5ffe690ccdb9f" Label="[UIModel]ecae4780b690408988b0ab0da8421279" Left="[float]4" SelectedResource="{ClusterBinding FieldName=Element\ 1}" ShowType="[bool]False" ShowUserRefresh="[bool]True" Top="[float]24" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<p4:p.TypeDefinitionTargets>
+									<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+								</p4:p.TypeDefinitionTargets>
+							</IONameControl>
+							<p4:Label Id="ecae4780b690408988b0ab0da8421279" LabelOwner="[UIModel]34c9286880034da38bc5ffe690ccdb9f" Left="[float]4" Text="[string]Element 1" Top="[float]4" />
+							<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="82b5e6bf49da4e78a6a522b677cc542d" Label="[UIModel]ea92952ef5e1437287af732b00fc2018" Left="[float]4" Text="{ClusterBinding FieldName=Element\ 2}" Top="[float]76" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]52" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p4:Label Id="ea92952ef5e1437287af732b00fc2018" LabelOwner="[UIModel]82b5e6bf49da4e78a6a522b677cc542d" Left="[float]4" Text="[string]Element 2" Top="[float]56" />
+						</p4:Cluster>
+					</p4:ArrayViewer>
+					<p4:Label Height="[float]16" Id="1ef2dea8e20e44c596c253d22fb2f280" LabelOwner="[UIModel]fa05aacd32f54c85bc79839ecef6dd20" Left="[float]160" Text="[string]Arduinos List" Top="[float]0" Width="[float]69" />
+					<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]31" Id="396b5e2194334af583207be4aeb8224a" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]92e3576ddec04f23b55e56f3353ce6ae" Left="[float]204" Shape="[LEDShape]Square" TabIndex="[int]4" Top="[float]227" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Multiplexer\ Arduino\ Detected?}" Width="[float]99" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="92e3576ddec04f23b55e56f3353ce6ae" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]396b5e2194334af583207be4aeb8224a" Left="[float]140" Text="[string]Multiplexer Arduino Detected?" Top="[float]207" Width="[float]163" />
+					<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]30" Id="674062e0d2cd4247ae431971e7e39208" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]eb1f120d832b4f588760fc72797e5ac1" Left="[float]204" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]171" TrueContent="[string]Online" Value="{ClusterBinding FieldName=XZ\ Stage\ Arduino\ Detected?}" Width="[float]98" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="eb1f120d832b4f588760fc72797e5ac1" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]674062e0d2cd4247ae431971e7e39208" Left="[float]152" Text="[string]XZ Stage Arduino Detected?" Top="[float]151" Width="[float]150" />
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]43" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="31e2eb7233b1455a952c18400d50c58d" Label="[UIModel]9b3f6cb250e4e18b8b02b36d2647d61" Left="[float]5" TabIndex="[int]5" Text="{ClusterBinding FieldName=XZ\ Stage\ Log}" Top="[float]140" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]131" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="9b3f6cb250e4e18b8b02b36d2647d61" LabelOwner="[UIModel]31e2eb7233b1455a952c18400d50c58d" Left="[float]5" Text="[string]XZ Stage Log" Top="[float]120" Width="[float]70" />
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]51" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="d753d26d14b040f48e5bc878d92d4071" Label="[UIModel]d5a861c943bc4c859a7e06365f680b7a" Left="[float]5" TabIndex="[int]6" Text="{ClusterBinding FieldName=Multiplexer\ Log}" Top="[float]205" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]130" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="d5a861c943bc4c859a7e06365f680b7a" LabelOwner="[UIModel]d753d26d14b040f48e5bc878d92d4071" Left="[float]5" Text="[string]Multiplexer Log" Top="[float]185" Width="[float]83" />
+				</p4:Cluster>
+				<p4:Label Height="[float]16" Id="b3df7743483946268146df0098ffeab0" LabelOwner="[UIModel]48746e538f9c45b687e71789aa04dba3" Left="[float]4" Text="[string]Arduino Coms Info" Top="[float]4" Width="[float]100" />
+				<p4:ArrayViewer ArrayElement="[UIModel]7883e00771af4f2d84bcdafdd8f61c03" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Enabled="[bool]True" Height="[float]120" Id="7dfaceee629540748bb238928612e7f7" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]daec33c4a130446695da5d2243c0bf95" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]1" Top="[float]321" Value="{ClusterBinding FieldName=Photodetector\ Names}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]92">
+					<p.DefaultElementValue>""</p.DefaultElementValue>
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="7883e00771af4f2d84bcdafdd8f61c03" IsReadOnly="[bool]False" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]60" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				</p4:ArrayViewer>
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="daec33c4a130446695da5d2243c0bf95" LabelOwner="[UIModel]7dfaceee629540748bb238928612e7f7" Left="[float]4" Text="[string]Photodetector Names" Top="[float]301" Width="[float]117" />
+				<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Enabled="[bool]True" Height="[float]24" Id="50705c59bd554559a8d8e645b8220d1d" IsTabStop="[bool]True" Label="[UIModel]9b1da7ce0e5740d79a66677e116d52c3" Left="[float]5" SelectedResource="{ClusterBinding FieldName=Keythley\ Address}" ShowUserRefresh="[bool]True" TabIndex="[int]2" Top="[float]600" Width="[float]155" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+				</IONameControl>
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="9b1da7ce0e5740d79a66677e116d52c3" LabelOwner="[UIModel]50705c59bd554559a8d8e645b8220d1d" Left="[float]5" Text="[string]Keythley Address" Top="[float]580" Width="[float]91" />
+				<p4:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Thorlabs Motors Serial Number In" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@23871ca50e77431f8b1daf76c3405108" Height="[float]108" Id="91576f13c96f499abe031a529b99ca7c" IsTabStop="[bool]True" Label="[UIModel]ec148e773c044770be0a8d65d71f3feb" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]6" Top="[float]469" Value="{ClusterBinding FieldName=Thorlabs\ Motors\ Serial\ Number}" Width="[float]240" p4:ControlDefinitionChecksum="pUdr8gdgUZBJkv09r/HfH2rE/66B/BRj27+gaHUmrrw=">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Detection::Thorlabs Motors Serial Number In.gtype::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="ec4bffac8b23430b88358d797a93c5b8" Label="[UIModel]46efa2ac8d434603a80ced80ca9876c4" Left="[float]4" TabIndex="[int]0" Text="{ClusterBinding FieldName=Thorlabs\ Blue\ Motor}" Top="[float]24" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="46efa2ac8d434603a80ced80ca9876c4" LabelOwner="[UIModel]ec4bffac8b23430b88358d797a93c5b8" Left="[float]4" Text="[string]Thorlabs Blue Motor" Top="[float]4" Width="[float]108" />
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="eb269ac7cafa4d3aa3406429c03bdddd" Label="[UIModel]269685de48c0428d818849f7814e801a" Left="[float]4" TabIndex="[int]1" Text="{ClusterBinding FieldName=Thorlabs\ Red\ Motor}" Top="[float]72" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="269685de48c0428d818849f7814e801a" LabelOwner="[UIModel]eb269ac7cafa4d3aa3406429c03bdddd" Left="[float]4" Text="[string]Thorlabs Red Motor" Top="[float]52" Width="[float]106" />
+					<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]24" Id="20b294cf22494abc9454aae698f82056" IsReadOnly="[bool]False" Label="[UIModel]39b39412a9c24add994ccb884e87373a" Left="[float]120" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]24" TrueContent="[string]On" Value="{ClusterBinding FieldName=Blue\ Motor\ Homed?}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="39b39412a9c24add994ccb884e87373a" LabelOwner="[UIModel]20b294cf22494abc9454aae698f82056" Left="[float]120" Text="[string]Blue Motor Homed?" Top="[float]4" Width="[float]108" />
+					<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]24" Id="9ab41faf9d384159a9b64cf4caeaecc5" IsReadOnly="[bool]False" Label="[UIModel]bdd2b09e14bb4d58aef698a72fcc1083" Left="[float]119" Shape="[LEDShape]Square" TabIndex="[int]3" Top="[float]72" TrueContent="[string]On" Value="{ClusterBinding FieldName=Red\ Motor\ Homed?}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="bdd2b09e14bb4d58aef698a72fcc1083" LabelOwner="[UIModel]9ab41faf9d384159a9b64cf4caeaecc5" Left="[float]119" Text="[string]Red Motor Homed?" Top="[float]52" Width="[float]105" />
+				</p4:Cluster>
+				<p4:Label Height="[float]16" Id="ec148e773c044770be0a8d65d71f3feb" LabelOwner="[UIModel]91576f13c96f499abe031a529b99ca7c" Left="[float]4" Text="[string]Thorlabs Motors Serial Number" Top="[float]449" Width="[float]166" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]30" Id="e0a0b82513fd481ca03b6ba899499727" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]40c21f0874b542a88315ed3e9174ca85" Left="[float]211" Shape="[LEDShape]Square" TabIndex="[int]3" Top="[float]321" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Photodetector\ Detected?}" Width="[float]101" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="40c21f0874b542a88315ed3e9174ca85" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]e0a0b82513fd481ca03b6ba899499727" Left="[float]179" Text="[string]Photodetector Detected?" Top="[float]301" Width="[float]133" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]29" Id="144266bb938042f8aea7aa425529fdaa" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]300d1fd29c70459ab38efbcc62483fe0" Left="[float]213" Shape="[LEDShape]Square" TabIndex="[int]4" Top="[float]373" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Thorlabs\ Motors\ Detected?}" Width="[float]99" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="300d1fd29c70459ab38efbcc62483fe0" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]144266bb938042f8aea7aa425529fdaa" Left="[float]168" Text="[string]Thorlabs Motors Detected?" Top="[float]353" Width="[float]144" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]33" Id="36a36d92c49948c088160315a6cb2531" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]b4e91f5b85854bbe823b3b36eef7acf9" Left="[float]212" Shape="[LEDShape]Square" TabIndex="[int]5" Top="[float]426" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Keithley\ Detected?}" Width="[float]101" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="b4e91f5b85854bbe823b3b36eef7acf9" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]36a36d92c49948c088160315a6cb2531" Left="[float]214" Text="[string]Keithley Detected?" Top="[float]406" Width="[float]99" />
+				<IONameControl BaseName="[string]IviDefault" DataType="[Type]:UDR:TagRefnum|NI::Ivi::IviDefault.udr::IviDefault" Height="[float]24" Id="26141459d5de45dba8281db05e6242d8" Label="[UIModel]3ac1f910bc146f1b8a330619ab192d4" Left="[float]170" SelectedResource="{ClusterBinding FieldName=Photodetector\ IVI\ session}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]7" Top="[float]600" Width="[float]147" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="NI::Ivi::IviDefault.udr::IviDefault::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+				</IONameControl>
+				<p4:Label Height="[float]16" Id="3ac1f910bc146f1b8a330619ab192d4" LabelOwner="[UIModel]26141459d5de45dba8281db05e6242d8" Left="[float]170" Text="[string]Photodetector IVI session" Top="[float]580" Width="[float]135" />
+			</Cluster>
+			<Label Height="[float]16" Id="bcc5a7c708714ccbaa0486e00ad098f4" LabelOwner="[UIModel]caaff0538a2e4bc2896fa3090123a489" Left="[float]20" Text="[string]Instrument Coms Info In" Top="[float]16" Width="[float]129" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Instrument Coms Info" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@0a99da08b03e415791f64b2e570dc0f3" Height="[float]636" Id="234e1c913ce24cd48cc7ad4870bb7b6c" IsTabStop="[bool]True" Label="[UIModel]8e0b2b0eada7411ea115ddca16403da5" LabelLinked="[bool]True" Left="[float]372" TabIndex="[int]3" Top="[float]36" Value="{DataItemBinding Id=2c93471e105d4d4bb1e9d3518bbde3cf}" Width="[float]332" p4:ControlDefinitionChecksum="GigXazLcOdxOwIT+XWuxUHCOL58up/ooIwI/vVKs10I=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Instrument Coms Info.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<p4:Cluster BaseName="[string]Arduino coms cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@d66bc535623f4a57894c819644446d96" Height="[float]272" Id="fc3ea1ed2c474afb9f52ea973aab4966" IsTabStop="[bool]True" Label="[UIModel]a827bb36e9614ee396f05da6f81af754" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Arduino\ Coms\ Info}" Width="[float]316" p4:ControlDefinitionChecksum="g75wDRXROIpdLXhN5qr4badykn4cnkRIgpwmvLe6OHU=">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Arduino::Arduino Detection cluster control.gtype::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+					<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="675cced6abca416fb810bbc7cf8cb3e1" IsReadOnly="[bool]True" Label="[UIModel]dc59c6b2b52481597a1ef2f80805f58" Left="[float]4" SelectedResource="{ClusterBinding FieldName=XZ\ Stage\ Arduino\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]0" Top="[float]35" Width="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<p4:p.TypeDefinitionTargets>
+							<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+						</p4:p.TypeDefinitionTargets>
+					</IONameControl>
+					<p4:Label Height="[float]16" Id="dc59c6b2b52481597a1ef2f80805f58" LabelOwner="[UIModel]675cced6abca416fb810bbc7cf8cb3e1" Left="[float]4" Text="[string]XZ Stage Arduino Address" Top="[float]15" Width="[float]139" />
+					<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="2f984389e0cc4fcb9af75be762708901" IsReadOnly="[bool]True" Label="[UIModel]248584fbf1a47ec9c690d390d42ea3f" Left="[float]4" SelectedResource="{ClusterBinding FieldName=Multiplexer\ Arduino\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]3" Top="[float]92" Width="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<p4:p.TypeDefinitionTargets>
+							<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+						</p4:p.TypeDefinitionTargets>
+					</IONameControl>
+					<p4:Label Height="[float]16" Id="248584fbf1a47ec9c690d390d42ea3f" LabelOwner="[UIModel]2f984389e0cc4fcb9af75be762708901" Left="[float]4" Text="[string]Multiplexer Arduino Address" Top="[float]72" Width="[float]152" />
+					<p4:ArrayViewer ArrayElement="[UIModel]a84a8176d1f54e548be67dc4a44df124" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="b115950acc374725b66c78c886397e44" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]dc9b7e659ffd48dd9bac4e0cdf0f9655" Left="[float]160" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]4" Top="[float]20" Value="{ClusterBinding FieldName=Arduinos\ List}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]144">
+						<p.DefaultElementValue>
+							<Cluster>
+								<Field1>""</Field1>
+								<Field2>""</Field2>
+							</Cluster>
+						</p.DefaultElementValue>
+						<p4:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@32b4f6f8e3384dd7acd49a8d30a8ff00" Height="[float]108" Id="a84a8176d1f54e548be67dc4a44df124" Width="[float]112">
+							<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="34415c16cd264befa9308c68bd40f913" IsReadOnly="[bool]True" Label="[UIModel]e97e3647d26e43b1b335e9ef0442a15c" Left="[float]4" SelectedResource="{ClusterBinding FieldName=Element\ 1}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]0" Top="[float]24" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<p4:p.TypeDefinitionTargets>
+									<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+								</p4:p.TypeDefinitionTargets>
+							</IONameControl>
+							<p4:Label Id="e97e3647d26e43b1b335e9ef0442a15c" LabelOwner="[UIModel]34415c16cd264befa9308c68bd40f913" Left="[float]4" Text="[string]Element 1" Top="[float]4" />
+							<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="64ff415fedcd407b95645ba5b948dc45" IsReadOnly="[bool]True" Label="[UIModel]4c13c8eeda4d4e0ca538ea3b43e24750" Left="[float]4" TabIndex="[int]1" Text="{ClusterBinding FieldName=Element\ 2}" Top="[float]76" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]52" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p4:Label Id="4c13c8eeda4d4e0ca538ea3b43e24750" LabelOwner="[UIModel]64ff415fedcd407b95645ba5b948dc45" Left="[float]4" Text="[string]Element 2" Top="[float]56" />
+						</p4:Cluster>
+					</p4:ArrayViewer>
+					<p4:Label Height="[float]16" Id="dc9b7e659ffd48dd9bac4e0cdf0f9655" LabelOwner="[UIModel]b115950acc374725b66c78c886397e44" Left="[float]160" Text="[string]Arduinos List" Top="[float]0" Width="[float]69" />
+					<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]31" Id="3e47c6561d454fe9a0bd588dcb7bc081" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]200ce81292b04fdc9918923e8ce702df" Left="[float]204" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]227" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Multiplexer\ Arduino\ Detected?}" Width="[float]99" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="200ce81292b04fdc9918923e8ce702df" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]3e47c6561d454fe9a0bd588dcb7bc081" Left="[float]140" Text="[string]Multiplexer Arduino Detected?" Top="[float]207" Width="[float]163" />
+					<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]30" Id="ed56975735574213ab4fc812134ca674" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]6f549de44e304fc99d7f0aa183f5d07f" Left="[float]204" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]171" TrueContent="[string]Online" Value="{ClusterBinding FieldName=XZ\ Stage\ Arduino\ Detected?}" Width="[float]98" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="6f549de44e304fc99d7f0aa183f5d07f" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]ed56975735574213ab4fc812134ca674" Left="[float]152" Text="[string]XZ Stage Arduino Detected?" Top="[float]151" Width="[float]150" />
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]43" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="6898c27ad5bc4155afeacd3ceb06e992" IsReadOnly="[bool]True" Label="[UIModel]1ddf4f516211499eb8e7a7d8b3d050a3" Left="[float]5" TabIndex="[int]5" Text="{ClusterBinding FieldName=XZ\ Stage\ Log}" Top="[float]140" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]131" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="1ddf4f516211499eb8e7a7d8b3d050a3" LabelOwner="[UIModel]6898c27ad5bc4155afeacd3ceb06e992" Left="[float]5" Text="[string]XZ Stage Log" Top="[float]120" Width="[float]70" />
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]51" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="8fd8a0186130433dab7d5d1e1dab8c3f" IsReadOnly="[bool]True" Label="[UIModel]c34949ae46754e979282c8756b652fef" Left="[float]5" TabIndex="[int]6" Text="{ClusterBinding FieldName=Multiplexer\ Log}" Top="[float]205" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]130" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="c34949ae46754e979282c8756b652fef" LabelOwner="[UIModel]8fd8a0186130433dab7d5d1e1dab8c3f" Left="[float]5" Text="[string]Multiplexer Log" Top="[float]185" Width="[float]83" />
+				</p4:Cluster>
+				<p4:Label Height="[float]16" Id="a827bb36e9614ee396f05da6f81af754" LabelOwner="[UIModel]fc3ea1ed2c474afb9f52ea973aab4966" Left="[float]4" Text="[string]Arduino Coms Info" Top="[float]4" Width="[float]100" />
+				<p4:ArrayViewer ArrayElement="[UIModel]b295a0d723c41dab3f541790eaa711f" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Enabled="[bool]True" Height="[float]120" Id="e4287ee6a1f54a48a96c59cd070a46b2" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]4740c2812b0046caa7fb0f4314ef6136" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]1" Top="[float]321" Value="{ClusterBinding FieldName=Photodetector\ Names}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]92">
+					<p.DefaultElementValue>""</p.DefaultElementValue>
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="b295a0d723c41dab3f541790eaa711f" IsReadOnly="[bool]True" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]60" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				</p4:ArrayViewer>
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="4740c2812b0046caa7fb0f4314ef6136" LabelOwner="[UIModel]e4287ee6a1f54a48a96c59cd070a46b2" Left="[float]4" Text="[string]Photodetector Names" Top="[float]301" Width="[float]117" />
+				<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Enabled="[bool]True" Height="[float]24" Id="9b9a70865996472f80861fa8004fd325" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]33976b6ed47349758663dd4beec940d9" Left="[float]5" SelectedResource="{ClusterBinding FieldName=Keythley\ Address}" ShowUserRefresh="[bool]True" TabIndex="[int]2" Top="[float]600" Width="[float]155" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+				</IONameControl>
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="33976b6ed47349758663dd4beec940d9" LabelOwner="[UIModel]9b9a70865996472f80861fa8004fd325" Left="[float]5" Text="[string]Keythley Address" Top="[float]580" Width="[float]91" />
+				<p4:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Thorlabs Motors Serial Number In" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@23871ca50e77431f8b1daf76c3405108" Height="[float]108" Id="f2289a974804b63918d38a29d975ba0" IsTabStop="[bool]True" Label="[UIModel]51afea526a73414e94b222fb16388c73" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]6" Top="[float]469" Value="{ClusterBinding FieldName=Thorlabs\ Motors\ Serial\ Number}" Width="[float]240" p4:ControlDefinitionChecksum="pUdr8gdgUZBJkv09r/HfH2rE/66B/BRj27+gaHUmrrw=">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Detection::Thorlabs Motors Serial Number In.gtype::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="c2c34d10cc8a4ce99dc0bd32b5c2250d" IsReadOnly="[bool]True" Label="[UIModel]9576f6c442ca4c64b412349dc654f6cf" Left="[float]4" TabIndex="[int]0" Text="{ClusterBinding FieldName=Thorlabs\ Blue\ Motor}" Top="[float]24" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="9576f6c442ca4c64b412349dc654f6cf" LabelOwner="[UIModel]c2c34d10cc8a4ce99dc0bd32b5c2250d" Left="[float]4" Text="[string]Thorlabs Blue Motor" Top="[float]4" Width="[float]108" />
+					<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="baea0f8389ab448e82099a97fc625c41" IsReadOnly="[bool]True" Label="[UIModel]179d3c5de7d44bcdb30003cc1b333fa8" Left="[float]4" TabIndex="[int]1" Text="{ClusterBinding FieldName=Thorlabs\ Red\ Motor}" Top="[float]72" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="179d3c5de7d44bcdb30003cc1b333fa8" LabelOwner="[UIModel]baea0f8389ab448e82099a97fc625c41" Left="[float]4" Text="[string]Thorlabs Red Motor" Top="[float]52" Width="[float]106" />
+					<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]24" Id="84ae5863d85043c886e7a5845aeede61" IsReadOnly="[bool]True" Label="[UIModel]b899e6ee21554a7cb25c76875a79d40b" Left="[float]120" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]24" TrueContent="[string]On" Value="{ClusterBinding FieldName=Blue\ Motor\ Homed?}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="b899e6ee21554a7cb25c76875a79d40b" LabelOwner="[UIModel]84ae5863d85043c886e7a5845aeede61" Left="[float]120" Text="[string]Blue Motor Homed?" Top="[float]4" Width="[float]108" />
+					<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]24" Id="262e535bd24905949072c06ee5e797" IsReadOnly="[bool]True" Label="[UIModel]9c1fced811f2418c81b37adaef0315d6" Left="[float]119" Shape="[LEDShape]Square" TabIndex="[int]3" Top="[float]72" TrueContent="[string]On" Value="{ClusterBinding FieldName=Red\ Motor\ Homed?}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="9c1fced811f2418c81b37adaef0315d6" LabelOwner="[UIModel]262e535bd24905949072c06ee5e797" Left="[float]119" Text="[string]Red Motor Homed?" Top="[float]52" Width="[float]105" />
+				</p4:Cluster>
+				<p4:Label Height="[float]16" Id="51afea526a73414e94b222fb16388c73" LabelOwner="[UIModel]f2289a974804b63918d38a29d975ba0" Left="[float]4" Text="[string]Thorlabs Motors Serial Number" Top="[float]449" Width="[float]166" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]30" Id="8a5ab817824948d7a2d4bb2f4862c8c9" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]5d45b5a19e5a4f5e90780f87b5c8f6ce" Left="[float]211" Shape="[LEDShape]Square" TabIndex="[int]3" Top="[float]321" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Photodetector\ Detected?}" Width="[float]101" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="5d45b5a19e5a4f5e90780f87b5c8f6ce" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]8a5ab817824948d7a2d4bb2f4862c8c9" Left="[float]179" Text="[string]Photodetector Detected?" Top="[float]301" Width="[float]133" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]29" Id="34d0a7251c15425db7c1eaabfb7010e7" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]8457b3173f8e4fefae3204e5f146c680" Left="[float]213" Shape="[LEDShape]Square" TabIndex="[int]4" Top="[float]373" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Thorlabs\ Motors\ Detected?}" Width="[float]99" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="8457b3173f8e4fefae3204e5f146c680" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]34d0a7251c15425db7c1eaabfb7010e7" Left="[float]168" Text="[string]Thorlabs Motors Detected?" Top="[float]353" Width="[float]144" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Visible" FalseContent="[string]Offline" Height="[float]33" Id="5c77aa70d13648d0b230fcc5c7e88274" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]2e9db3ffde96417b81cf08544f2ca885" Left="[float]212" Shape="[LEDShape]Square" TabIndex="[int]5" Top="[float]426" TrueContent="[string]Online" Value="{ClusterBinding FieldName=Keithley\ Detected?}" Width="[float]101" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="2e9db3ffde96417b81cf08544f2ca885" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]5c77aa70d13648d0b230fcc5c7e88274" Left="[float]214" Text="[string]Keithley Detected?" Top="[float]406" Width="[float]99" />
+				<IONameControl BaseName="[string]IviDefault" DataType="[Type]:UDR:TagRefnum|NI::Ivi::IviDefault.udr::IviDefault" Height="[float]24" Id="8e8751294a645af98831a62fa0db92f" IsReadOnly="[bool]True" Label="[UIModel]570696b85afc45dab5e61c620c5ec8b5" Left="[float]170" SelectedResource="{ClusterBinding FieldName=Photodetector\ IVI\ session}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]7" Top="[float]600" Width="[float]147" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="NI::Ivi::IviDefault.udr::IviDefault::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+				</IONameControl>
+				<p4:Label Height="[float]16" Id="570696b85afc45dab5e61c620c5ec8b5" LabelOwner="[UIModel]8e8751294a645af98831a62fa0db92f" Left="[float]170" Text="[string]Photodetector IVI session" Top="[float]580" Width="[float]135" />
+			</Cluster>
+			<Label Height="[float]16" Id="8e0b2b0eada7411ea115ddca16403da5" LabelOwner="[UIModel]234e1c913ce24cd48cc7ad4870bb7b6c" Left="[float]372" Text="[string]Instrument Coms Info Out" Top="[float]16" Width="[float]138" xmlns="http://www.ni.com/PanelCommon" />
+		</NativeFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="0" DataType="Error" Id="2dbce58698847049b6db4ce33456f79" Name="Error In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="0" DataType="Error" Id="e0f9a4f8d414ad0a60104fccd05e210" Name="Error Out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" DataType="@0a99da08b03e415791f64b2e570dc0f3" Id="34da5f5d333d4c96bc4e3b4fe1a37976" Name="Instrument Coms Info In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>False</Field2>
+							<Field3>False</Field3>
+							<Field4>""</Field4>
+							<Field5>null</Field5>
+							<Field6>""</Field6>
+							<Field7>""</Field7>
+						</Cluster>
+					</Field1>
+					<Field2>null</Field2>
+					<Field3>""</Field3>
+					<Field4>False</Field4>
+					<Field5>False</Field5>
+					<Field6>False</Field6>
+					<Field7>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+							<Field3>False</Field3>
+							<Field4>False</Field4>
+						</Cluster>
+					</Field7>
+					<Field8>""</Field8>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Instrument Coms Info.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@0a99da08b03e415791f64b2e570dc0f3" Id="2c93471e105d4d4bb1e9d3518bbde3cf" Name="Instrument Coms Info Out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>False</Field2>
+							<Field3>False</Field3>
+							<Field4>""</Field4>
+							<Field5>null</Field5>
+							<Field6>""</Field6>
+							<Field7>""</Field7>
+						</Cluster>
+					</Field1>
+					<Field2>null</Field2>
+					<Field3>""</Field3>
+					<Field4>False</Field4>
+					<Field5>False</Field5>
+					<Field6>False</Field6>
+					<Field7>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+							<Field3>False</Field3>
+							<Field4>False</Field4>
+						</Cluster>
+					</Field7>
+					<Field8>""</Field8>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Instrument Coms Info.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="0a99da08b03e415791f64b2e570dc0f3">
+			<Attributed AttributedType="@ed174b0cb8454847bdb3c9439367952a">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Instrument Control" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3ae7aa7246db46ed99dee64b9b22f75e">
+			<Attributed AttributedType="@b2b3a9c48c624dd795475e92dfaa89d2">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e0b233fb9da84473b60505878fd360e1">
+			<Attributed AttributedType="@98bf60298d19424da9f97b241f73592e">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b667906cf7f441008623e361619ecd0f">
+			<Attributed AttributedType="@2d0a1355050042bbaf2d4fdaac0f736b">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1a8db548033f45edaf251458636536f6">
+			<Attributed AttributedType="@06cbc132b51e4ce4b5890b5a3d0ca71d">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="d66bc535623f4a57894c819644446d96">
+			<Attributed AttributedType="@fddc6274860c4b4d96f5bf85af6fb10f">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Instrument Control::Arduino" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="32b4f6f8e3384dd7acd49a8d30a8ff00">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 1" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 2" DataType="String" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="23871ca50e77431f8b1daf76c3405108">
+			<Attributed AttributedType="@0666bb263cf240bd945105c7dbc27dd2">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Detection" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ed174b0cb8454847bdb3c9439367952a">
+			<Typedef TypedefName="Instrument Coms Info.gtype" UnderlyingType="@840936b4dc3147dea852e26e8557dde7" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="b2b3a9c48c624dd795475e92dfaa89d2">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="KCube Motors Move to Position.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@ea9afb10a9034be6a3d0b6d6c761d1a5">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Coms Info In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@1a4534845a224f4d85a2c2364a1c8b61">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Blue Motor Position to move to (mm)" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@b270acf8b2764cd0a88c76fac07b63af">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Red Motor Position to move to (mm)" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@e4848e9b30ac4b199da735e2d4543b54">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@4ef61eaab4114db4b30d3af3743ec96e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Coms Info Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@850a19a74a524897ac80001baedfd0e9">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="98bf60298d19424da9f97b241f73592e">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="KCube Motors Home sequence.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@ea9afb10a9034be6a3d0b6d6c761d1a5">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Coms Info In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@e4848e9b30ac4b199da735e2d4543b54">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@4ef61eaab4114db4b30d3af3743ec96e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Coms Info Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@bc53b3dd8c154c6a888ad8308fbbb6fd">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Homed?" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@850a19a74a524897ac80001baedfd0e9">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2d0a1355050042bbaf2d4fdaac0f736b">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="KCube Motors Initialize.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@ea9afb10a9034be6a3d0b6d6c761d1a5">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Coms Info In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@e4848e9b30ac4b199da735e2d4543b54">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@4ef61eaab4114db4b30d3af3743ec96e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Coms Info Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@850a19a74a524897ac80001baedfd0e9">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="06cbc132b51e4ce4b5890b5a3d0ca71d">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="KCube Motors Close.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@ea9afb10a9034be6a3d0b6d6c761d1a5">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Coms Info In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@e4848e9b30ac4b199da735e2d4543b54">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@4ef61eaab4114db4b30d3af3743ec96e">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Coms Info Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@850a19a74a524897ac80001baedfd0e9">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="fddc6274860c4b4d96f5bf85af6fb10f">
+			<Typedef TypedefName="Arduino Detection cluster control.gtype" UnderlyingType="@da5d7d8a2ca54cf3a1f3d16f2a6a5ee6" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="0666bb263cf240bd945105c7dbc27dd2">
+			<Typedef TypedefName="Thorlabs Motors Serial Number In.gtype" UnderlyingType="@c9ebca7aa552417e910f34a598b35928" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="840936b4dc3147dea852e26e8557dde7">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Arduino Coms Info" DataType="@d66bc535623f4a57894c819644446d96" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Photodetector Names" DataType="String[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Keythley Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Photodetector Detected?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Thorlabs Motors Detected?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Keithley Detected?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Thorlabs Motors Serial Number" DataType="@23871ca50e77431f8b1daf76c3405108" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Photodetector IVI session" DataType=":UDR:TagRefnum|NI::Ivi::IviDefault.udr::IviDefault" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ea9afb10a9034be6a3d0b6d6c761d1a5">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@0a99da08b03e415791f64b2e570dc0f3" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="1a4534845a224f4d85a2c2364a1c8b61">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Double" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="b270acf8b2764cd0a88c76fac07b63af">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Double" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="e4848e9b30ac4b199da735e2d4543b54">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Error" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="4ef61eaab4114db4b30d3af3743ec96e">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="@0a99da08b03e415791f64b2e570dc0f3" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="850a19a74a524897ac80001baedfd0e9">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Error" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="bc53b3dd8c154c6a888ad8308fbbb6fd">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="da5d7d8a2ca54cf3a1f3d16f2a6a5ee6">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Arduino Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Arduino Detected?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Multiplexer Arduino Detected?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Multiplexer Arduino Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Arduinos List" DataType="@09f62b7eab82450e83a48e3038b677a5" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Log" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Multiplexer Log" DataType="String" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c9ebca7aa552417e910f34a598b35928">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Thorlabs Blue Motor" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Thorlabs Red Motor" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Blue Motor Homed?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Red Motor Homed?" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="09f62b7eab82450e83a48e3038b677a5">
+			<VariableArray DereferenceType="@32b4f6f8e3384dd7acd49a8d30a8ff00" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Movement::KCube Motors Move to Position.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]KCube Motors Move to Position" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Rainbow NXG.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Movement::KCube Motors Home sequence.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]KCube Motors Home sequence" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Rainbow NXG.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Movement::KCube Motors Initialize.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]KCube Motors Initialize" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Rainbow NXG.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rainbow Measurement Setup::Side Functions::Instrument Control::Thorlabs Motors::Movement::KCube Motors Close.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]KCube Motors Close" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6.75" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Rainbow NXG.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

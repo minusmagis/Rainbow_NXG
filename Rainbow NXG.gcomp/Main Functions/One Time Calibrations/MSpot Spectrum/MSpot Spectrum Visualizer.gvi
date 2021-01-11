@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DD258C925EBA466631C21175213132DFFF02EB31384C99300AFE12823CE37A0CC1501AB9140653DABBEFC841C6B18298971071BBD4CB319ECEBF8146BCBFAD91" Timestamp="1D6D4976B5A7632" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="3C7511C63EC50ED76D37E359BFD08A93731A59DB77B163611131F89637CCAA9BCF0D3DCEC57EF4C1582D6C16F8F1CDF7278E6D58F85B84516FE078A28B5985D9" Timestamp="1D6E835B17783A3" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="ebc424f368884d33b5fc9664b0f9d9fe" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="63c430f1cbad450183b4c8feeee9763c" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="b333f2dcac6c444084155d2bf7907ba9" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Id="e4839dbe966840a88281a5a8e3533863" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Beam Spectrum Visualizer" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+					<FileNameText Attached="[bool]True" Id="e4839dbe966840a88281a5a8e3533863" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Measuring Spot Spectrum Visualizer" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="54a5d8321f6348fe853452dd4950372d" />
 					</FileNameText>
 				</IconTemplate>
@@ -54,7 +54,7 @@
 						<NodeLabel AttachedTo="9b4374f0b63d49d09b0a6f6216e63164" Bounds="38 52 30 15" Id="4fe73e5e667543eda8f154b4eaefb603" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>millisecond multiple</p.Text>
 						</NodeLabel>
-						<Wire Facade="WireInvisibleFacade" Id="55b97cfcfed6466aa95833386cbbff23" Joints="N(9b4374f0b63d49d09b0a6f6216e63164:Out)|(78,75) N(84fa2ac2ca2145bfa957a7bd09d4c902:multiple to wait)|(50,75)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Facade="WireInvisibleFacade" Id="55b97cfcfed6466aa95833386cbbff23" Joints="N(9b4374f0b63d49d09b0a6f6216e63164:Out)|(50,75) N(84fa2ac2ca2145bfa957a7bd09d4c902:multiple to wait)|(50,75)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 						<DataAccessor Bounds="180 35 40 15" DataItem="6f6351080a44b7bb27d8705e4026706" Id="a3b9c9de3ad64f919d5945f430a07085" Label="14a41352534344c797b233ac0621ad1b" xmlns="http://www.ni.com/MocCommon">
 							<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 						</DataAccessor>
@@ -64,13 +64,13 @@
 						<ArrayIndex Bounds="240 15 40 30" Id="8487c96f5f704b2e97f162c0cfcd7048" Terminals="array=82a883ab680f421bb40d0390a3d63d77, c0t0v=7aa0f44e7e4b423dab3e17a7bb4e3fa1, c0out=b72d79d220d2457bb8e65c0eb0ee6ea2" />
 						<Wire Id="82a883ab680f421bb40d0390a3d63d77" Joints="N(8ae521dc7174a7b8c146251efe684ba:i0)|(4,20) N(8487c96f5f704b2e97f162c0cfcd7048:array)|(240,20)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="7aa0f44e7e4b423dab3e17a7bb4e3fa1" Joints="N(a3b9c9de3ad64f919d5945f430a07085:Value)|(220,40) N(8487c96f5f704b2e97f162c0cfcd7048:c0t0v)|(240,40)" xmlns="http://www.ni.com/PlatformFramework" />
-						<PropertyNode Bounds="300 15 187 50" HasErrorTerminals="False" Id="47f6462ad26d4936aa76651d9af6073f" InstanceDataType="@8618a8ba29c44b0d98794472fad01910" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+						<PropertyNode Bounds="300 15 187 50" HasErrorTerminals="False" Id="47f6462ad26d4936aa76651d9af6073f" InstanceDataType="@2c1e25fe1a8c473ebeef4ce2758fca34" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-								<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Full Beam Multispectral Data.gtype" />
-								<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Beam Spectrum Data.gtype" />
+								<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum::Full Measuring Spot Multispectral Data.gtype" />
+								<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum::Measuring Spot Spectrum Data.gtype" />
 								<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Types.gtype" />
 							</p.TypeDefinitionTargets>
-							<PropertyItemTerminal DataType="@7d573e58c4cc45eda986a0914983e68c" Hotspot="187 15" Id="c0t0v" Path="Beam Spectrum Data Array" PathElementMemberKinds="Field" Usage="Optional" />
+							<PropertyItemTerminal DataType="@4701eb0aab6f47d693eae49f0f5f990c" Hotspot="187 15" Id="c0t0v" Path="Beam Spectrum Data Array" PathElementMemberKinds="Field" Usage="Optional" />
 							<PropertyItemTerminal DataType="@8d8d7bab4880447083786326c799ad41" Hotspot="187 30" Id="c1t0v" Path="Rainbow Sweep Types" PathElementMemberKinds="Field" Usage="Optional" />
 						</PropertyNode>
 						<Wire Id="b72d79d220d2457bb8e65c0eb0ee6ea2" Joints="N(8487c96f5f704b2e97f162c0cfcd7048:c0out)|(280,40) h(10) v(-20) N(47f6462ad26d4936aa76651d9af6073f:instance in)|(300,20)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -86,12 +86,12 @@
 						<DataAccessor Bounds="445 70 40 15" DataItem="a85544c70c504a199841124a23a85f79" Id="7dfc28898ea54859b1e18e849bcb18dc" Label="acc66a4bd9114f2c858757079e0ff943" xmlns="http://www.ni.com/MocCommon">
 							<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 						</DataAccessor>
-						<NodeLabel AttachedTo="7dfc28898ea54859b1e18e849bcb18dc" Bounds="357 70 83 14" Id="acc66a4bd9114f2c858757079e0ff943" xmlns="http://www.ni.com/PlatformFramework">
-							<p.Text>Graph Selector</p.Text>
+						<NodeLabel AttachedTo="7dfc28898ea54859b1e18e849bcb18dc" Bounds="300 70 140 14" Id="acc66a4bd9114f2c858757079e0ff943" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Graph (position) Selector</p.Text>
 						</NodeLabel>
 						<Wire Id="2901d9ec0bf04eb7bf54edbd30db631d" Joints="N(7dfc28898ea54859b1e18e849bcb18dc:Value)|(485,75) h(10) v(-25) N(aa71e8e96e9b41bf9fe25b86858834a0:c0t0v)|(515,50)" xmlns="http://www.ni.com/PlatformFramework" />
 						<DataAccessor Bounds="575 15 40 15" DataItem="a5d3d1d9d4d742c08035c5d679493e78" Id="68320a9e89a644e7bc951f415660d75d" Label="a34a82a34d6e424abdbf5d6f4a5470b2" xmlns="http://www.ni.com/MocCommon">
-							<Terminal DataType="@e7664509d5e24918be7f3c39018f5d4f" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@67e941fa340745d499beb3a4994af49c" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 						</DataAccessor>
 						<NodeLabel AttachedTo="68320a9e89a644e7bc951f415660d75d" Bounds="620 15 158 14" Id="a34a82a34d6e424abdbf5d6f4a5470b2" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Beam Spectrum Information</p.Text>
@@ -103,9 +103,9 @@
 						<NodeLabel AttachedTo="3c2f34222b3b444684aa652e0b59f081" Bounds="1005 30 89 14" Id="caa0f1146f49424bac60d35258af14f8" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Beam Spectrum</p.Text>
 						</NodeLabel>
-						<PropertyNode Bounds="575 45 123 35" HasErrorTerminals="False" Id="9b54ffea30ea46a781f3003977bbb472" InstanceDataType="@e7664509d5e24918be7f3c39018f5d4f" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+						<PropertyNode Bounds="575 45 123 35" HasErrorTerminals="False" Id="9b54ffea30ea46a781f3003977bbb472" InstanceDataType="@67e941fa340745d499beb3a4994af49c" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-								<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Beam Spectrum Data.gtype" />
+								<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum::Measuring Spot Spectrum Data.gtype" />
 							</p.TypeDefinitionTargets>
 							<PropertyItemTerminal DataType="@9a50897e1d594b78aaeb52316391381a" Hotspot="123 15" Id="c0t0v" Path="Beam Spectrum" PathElementMemberKinds="Field" Usage="Optional" />
 						</PropertyNode>
@@ -118,8 +118,8 @@
 						<DataAccessor Bounds="1050 90 40 15" DataItem="3553ee1a1e2c442da56f7884fec1a4ad" Id="1fd99f0c35b242659f5e869cb5c64e99" Label="1be7f8286d5a4474b6008e684f051c9b" xmlns="http://www.ni.com/MocCommon">
 							<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 						</DataAccessor>
-						<NodeLabel AttachedTo="1fd99f0c35b242659f5e869cb5c64e99" Bounds="1014 90 31 14" Id="1be7f8286d5a4474b6008e684f051c9b" xmlns="http://www.ni.com/PlatformFramework">
-							<p.Text>Abort</p.Text>
+						<NodeLabel AttachedTo="1fd99f0c35b242659f5e869cb5c64e99" Bounds="995 90 50 14" Id="1be7f8286d5a4474b6008e684f051c9b" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Continue</p.Text>
 						</NodeLabel>
 						<Wire Id="848282cdfc9f4b42a3da9cdffc79ebed" Joints="N(1fd99f0c35b242659f5e869cb5c64e99:Value)|(1090,95) h(10) v(45) N(656088a7429f487a931bc5f82c9fd986:Input)|(1110,140)" xmlns="http://www.ni.com/PlatformFramework" />
 						<BuildCluster Bounds="845 45 40 20" Id="25b6476225324f8b8acd802a8b364ea8" Terminals="outCluster=2308aace6fc14feeb262d13ffe9be922, c0t0v=8425611911644847a89b92230c1baa74, c1t0v=4dfa2ddbd36c422ebb385fbcd2bcfec3" />
@@ -164,12 +164,15 @@
 			<Wire Id="94e53a4940c9445187efed280369f720" Joints="N(bf074400698347b99b0cd987c15d6a54:error out)|(1730,170) N(d8fb557156b34642bf6a6289b525e161:Value)|(1753,170)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="86158e029dae47959e403a83744997d1" Joints="N(f7eaf8f5e0f248ed991cb5d5f8c7f36f:reference out)|(445,160) N(bf074400698347b99b0cd987c15d6a54:reference in)|(1690,160)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="405 215 40 15" DataItem="1f6dc549e810473faf1b78ef3718be55" Id="449f2602f82f4f4a86405aaef374dc68" Label="c726da59573b47f38a46fa85851e273c" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@75c39efdc2db413985eacdef092180ab" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@52094530b72d43c9b04d54cc7c57067a" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="449f2602f82f4f4a86405aaef374dc68" Bounds="208 215 192 14" Id="c726da59573b47f38a46fa85851e273c" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Full Beam Multispectral Data Array</p.Text>
 			</NodeLabel>
 			<Wire Id="7ef248914e774292a88b4b5a92ee4f5a" Joints="N(449f2602f82f4f4a86405aaef374dc68:Value)|(445,220) N(708a479df8184359abf885417beefe52:ed94988f66fd45ec869b0c124fc49b2e)|(461,220)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="695 95 695 28" Id="62a53e6b17da496eb573000df37bc485" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"This subVI allows us to visualize the data obtained on the Measuring Spot Spectrum Calibration subroutine so that we can\r\nextract our own conclusions and elaborate the calibration file."</p.Text>
+			</Comment>
 		</BlockDiagram>
 		<NativeFrontPanel AllowClose="[bool]False" AllowMaximize="[bool]False" Background="[SMSolidColorBrush]#ffffffff" EnforceMaximumSize="[bool]False" Height="[float]788" HtmlPanel="[bool]False" Id="43135abf31c940b08e60d12d49d88cff" Left="[float]0" MaxHeight="[float]788" MaxWidth="[float]1136" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]1136" WindowTitleOption="[WindowTitleOption]None">
 			<PanelExecutionWindow Id="9fc444568919411592fdba6d35136a23" />
@@ -198,12 +201,12 @@
 			</Cluster>
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="33ae339745a847f3a9f8677e70ffb203" LabelOwner="[UIModel]a4779465c5864bf3a0fd5bc71b438ed0" Left="[float]1348" Text="[string]Error Out" Top="[float]592" Width="[float]49" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" ControlResizeMode="[ControlResizeMode]Fixed" DataSource="{DataItemBinding Id=105cf66803834a9799c6bafac578b34e}" DataSourceType="[Type]@4b64098a03e44c95a23c8aa21cf52c88" Enabled="[bool]True" Height="[float]760" Id="2af49560376b4bb3805d67d6579357db" Label="[UIModel]7c836f1bd25242688c435e0f161a1cab" Left="[float]4" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]2" Top="[float]20" Width="[float]952" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" DisableMappingChanges="[bool]False" Id="70658807ede246fbb536c28c37769747" IsInverted="[bool]False" Label="[string]Wavelngth (nm)" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]31ef965e0edb49a2861990e83bb54137" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 1, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" DisableMappingChanges="[bool]False" Id="70658807ede246fbb536c28c37769747" IsInverted="[bool]False" Label="[string]Wavelngth (nm)" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]31ef965e0edb49a2861990e83bb54137" Orientation="[SMOrientation]Horizontal" Range="[IRange]300, 800, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="31ef965e0edb49a2861990e83bb54137">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" DisableMappingChanges="[bool]False" Id="6cdc2f8623bf4f448238c18bf1b395c7" IsInverted="[bool]False" Label="[string]Counts" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]a4e53226ff854db4a34c936549ab6f23" Orientation="[SMOrientation]Vertical" Range="[IRange]2, 7, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" DisableMappingChanges="[bool]False" Id="6cdc2f8623bf4f448238c18bf1b395c7" IsInverted="[bool]False" Label="[string]Counts" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]a4e53226ff854db4a34c936549ab6f23" Orientation="[SMOrientation]Vertical" Range="[IRange]10, 100, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="a4e53226ff854db4a34c936549ab6f23">
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
@@ -231,31 +234,31 @@
 			<ScaleLegend Enabled="[bool]True" Graph="[UIModel]2af49560376b4bb3805d67d6579357db" Height="[float]54" Id="3bebc78012644741956282e7c3c02373" Left="[float]963" Top="[float]678" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<GraphTools Enabled="[bool]True" Graph="[UIModel]2af49560376b4bb3805d67d6579357db" Id="f64a2a502e6c414eaf2d9ba63fed6d15" Left="[float]9" Top="[float]787" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="7c836f1bd25242688c435e0f161a1cab" LabelOwner="[UIModel]2af49560376b4bb3805d67d6579357db" Left="[float]4" Text="[string]Beam Spectrum" Top="[float]0" Width="[float]84" xmlns="http://www.ni.com/PanelCommon" />
-			<Button BaseName="[string]Stop" Content="[string]Stop" Enabled="[bool]True" Foreground="[SMColor]#ffff0000" Height="[float]25" Id="293183334c8a4fcdbd85b4debc97ce16" IncludeInCapture="[bool]False" IsMomentary="[bool]False" IsReadOnly="[bool]False" Label="[UIModel]366a755000784f33bc76986701c12615" Left="[float]980" Shape="[ButtonShape]Square" TabIndex="[int]3" Top="[float]740" Value="{DataItemBinding Id=3553ee1a1e2c442da56f7884fec1a4ad}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="366a755000784f33bc76986701c12615" LabelOwner="[UIModel]293183334c8a4fcdbd85b4debc97ce16" Left="[float]980" Text="[string]Abort" Top="[float]720" Width="[float]31" xmlns="http://www.ni.com/PanelCommon" />
+			<Button BaseName="[string]Stop" Content="[string]Continue" Enabled="[bool]True" Foreground="[SMColor]#ffff0000" Height="[float]57" Id="293183334c8a4fcdbd85b4debc97ce16" IncludeInCapture="[bool]False" IsMomentary="[bool]False" IsReadOnly="[bool]False" Label="[UIModel]366a755000784f33bc76986701c12615" Left="[float]980" Shape="[ButtonShape]Square" TabIndex="[int]3" Top="[float]708" Value="{DataItemBinding Id=3553ee1a1e2c442da56f7884fec1a4ad}" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]0" Id="366a755000784f33bc76986701c12615" LabelOwner="[UIModel]293183334c8a4fcdbd85b4debc97ce16" Left="[float]980" Text="[string]Continue" Top="[float]688" Visible="[bool]False" Width="[float]0" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="9692274fea084e85b330922f857313b9" Interval="[int]1" IsReadOnly="[bool]False" Label="[UIModel]6a5c6d5b0ad34070b2507fe132c81054" Left="[float]967" Maximum="[int]2147483647" Minimum="[int]-2147483648" TabIndex="[int]4" Top="[float]612" Value="{DataItemBinding Id=a85544c70c504a199841124a23a85f79}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="43d415ebd0bb4f098d9110057945dc99" Interval="[int]1" Label="[UIModel]9074ee7f2e4642e6849a5e5ee53ca2f4" Left="[float]967" Maximum="[int]2147483647" Minimum="[int]-2147483648" TabIndex="[int]5" Top="[float]660" Value="{DataItemBinding Id=6f6351080a44b7bb27d8705e4026706}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Beam Spectrum Data" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@e7664509d5e24918be7f3c39018f5d4f" Enabled="[bool]True" Height="[float]453" Id="1d1ae78c04614bbfbe5cafe2b8118ee9" Label="[UIModel]21c9670a56ad4401970d0e55faa8e0ea" Left="[float]967" TabIndex="[int]6" Top="[float]84" Value="{DataItemBinding Id=a5d3d1d9d4d742c08035c5d679493e78}" Width="[float]157" p4:ControlDefinitionChecksum="H4qJBzRFeR4YZguIMbUUCHi/L1DQmoJGp1r3kpKuDAc=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Beam Spectrum Data" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@67e941fa340745d499beb3a4994af49c" Enabled="[bool]True" Height="[float]453" Id="1d1ae78c04614bbfbe5cafe2b8118ee9" IsTabStop="[bool]True" Label="[UIModel]21c9670a56ad4401970d0e55faa8e0ea" LabelLinked="[bool]True" Left="[float]967" TabIndex="[int]6" Top="[float]84" Value="{DataItemBinding Id=a5d3d1d9d4d742c08035c5d679493e78}" Width="[float]157" p4:ControlDefinitionChecksum="IUgJUSX5IXbX+5UyzKJCG6EbGSCMA24P811b7xfGG2w=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
-					<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Beam Spectrum Data.gtype::ControlDefinition" />
+					<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum::Measuring Spot Spectrum Data.gtype::ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
-				<p4:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@9a50897e1d594b78aaeb52316391381a" Enabled="[bool]True" Height="[float]316" Id="a9f28ea953714ba6bc1205bdfa03525e" Label="[UIModel]acb407cf58af4b428faa2528dc2e692a" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Spectrum}" Width="[float]127">
-					<p4:ArrayViewer ArrayElement="[UIModel]5759487f9dfd49b08ba059ebf94cdd50" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Enabled="[bool]True" Height="[float]120" Id="afa084e30ec4cee8c536334d704f602" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]1a0f98099be04c488ab4ff61aaaa7af5" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Wavelength}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+				<p4:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@9a50897e1d594b78aaeb52316391381a" Height="[float]316" Id="538cd7984e1846cbb5835adee4b8e88a" Label="[UIModel]45b451af8b98465aabeeaf216e83dee4" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Spectrum}" Width="[float]127">
+					<p4:ArrayViewer ArrayElement="[UIModel]cb8571b56f734fdea0b9329d887ad75a" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="7caecda5d9024f53807b0b0f21df376a" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]f44c8aa8f624f11a2f792f52dff2853" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Wavelength}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
 						<p.DefaultElementValue>0x0</p.DefaultElementValue>
-						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="5759487f9dfd49b08ba059ebf94cdd50" IsReadOnly="[bool]True" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="cb8571b56f734fdea0b9329d887ad75a" IsReadOnly="[bool]True" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 					</p4:ArrayViewer>
-					<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="1a0f98099be04c488ab4ff61aaaa7af5" LabelOwner="[UIModel]afa084e30ec4cee8c536334d704f602" Left="[float]4" Text="[string]Wavelength" Top="[float]4" Width="[float]63" />
-					<p4:ArrayViewer ArrayElement="[UIModel]474b12b3e9644a38876ab0cc6aa9176b" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Enabled="[bool]True" Height="[float]120" Id="4562854c4b0a4cb3b20f831c37f815fe" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]40aa2c8d4fa74ca2b38daa15077c191d" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]1" Top="[float]178" Value="{ClusterBinding FieldName=Counts}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+					<p4:Label Height="[float]16" Id="f44c8aa8f624f11a2f792f52dff2853" LabelOwner="[UIModel]7caecda5d9024f53807b0b0f21df376a" Left="[float]4" Text="[string]Wavelength" Top="[float]4" Width="[float]63" />
+					<p4:ArrayViewer ArrayElement="[UIModel]664db5a2e2914c9cbf3d53f8be604c67" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="284d5ecd680e48309286487d1847b6a6" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]7fe7a946dea34ccda28d9c2f35a3f27b" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]1" Top="[float]178" Value="{ClusterBinding FieldName=Counts}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
 						<p.DefaultElementValue>0x0</p.DefaultElementValue>
-						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="474b12b3e9644a38876ab0cc6aa9176b" IsReadOnly="[bool]True" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="664db5a2e2914c9cbf3d53f8be604c67" IsReadOnly="[bool]True" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 					</p4:ArrayViewer>
-					<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="40aa2c8d4fa74ca2b38daa15077c191d" LabelOwner="[UIModel]4562854c4b0a4cb3b20f831c37f815fe" Left="[float]4" Text="[string]Counts" Top="[float]158" Width="[float]38" />
+					<p4:Label Height="[float]16" Id="7fe7a946dea34ccda28d9c2f35a3f27b" LabelOwner="[UIModel]284d5ecd680e48309286487d1847b6a6" Left="[float]4" Text="[string]Counts" Top="[float]158" Width="[float]38" />
 				</p4:Cluster>
-				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="acb407cf58af4b428faa2528dc2e692a" LabelOwner="[UIModel]a9f28ea953714ba6bc1205bdfa03525e" Left="[float]4" Text="[string]Beam Spectrum" Top="[float]4" Width="[float]84" />
-				<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="fefe5729981b49d29ddf0cb9ee032b1b" Interval="[double]1" IsReadOnly="[bool]True" Label="[UIModel]a2545de3b9154bea8be80c17cdc2ee12" Left="[float]9" Maximum="[double]Infinity" Minimum="[double]-Infinity" TabIndex="[int]1" Top="[float]363" Value="{ClusterBinding FieldName=Blue\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="a2545de3b9154bea8be80c17cdc2ee12" LabelOwner="[UIModel]fefe5729981b49d29ddf0cb9ee032b1b" Left="[float]9" Text="[string]Blue Motor Position (mm)" Top="[float]343" Width="[float]136" />
-				<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="2d2c25e3dcb4472e978451a80e980b37" Interval="[double]1" IsReadOnly="[bool]True" Label="[UIModel]fa2f7e7a9bba4789992478a3295fcc3e" Left="[float]7" Maximum="[double]Infinity" Minimum="[double]-Infinity" TabIndex="[int]2" Top="[float]417" Value="{ClusterBinding FieldName=Red\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="fa2f7e7a9bba4789992478a3295fcc3e" LabelOwner="[UIModel]2d2c25e3dcb4472e978451a80e980b37" Left="[float]7" Text="[string]Red Motor Position (mm)" Top="[float]397" Width="[float]134" />
+				<p4:Label Height="[float]16" Id="45b451af8b98465aabeeaf216e83dee4" LabelOwner="[UIModel]538cd7984e1846cbb5835adee4b8e88a" Left="[float]4" Text="[string]Beam Spectrum" Top="[float]4" Width="[float]84" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="daa5d514ead04675b6208a5260270289" IsReadOnly="[bool]True" Label="[UIModel]52f1e851f8a74b8db0f308729814e440" Left="[float]9" TabIndex="[int]1" Top="[float]363" Value="{ClusterBinding FieldName=Blue\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="52f1e851f8a74b8db0f308729814e440" LabelOwner="[UIModel]daa5d514ead04675b6208a5260270289" Left="[float]9" Text="[string]Blue Motor Position (mm)" Top="[float]343" Width="[float]136" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="e666c8c596064e8d96bcc3bbb43e4f82" IsReadOnly="[bool]True" Label="[UIModel]34d6b1b15c424f6390f6c2f8a9cc12af" Left="[float]7" TabIndex="[int]2" Top="[float]417" Value="{ClusterBinding FieldName=Red\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="34d6b1b15c424f6390f6c2f8a9cc12af" LabelOwner="[UIModel]e666c8c596064e8d96bcc3bbb43e4f82" Left="[float]7" Text="[string]Red Motor Position (mm)" Top="[float]397" Width="[float]134" />
 			</Cluster>
 			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Rainbow Sweep Types" Enabled="[bool]True" Height="[float]24" Id="19e47ab693ad43f88c4b6583bd9ebb02" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]93f247c66e124df481a59d279acb7b20" Left="[float]967" TabIndex="[int]7" Top="[float]564" Value="{DataItemBinding Id=2ca15f5ce7094f60bb393d2ee89dee56}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]140" p4:ControlDefinitionChecksum="aORrvFvlLWc+LjiIPkhUNbt66rrOpyRfkEQ+wIb6XUQ=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<p4:p.TypeDefinitionTargets>
@@ -266,9 +269,9 @@
 				<EnumSelectorInfo DisplayValue="[string]Blue Sweep Closing" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]Blue Sweep Opening" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
 			</EnumSelector>
-			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="6a5c6d5b0ad34070b2507fe132c81054" LabelOwner="[UIModel]9692274fea084e85b330922f857313b9" Left="[float]967" Text="[string]Graph Selector" Top="[float]592" Width="[float]79" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="6a5c6d5b0ad34070b2507fe132c81054" LabelOwner="[UIModel]9692274fea084e85b330922f857313b9" Left="[float]967" Text="[string]Graph (position) Selector" Top="[float]592" Width="[float]132" xmlns="http://www.ni.com/PanelCommon" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="9074ee7f2e4642e6849a5e5ee53ca2f4" LabelOwner="[UIModel]43d415ebd0bb4f098d9110057945dc99" Left="[float]967" Text="[string]Sweep Type Selector" Top="[float]640" Width="[float]109" xmlns="http://www.ni.com/PanelCommon" />
-			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="21c9670a56ad4401970d0e55faa8e0ea" LabelOwner="[UIModel]1d1ae78c04614bbfbe5cafe2b8118ee9" Left="[float]967" Text="[string]Beam Spectrum Information" Top="[float]64" Width="[float]149" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="21c9670a56ad4401970d0e55faa8e0ea" LabelOwner="[UIModel]1d1ae78c04614bbfbe5cafe2b8118ee9" Left="[float]967" Text="[string]Beam Spectrum Information" Top="[float]64" Width="[float]149" xmlns="http://www.ni.com/PanelCommon" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="93f247c66e124df481a59d279acb7b20" LabelOwner="[UIModel]19e47ab693ad43f88c4b6583bd9ebb02" Left="[float]967" Text="[string]Rainbow Sweep Type" Top="[float]544" Width="[float]112" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]259ce8bfcf664661ae6d9cf8bd7c59d9" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Enabled="[bool]True" FirstIndex="[ArrayElementIndex]0" Height="[float]558" Id="486276e3d4f5416b9aac63f0ebd028c9" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]344eb22296a844b9978f433eb70e9061" Left="[float]1156" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]8" Top="[float]20" Value="{DataItemBinding Id=1f6dc549e810473faf1b78ef3718be55}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]233" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>
@@ -277,11 +280,11 @@
 						<Field2>0</Field2>
 					</Cluster>
 				</p.DefaultElementValue>
-				<Cluster BaseName="[string]Full Beam Multispectral Data" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@8618a8ba29c44b0d98794472fad01910" Height="[float]546" Id="259ce8bfcf664661ae6d9cf8bd7c59d9" IsTabStop="[bool]True" Label="[UIModel]a17e273f31f64dd3bec770aca22925c7" LabelLinked="[bool]True" TabIndex="[int]0" Width="[float]201" p5:ControlDefinitionChecksum="Edp1E5MugSS4fbABH6BVxBAQ8+2YX6Cb/c4oJKvHm0U=" xmlns:p5="http://www.ni.com/PanelCommon">
+				<Cluster BaseName="[string]Full Beam Multispectral Data" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@2c1e25fe1a8c473ebeef4ce2758fca34" Height="[float]546" Id="259ce8bfcf664661ae6d9cf8bd7c59d9" IsTabStop="[bool]True" Label="[UIModel]a17e273f31f64dd3bec770aca22925c7" LabelLinked="[bool]True" TabIndex="[int]0" Width="[float]201" p5:ControlDefinitionChecksum="/3zmHKU299qRsisovsO8tgucYZ9nzpcebRwkrrpF6do=" xmlns:p5="http://www.ni.com/PanelCommon">
 					<p5:p.TypeDefinitionTargets>
-						<p5:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Full Beam Multispectral Data.gtype::ControlDefinition" />
+						<p5:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum::Full Measuring Spot Multispectral Data.gtype::ControlDefinition" />
 					</p5:p.TypeDefinitionTargets>
-					<p5:ArrayViewer ArrayElement="[UIModel]3f3fd23d3d0342d2a9773936ed46e21f" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]465" Id="63ee639562794052bdb5b2927429a821" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]10063701dd4449089d621f6b3fe3690c" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Spectrum\ Data\ Array}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]189">
+					<p5:ArrayViewer ArrayElement="[UIModel]91b1890dbe1b4fd8b5c282d5e765e484" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]465" Id="66ae63358a76416dbb669f73bdda460a" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]950b8378781e4a35a5c0670d45616ae8" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Spectrum\ Data\ Array}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]189">
 						<p.DefaultElementValue>
 							<Cluster>
 								<Field1>
@@ -294,32 +297,32 @@
 								<Field3>0x0</Field3>
 							</Cluster>
 						</p.DefaultElementValue>
-						<p5:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Beam Spectrum Data" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@e7664509d5e24918be7f3c39018f5d4f" Height="[float]453" Id="3f3fd23d3d0342d2a9773936ed46e21f" IsTabStop="[bool]True" Label="[UIModel]3eb140de96ae48468d393bbb4c4387c2" LabelLinked="[bool]True" TabIndex="[int]0" Width="[float]157" p5:ControlDefinitionChecksum="H4qJBzRFeR4YZguIMbUUCHi/L1DQmoJGp1r3kpKuDAc=">
+						<p5:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Beam Spectrum Data" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@67e941fa340745d499beb3a4994af49c" Height="[float]453" Id="91b1890dbe1b4fd8b5c282d5e765e484" IsTabStop="[bool]True" Label="[UIModel]2ceadd68a4044ad7a0760eee3c0cdb71" LabelLinked="[bool]True" TabIndex="[int]0" Width="[float]157" p5:ControlDefinitionChecksum="IUgJUSX5IXbX+5UyzKJCG6EbGSCMA24P811b7xfGG2w=">
 							<p5:p.TypeDefinitionTargets>
-								<p5:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Beam Spectrum Data.gtype::ControlDefinition" />
+								<p5:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum::Measuring Spot Spectrum Data.gtype::ControlDefinition" />
 							</p5:p.TypeDefinitionTargets>
-							<p5:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@9a50897e1d594b78aaeb52316391381a" Height="[float]316" Id="d7672b9d5a6a4b50a747de5b44537191" Label="[UIModel]ff264313c7d40de969c090e0aa70bbf" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Spectrum}" Width="[float]127">
-								<p5:ArrayViewer ArrayElement="[UIModel]713f8a121e0341f795952159e409c63b" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="b7dfd24c92274940b3acd0054cf4ff60" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]fd5403e251e94157b4006862c4b2e7cc" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Wavelength}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+							<p5:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@9a50897e1d594b78aaeb52316391381a" Height="[float]316" Id="785fec1c711e49eeae1afc82964b5c66" Label="[UIModel]5b06231a51194d34af067d557f4103d7" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Spectrum}" Width="[float]127">
+								<p5:ArrayViewer ArrayElement="[UIModel]cb31857e91534224ac7d988fbba1e0ed" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="e0b6f7f49fcd4b818484c5ea9c3e7be3" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]81eb6c52d73d4b5dbc6736de43b5449b" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Wavelength}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
 									<p.DefaultElementValue>0x0</p.DefaultElementValue>
-									<NumericText BaseName="[string]Numeric" Height="[float]24" Id="713f8a121e0341f795952159e409c63b" IsReadOnly="[bool]False" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+									<NumericText BaseName="[string]Numeric" Height="[float]24" Id="cb31857e91534224ac7d988fbba1e0ed" IsReadOnly="[bool]False" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 								</p5:ArrayViewer>
-								<p5:Label Height="[float]16" Id="fd5403e251e94157b4006862c4b2e7cc" LabelOwner="[UIModel]b7dfd24c92274940b3acd0054cf4ff60" Left="[float]4" Text="[string]Wavelength" Top="[float]4" Width="[float]63" />
-								<p5:ArrayViewer ArrayElement="[UIModel]557a021c0a24899b53147945e49ff36" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="4de2881aaedf4519b7e7b08d97e95f8a" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]7f43c3079858456d84260ecb323749fb" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]1" Top="[float]178" Value="{ClusterBinding FieldName=Counts}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+								<p5:Label Height="[float]16" Id="81eb6c52d73d4b5dbc6736de43b5449b" LabelOwner="[UIModel]e0b6f7f49fcd4b818484c5ea9c3e7be3" Left="[float]4" Text="[string]Wavelength" Top="[float]4" Width="[float]63" />
+								<p5:ArrayViewer ArrayElement="[UIModel]9b35ba3347744e54a26348d5e9457a8d" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="57d692f968284419953515f823317025" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]624e52f96f664549bd3b3d7057e5afb1" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]1" Top="[float]178" Value="{ClusterBinding FieldName=Counts}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
 									<p.DefaultElementValue>0x0</p.DefaultElementValue>
-									<NumericText BaseName="[string]Numeric" Height="[float]24" Id="557a021c0a24899b53147945e49ff36" IsReadOnly="[bool]False" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+									<NumericText BaseName="[string]Numeric" Height="[float]24" Id="9b35ba3347744e54a26348d5e9457a8d" IsReadOnly="[bool]False" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 								</p5:ArrayViewer>
-								<p5:Label Height="[float]16" Id="7f43c3079858456d84260ecb323749fb" LabelOwner="[UIModel]4de2881aaedf4519b7e7b08d97e95f8a" Left="[float]4" Text="[string]Counts" Top="[float]158" Width="[float]37" />
+								<p5:Label Height="[float]16" Id="624e52f96f664549bd3b3d7057e5afb1" LabelOwner="[UIModel]57d692f968284419953515f823317025" Left="[float]4" Text="[string]Counts" Top="[float]158" Width="[float]37" />
 							</p5:Cluster>
-							<p5:Label Height="[float]16" Id="ff264313c7d40de969c090e0aa70bbf" LabelOwner="[UIModel]d7672b9d5a6a4b50a747de5b44537191" Left="[float]4" Text="[string]Beam Spectrum" Top="[float]4" Width="[float]84" />
-							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="e02e491ece7a486585c932b8687281e6" IsReadOnly="[bool]False" Label="[UIModel]7cc08603e6c6455b94bad4297140e10a" Left="[float]9" TabIndex="[int]1" Top="[float]363" Value="{ClusterBinding FieldName=Blue\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<p5:Label Height="[float]16" Id="7cc08603e6c6455b94bad4297140e10a" LabelOwner="[UIModel]e02e491ece7a486585c932b8687281e6" Left="[float]9" Text="[string]Blue Motor Position (mm)" Top="[float]343" Width="[float]136" />
-							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="ac215d3184be40189622b14bd9d765ec" IsReadOnly="[bool]False" Label="[UIModel]3fc9c1f70a2043518fce186c37bc831d" Left="[float]7" TabIndex="[int]2" Top="[float]417" Value="{ClusterBinding FieldName=Red\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<p5:Label Height="[float]16" Id="3fc9c1f70a2043518fce186c37bc831d" LabelOwner="[UIModel]ac215d3184be40189622b14bd9d765ec" Left="[float]7" Text="[string]Red Motor Position (mm)" Top="[float]397" Width="[float]133" />
-							<p5:Label Height="[float]16" Id="3eb140de96ae48468d393bbb4c4387c2" IsVisualChild="[bool]False" LabelOwner="[UIModel]3f3fd23d3d0342d2a9773936ed46e21f" Left="[float]6" Text="[string]Cluster" Top="[float]-14" Width="[float]111" />
+							<p5:Label Height="[float]16" Id="5b06231a51194d34af067d557f4103d7" LabelOwner="[UIModel]785fec1c711e49eeae1afc82964b5c66" Left="[float]4" Text="[string]Beam Spectrum" Top="[float]4" Width="[float]84" />
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="faabbb4b25fd496a9c68039b6af421ea" IsReadOnly="[bool]False" Label="[UIModel]db9b02e5ade643bd8d63c657908be524" Left="[float]9" TabIndex="[int]1" Top="[float]363" Value="{ClusterBinding FieldName=Blue\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p5:Label Height="[float]16" Id="db9b02e5ade643bd8d63c657908be524" LabelOwner="[UIModel]faabbb4b25fd496a9c68039b6af421ea" Left="[float]9" Text="[string]Blue Motor Position (mm)" Top="[float]343" Width="[float]136" />
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="f35396d75e1844029be9a3e2b823178a" IsReadOnly="[bool]False" Label="[UIModel]a96ec93d0b2545e4998af3ed84093337" Left="[float]7" TabIndex="[int]2" Top="[float]417" Value="{ClusterBinding FieldName=Red\ Motor\ Position\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p5:Label Height="[float]16" Id="a96ec93d0b2545e4998af3ed84093337" LabelOwner="[UIModel]f35396d75e1844029be9a3e2b823178a" Left="[float]7" Text="[string]Red Motor Position (mm)" Top="[float]397" Width="[float]133" />
+							<p5:Label Height="[float]16" Id="2ceadd68a4044ad7a0760eee3c0cdb71" IsVisualChild="[bool]False" LabelOwner="[UIModel]91b1890dbe1b4fd8b5c282d5e765e484" Left="[float]6" Text="[string]Cluster" Top="[float]-14" Width="[float]111" />
 						</p5:Cluster>
 					</p5:ArrayViewer>
-					<p5:Label Height="[float]16" Id="10063701dd4449089d621f6b3fe3690c" LabelOwner="[UIModel]63ee639562794052bdb5b2927429a821" Left="[float]4" Text="[string]Beam Spectrum Data Array" Top="[float]4" Width="[float]143" />
-					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Rainbow Sweep Types" Height="[float]24" Id="49d8a36bb36a49389d7edb90fe2cc009" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]37119c46972742dbb87b531c66db6379" LabelLinked="[bool]True" Left="[float]3" TabIndex="[int]1" Top="[float]514" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Types}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]140" p5:ControlDefinitionChecksum="aORrvFvlLWc+LjiIPkhUNbt66rrOpyRfkEQ+wIb6XUQ=" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<p5:Label Height="[float]16" Id="950b8378781e4a35a5c0670d45616ae8" LabelOwner="[UIModel]66ae63358a76416dbb669f73bdda460a" Left="[float]4" Text="[string]Beam Spectrum Data Array" Top="[float]4" Width="[float]143" />
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Rainbow Sweep Types" Height="[float]24" Id="41d90a86da634e5e9be2b63c77cde2a1" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]9e96ecca9fcd49b88d105eeb833b5f72" LabelLinked="[bool]True" Left="[float]3" TabIndex="[int]1" Top="[float]514" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Types}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]140" p5:ControlDefinitionChecksum="aORrvFvlLWc+LjiIPkhUNbt66rrOpyRfkEQ+wIb6XUQ=" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 						<p5:p.TypeDefinitionTargets>
 							<p5:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Types.gtype::ControlDefinition" />
 						</p5:p.TypeDefinitionTargets>
@@ -328,7 +331,7 @@
 						<EnumSelectorInfo DisplayValue="[string]Blue Sweep Closing" Value="[ushort]2" ValueType="[Type]UInt16" />
 						<EnumSelectorInfo DisplayValue="[string]Blue Sweep Opening" Value="[ushort]3" ValueType="[Type]UInt16" />
 					</EnumSelector>
-					<p5:Label Height="[float]16" Id="37119c46972742dbb87b531c66db6379" LabelOwner="[UIModel]49d8a36bb36a49389d7edb90fe2cc009" Left="[float]3" Text="[string]Rainbow Sweep Types" Top="[float]494" Width="[float]117" />
+					<p5:Label Height="[float]16" Id="9e96ecca9fcd49b88d105eeb833b5f72" LabelOwner="[UIModel]41d90a86da634e5e9be2b63c77cde2a1" Left="[float]3" Text="[string]Rainbow Sweep Types" Top="[float]494" Width="[float]117" />
 					<p5:Label Height="[float]16" Id="a17e273f31f64dd3bec770aca22925c7" IsVisualChild="[bool]False" LabelOwner="[UIModel]259ce8bfcf664661ae6d9cf8bd7c59d9" Left="[float]6" Text="[string]Full Beam Multispectral Data" Top="[float]-14" Width="[float]151" />
 				</Cluster>
 			</ArrayViewer>
@@ -367,10 +370,10 @@
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Types.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="a85544c70c504a199841124a23a85f79" Name="Graph Selector" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="a85544c70c504a199841124a23a85f79" Name="Graph (position) Selector" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
-		<DataItem DataType="@e7664509d5e24918be7f3c39018f5d4f" Id="a5d3d1d9d4d742c08035c5d679493e78" Name="Beam Spectrum Information" xmlns="http://www.ni.com/MocCommon">
+		<DataItem DataType="@67e941fa340745d499beb3a4994af49c" Id="a5d3d1d9d4d742c08035c5d679493e78" Name="Beam Spectrum Information" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>
@@ -384,7 +387,7 @@
 				</Cluster>
 			</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Beam Spectrum Data.gtype" />
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum::Measuring Spot Spectrum Data.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="@4b64098a03e44c95a23c8aa21cf52c88" Id="105cf66803834a9799c6bafac578b34e" Name="Beam Spectrum" xmlns="http://www.ni.com/MocCommon">
@@ -395,26 +398,26 @@
 				</Cluster>
 			</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="3553ee1a1e2c442da56f7884fec1a4ad" IsLatched="True" Name="Abort" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="3553ee1a1e2c442da56f7884fec1a4ad" IsLatched="True" Name="Continue" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="@75c39efdc2db413985eacdef092180ab" Id="1f6dc549e810473faf1b78ef3718be55" Name="Full Beam Multispectral Data Array" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="@52094530b72d43c9b04d54cc7c57067a" Id="1f6dc549e810473faf1b78ef3718be55" Name="Full Beam Multispectral Data Array" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum::Full Beam Multispectral Data.gtype" />
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum::Full Measuring Spot Multispectral Data.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="8618a8ba29c44b0d98794472fad01910">
-			<Attributed AttributedType="@eb0e325f57654e3dace867664d83b9ec">
+		<p.TypeReference TypeId="2c1e25fe1a8c473ebeef4ce2758fca34">
+			<Attributed AttributedType="@a93432bcbb0844b699d058f8f43a5e72">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="7d573e58c4cc45eda986a0914983e68c">
-			<VariableArray DereferenceType="@e7664509d5e24918be7f3c39018f5d4f" />
+		<p.TypeReference TypeId="4701eb0aab6f47d693eae49f0f5f990c">
+			<VariableArray DereferenceType="@67e941fa340745d499beb3a4994af49c" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="8d8d7bab4880447083786326c799ad41">
 			<Attributed AttributedType="@cb26bcd9a16d4f339fa1c95b75463f9c">
@@ -423,10 +426,10 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="e7664509d5e24918be7f3c39018f5d4f">
-			<Attributed AttributedType="@94d6db99bf7e4656b82237342305d387">
+		<p.TypeReference TypeId="67e941fa340745d499beb3a4994af49c">
+			<Attributed AttributedType="@14f00d92da654089a44c7886ae159501">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::One Time Calibrations::Beam Spectrum" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::One Time Calibrations::Measuring Spot Spectrum" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
@@ -446,22 +449,22 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="75c39efdc2db413985eacdef092180ab">
-			<VariableArray DereferenceType="@8618a8ba29c44b0d98794472fad01910" />
+		<p.TypeReference TypeId="52094530b72d43c9b04d54cc7c57067a">
+			<VariableArray DereferenceType="@2c1e25fe1a8c473ebeef4ce2758fca34" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="eb0e325f57654e3dace867664d83b9ec">
-			<Typedef TypedefName="Full Beam Multispectral Data.gtype" UnderlyingType="@7df7b554a682471fa9d57f57cceb04a7" />
+		<p.TypeReference TypeId="a93432bcbb0844b699d058f8f43a5e72">
+			<Typedef TypedefName="Full Measuring Spot Multispectral Data.gtype" UnderlyingType="@bb310a5777674026b999d04d0abd5e82" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="cb26bcd9a16d4f339fa1c95b75463f9c">
 			<Typedef TypedefName="Rainbow Sweep Types.gtype" UnderlyingType="@ddd71e4459794372988289171abd37f2" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="94d6db99bf7e4656b82237342305d387">
-			<Typedef TypedefName="Beam Spectrum Data.gtype" UnderlyingType="@888fbab1df224bf4b6442aa7f3a39d62" />
+		<p.TypeReference TypeId="14f00d92da654089a44c7886ae159501">
+			<Typedef TypedefName="Measuring Spot Spectrum Data.gtype" UnderlyingType="@888fbab1df224bf4b6442aa7f3a39d62" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="7df7b554a682471fa9d57f57cceb04a7">
+		<p.TypeReference TypeId="bb310a5777674026b999d04d0abd5e82">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Beam Spectrum Data Array" DataType="@7d573e58c4cc45eda986a0914983e68c" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Beam Spectrum Data Array" DataType="@4701eb0aab6f47d693eae49f0f5f990c" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Types" DataType="@8d8d7bab4880447083786326c799ad41" />
 				</Members>
 			</Composite>
