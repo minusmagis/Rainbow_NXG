@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="683F7B26A6BF8BAB21F8787108D9EAFDF431A626BD73D6278062112F5C51F16AFEC6E19EAA35A3842012CE556F0D0798847B26F30EA9A9C3C07C1D70E465AA78" Timestamp="1D704984403B671" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@c6642207397f4b9ca07fd9f6db9ae1c7" Id="94c40ab1870b4a2581d87985aced8961" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="da8ae69e02b449d1904c9ff10e99e18c" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="9cbd2f2790c4a4aa199c206bcf707f7" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="5a18fea855c04c4088135413644c2c5a" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@c6642207397f4b9ca07fd9f6db9ae1c7" Id="dbd9dc1604fb4e0e9e850c1dbff72ce2" Name="KCube Motor Selector">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="a1135a2f7a674abe9b32499daed7ad87" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="861f9b7f50ae461d8c485c01470b488b" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="6319e58887544915a46f33fff20198e1" Name="KCube Motor Selector.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="9da62a888d1c4285a669ba6af6be46b0" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="61c01c93be742e59283df3cd7141731" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="595bfc8c8c86444ebf926063d6ca23da" IsTypeAheadEnabled="[bool]True" Label="[UIModel]bad3c559ee9e4d77bb50e0276d46cc60" Left="[float]447" TabIndex="[int]0" Top="[float]236" Value="{DataItemBinding Id=dbd9dc1604fb4e0e9e850c1dbff72ce2}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]110" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Red Motor" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Blue Motor" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="bad3c559ee9e4d77bb50e0276d46cc60" LabelOwner="[UIModel]595bfc8c8c86444ebf926063d6ca23da" Left="[float]447" Text="[string]KCube Motor Selector" Top="[float]216" Width="[float]117" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="c6642207397f4b9ca07fd9f6db9ae1c7">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Red Motor" />
+					<EnumerationMember Value="1" Name="Blue Motor" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
