@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="13F67D92E3EFC8C85B8885B4CF8BFDE3E58285B0FE11421D86870846EC3B8AB7CA62BC6A91579ED14018CCF20808B810D8909260DDF3A1A48A01AB946B9B259E" Timestamp="1D6E8154E8A2FF1" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="5180A293C05602435CBD7FD36C7101C66F3D61F322BBAF1C2C01AC6E0C22214D49A9FE7B5AD973A172E23A3700BCFE65FEE4DC6EA1BE2C48A6FF58F3D1E51749" Timestamp="1D7053C93C445F2" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,28 +7,30 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@64ed0b21f81444deb1f35fedeb8ef933" Id="48bd03090e0544ebac82c66320fa6d21" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@b3c63513bc5c46fb930c94342d5a792a" Id="48bd03090e0544ebac82c66320fa6d21" xmlns="http://www.ni.com/MocCommon">
 		<Icon Id="4e8737b1c1784a35becded414e598e93" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="be3d0eedb701485291d61e866d0573d1" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="56ee4e79b1d8464e8f5c22dfde13e89d" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@64ed0b21f81444deb1f35fedeb8ef933" Id="466ad0c4c8f1458c981104f3b6080e07" Name="Measuring Spot Sperctrum Calibration Parameters">
-			<p.DefaultValue>0x0_0x4024000000000000_0x3FB999999999999A_</p.DefaultValue>
+		<DataItem DataType="@b3c63513bc5c46fb930c94342d5a792a" Id="466ad0c4c8f1458c981104f3b6080e07" Name="Measuring Spot Sperctrum Calibration Parameters">
+			<p.DefaultValue>0x0_0x4024000000000000_0x3FB999999999999A_False_</p.DefaultValue>
 		</DataItem>
 	</TypeDefinition>
 	<EnvoyManagerFile Id="9d034149592a4078b51d1b783acd164e" xmlns="http://www.ni.com/PlatformFramework">
 		<EnvoyManagerRootEnvoy Id="8fbc83f89e8a4d3c857e74f5d0ab331f" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
-		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="8d24e747d5cd4085b4cd324e86726494" Name="Measuring Spot Spectrum Calibration Parameters.gtype" NameTracksFileName="True">
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="8d24e747d5cd4085b4cd324e86726494" Name="MSpot Spectrum Calibration Parameters.gtype" NameTracksFileName="True">
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="9e758798549a49d6872622ad529f4351" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="649c778af112411c96743fa096ba2f61" xmlns="http://www.ni.com/MocCommon">
-					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@64ed0b21f81444deb1f35fedeb8ef933" Height="[float]164" Id="c4e501dc032c4c808ae48ba82dc6c30d" Label="[UIModel]b6abc1151bc54124abe92a3915a53768" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=466ad0c4c8f1458c981104f3b6080e07}" Width="[float]140" xmlns="http://www.ni.com/PanelCommon">
-						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="6f255e645212461ab422faa368c7cc1d" Label="[UIModel]6f5667c7ee64494a9356fc213b81f9bb" Left="[float]4" Maximum="[double]50" Minimum="[double]0" Top="[float]24" Value="{ClusterBinding FieldName=Min\ Position\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b3c63513bc5c46fb930c94342d5a792a" Height="[float]205" Id="c4e501dc032c4c808ae48ba82dc6c30d" Label="[UIModel]b6abc1151bc54124abe92a3915a53768" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=466ad0c4c8f1458c981104f3b6080e07}" Width="[float]138" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="6f255e645212461ab422faa368c7cc1d" Label="[UIModel]6f5667c7ee64494a9356fc213b81f9bb" Left="[float]4" Maximum="[double]50" Minimum="[double]0" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Min\ Position\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="6f5667c7ee64494a9356fc213b81f9bb" LabelOwner="[UIModel]6f255e645212461ab422faa368c7cc1d" Left="[float]4" Text="[string]Min Position (mm)" Top="[float]4" Width="[float]97" />
-						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="7706f8e0b2f54777a93863b0a9fa3b0e" Label="[UIModel]f881ded478284400ad7fc9c4c1e46748" Left="[float]4" Maximum="[double]50" Minimum="[double]0" Top="[float]76" Value="{ClusterBinding FieldName=Max\ Position\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="7706f8e0b2f54777a93863b0a9fa3b0e" Label="[UIModel]f881ded478284400ad7fc9c4c1e46748" Left="[float]4" Maximum="[double]50" Minimum="[double]0" TabIndex="[int]2" Top="[float]76" Value="{ClusterBinding FieldName=Max\ Position\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="f881ded478284400ad7fc9c4c1e46748" LabelOwner="[UIModel]7706f8e0b2f54777a93863b0a9fa3b0e" Left="[float]4" Text="[string]Max Position (mm)" Top="[float]56" Width="[float]99" />
-						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="e2a2dbc9150746bb8969bf3d465bff18" Label="[UIModel]bcecaaf7ae8b4cb8a5f46404cf97c394" Left="[float]4" Maximum="[double]50" Minimum="[double]0.001" Top="[float]128" Value="{ClusterBinding FieldName=Position\ step\ size\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="e2a2dbc9150746bb8969bf3d465bff18" Label="[UIModel]bcecaaf7ae8b4cb8a5f46404cf97c394" Left="[float]4" Maximum="[double]50" Minimum="[double]0.001" TabIndex="[int]3" Top="[float]128" Value="{ClusterBinding FieldName=Position\ step\ size\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="bcecaaf7ae8b4cb8a5f46404cf97c394" LabelOwner="[UIModel]e2a2dbc9150746bb8969bf3d465bff18" Left="[float]4" Text="[string]Position step size (mm)" Top="[float]108" Width="[float]122" />
+						<LVCheckBox BaseName="[string]Checkbox" Content="[string]Off/On" Height="[float]16" Id="3d2eeba1329c4e1cba78631ad7157bcb" IsTabStop="[bool]True" Label="[UIModel]f271e5d7916841d7b5c495f08d943f8f" LabelLinked="[bool]True" Left="[float]5" TabIndex="[int]0" Top="[float]177" Value="{ClusterBinding FieldName=Manual\ Spectra?}" Width="[float]59" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="f271e5d7916841d7b5c495f08d943f8f" LabelOwner="[UIModel]3d2eeba1329c4e1cba78631ad7157bcb" Left="[float]5" Text="[string]Manual Spectra?" Top="[float]157" Width="[float]88" />
 					</Cluster>
 					<Label Height="[float]16" Id="b6abc1151bc54124abe92a3915a53768" LabelOwner="[UIModel]c4e501dc032c4c808ae48ba82dc6c30d" Left="[float]100" Text="[string]Measuring Spot Sperctrum Calibration Parameters" Top="[float]80" Width="[float]265" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
@@ -36,12 +38,13 @@
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="64ed0b21f81444deb1f35fedeb8ef933">
+		<p.TypeReference TypeId="b3c63513bc5c46fb930c94342d5a792a">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Min Position (mm)" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Max Position (mm)" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Position step size (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Manual Spectra?" DataType="Boolean" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
