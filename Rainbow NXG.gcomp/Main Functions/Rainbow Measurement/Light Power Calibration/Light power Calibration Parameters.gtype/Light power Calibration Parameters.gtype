@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="B7D41FF30D75D4CBB7FB6C8722E15B152489861D3B4D7E7B44D865FB7F351D98AE8A099A42D32104AA4C363FDB914ACC8F562E579CA1F2A21FD1D88688878BBF" Timestamp="1D7062B03CBF360" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@fe5e182112e543d4af275781a7dfe3ca" Id="57d414d335884f9c818f55fe94636e18" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="1a71cd90fd14f1d85949b8c03645667" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="ab17601fbfd6448bb7dd2f9b7ff56d3f" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="f3e285c2b4ea47f5b216ac2d34500dc6" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@fe5e182112e543d4af275781a7dfe3ca" Id="b5d9a69a46824e5e8c77d73e34d994a0" Name="Light power Calibration Parameters">
+			<p.DefaultValue>0x4008000000000000_</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="db3d17d536404aad8c5f177e2bfe7e2b" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="9f12c0e9013546858d9d255b3fa7a145" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="2733a0053df45b69c74740544f4e9bb" Name="Light power Calibration Parameters.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="a41d64f8de5c46abb1783d88b0fc9088" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="90901b7022ac4a56b848a2e55b0fb374" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@fe5e182112e543d4af275781a7dfe3ca" Height="[float]60" Id="4ab33c542a76470f81346730261f7b92" Label="[UIModel]3d1e25ee6ff943afa4425e249ca9f6ea" Left="[float]367" TabIndex="[int]0" Top="[float]142" Value="{DataItemBinding Id=b5d9a69a46824e5e8c77d73e34d994a0}" Width="[float]132" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="4a6a8ee913c49f899a0f0c4356c96c1" Label="[UIModel]fffb3cb1d5a46f0939a7c284fbeff70" Left="[float]4" Maximum="[double]1000" Minimum="[double]1" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Powermeter\ Averages}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="fffb3cb1d5a46f0939a7c284fbeff70" LabelOwner="[UIModel]4a6a8ee913c49f899a0f0c4356c96c1" Left="[float]4" Text="[string]Powermeter Averages" Top="[float]4" Width="[float]116" />
+					</Cluster>
+					<Label Height="[float]16" Id="3d1e25ee6ff943afa4425e249ca9f6ea" LabelOwner="[UIModel]4ab33c542a76470f81346730261f7b92" Left="[float]367" Text="[string]Light power Calibration Parameters" Top="[float]122" Width="[float]186" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="fe5e182112e543d4af275781a7dfe3ca">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Powermeter Averages" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
