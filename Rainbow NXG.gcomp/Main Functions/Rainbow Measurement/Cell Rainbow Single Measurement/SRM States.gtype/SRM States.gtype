@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="76EF6388795D4488A1BD93B7797F96028CEC7F386F6B33E58800094930976E13C50619F7690E97A19D1D145D6A6DCF8CD3CA27A51693EEE5609AC6365172703E" Timestamp="1D70619E2A056D6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6827FFCB7101D65FC594EBC5B3B6A4C38ED44ACAD028C756034AE245C6287A6C179FF5FC38F3A5C5EDCACBC18D76ED21A07609F940E866C9599735A1E4458AEE" Timestamp="1D70BA9F26FFFEE" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,14 +7,14 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@8d85ee21e49a405da6a8150226d3fa0c" Id="eaf8363b5d814cf9b7981859b175ee21" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@7748e69b6097471583b28ebf8f52b031" Id="eaf8363b5d814cf9b7981859b175ee21" xmlns="http://www.ni.com/MocCommon">
 		<Icon Id="1887cb6deb424fa68f8f8186bb25a4e5" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="af354211a9fd466eb5dec86c3b7732b4" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="c289ab8800a241b593581ad1eedc5d7a" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@8d85ee21e49a405da6a8150226d3fa0c" Id="4d8139525329437192ce5cd8aa014332" Name="Single Rainbow Measurement States">
-			<p.DefaultValue>1</p.DefaultValue>
+		<DataItem DataType="@7748e69b6097471583b28ebf8f52b031" Id="4d8139525329437192ce5cd8aa014332" Name="Single Rainbow Measurement States">
+			<p.DefaultValue>2</p.DefaultValue>
 		</DataItem>
 	</TypeDefinition>
 	<EnvoyManagerFile Id="d8699f860e2a440d8c6dd62c3d6a83bc" xmlns="http://www.ni.com/PlatformFramework">
@@ -24,31 +24,33 @@
 				<ControlDefinition DefaultDirection="Control" Id="c44a4203db22425f828059a718318e47" xmlns="http://www.ni.com/MocCommon">
 					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="87baba758ca41a4989b65770fa2b726" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2a70eece0f9c4ddda97c421415f0b5e1" Left="[float]486" TabIndex="[int]0" Top="[float]226" Value="{DataItemBinding Id=4d8139525329437192ce5cd8aa014332}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]177" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 						<EnumSelectorInfo DisplayValue="[string]Start App" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Detect Instruments" DisplayValueOverride="[string]" Id="34" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Initialize Instruments" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Rainbow Sweep" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Close Coms" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Load Measurement" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]5" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Save Graphs" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]6" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Stop App" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]7" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Load Light Power Calibration" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Detect Instruments" DisplayValueOverride="[string]" Id="34" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Initialize Instruments" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Rainbow Sweep" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Close Coms" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]5" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Load Measurement" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]6" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Save Graphs" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]7" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Stop App" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]8" ValueType="[Type]UInt16" />
 					</EnumSelector>
-					<Label Height="[float]16" Id="2a70eece0f9c4ddda97c421415f0b5e1" LabelOwner="[UIModel]87baba758ca41a4989b65770fa2b726" Left="[float]486" Text="[string]Single Rainbow Measurement States" Top="[float]206" Width="[float]193" xmlns="http://www.ni.com/PanelCommon" />
+					<Label Height="[float]16" Id="2a70eece0f9c4ddda97c421415f0b5e1" LabelOwner="[UIModel]87baba758ca41a4989b65770fa2b726" Left="[float]486" Text="[string]Single Rainbow Measurement States" Top="[float]206" Width="[float]192" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="8d85ee21e49a405da6a8150226d3fa0c">
+		<p.TypeReference TypeId="7748e69b6097471583b28ebf8f52b031">
 			<Enumeration>
 				<Members>
 					<EnumerationMember Value="0" Name="Start App" />
-					<EnumerationMember Value="1" Name="Detect Instruments" />
-					<EnumerationMember Value="2" Name="Initialize Instruments" />
-					<EnumerationMember Value="3" Name="Rainbow Sweep" />
-					<EnumerationMember Value="4" Name="Close Coms" />
-					<EnumerationMember Value="5" Name="Load Measurement" />
-					<EnumerationMember Value="6" Name="Save Graphs" />
-					<EnumerationMember Value="7" Name="Stop App" />
+					<EnumerationMember Value="1" Name="Load Light Power Calibration" />
+					<EnumerationMember Value="2" Name="Detect Instruments" />
+					<EnumerationMember Value="3" Name="Initialize Instruments" />
+					<EnumerationMember Value="4" Name="Rainbow Sweep" />
+					<EnumerationMember Value="5" Name="Close Coms" />
+					<EnumerationMember Value="6" Name="Load Measurement" />
+					<EnumerationMember Value="7" Name="Save Graphs" />
+					<EnumerationMember Value="8" Name="Stop App" />
 				</Members>
 				<DataType>UInt16</DataType>
 			</Enumeration>
