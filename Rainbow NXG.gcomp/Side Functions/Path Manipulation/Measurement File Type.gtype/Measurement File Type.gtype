@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="A6CB71CBF1069D7E32D47BD98FFF7FAFF99909F1D4FC723F4BA554AD1D34328E34B98029A03DBB16FC1AF56E4F579E4E294FB78D737CCE14C0EF39E9FB3FB9DF" Timestamp="1D6E82245459559" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="0EE1F096F979385EB1F616E8DC0C18BC067585858AF14A5144D7C476AB38B8429B19F05E5E7210E3F581F5F550F8DFB0C778710D9F5826FFB04A2BDFEE1922CF" Timestamp="1D710324F4C09D8" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,13 +7,13 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@e0d2042ee14c4cd38d549171d9fe4725" Id="39ed7d66405c49baacc4507127f3de51" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@446b8177ba334e419819cbfdde10c05c" Id="39ed7d66405c49baacc4507127f3de51" xmlns="http://www.ni.com/MocCommon">
 		<Icon Id="256cf773fd1542d2905c13280dc1b338" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="5fb00112fa834973bd073a24de0a91d6" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="ed05d22890c4ca588ee266dcd075755" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@e0d2042ee14c4cd38d549171d9fe4725" Id="467c265ce1c34f03a26f1add44565937" Name="Measurement File Type">
+		<DataItem DataType="@446b8177ba334e419819cbfdde10c05c" Id="467c265ce1c34f03a26f1add44565937" Name="Measurement File Type">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 	</TypeDefinition>
@@ -23,13 +23,15 @@
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="a52ba00f45b41ac9f4e591ece02452f" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="5fc81bda124a422f918ba2e09f77f270" xmlns="http://www.ni.com/MocCommon">
 					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Path type" Height="[float]24" Id="9147437e75f848338813174a9aad8212" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]cd0a6656e87c49c8a2a21cfa1ff9890d" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=467c265ce1c34f03a26f1add44565937}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]225" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-						<EnumSelectorInfo DisplayValue="[string]Single Cell Rainbow" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Multiple Cell Rainbow" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Light Calibration Power" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Light Calibration Spectral Density" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Light Calibration Power Density" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Light Calibration Dividing Wavelength Spectrum" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]5" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Dividing Wavelength To Motor Position" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]6" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Single Cell Rainbow Raw" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Single Cell Rainbow Refined" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Multiple Cell Rainbow Raw" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Multiple Cell Rainbow Refined" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Light Calibration Power" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Light Calibration Spectral Density" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]5" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Light Calibration Power Density" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]6" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Light Calibration Dividing Wavelength Spectrum" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]7" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Dividing Wavelength To Motor Position" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]8" ValueType="[Type]UInt16" />
 					</EnumSelector>
 					<Label Height="[float]16" Id="cd0a6656e87c49c8a2a21cfa1ff9890d" LabelOwner="[UIModel]9147437e75f848338813174a9aad8212" Left="[float]100" Text="[string]Measurement File Type" Top="[float]80" Width="[float]122" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
@@ -37,16 +39,18 @@
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="e0d2042ee14c4cd38d549171d9fe4725">
+		<p.TypeReference TypeId="446b8177ba334e419819cbfdde10c05c">
 			<Enumeration>
 				<Members>
-					<EnumerationMember Value="0" Name="Single Cell Rainbow" />
-					<EnumerationMember Value="1" Name="Multiple Cell Rainbow" />
-					<EnumerationMember Value="2" Name="Light Calibration Power" />
-					<EnumerationMember Value="3" Name="Light Calibration Spectral Density" />
-					<EnumerationMember Value="4" Name="Light Calibration Power Density" />
-					<EnumerationMember Value="5" Name="Light Calibration Dividing Wavelength Spectrum" />
-					<EnumerationMember Value="6" Name="Dividing Wavelength To Motor Position" />
+					<EnumerationMember Value="0" Name="Single Cell Rainbow Raw" />
+					<EnumerationMember Value="1" Name="Single Cell Rainbow Refined" />
+					<EnumerationMember Value="2" Name="Multiple Cell Rainbow Raw" />
+					<EnumerationMember Value="3" Name="Multiple Cell Rainbow Refined" />
+					<EnumerationMember Value="4" Name="Light Calibration Power" />
+					<EnumerationMember Value="5" Name="Light Calibration Spectral Density" />
+					<EnumerationMember Value="6" Name="Light Calibration Power Density" />
+					<EnumerationMember Value="7" Name="Light Calibration Dividing Wavelength Spectrum" />
+					<EnumerationMember Value="8" Name="Dividing Wavelength To Motor Position" />
 				</Members>
 				<DataType>UInt16</DataType>
 			</Enumeration>

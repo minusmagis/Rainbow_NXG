@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="2D10BD3BF59CE75A8CFA41DE7CA07831AA76C21E91D36AEFDE65B2910150AC8108A72BC0B943063A3D2C37B9E66AAC457D3D0B67F343899601028D916654877F" Timestamp="1D710286C45C556" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@6c267aa991bf4469a71517fd60d5dc36" Id="ba0a4df7656a4cbc8ca8cd3dd07b9f7c" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="13b21019bd94c00841ac794213d6044" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="81db3d73b2a24e9d8a54960fb973d112" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="c17f67600a8240b1b68cd7d37daf8c2f" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@6c267aa991bf4469a71517fd60d5dc36" Id="635d5c7eb29840aa90ff64e69576c33b" Name="IV Raw Single measurement Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>null</Field2>
+					<Field3>null</Field3>
+					<Field4>0x0</Field4>
+					<Field5>0x0</Field5>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="4ddd3c93933c41909f29367e3f3804af" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="e3b05962ac894b8991e616ed116fe5a3" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="6c81e0abe3bc497fb356303035240e14" Name="IV Single Measurement.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="48ee26938bb5496f805b9b732793075c" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="9b182436b20140f4b1d30f6b91adb89c" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6c267aa991bf4469a71517fd60d5dc36" Height="[float]303" Id="819bebce717d4cdda00fe8107df67819" Label="[UIModel]ba36288ec57142aea1bd0752ff926a97" Left="[float]273" TabIndex="[int]0" Top="[float]106" Value="{DataItemBinding Id=635d5c7eb29840aa90ff64e69576c33b}" Width="[float]122" xmlns="http://www.ni.com/PanelCommon">
+						<ArrayViewer ArrayElement="[UIModel]434369eac01b4fbeb189dc62d2125cf9" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="e59a282a86c0456389a941209c653513" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]f59f9bfc4aa740e3b21de19b393d83d3" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Voltage}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+							<p.DefaultElementValue>0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="434369eac01b4fbeb189dc62d2125cf9" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="f59f9bfc4aa740e3b21de19b393d83d3" LabelOwner="[UIModel]e59a282a86c0456389a941209c653513" Left="[float]4" Text="[string]Voltage" Top="[float]4" Width="[float]40" />
+						<ArrayViewer ArrayElement="[UIModel]426ca4bff06444696742985d2472cbf" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="d28cf755000a4280a46d14c83df6ae8e" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]43e62f76ff9e490b8f41e28a300a3243" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]88" Value="{ClusterBinding FieldName=Current}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+							<p.DefaultElementValue>0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="426ca4bff06444696742985d2472cbf" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="43e62f76ff9e490b8f41e28a300a3243" LabelOwner="[UIModel]d28cf755000a4280a46d14c83df6ae8e" Left="[float]4" Text="[string]Current" Top="[float]68" Width="[float]40" />
+						<ArrayViewer ArrayElement="[UIModel]f7d8c6ecbc1b404482f36dd42680ebec" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="12c49947bf8d42b080daade818078750" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]6127b4eb108b4457be1d51a05bb8cbdc" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]152" Value="{ClusterBinding FieldName=Current\ Density}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+							<p.DefaultElementValue>0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="f7d8c6ecbc1b404482f36dd42680ebec" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="6127b4eb108b4457be1d51a05bb8cbdc" LabelOwner="[UIModel]12c49947bf8d42b080daade818078750" Left="[float]4" Text="[string]Current Density" Top="[float]132" Width="[float]82" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="b9491e9650264ec080b7f4f23dae6436" IsReadOnly="[bool]False" Label="[UIModel]70e83a9622ce420eb3e8f3fd38bc0d21" Left="[float]4" TabIndex="[int]3" Top="[float]216" Value="{ClusterBinding FieldName=Dividing\ Wavelength}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="b897307f94f745fda7e8162b1f9d9b59" IsReadOnly="[bool]False" Label="[UIModel]51ee3804cb1c41c79830cfe899187830" Left="[float]4" TabIndex="[int]4" Top="[float]263" Value="{ClusterBinding FieldName=Light\ Power}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="70e83a9622ce420eb3e8f3fd38bc0d21" LabelOwner="[UIModel]b9491e9650264ec080b7f4f23dae6436" Left="[float]4" Text="[string]Dividing Wavelength" Top="[float]196" Width="[float]110" />
+						<Label Height="[float]16" Id="51ee3804cb1c41c79830cfe899187830" LabelOwner="[UIModel]b897307f94f745fda7e8162b1f9d9b59" Left="[float]4" Text="[string]Light Power" Top="[float]243" Width="[float]62" />
+					</Cluster>
+					<Label Height="[float]16" Id="ba36288ec57142aea1bd0752ff926a97" LabelOwner="[UIModel]819bebce717d4cdda00fe8107df67819" Left="[float]273" Text="[string]IV Raw Single measurement Cluster" Top="[float]86" Width="[float]188" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="6c267aa991bf4469a71517fd60d5dc36">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Voltage" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Density" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Dividing Wavelength" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Light Power" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
