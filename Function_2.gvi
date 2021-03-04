@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2CE981FEE3795B0F3A976C9F5607EEF817240D04E50C9FF49FCE12BD952834EA198BE8AF1405D2B08735295B8604CB0283435F05E434D5DF3AD1FD4C25C115C1" Timestamp="1D710683C1D6163" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="FEACC1CCAC1610C925C74AA83C38D88B1A0B0C84D8AC964CD77BA76562AC8C73F5B02B510DD34A0C65E323AE8F2D6FA08C53D16B9F85622EF726F0D22CEB42A6" Timestamp="1D711128A39FEA7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -62,7 +62,7 @@
 				<ArrayBehavior ElementType="Double" IndexEditorWidth="42" VisibleColumns="9" VisibleRows="9">
 					<p.DefaultElementValue>0x0</p.DefaultElementValue>
 				</ArrayBehavior>
-				<Literal Bounds="342 2 40 15" DataType="Double" Id="6116b7f942004f6c9dc29d5bc6bdcd53">
+				<Literal Bounds="132 2 40 15" DataType="Double" Id="6116b7f942004f6c9dc29d5bc6bdcd53">
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 				</Literal>
 			</ArrayLiteral>
@@ -70,39 +70,174 @@
 				<p.Text>Graph</p.Text>
 			</NodeLabel>
 			<Wire Id="6dc31db6994b47cfa3836c6371709522" Joints="N(118b3f8c23654067845ca3edf4074e92:Out)|(515,-90) h(10) v(20) N(d71e09c25d2541f4870b67225bd9ce23:Value)|(693,-70)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ForLoop Bounds="903 -102 332 351" DiagramId="eed7e1fa602848dbb240d6b176b78291" Id="47e5d135cc104d9087294918a4a1cba4">
+			<ForLoop Bounds="903 -102 426 351" DiagramId="eed7e1fa602848dbb240d6b176b78291" Id="47e5d135cc104d9087294918a4a1cba4">
 				<LoopIteration Bounds="5 320 15 15" Id="d207ac00c58749c6aa732f022d33c9cb" />
-				<PropertyNode Bounds="95 115 97 60" Id="7abe59d160c54bdc98247d97dfcfd340" InstanceDataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`Double[,]`Double[,]" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+				<PropertyNode Bounds="95 115 97 90" Id="7abe59d160c54bdc98247d97dfcfd340" InstanceDataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`Double[,]`Double[,]" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 					<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 						<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
 					</p.TypeDefinitionTargets>
 					<PropertyItemTerminal DataType=":DotNet:NationalInstruments.Controls.Runtime.PlotProxy, NationalInstruments.Controls.Runtime" Hotspot="97 25" Id="c0t0v" Path="Plot" PathElementMemberKinds="Property" Usage="Optional" />
 					<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 40" Id="c1t0v" Path="ActivePlot" PathElementMemberKinds="Property" Usage="Required" />
+					<PropertyItemTerminal DataType=":DotNet:NationalInstruments.PanelRuntime.TextProxy, NationalInstruments.PanelRuntime" Hotspot="97 55" Id="c2t0v" Path="Label" PathElementMemberKinds="Property" Usage="Optional" />
+					<PropertyItemTerminal DataType=":DotNet:NationalInstruments.PanelRuntime.TextProxy, NationalInstruments.PanelRuntime" Hotspot="97 70" Id="c3t0v" Path="Label" PathElementMemberKinds="Property" Usage="Optional" />
 				</PropertyNode>
 				<Wire Id="81fe24b065e146e293cd191b8d5a4c81" Joints="N(c37795b3c80242b3b7a8b4af4ac85966:i0)|(6,120) N(7abe59d160c54bdc98247d97dfcfd340:instance in)|(95,120)" xmlns="http://www.ni.com/PlatformFramework" />
-				<PropertyNode Bounds="222 135 78 45" Id="59b6baefc9c422dac385f8e1dbe9cf1" InstanceDataType=":DotNet:NationalInstruments.Controls.Runtime.PlotProxy, NationalInstruments.Controls.Runtime" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+				<PropertyNode Bounds="225 110 78 75" Id="59b6baefc9c422dac385f8e1dbe9cf1" InstanceDataType=":DotNet:NationalInstruments.Controls.Runtime.PlotProxy, NationalInstruments.Controls.Runtime" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 					<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 						<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
 					</p.TypeDefinitionTargets>
 					<PropertyItemTerminal Action="Write" DataType="String" Hotspot="0 25" Id="c0t0v" Path="Name" PathElementMemberKinds="Property" Usage="Required" />
+					<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 40" Id="c1t0v" Path="Visible" PathElementMemberKinds="Property" Usage="Required" />
+					<PropertyItemTerminal DataType="Int32" Hotspot="78 55" Id="c2t0v" Path="XAxisIndex" PathElementMemberKinds="Property" Usage="Optional" />
 				</PropertyNode>
-				<Wire Id="f582f2da4e94469fb7f80ec029ab33bc" Joints="N(7abe59d160c54bdc98247d97dfcfd340:c0t0v)|(192,140) N(59b6baefc9c422dac385f8e1dbe9cf1:instance in)|(222,140)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="f582f2da4e94469fb7f80ec029ab33bc" Joints="N(7abe59d160c54bdc98247d97dfcfd340:c0t0v)|(192,140) h(18) v(-25) N(59b6baefc9c422dac385f8e1dbe9cf1:instance in)|(225,115)" xmlns="http://www.ni.com/PlatformFramework" />
 				<FormatIntoString Bounds="155 275 40 40" Id="b492549469e6436fb6cbc057e93ee81b" Terminals="outString=6d43d581f8cc436e829ab3f52fa299cc, c0t0v=83982f24d4294a5aa984909f0940b762" />
-				<Wire Id="6d43d581f8cc436e829ab3f52fa299cc" Joints="N(b492549469e6436fb6cbc057e93ee81b:outString)|(195,280) h(11) v(-120) N(59b6baefc9c422dac385f8e1dbe9cf1:c0t0v)|(222,160)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="83982f24d4294a5aa984909f0940b762" Joints="N(87f246e24d634f17a8ce14bef1986304:x+1)|(65,310) h(14) v(-15) h(5) B(3) v(-140) N(7abe59d160c54bdc98247d97dfcfd340:c1t0v)|(95,155) B(3) v(15) N(b492549469e6436fb6cbc057e93ee81b:c0t0v)|(155,310)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="6d43d581f8cc436e829ab3f52fa299cc" Joints="N(b492549469e6436fb6cbc057e93ee81b:outString)|(195,280) h(11) v(-20) B(2) h(5) v(-10) N(e093204b5cae4e9b9459536ea2be7895:c1t0v)|(225,250) B(2) v(-125) N(59b6baefc9c422dac385f8e1dbe9cf1:c0t0v)|(225,135)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="83982f24d4294a5aa984909f0940b762" Joints="N(87f246e24d634f17a8ce14bef1986304:x+1)|(65,310) h(14) v(-15) h(5) B(3) v(-70) B(4) N(2659503ea9d438694706a09adcc058d:x)|(140,225) B(4) v(-70) N(7abe59d160c54bdc98247d97dfcfd340:c1t0v)|(95,155) B(3) v(15) N(b492549469e6436fb6cbc057e93ee81b:c0t0v)|(155,310)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Increment Bounds="35 295 30 30" Id="87f246e24d634f17a8ce14bef1986304" />
 				<Wire Id="8c6fdaa394ba48529a80432a4ab12866" Joints="N(d207ac00c58749c6aa732f022d33c9cb:Output)|(20,325) h(15) N(87f246e24d634f17a8ce14bef1986304:x)|(35,310)" xmlns="http://www.ni.com/PlatformFramework" />
+				<IsGreater Bounds="140 220 30 30" Id="2659503ea9d438694706a09adcc058d" />
+				<Literal Bounds="85 205 40 15" DataType="Int32" Id="b47f6671e94845d6ab758f930f19d92e" Label="40d7a09ca9444b03a95afcdbab281936" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>5</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+				</Literal>
+				<NodeLabel AttachedTo="b47f6671e94845d6ab758f930f19d92e" Bounds="85 187 30 15" Id="40d7a09ca9444b03a95afcdbab281936" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>y</p.Text>
+				</NodeLabel>
+				<Wire Id="1604a574ab02441a9193c6b021459b61" Joints="N(b47f6671e94845d6ab758f930f19d92e:Out)|(125,210) h(5) v(30) N(2659503ea9d438694706a09adcc058d:y)|(140,240)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="b2685a7cb56645338aa284b917469b11" Joints="N(2659503ea9d438694706a09adcc058d:x &gt; y?)|(170,235) h(41) B(1) N(e093204b5cae4e9b9459536ea2be7895:c0t0v)|(225,235) B(1) v(-85) N(59b6baefc9c422dac385f8e1dbe9cf1:c1t0v)|(225,150)" xmlns="http://www.ni.com/PlatformFramework" />
+				<PropertyNode Bounds="225 210 81 60" Id="e093204b5cae4e9b9459536ea2be7895" InstanceDataType=":DotNet:NationalInstruments.PanelRuntime.TextProxy, NationalInstruments.PanelRuntime" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+					<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+						<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
+					</p.TypeDefinitionTargets>
+					<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 25" Id="c0t0v" Path="Visible" PathElementMemberKinds="Property" Usage="Required" />
+					<PropertyItemTerminal Action="Write" DataType="String" Hotspot="0 40" Id="c1t0v" Path="Text" PathElementMemberKinds="Property" Usage="Required" />
+				</PropertyNode>
+				<Wire Id="b2da8ce746824034a603da97ef3a079d" Joints="N(7abe59d160c54bdc98247d97dfcfd340:c2t0v)|(192,170) h(28) v(45) N(e093204b5cae4e9b9459536ea2be7895:instance in)|(225,215)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="333 160 40 15" DataItem="ce0905b914664d46a445ecd33471cbc8" Id="29247bbc18524075a84d5f2a5c8a2ec0" Label="707cf4006efc4ce387d8a111f0eac2e6" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="29247bbc18524075a84d5f2a5c8a2ec0" Bounds="378 160 31 14" Id="707cf4006efc4ce387d8a111f0eac2e6" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>XAxis</p.Text>
+				</NodeLabel>
+				<Wire Id="d07b1480f7584ed8a30e22adb8656307" Joints="N(59b6baefc9c422dac385f8e1dbe9cf1:c2t0v)|(303,165) N(29247bbc18524075a84d5f2a5c8a2ec0:Value)|(336,165)" xmlns="http://www.ni.com/PlatformFramework" />
 				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="c7cd1cc293d4412db782302ce39c9bfd" Terminals="47e5d135cc104d9087294918a4a1cba4=2c685fbebbb14ff98967133f49709c30, eed7e1fa602848dbb240d6b176b78291" />
 				<LoopTunnel Bounds="-5 117 13 10" Docking="Left" Id="c37795b3c80242b3b7a8b4af4ac85966" Terminals="o0=12d6649d23e8451cabc0320617098641, i0=81fe24b065e146e293cd191b8d5a4c81" />
 			</ForLoop>
 			<Literal Bounds="834 -100 40 15" DataType="Int32" Id="ca85609bf7a14175b5917d0003544dd8" Label="ac394648d41244bc98fbd77e84acb65a" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>5</p.Data>
+				<p.Data>10</p.Data>
 				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
 			</Literal>
 			<NodeLabel AttachedTo="ca85609bf7a14175b5917d0003544dd8" Bounds="834 -118 30 15" Id="ac394648d41244bc98fbd77e84acb65a" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>loop count</p.Text>
 			</NodeLabel>
 			<Wire Id="2c685fbebbb14ff98967133f49709c30" Joints="N(ca85609bf7a14175b5917d0003544dd8:Out)|(874,-95) N(c7cd1cc293d4412db782302ce39c9bfd:47e5d135cc104d9087294918a4a1cba4)|(904,-95)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="665 195 40 15" DataItem="5cd13da34f10451883e23d3441ff01f7" Id="721a5f97c9f649afaa6e49f22ba4eb41" Label="53025fa3e0c54f99b0a51b7f6aa5baf7" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="721a5f97c9f649afaa6e49f22ba4eb41" Bounds="710 195 78 14" Id="53025fa3e0c54f99b0a51b7f6aa5baf7" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Ring Constant</p.Text>
+			</NodeLabel>
+			<Wire Id="4e36cb840e04afabd2461fa36371c36" Joints="N(3d8f69d301d4c79b825ac73a095257f:3b0ba859e8f843fc9f0353b0a756b2e2)|(609,200) N(721a5f97c9f649afaa6e49f22ba4eb41:Value)|(668,200)" xmlns="http://www.ni.com/PlatformFramework" />
+			<CaseStructure Bounds="310 135 295 170" Default="cf3b7c7bd8d342418242bed63d47644d" Id="3b0ba859e8f843fc9f0353b0a756b2e2" Selected="cf3b7c7bd8d342418242bed63d47644d" UserSelectorBounds="104 0 88 17">
+				<CaseStructure.Case Bounds="5 5 285 160" Id="cf3b7c7bd8d342418242bed63d47644d" Pattern="False">
+					<Literal Bounds="185 70 55 15" DataType="Int32" Id="43236c2960b047f0bcc7ca4ad9fb201d" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>4</p.Data>
+						<RingBehavior ValueFormatter="LV:G6">
+							<RingConstantInfo DisplayValue="Red Sweep Closind" ValueType="Int32">
+								<p.Value>0</p.Value>
+							</RingConstantInfo>
+							<RingConstantInfo DisplayValue="ARA" ValueType="Int32">
+								<p.Value>1</p.Value>
+							</RingConstantInfo>
+							<RingConstantInfo DisplayValue="RRR" ValueType="Int32">
+								<p.Value>2</p.Value>
+							</RingConstantInfo>
+							<RingConstantInfo DisplayValue="RRRAAA" ValueType="Int32">
+								<p.Value>3</p.Value>
+							</RingConstantInfo>
+							<RingConstantInfo DisplayValue="tata" ValueType="Int32">
+								<p.Value>4</p.Value>
+							</RingConstantInfo>
+						</RingBehavior>
+					</Literal>
+					<Wire Id="c66619879974410eb191736534b378e3" Joints="N(43236c2960b047f0bcc7ca4ad9fb201d:Out)|(240,75) h(36) v(-15) N(3d8f69d301d4c79b825ac73a095257f:cf3b7c7bd8d342418242bed63d47644d)|(281,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 285 160" Id="6a62ab1cb6c497e9acc87fc407f3445" Pattern="True">
+					<Literal Bounds="110 55 135 15" DataType="Int32" Id="8d4b8050162e48f09222bd03c638ee4d" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>0</p.Data>
+						<RingBehavior ValueFormatter="LV:G6">
+							<RingConstantInfo DisplayValue="Red Sweep Closind" ValueType="Int32">
+								<p.Value>0</p.Value>
+							</RingConstantInfo>
+							<RingConstantInfo DisplayValue="ARA" ValueType="Int32">
+								<p.Value>1</p.Value>
+							</RingConstantInfo>
+							<RingConstantInfo DisplayValue="RRR" ValueType="Int32">
+								<p.Value>2</p.Value>
+							</RingConstantInfo>
+							<RingConstantInfo DisplayValue="RRRAAA" ValueType="Int32">
+								<p.Value>3</p.Value>
+							</RingConstantInfo>
+						</RingBehavior>
+					</Literal>
+					<Wire Id="855f4382023949218d3d1344f03c42ee" Joints="N(8d4b8050162e48f09222bd03c638ee4d:Out)|(245,60) N(3d8f69d301d4c79b825ac73a095257f:6a62ab1cb6c497e9acc87fc407f3445)|(281,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="62543880cc0e49f095bd3fc0a593ea18" Terminals="3b0ba859e8f843fc9f0353b0a756b2e2=e728233ab24c43f29ffb1a3044e81729, cf3b7c7bd8d342418242bed63d47644d, 6a62ab1cb6c497e9acc87fc407f3445" />
+				<CaseStructure.Tunnel Bounds="286 60 13 10" Docking="Right" Id="3d8f69d301d4c79b825ac73a095257f" Terminals="3b0ba859e8f843fc9f0353b0a756b2e2=4e36cb840e04afabd2461fa36371c36, cf3b7c7bd8d342418242bed63d47644d=c66619879974410eb191736534b378e3, 6a62ab1cb6c497e9acc87fc407f3445=855f4382023949218d3d1344f03c42ee" />
+			</CaseStructure>
+			<DataAccessor Bounds="236 175 40 15" DataItem="83e81c7a56614a7d88735ca9819af802" Id="43b9aa0a4a34843a34a278d7192d749" Label="b0145579c660487e9fd4e63ef318ee80" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="43b9aa0a4a34843a34a278d7192d749" Bounds="187 175 44 14" Id="b0145579c660487e9fd4e63ef318ee80" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>selector</p.Text>
+			</NodeLabel>
+			<Wire Id="e728233ab24c43f29ffb1a3044e81729" Joints="N(43b9aa0a4a34843a34a278d7192d749:Value)|(276,180) N(62543880cc0e49f095bd3fc0a593ea18:3b0ba859e8f843fc9f0353b0a756b2e2)|(306,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="415 380 40 15" DataItem="92a5aaef0dcc4c16b91536ae9d1e4850" Id="1bceb3da86ce468e9e794b1c0f16da03" Label="3a7a25eeb4c94bed9465810feb54417a" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="1bceb3da86ce468e9e794b1c0f16da03" Bounds="346 380 64 14" Id="3a7a25eeb4c94bed9465810feb54417a" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Combo Box</p.Text>
+			</NodeLabel>
+			<ControlReference Bounds="635 410 95 20" Id="3f1cd13dafb640849368c57947cc44e9" SourceControl="b2da3f62c9ec402ab0cfd4960f794c22" />
+			<PropertyNode Bounds="760 410 119 45" Id="9c97dd54dcae42c0a749b2067b2a12de" InstanceDataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+					<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
+				</p.TypeDefinitionTargets>
+				<PropertyItemTerminal Action="Write" DataType="String[]" Hotspot="0 25" Id="c0t0v" Path="Items" PathElementMemberKinds="Property" Usage="Required" />
+			</PropertyNode>
+			<Wire Id="e09c6b2657d741bfa05443a6a967bee3" Joints="N(3f1cd13dafb640849368c57947cc44e9:control reference)|(730,415) N(9c97dd54dcae42c0a749b2067b2a12de:instance in)|(760,415)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ArrayLiteral Bounds="636 430 94 37" DataType="String[]" Id="38a43f3f3051442bbaa6f3d05b2c9797" Label="d4d624d527d749049a22b846f4a04a9c" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="2" IsBinary="True" Compression="GZip">
+						<BinaryElements>H4sIAAAAAAAEAGNgZGBg+A8EIBoEBEAMJiBmAxEsJanFJWzMQBYriGXEDQADI5zTMAAAAA==</BinaryElements>
+					</Array>
+				</p.Data>
+				<ArrayBehavior ElementType="String" IndexEditorWidth="42" VisibleRows="2">
+					<p.DefaultElementValue>""</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="48 19 40 15" DataType="String" Id="d9d40d05c92e4035b5eec3f48056c291">
+					<StringBehavior TextDisplayMode="Default" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="38a43f3f3051442bbaa6f3d05b2c9797" Bounds="636 412 30 15" Id="d4d624d527d749049a22b846f4a04a9c" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Items</p.Text>
+			</NodeLabel>
+			<Wire Id="9eb30c3c241643b4af311290c7ec4e48" Joints="N(38a43f3f3051442bbaa6f3d05b2c9797:Out)|(730,435) N(9c97dd54dcae42c0a749b2067b2a12de:c0t0v)|(760,435)" xmlns="http://www.ni.com/PlatformFramework" />
+			<PropertyNode Bounds="909 410 119 45" Id="7c53cd8f6d5749218234e64a551f23a9" InstanceDataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+					<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
+				</p.TypeDefinitionTargets>
+				<PropertyItemTerminal DataType="String" Hotspot="119 25" Id="c0t0v" Path="Value" PathElementMemberKinds="Property" Usage="Optional" />
+			</PropertyNode>
+			<Wire Id="1f0ce81c15004c15b2c260ae5cf267fb" Joints="N(9c97dd54dcae42c0a749b2067b2a12de:instance out)|(879,415) N(7c53cd8f6d5749218234e64a551f23a9:instance in)|(909,415)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="cc01cf519a944c8794a2f58cef1b9c5f" Joints="N(7c53cd8f6d5749218234e64a551f23a9:c0t0v)|(1028,435) N(67a83c14695941e685d7d13e8cbf8601:Value)|(1098,435)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1095 430 40 15" DataItem="d7c7975511e84d18915bb068b7a58016" Id="67a83c14695941e685d7d13e8cbf8601" Label="2195be0e6a0948448173bc8b5777c739" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="67a83c14695941e685d7d13e8cbf8601" Bounds="1140 430 31 14" Id="2195be0e6a0948448173bc8b5777c739" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Value</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
 		<NativeFrontPanel Background="[SMSolidColorBrush]#ffffffff" Height="[float]1600" HtmlPanel="[bool]False" Id="777e0cf8028843eab316c08f02f45c54" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="b9e1ccbb8f7442748c6b12adc05390fb" />
@@ -117,7 +252,7 @@
 						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 					</RangeLabeledDivisions>
 				</Axis>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="e45541763d5943d7a1b834240a39027d" Label="[string]1" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="e45541763d5943d7a1b834240a39027d" Label="[string]1" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Collapsed">
 					<PlotRenderer Id="783d8a203e444a95a33f88cb00e56a4a" LineStroke="[SMSolidColorBrush]#ff962428" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="bb5b24ff301645d789ce152ed0cf08ab" LineStroke="[SMSolidColorBrush]#ff962428" PointShape="[PointShape]Ellipse" />
@@ -128,34 +263,34 @@
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="9813d1ab34d5438e8243d104d42d5c44" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" />
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="78cf970526654fd68b21709af9620dfe" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="7710d596b46a40c5a4a004fcb7b2666e" LineStroke="[SMSolidColorBrush]#ff91685c" PointShape="[PointShape]Cross" />
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="d2dde2f232d640a38a5848add999bfc0" Label="[string]2" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="d2dde2f232d640a38a5848add999bfc0" Label="[string]2" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Collapsed">
 					<PlotRenderer Id="c478ffaea7d04b83b01928a1fa92d44a" LineStroke="[SMSolidColorBrush]#ff008ee4" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="90003cf585249be8a7f53e9970e18b6" Label="[string]3" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="90003cf585249be8a7f53e9970e18b6" Label="[string]3" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Collapsed">
 					<PlotRenderer Id="1c43564095c3432d8a24645247e2f80f" LineStroke="[SMSolidColorBrush]#ffe2b683" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="767dd54b863347cea31d5528087b9bbf" Label="[string]4" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="767dd54b863347cea31d5528087b9bbf" Label="[string]4" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Collapsed">
 					<PlotRenderer Id="b6008ba3349449518d2968f9e8a5ad80" LineStroke="[SMSolidColorBrush]#ffb7ac1f" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="f928de7177024b0a83285eab4a78b9a9" Label="[string]5" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="f928de7177024b0a83285eab4a78b9a9" Label="[string]5" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Collapsed">
 					<PlotRenderer Id="175416fec9d94439995c8a4ce36f50b2" LineStroke="[SMSolidColorBrush]#ffaedcef" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="bacb37ca8c3b45bd887e52bcbec9bd4f" Label="[string]Plot 6" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="bacb37ca8c3b45bd887e52bcbec9bd4f" Label="[string]6" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
 					<PlotRenderer Id="269a09ef4b4f4db68d0d1aa7a4304483" LineStroke="[SMSolidColorBrush]#ffa08bb0" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="cbef172d6784e2e986981c789818b72" Label="[string]Plot 7" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="cbef172d6784e2e986981c789818b72" Label="[string]7" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
 					<PlotRenderer Id="55d89f11508940978dabb0c3fa3c3731" LineStroke="[SMSolidColorBrush]#ff7f7f7f" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="be1664d9caf84e7c9bf5a2668377207e" Label="[string]Plot 8" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="be1664d9caf84e7c9bf5a2668377207e" Label="[string]8" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
 					<PlotRenderer Id="f3416889c0a04f82978468baef1f313d" LineStroke="[SMSolidColorBrush]#ff91685c" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="d5a648283d86406ebda174a7d809ffd9" Label="[string]Plot 9" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="d5a648283d86406ebda174a7d809ffd9" Label="[string]9" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
 					<PlotRenderer Id="3b91928efa8b4470828068e90850fc20" LineStroke="[SMSolidColorBrush]#ff962428" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="b19dedf0fde04b3585622804d33a8a65" Label="[string]Plot 10" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="b19dedf0fde04b3585622804d33a8a65" Label="[string]10" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
 					<PlotRenderer Id="3db148181f74db08d327a9ca06b139b" LineStroke="[SMSolidColorBrush]#ff008ee4" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
-				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="453ce8b0b85342c78093b47754f0ee55" Label="[string]Plot 11" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
+				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="453ce8b0b85342c78093b47754f0ee55" Label="[string]1" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Collapsed">
 					<PlotRenderer Id="acf9c22de6214292b643ea9b552b81f9" LineStroke="[SMSolidColorBrush]#ffe2b683" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
 				</Plot>
 				<Plot HorizontalScale="[UIModel]5eed55f061ae40b09e38955c9f0a5e98" Id="490bb4184f1c41eabe140ab3b493ef24" Label="[string]Plot 12" VerticalScale="[UIModel]8cc2da5abd104d3c88ddaa153538734d" Visibility="[SMVisibility]Visible">
@@ -188,11 +323,44 @@
 			<ScaleLegend Enabled="[bool]True" Graph="[UIModel]7b5a10eaaf21441681ab2ac429b40fce" Height="[float]54" Id="5a99c755960f46f388dff94b170c22d2" Left="[float]1011" Top="[float]1062" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<GraphTools Enabled="[bool]True" Graph="[UIModel]7b5a10eaaf21441681ab2ac429b40fce" Id="4786975be41645ebb2be325d0f8a401e" Left="[float]617" Top="[float]1171" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="34505913526e4946adff4e7919b45daa" LabelOwner="[UIModel]7b5a10eaaf21441681ab2ac429b40fce" Left="[float]612" Text="[string]Graph" Top="[float]848" Width="[float]33" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="e0efa48c365c410891687ff84a1f3e72" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]66906aa6f1954e689d67f0e003a52a6d" Left="[float]1108" Maximum="[int]2147483647" Minimum="[int]-2147483648" TabIndex="[int]1" Top="[float]868" Value="{DataItemBinding Id=ce0905b914664d46a445ecd33471cbc8}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="66906aa6f1954e689d67f0e003a52a6d" LabelOwner="[UIModel]e0efa48c365c410891687ff84a1f3e72" Left="[float]1108" Text="[string]XAxis" Top="[float]848" Width="[float]29" xmlns="http://www.ni.com/PanelCommon" />
+			<RingSelector AllowNonSequentialValues="[bool]False" AllowUndefinedValueEntry="[bool]False" BaseName="[string]Ring" Enabled="[bool]True" Height="[float]24" Id="67c639501f7f4323a9e05b805dc7dd40" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]75f60762525c4381b3f73f517ac66fc1" Left="[float]660" TabIndex="[int]2" Top="[float]1268" Value="{DataItemBinding Id=5cd13da34f10451883e23d3441ff01f7}" ValueType="[Type]Int32" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]152" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<RingSelectorInfo DisplayValue="[string]Red Sweep Closind" IsEnabled="[bool]True" Value="[int]0" ValueType="[Type]Int32" />
+				<RingSelectorInfo DisplayValue="[string]ARA" IsEnabled="[bool]True" Value="[int]1" ValueType="[Type]Int32" />
+				<RingSelectorInfo DisplayValue="[string]RRR" IsEnabled="[bool]True" Value="[int]2" ValueType="[Type]Int32" />
+				<RingSelectorInfo DisplayValue="[string]RRRAAA" IsEnabled="[bool]True" Value="[int]3" ValueType="[Type]Int32" />
+			</RingSelector>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="75f60762525c4381b3f73f517ac66fc1" LabelOwner="[UIModel]67c639501f7f4323a9e05b805dc7dd40" Left="[float]660" Text="[string]Ring Constant" Top="[float]1248" Width="[float]75" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]72" Id="b7640faaecd84524aaf4c335a3eccca2" IsReadOnly="[bool]False" Label="[UIModel]9c31564cc98340edbedc73468504ec30" Left="[float]548" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]3" Top="[float]1236" TrueContent="[string]On" Value="{DataItemBinding Id=83e81c7a56614a7d88735ca9819af802}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="9c31564cc98340edbedc73468504ec30" LabelOwner="[UIModel]b7640faaecd84524aaf4c335a3eccca2" Left="[float]548" Text="[string]selector" Top="[float]1216" Width="[float]42" xmlns="http://www.ni.com/PanelCommon" />
+			<ComboboxSelector AllowDifferentText="[bool]False" AllowUndefinedValueEntry="[bool]True" BaseName="[string]Combo Box" Enabled="[bool]True" Height="[float]24" Id="b2da3f62c9ec402ab0cfd4960f794c22" IsTypeAheadEnabled="[bool]True" Label="[UIModel]fb90e2455da34f4797a021561554084a" Left="[float]660" TabIndex="[int]4" Top="[float]1332" Value="{DataItemBinding Id=92a5aaef0dcc4c16b91536ae9d1e4850}" ValueType="[Type]String" VisualMode="[SelectorVisualMode]ComboBoxStyle" Width="[float]152" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<ComboboxSelectorInfo DisplayValue="[string]test" IsEnabled="[bool]True" Value="[string]test" ValueType="[Type]String" />
+				<ComboboxSelectorInfo DisplayValue="[string]test2" IsEnabled="[bool]True" Value="[string]test2" ValueType="[Type]String" />
+			</ComboboxSelector>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="fb90e2455da34f4797a021561554084a" LabelOwner="[UIModel]b2da3f62c9ec402ab0cfd4960f794c22" Left="[float]660" Text="[string]Combo Box" Top="[float]1312" Width="[float]62" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="8f15cc3cfe7d4cfa86158312188451ee" IsReadOnly="[bool]True" Label="[UIModel]e1fff4b42c99475db5fdea1cf46f6664" Left="[float]852" TabIndex="[int]5" Text="{DataItemBinding Id=d7c7975511e84d18915bb068b7a58016}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]1332" TypeToReplace="[bool]False" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="e1fff4b42c99475db5fdea1cf46f6664" LabelOwner="[UIModel]8f15cc3cfe7d4cfa86158312188451ee" Left="[float]852" Text="[string]Value" Top="[float]1312" Width="[float]29" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="Double[,]" Id="2827e3d8edd34c78b0c98206de465992" Name="Graph" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Array Lengths="0,0" />
 			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="ce0905b914664d46a445ecd33471cbc8" Name="XAxis" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="5cd13da34f10451883e23d3441ff01f7" Name="Ring Constant" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="83e81c7a56614a7d88735ca9819af802" Name="selector" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="String" Id="92a5aaef0dcc4c16b91536ae9d1e4850" Name="Combo Box" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="d7c7975511e84d18915bb068b7a58016" Name="Value" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>Test</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 </SourceFile>

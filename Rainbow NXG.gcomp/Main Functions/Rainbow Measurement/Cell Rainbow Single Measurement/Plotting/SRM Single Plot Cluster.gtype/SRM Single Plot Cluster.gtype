@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="477861BF693258076E460ECF4578768977F749297B02A35DE68A36A4BFF2446E1DA8BA263431C15234FACB401374FE35129B5EF7E07ACC5CA2524C85E01E511C" Timestamp="1D710E440B9B0C7" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@750c796bc832469085e0311168cad8f6" Id="53fb2daf75ac428f89e240bca196f145" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="3d2bc5b31fcb42eca6acfc5ff23e5b21" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3cdbdd779bfa4ad5a3e2da8afb3e3df4" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="da36c27e1728429f8933a9400e75b0e1" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@750c796bc832469085e0311168cad8f6" Id="ce44740733c4b5baf0b5e2fdda91060" Name="Single Plot Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>null</Field2>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="863345f3c4004384a32cb718429c2f83" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="c53c811466544a029a858ccc230ad77f" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="6a9b797066a54ee283f5142abd9489b2" Name="SRM Single Plot Cluster.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="cc397a9154f448e0aad3dd904ea9d9c6" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="1e6908982e1c4b8b811b5b102774bf8b" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@750c796bc832469085e0311168cad8f6" Height="[float]132" Id="3dc2d2304d764579819d2ea7a4029af3" Label="[UIModel]e003af28d0124d13ade47c0a5c65546c" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=ce44740733c4b5baf0b5e2fdda91060}" Width="[float]117" xmlns="http://www.ni.com/PanelCommon">
+						<ArrayViewer ArrayElement="[UIModel]350cef5a676247bb9c4c6a09d87ece02" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="fa427089ab9c4175bbf06c100c35444e" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]988933d27cb042a2a5b6ef69ce170129" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Voltage}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+							<p.DefaultElementValue>0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="350cef5a676247bb9c4c6a09d87ece02" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="988933d27cb042a2a5b6ef69ce170129" LabelOwner="[UIModel]fa427089ab9c4175bbf06c100c35444e" Left="[float]4" Text="[string]Voltage" Top="[float]4" Width="[float]40" />
+						<ArrayViewer ArrayElement="[UIModel]e827a123d4904052b44fa72087c82a32" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="be6a8af4ac2343d1be5e93f716ab16a2" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]e0e9c0bb70b44cf2b815878d57831987" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]1" Top="[float]88" Value="{ClusterBinding FieldName=Current\ Density}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+							<p.DefaultElementValue>0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="e827a123d4904052b44fa72087c82a32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="e0e9c0bb70b44cf2b815878d57831987" LabelOwner="[UIModel]be6a8af4ac2343d1be5e93f716ab16a2" Left="[float]4" Text="[string]Current Density" Top="[float]68" Width="[float]82" />
+					</Cluster>
+					<Label Height="[float]16" Id="e003af28d0124d13ade47c0a5c65546c" LabelOwner="[UIModel]3dc2d2304d764579819d2ea7a4029af3" Left="[float]100" Text="[string]Single Plot Cluster" Top="[float]80" Width="[float]97" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="750c796bc832469085e0311168cad8f6">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Voltage" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Density" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

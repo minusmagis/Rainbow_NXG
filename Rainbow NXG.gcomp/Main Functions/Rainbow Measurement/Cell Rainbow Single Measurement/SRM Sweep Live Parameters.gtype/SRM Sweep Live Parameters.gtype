@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F8C9EC4F5B2289A00508EF4DE722A939C5C3667A879F188DC9C72AFC81EB969AA9B6567DB145BCBE29AD1E9753BF87DD8D77312A2C01297E67EE4D95922DC396" Timestamp="1D7101ED0BF311C" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="64347766F4C2C86F8393EBB39E30CA444E30CB6E1526F51F9D4FACF7160B701DF442C03436C03AD9906128FB9680D962AFA80B1B874A64467BDD9547BAD23C9F" Timestamp="1D710EBB25F2EF1" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,7 +7,7 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@4c372b133a194cf3b6494de9d479bd88" Id="12431fce31004713b2b0b255a0468c9d" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@aa5e2248d99d46e58cf78280e664b102" Id="12431fce31004713b2b0b255a0468c9d" xmlns="http://www.ni.com/MocCommon">
 		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Types.gtype" />
 		</p.TypeDefinitionTargets>
@@ -16,8 +16,8 @@
 				<IconTemplate Height="[float]40" Id="b05c8747cc6748a9bb7e233142df1725" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@4c372b133a194cf3b6494de9d479bd88" Id="8eb3febab7dc4c33af17f84b9a41f99f" Name="SRM Sweep Live Parameters">
-			<p.DefaultValue>0x0_0_</p.DefaultValue>
+		<DataItem DataType="@aa5e2248d99d46e58cf78280e664b102" Id="8eb3febab7dc4c33af17f84b9a41f99f" Name="SRM Sweep Live Parameters">
+			<p.DefaultValue>0x0_0_True_</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Types.gtype" />
 			</p.TypeDefinitionTargets>
@@ -28,7 +28,7 @@
 		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="1a58cd018fb14b049bf9e84b43641ed2" Name="SRM Sweep Live Parameters.gtype" NameTracksFileName="True">
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="fd2fc014e9ac4e15aa7a66bb337c66d0" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Indicator" Id="340b736632b84e209cf76944cce0c6a4" xmlns="http://www.ni.com/MocCommon">
-					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4c372b133a194cf3b6494de9d479bd88" Height="[float]105" Id="56dd58226cbe4abcaf1ee25eab4b1fd6" Label="[UIModel]8961714f349c4817856de8dd84df8059" Left="[float]359" TabIndex="[int]0" Top="[float]78" Value="{DataItemBinding Id=8eb3febab7dc4c33af17f84b9a41f99f}" Width="[float]156" xmlns="http://www.ni.com/PanelCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@aa5e2248d99d46e58cf78280e664b102" Height="[float]105" Id="56dd58226cbe4abcaf1ee25eab4b1fd6" Label="[UIModel]8961714f349c4817856de8dd84df8059" Left="[float]359" TabIndex="[int]0" Top="[float]78" Value="{DataItemBinding Id=8eb3febab7dc4c33af17f84b9a41f99f}" Width="[float]156" xmlns="http://www.ni.com/PanelCommon">
 						<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="80f983f65fdc441e884b13c782cc4cd6" Interval="[double]0.1" IsReadOnly="[bool]True" Label="[UIModel]14061d31d9a240f2b668ce24af3531d2" Left="[float]5" Maximum="[double]3000" Minimum="[double]0.1" RadixBase="[RadixBase]0" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]0" Top="[float]20" Value="{ClusterBinding FieldName=Current\ Wavelength\ (nm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]56" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 							<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">Current set Wavelength on the Monchromator</p.InfoTipDescription>
 						</NumericText>
@@ -43,6 +43,8 @@
 							<EnumSelectorInfo DisplayValue="[string]Blue Sweep Opening" Value="[ushort]3" ValueType="[Type]UInt16" />
 						</EnumSelector>
 						<Label Height="[float]16" Id="4bcdd8262ba4f04b5b25a73569ed8f9" LabelOwner="[UIModel]8cf2b9c6762c41b589e455c4e5aeae45" Left="[float]3" Text="[string]Rainbow Sweep Types" Top="[float]49" Width="[float]117" />
+						<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]9" Id="c2579a3108d2456ba790616811fab736" IsReadOnly="[bool]True" Label="[UIModel]ae89fd150245968edbe995ce3c4172" Left="[float]103" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]29" TrueContent="[string]On" Value="{ClusterBinding FieldName=Finished\ Measurement?}" Width="[float]9" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]0" Id="ae89fd150245968edbe995ce3c4172" LabelOwner="[UIModel]c2579a3108d2456ba790616811fab736" Left="[float]103" Text="[string]Finished Measurement?" Top="[float]9" Visible="[bool]False" Width="[float]0" />
 					</Cluster>
 					<Label Height="[float]16" Id="8961714f349c4817856de8dd84df8059" LabelOwner="[UIModel]56dd58226cbe4abcaf1ee25eab4b1fd6" Left="[float]359" Text="[string]SRM Sweep Live Parameters" Top="[float]58" Width="[float]148" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
@@ -50,11 +52,12 @@
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="4c372b133a194cf3b6494de9d479bd88">
+		<p.TypeReference TypeId="aa5e2248d99d46e58cf78280e664b102">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Current Wavelength (nm)" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Types" DataType="@8d8d7bab4880447083786326c799ad41" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Finished Measurement?" DataType="Boolean" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
