@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="8D2E0C067CA8486A258CB15F99EA43BBE2C32AE7200E42DE833BEFEF569FD119E946C771B9D0165C88BF1145CA62E3985E7CF4C55AA37454CB73673B592D9743" Timestamp="1D721A1B3B0F419" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="65E1DDA3898460768C5C56ABCD2355CB011D2A4372B5CE8FC09F03539F4FFD82CDEC82C576EFBED3A35F3F8A0AE5BC38CA4E2F69978D57BDCF7A2A807F25248C" Timestamp="1D721A206957E27" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -37,7 +37,7 @@
 		<DiagramUnplacedItems Id="5b95579a11f84266acde362981c67606" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="64f8028d4a8d409ca1106bc7093b435a" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
 			<Button BaseName="[string]TextButton" Content="[string]Set Position" Height="[float]40" Id="1d86367a5514b8eaa186d8f795b8b8f" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]ecf3b2f18d7848ebb13fa41abdc13737" Left="[float]100" Shape="[ButtonShape]Square" TabIndex="[int]0" Top="[float]164" Value="{DataItemBinding Id=ec099089674048ae8ddf9ae9b70ff627}" Width="[float]88" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Id="ecf3b2f18d7848ebb13fa41abdc13737" LabelOwner="[UIModel]1d86367a5514b8eaa186d8f795b8b8f" Left="[float]100" Text="[string]Set Position" Top="[float]144" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Id="ecf3b2f18d7848ebb13fa41abdc13737" LabelOwner="[UIModel]1d86367a5514b8eaa186d8f795b8b8f" Left="[float]100" Text="[string]Activate XZ Stage" Top="[float]144" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
 			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Instrument Coms Info" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@a9cce9e4c3334ff3a345d533140c70d4" Enabled="[bool]True" Height="[float]606" Id="13508889c0124863ba430fbcfccacce3" IsTabStop="[bool]True" Label="[UIModel]58c0772ce7d949b5b0247ca177d329ce" LabelLinked="[bool]True" Left="[float]156" TabIndex="[int]1" Top="[float]20" Value="{DataItemBinding Id=b8e46b8e7eb43019a5c0c14391e075b}" Width="[float]332" p4:ControlDefinitionChecksum="xrMSDgIj9kejeVz/poCzgcbWMlqiW4k2VrS7ZtwrypY=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Instrument Coms Info.gtype::ControlDefinition" />
@@ -240,8 +240,8 @@
 			<DataAccessor Bounds="435 195 40 15" DataItem="ec099089674048ae8ddf9ae9b70ff627" Id="ac472f268db24838b5031abe8e53273e" Label="86bb071b0fb5448184b70219fd7703ca" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="ac472f268db24838b5031abe8e53273e" Bounds="364 195 66 14" Id="86bb071b0fb5448184b70219fd7703ca" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Set Position</p.Text>
+			<NodeLabel AttachedTo="ac472f268db24838b5031abe8e53273e" Bounds="330 195 100 14" Id="86bb071b0fb5448184b70219fd7703ca" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Activate XZ Stage</p.Text>
 			</NodeLabel>
 			<Wire Id="65c85fe467fa48308453e0eaa01bf612" Joints="N(ac472f268db24838b5031abe8e53273e:Value)|(475,200) N(a8f4d0d6992a42fcac4d3f3efad72d16:ed94988f66fd45ec869b0c124fc49b2e)|(491,200)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="1030 245 40 15" DataItem="cfad728665f642cc99a4ad52088e8ec6" Id="67d785a0646249978987870ade337c9e" Label="c830aad205cc4b10a6c7e87d1f58bca3" xmlns="http://www.ni.com/MocCommon">
@@ -312,7 +312,7 @@
 				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Boolean" Id="ec099089674048ae8ddf9ae9b70ff627" Name="Set Position" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Boolean" Id="ec099089674048ae8ddf9ae9b70ff627" Name="Activate XZ Stage" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 		<DataItem CallDirection="Input" CallIndex="3" DataType="@a9cce9e4c3334ff3a345d533140c70d4" Id="b8e46b8e7eb43019a5c0c14391e075b" Name="Instrument Coms Info" xmlns="http://www.ni.com/MocCommon">
