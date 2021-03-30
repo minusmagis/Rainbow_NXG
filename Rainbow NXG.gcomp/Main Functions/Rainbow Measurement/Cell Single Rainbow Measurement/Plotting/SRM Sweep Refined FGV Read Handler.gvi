@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="4A7AE2A613CE6169FF445A933D5BD3D0849247BF11B07080D89DCCF9F5CE6B2A17E3FCD44C12DF52E943FCB416BFB60922934EC2E7308430B00D2BB7C129A936" Timestamp="1D711DCD202D218" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D55A02DCAAF0D28756794D9720AAF2602957BB82EE07570C6E21501F2A8F4A3DB550E4B6258F6AE191C1A6577FDEFFBF694F8B812F8A1C29A19BE5D8BF5965E2" Timestamp="1D7256077A77FB2" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -166,14 +166,14 @@
 							<Wire Id="c9a9956d77f24b23a933bc55cc1b84e8" Joints="N(dc52f54565574801bffaa2ec009c85e8:c0t0v)|(142,30) N(aa05a32b48e44fde88c1979e84960357:25fd1c09b19d40508d384c4c68e0a031)|(186,30)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 190 160" Id="f8a4b88f9cb04038805e9f3d78a510bb" Pattern="&quot;Rs (Ω/m^2)&quot;">
-							<PropertyNode Bounds="65 15 79 35" HasErrorTerminals="False" Id="36da0ee002a84919b33ff7ca1a2ba0f4" InstanceDataType="@01066009c6f64b0fa5b1244f199458ca" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+							<PropertyNode Bounds="65 15 72 35" HasErrorTerminals="False" Id="36da0ee002a84919b33ff7ca1a2ba0f4" InstanceDataType="@01066009c6f64b0fa5b1244f199458ca" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 								<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 									<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::Plotting::SRM IV Refined Data Plot.gtype" />
 								</p.TypeDefinitionTargets>
-								<PropertyItemTerminal DataType="@55459a1d26de42d8b5004108e9abaeea" Hotspot="79 15" Id="c0t0v" Path="Rsh Plot" PathElementMemberKinds="Field" Usage="Optional" />
+								<PropertyItemTerminal DataType="@9307136624d748689d173a562ff7a63a" Hotspot="72 15" Id="c0t0v" Path="Rs Plot" PathElementMemberKinds="Field" Usage="Optional" />
 							</PropertyNode>
 							<Wire Id="755527ca6c384f85b03dadbb88fc43dc" Joints="N(2b4516e6ce6d4ec8886d3af20a2d318d:f8a4b88f9cb04038805e9f3d78a510bb)|(4,20) N(36da0ee002a84919b33ff7ca1a2ba0f4:instance in)|(65,20)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="ac2cb08d59a24b8486be536e44839a0b" Joints="N(36da0ee002a84919b33ff7ca1a2ba0f4:c0t0v)|(144,30) N(aa05a32b48e44fde88c1979e84960357:f8a4b88f9cb04038805e9f3d78a510bb)|(186,30)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="ac2cb08d59a24b8486be536e44839a0b" Joints="N(36da0ee002a84919b33ff7ca1a2ba0f4:c0t0v)|(137,30) N(aa05a32b48e44fde88c1979e84960357:f8a4b88f9cb04038805e9f3d78a510bb)|(186,30)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 190 160" Id="8530a45f86934f00a2b652453c3666c1" Pattern="&quot;Rsh (Ω/m^2)&quot;">
 							<PropertyNode Bounds="65 15 79 35" HasErrorTerminals="False" Id="ca7c93fc62f04ca1b7d1ffc82a3fbaac" InstanceDataType="@01066009c6f64b0fa5b1244f199458ca" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
@@ -576,19 +576,19 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="55459a1d26de42d8b5004108e9abaeea">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Dividing Wavelength (nm)" DataType="Double[]" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Rsh (Ω/m^2)" DataType="Double[]" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
 		<p.TypeReference TypeId="9307136624d748689d173a562ff7a63a">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Dividing Wavelength (nm)" DataType="Double[]" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Rs (Ω/m^2)" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="55459a1d26de42d8b5004108e9abaeea">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Dividing Wavelength (nm)" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rsh (Ω/m^2)" DataType="Double[]" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
