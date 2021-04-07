@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="36A132E3C994A500160C425B2D26B8D9C05BD17FA9CC81D84BEC8C82DC8CD83B2BD098FB6286F1264CCE2AC085E8285FBC62C9A885C8F4D912C97F5AD07CFE97" Timestamp="1D726384515F288" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="0F695268AB26CCF47FB0CB528762483A90E93607AF570A1345234690E28293B3D2ADF17906E54336F9042D431FCCC8B14E6B92E1B5108F7B7371847338B8CFB8" Timestamp="1D72BB848233146" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,9 +7,10 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@f2f88813d49741e3b442aa98477b218e" Id="e96c5c530133405792086f08e5a25a01" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@77a91fa38a7643bfb05dd8a6264c1332" Id="e96c5c530133405792086f08e5a25a01" xmlns="http://www.ni.com/MocCommon">
 		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype" />
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Light Power Calibration::Light power Calibration Parameters.gtype" />
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Light Power Calibration::Light Power Calibration Data.gtype" />
 		</p.TypeDefinitionTargets>
 		<Icon Id="b78cd23236104006804121d3abf8602e" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -17,15 +18,17 @@
 				<IconTemplate Height="[float]40" Id="c66f29330bb1455783cf42912b57f920" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@f2f88813d49741e3b442aa98477b218e" Id="341a1cc8532d453a8504cf69e73322da" Name="Cluster">
+		<DataItem DataType="@77a91fa38a7643bfb05dd8a6264c1332" Id="341a1cc8532d453a8504cf69e73322da" Name="LPC Mega Cluster">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>0_0x0_0x0_0x0_0_0_</Field1>
-					<Field2>null</Field2>
+					<Field2>0x4008000000000000_</Field2>
+					<Field3>null</Field3>
 				</Cluster>
 			</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype" />
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Light Power Calibration::Light power Calibration Parameters.gtype" />
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Light Power Calibration::Light Power Calibration Data.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
@@ -35,7 +38,7 @@
 		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="3c6380c915c148228e408faa64e4c64b" Name="LPC Mega Cluster.gtype" NameTracksFileName="True">
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="e5c54487114143fda15d786cb1bbe163" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="7c0c9fb5e851449295fed02de5eb9d98" xmlns="http://www.ni.com/MocCommon">
-					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f2f88813d49741e3b442aa98477b218e" Height="[float]650" Id="aa32f31383754988b5e41a8c35d9454a" Label="[UIModel]ec2f77efca5a4383ba9bda9662c66bc8" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=341a1cc8532d453a8504cf69e73322da}" Width="[float]220" xmlns="http://www.ni.com/PanelCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@77a91fa38a7643bfb05dd8a6264c1332" Height="[float]382" Id="aa32f31383754988b5e41a8c35d9454a" Label="[UIModel]ec2f77efca5a4383ba9bda9662c66bc8" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=341a1cc8532d453a8504cf69e73322da}" Width="[float]406" xmlns="http://www.ni.com/PanelCommon">
 						<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Rainbow Sweep Parameters" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@272a24b82a434ed896958e12904ae149" Height="[float]350" Id="50d09a18743647a5b5e799e585e17c8d" Label="[UIModel]70cde8451d3e499793825e6bd460ff34" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ LPC}" Width="[float]190" p7:ControlDefinitionChecksum="NldGDyL0c9veK/dVHRZ8x8iV5eX3TG4VmL2yKywtzkk=" xmlns:p7="http://www.ni.com/PanelCommon">
 							<p7:p.TypeDefinitionTargets>
 								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype::ControlDefinition" />
@@ -75,8 +78,16 @@
 							</p7:Cluster>
 							<p7:Label Height="[float]16" Id="b19317ecedd4470985a885b8350a8c20" LabelOwner="[UIModel]1c94bb7de7dd4a75914317b12ad03c5d" Left="[float]7" Text="[string]Rainbow Sweep Type Selector" Top="[float]53" Width="[float]157" />
 						</Cluster>
-						<Label Id="70cde8451d3e499793825e6bd460ff34" LabelOwner="[UIModel]50d09a18743647a5b5e799e585e17c8d" Left="[float]4" Text="[string]Rainbow Sweep Parameters LPC" Top="[float]4" />
-						<ArrayViewer ArrayElement="[UIModel]687b13d716644ed7a749f7cf464bf66c" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]236" Id="8405ed23bf7844238d9b719a93b40d7b" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]16b319ba677c4b94926bf8b0c2151ba3" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]402" Value="{ClusterBinding FieldName=Light\ Power\ Calibration\ Data}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]204">
+						<Label Height="[float]16" Id="70cde8451d3e499793825e6bd460ff34" LabelOwner="[UIModel]50d09a18743647a5b5e799e585e17c8d" Left="[float]4" Text="[string]Rainbow Sweep Parameters LPC" Top="[float]4" Width="[float]169" />
+						<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Light power Calibration Parameters" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f95cefbdbca746d3b522d53e77c6a93d" Enabled="[bool]True" Height="[float]60" Id="4743685c89204321afd0bf1a5afbce91" Label="[UIModel]e22a5c7fbd74824aa913152f9ef1678" Left="[float]202" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=LPC\ Specific\ Parameters}" Width="[float]131" p7:ControlDefinitionChecksum="bMwhlLSylOPxPv76agf8+ScmYvJopURxRQjTKn5bDjA=" xmlns:p7="http://www.ni.com/PanelCommon">
+							<p7:p.TypeDefinitionTargets>
+								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Light Power Calibration::Light power Calibration Parameters.gtype::ControlDefinition" />
+							</p7:p.TypeDefinitionTargets>
+							<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="750b424b7c624528bdeb65660025c90c" Interval="[double]1" Label="[UIModel]9324d694448d401bbe9c923ba096aec7" Left="[float]4" Maximum="[double]1000" Minimum="[double]1" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Powermeter\ Averages}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p7:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="9324d694448d401bbe9c923ba096aec7" LabelOwner="[UIModel]750b424b7c624528bdeb65660025c90c" Left="[float]4" Text="[string]Powermeter Averages" Top="[float]4" Width="[float]115" />
+						</Cluster>
+						<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="e22a5c7fbd74824aa913152f9ef1678" LabelOwner="[UIModel]4743685c89204321afd0bf1a5afbce91" Left="[float]202" Text="[string]LPC Specific Parameters" Top="[float]4" Width="[float]126" />
+						<ArrayViewer ArrayElement="[UIModel]687b13d716644ed7a749f7cf464bf66c" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]236" Id="8405ed23bf7844238d9b719a93b40d7b" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]16b319ba677c4b94926bf8b0c2151ba3" Left="[float]201" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]2" Top="[float]107" Value="{ClusterBinding FieldName=Light\ Power\ Calibration\ Data}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]197">
 							<p.DefaultElementValue>
 								<Cluster>
 									<Field1>
@@ -117,18 +128,19 @@
 								<p8:Label Height="[float]16" Id="4392be91c1fd4910ba3d7b2acb8a0f6f" LabelOwner="[UIModel]a507c62166574053884a5ca58dbba866" Left="[float]4" Text="[string]Rainbow Sweep Types" Top="[float]168" Width="[float]117" />
 							</Cluster>
 						</ArrayViewer>
-						<Label Id="16b319ba677c4b94926bf8b0c2151ba3" LabelOwner="[UIModel]8405ed23bf7844238d9b719a93b40d7b" Left="[float]4" Text="[string]Light Power Calibration Data" Top="[float]382" />
+						<Label Height="[float]16" Id="16b319ba677c4b94926bf8b0c2151ba3" LabelOwner="[UIModel]8405ed23bf7844238d9b719a93b40d7b" Left="[float]201" Text="[string]Light Power Calibration Data" Top="[float]87" Width="[float]151" />
 					</Cluster>
-					<Label Id="ec2f77efca5a4383ba9bda9662c66bc8" LabelOwner="[UIModel]aa32f31383754988b5e41a8c35d9454a" Left="[float]100" Text="[string]Cluster" Top="[float]80" xmlns="http://www.ni.com/PanelCommon" />
+					<Label Height="[float]16" Id="ec2f77efca5a4383ba9bda9662c66bc8" LabelOwner="[UIModel]aa32f31383754988b5e41a8c35d9454a" Left="[float]100" Text="[string]LPC Mega Cluster" Top="[float]80" Width="[float]93" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="f2f88813d49741e3b442aa98477b218e">
+		<p.TypeReference TypeId="77a91fa38a7643bfb05dd8a6264c1332">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Parameters LPC" DataType="@272a24b82a434ed896958e12904ae149" />
+					<Field FieldAccessPolicy="ReadWrite" Name="LPC Specific Parameters" DataType="@f95cefbdbca746d3b522d53e77c6a93d" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Light Power Calibration Data" DataType="@124d4d6e0fc842d4a3b388ce011901de" />
 				</Members>
 			</Composite>
@@ -144,6 +156,13 @@
 			<Attributed AttributedType="@fc3f57741650458a94c58519f457841c">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Rainbow Sweep" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f95cefbdbca746d3b522d53e77c6a93d">
+			<Attributed AttributedType="@e2ac06c5e2cc467f8c181080bb7ac5af">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Light Power Calibration" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
@@ -171,6 +190,9 @@
 		<p.TypeReference TypeId="fc3f57741650458a94c58519f457841c">
 			<Typedef TypedefName="Rainbow Sweep Type Selector.gtype" UnderlyingType="@2dac1fece938402da376981957bcff8f" />
 		</p.TypeReference>
+		<p.TypeReference TypeId="e2ac06c5e2cc467f8c181080bb7ac5af">
+			<Typedef TypedefName="Light power Calibration Parameters.gtype" UnderlyingType="@fe5e182112e543d4af275781a7dfe3ca" />
+		</p.TypeReference>
 		<p.TypeReference TypeId="1bc74748e29b4d44b64906d807cf2575">
 			<Typedef TypedefName="Light Power Calibration Data.gtype" UnderlyingType="@69c3c327fcbe41ee9479200659f16344" />
 		</p.TypeReference>
@@ -190,6 +212,13 @@
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Red Sweep Mode" DataType="@6508ec75025044dbb8208d2a5d010418" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Blue Sweep Mode" DataType="@9f196b7843d846ec8c4098af912b39ec" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="fe5e182112e543d4af275781a7dfe3ca">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Powermeter Averages" DataType="Double" />
 				</Members>
 			</Composite>
 		</p.TypeReference>

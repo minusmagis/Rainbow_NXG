@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="FDBCFE0EC7673104E55C46710E2E81435B6ED8D921A7BB17BD04FE136724C5932773E2C915CEBD4ED67C2171AD52D28C3B389B23BDCB89921722D4E39D327D18" Timestamp="1D72ACDF7C3629C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@47def77f04944b68883d6c034bcd00d3" Id="9db77c2d2e02445daeb57088bd5380a7" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="36c3878200a34d6c80b82d51cee99445" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="284fcd536a1f444194caba1ddbc1e309" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="ccd31f1db0994ddd9f672ff9c33325cc" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@47def77f04944b68883d6c034bcd00d3" Id="6f4e996a54e846148c3ada6f58e658ba" Name="Cluster">
+			<p.DefaultValue>False_False_False_</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="cec37cac7dbc4ce98496b2a4e02d47c1" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="6f4e99053414b5892d7bfc89a70d316" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="52571dca858449ddbefba3b6ced3ba9c" Name="File Handling Boolean Cluster.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="31750cd6181f4295b65fd15580b961ce" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="126eaf0d8d2b41849e0ce8e0f200dd5e" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@47def77f04944b68883d6c034bcd00d3" Height="[float]308" Id="d2c8185873064031b9f14c50c865b1d2" Label="[UIModel]daf56ba6222949da9868c77a53745b8c" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=6f4e996a54e846148c3ada6f58e658ba}" Width="[float]155" xmlns="http://www.ni.com/PanelCommon">
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="d743d038b58547958fdf1bb5d07cdd3a" Label="[UIModel]3fdab17b433f40e887d0e56fdc15c207" Left="[float]4" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]24" TrueContent="[string]On" Value="{ClusterBinding FieldName=Canceled\ Loading?}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="3fdab17b433f40e887d0e56fdc15c207" LabelOwner="[UIModel]d743d038b58547958fdf1bb5d07cdd3a" Left="[float]4" Text="[string]Canceled Loading?" Top="[float]4" Width="[float]100" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="55eb813a3278469c98b275aff4ed5ab9" Label="[UIModel]3a38942456344ac29ab5652769bce535" Left="[float]4" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]124" TrueContent="[string]On" Value="{ClusterBinding FieldName=Found\ Any\ File?}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="3a38942456344ac29ab5652769bce535" LabelOwner="[UIModel]55eb813a3278469c98b275aff4ed5ab9" Left="[float]4" Text="[string]Found Any File?" Top="[float]104" Width="[float]84" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="2a5f35d91c99406894c2c59aabe0354b" Label="[UIModel]bd52bc6c61e043c4a26574dcb29d59bd" Left="[float]4" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]224" TrueContent="[string]On" Value="{ClusterBinding FieldName=Duplicate\ Calibration\ Files?}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="bd52bc6c61e043c4a26574dcb29d59bd" LabelOwner="[UIModel]2a5f35d91c99406894c2c59aabe0354b" Left="[float]4" Text="[string]Duplicate Calibration Files?" Top="[float]204" Width="[float]143" />
+					</Cluster>
+					<Label Height="[float]16" Id="daf56ba6222949da9868c77a53745b8c" LabelOwner="[UIModel]d2c8185873064031b9f14c50c865b1d2" Left="[float]100" Text="[string]Cluster" Top="[float]80" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="47def77f04944b68883d6c034bcd00d3">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Canceled Loading?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Found Any File?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Duplicate Calibration Files?" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

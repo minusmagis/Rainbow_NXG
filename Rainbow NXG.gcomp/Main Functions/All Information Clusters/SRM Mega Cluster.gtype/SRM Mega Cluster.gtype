@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1188568A78245658309DFE042138AAC0F5CAEF496B3DE0FF5AFC2F329BAD411C672D4F19B29827489AE5B7D57D80E8D25B0F842D1E11FEA13D070D4FF4A7FD08" Timestamp="1D7263733E41DE4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="E9E44A3331849BB0B1A970F09CD97C4873631A92B637BCA2885B22CA682B00CE2981F97448FC16D43A6D7747B211BDD4003988C5231FBFAC326374F63B2D192C" Timestamp="1D72AEF39FA885F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,29 +7,32 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@6b04263caa4249d286760bd65a70e7f5" Id="896204cb849142008ed21f6f7f35eb3d" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@84028030700844e187b712326ed6c5cb" Id="896204cb849142008ed21f6f7f35eb3d" xmlns="http://www.ni.com/MocCommon">
 		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::SRM Specific Parameters.gtype" />
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype" />
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::IV Calculations::IV Full Data Cluster.gtype" />
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::IV Calculations::IV Full Raw Data.gtype" />
 		</p.TypeDefinitionTargets>
 		<Icon Id="b549b5966ae3495fa692f1e4d884b7ae" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="f35003f86cd8457c9e97ea3c622a8b9a" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="31b01deaf9424d76a585f9bd3097014b" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@6b04263caa4249d286760bd65a70e7f5" Id="a98203071aff42499e8d3a13bdd9d709" Name="Cluster">
+		<DataItem DataType="@84028030700844e187b712326ed6c5cb" Id="a98203071aff42499e8d3a13bdd9d709" Name="Cluster">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>0x0_0x0_0_0x0_False_False_0_0x0_0x0_0x0_</Field1>
 					<Field2>0_0x0_0x0_0x0_0_0_</Field2>
 					<Field3>null</Field3>
+					<Field4>null</Field4>
 				</Cluster>
 			</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::SRM Specific Parameters.gtype" />
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype" />
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::IV Calculations::IV Full Data Cluster.gtype" />
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::IV Calculations::IV Full Raw Data.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
 	</TypeDefinition>
@@ -38,15 +41,15 @@
 		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="b3c1344ccfa7437ab51ee4d1a6607f1c" Name="SRM Mega Cluster.gtype" NameTracksFileName="True">
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="b62391d94a1743659f82e28c1520409d" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="2583560d75a141ea8783406ee0570631" xmlns="http://www.ni.com/MocCommon">
-					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6b04263caa4249d286760bd65a70e7f5" Height="[float]1331" Id="ad219c1c729c41dabb6fd60be818c283" Label="[UIModel]86245ca3848d4c408602e6ae82c0e76b" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=a98203071aff42499e8d3a13bdd9d709}" Width="[float]389" xmlns="http://www.ni.com/PanelCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@84028030700844e187b712326ed6c5cb" Height="[float]1331" Id="ad219c1c729c41dabb6fd60be818c283" Label="[UIModel]86245ca3848d4c408602e6ae82c0e76b" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=a98203071aff42499e8d3a13bdd9d709}" Width="[float]409" xmlns="http://www.ni.com/PanelCommon">
 						<Cluster BaseName="[string]SRM Specific Parameters" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@bf297fbcba40425ab176e30e0b998a90" Height="[float]321" Id="c62e70b00f4f4e8686932a34c09b8406" Label="[UIModel]51adbab7df49444090a7a635f97c7c1a" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=SRM\ Specific\ Parameters}" Width="[float]140" p7:ControlDefinitionChecksum="ebszyyoOXmTuqW7JOozUCCilR9SeL33NIvFrhfMY0BE=" xmlns:p7="http://www.ni.com/PanelCommon">
 							<p7:p.TypeDefinitionTargets>
 								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::SRM Specific Parameters.gtype::ControlDefinition" />
 							</p7:p.TypeDefinitionTargets>
 							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="5fb56fbee6f74544b02c3181f5658c11" Interval="[double]0.1" Label="[UIModel]be41ed11899140f6b005fe588e25b602" Left="[float]2" Maximum="[double]200" Minimum="[double]-200" TabIndex="[int]0" Top="[float]20" Value="{ClusterBinding FieldName=Max\ (V)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<p7:Label Height="[float]16" Id="be41ed11899140f6b005fe588e25b602" LabelOwner="[UIModel]5fb56fbee6f74544b02c3181f5658c11" Left="[float]2" Text="[string]Max (V)" Top="[float]0" Width="[float]41" />
+							<p7:Label Height="[float]16" Id="be41ed11899140f6b005fe588e25b602" LabelOwner="[UIModel]5fb56fbee6f74544b02c3181f5658c11" Left="[float]2" Text="[string]Max (V)" Top="[float]0" Width="[float]40" />
 							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="1e484a15b062467bab32b3a718b71d57" Interval="[double]0.1" Label="[UIModel]f23cbac5ee8945c8a282dee63ebb0fc2" Left="[float]2" Maximum="[double]200" Minimum="[double]-200" TabIndex="[int]1" Top="[float]64" Value="{ClusterBinding FieldName=Min\ (V)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<p7:Label Height="[float]16" Id="f23cbac5ee8945c8a282dee63ebb0fc2" LabelOwner="[UIModel]1e484a15b062467bab32b3a718b71d57" Left="[float]2" Text="[string]Min (V)" Top="[float]44" Width="[float]39" />
+							<p7:Label Height="[float]16" Id="f23cbac5ee8945c8a282dee63ebb0fc2" LabelOwner="[UIModel]1e484a15b062467bab32b3a718b71d57" Left="[float]2" Text="[string]Min (V)" Top="[float]44" Width="[float]38" />
 							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="52a89277dc74fc4a098e099f794b29b" Interval="[uint]1" Label="[UIModel]b2ebdc2cb2974f3fadbff183aa950715" Left="[float]2" Maximum="[uint]100000" Minimum="[uint]1" TabIndex="[int]2" Top="[float]108" Value="{ClusterBinding FieldName=V\ Points}" ValueFormatter="[string]LV:0" ValueType="[Type]UInt32" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 							<p7:Label Height="[float]16" Id="b2ebdc2cb2974f3fadbff183aa950715" LabelOwner="[UIModel]52a89277dc74fc4a098e099f794b29b" Left="[float]2" Text="[string]V Points" Top="[float]88" Width="[float]43" />
 							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="efab1b2700974ceb925ec850506c761c" Interval="[double]1E-07" Label="[UIModel]c5b602bae00b4141a841c4ba3540ef39" Left="[float]1" Maximum="[double]1" Minimum="[double]1E-08" TabIndex="[int]3" Top="[float]157" Value="{ClusterBinding FieldName=Current\ Range\ (A)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -56,7 +59,7 @@
 							</LVCheckBox>
 							<p7:Label Height="[float]16" Id="4b1b4e0b5ec24100b3290556141c5ff5" LabelOwner="[UIModel]dd2b2a8b1491463699e15b0d40535893" Left="[float]7" Text="[string]Autorange" Top="[float]271" Width="[float]56" />
 							<Switch BaseName="[string]Switch" FalseContent="[string]-/+" Height="[float]24" Id="72dda49c01c04527967f070e6a3a57b3" Label="[UIModel]a0e9adc5d5a5421d8dda875bff08f639" Left="[float]56" Orientation="[SMOrientation]Horizontal" Shape="[SwitchShape]Slider" TabIndex="[int]5" Top="[float]66" TrueContent="[string]+/-" Value="{ClusterBinding FieldName=Sweep\ Dir}" Width="[float]46" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<p7:Label Height="[float]16" Id="a0e9adc5d5a5421d8dda875bff08f639" LabelOwner="[UIModel]72dda49c01c04527967f070e6a3a57b3" Left="[float]56" Text="[string]Sweep Dir" Top="[float]46" Width="[float]54" />
+							<p7:Label Height="[float]16" Id="a0e9adc5d5a5421d8dda875bff08f639" LabelOwner="[UIModel]72dda49c01c04527967f070e6a3a57b3" Left="[float]56" Text="[string]Sweep Dir" Top="[float]46" Width="[float]53" />
 							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="9449301308ab4a3694626bf5c9ed338f" Interval="[uint]1" Label="[UIModel]d16f493e82024274974a84483a76e9ed" Left="[float]1" Maximum="[uint]1000000" Minimum="[uint]1" TabIndex="[int]6" Top="[float]200" Value="{ClusterBinding FieldName=Current\ Averages}" ValueFormatter="[string]LV:0" ValueType="[Type]UInt32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 							<p7:Label Height="[float]16" Id="d16f493e82024274974a84483a76e9ed" LabelOwner="[UIModel]9449301308ab4a3694626bf5c9ed338f" Left="[float]1" Text="[string]Current Averages" Top="[float]180" Width="[float]91" />
 							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="2ca207fc1ac64733bdd86b6380ef1bf7" Interval="[double]0.01" Label="[UIModel]43776402dd5a4d9f8269acc05f269b38" Left="[float]47" Maximum="[double]5" Minimum="[double]0" TabIndex="[int]7" Top="[float]20" Value="{ClusterBinding FieldName=Max\ (A)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -68,7 +71,7 @@
 							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="125f881358ef4c46b05da8eea69ef38f" Interval="[double]1E-08" Label="[UIModel]b2c83cb937df47009c7ac5f92eba8452" Left="[float]49" Maximum="[double]10000" Minimum="[double]0" TabIndex="[int]9" Top="[float]108" Value="{ClusterBinding FieldName=Cell\ Area\ (m^2)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]49" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 							<p7:Label Height="[float]16" Id="b2c83cb937df47009c7ac5f92eba8452" LabelOwner="[UIModel]125f881358ef4c46b05da8eea69ef38f" Left="[float]49" Text="[string]Cell Area (m^2)" Top="[float]88" Width="[float]83" />
 						</Cluster>
-						<Label Id="51adbab7df49444090a7a635f97c7c1a" LabelOwner="[UIModel]c62e70b00f4f4e8686932a34c09b8406" Left="[float]4" Text="[string]SRM Specific Parameters" Top="[float]4" />
+						<Label Height="[float]16" Id="51adbab7df49444090a7a635f97c7c1a" LabelOwner="[UIModel]c62e70b00f4f4e8686932a34c09b8406" Left="[float]4" Text="[string]SRM Specific Parameters" Top="[float]4" Width="[float]130" />
 						<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Rainbow Sweep Parameters" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@272a24b82a434ed896958e12904ae149" Height="[float]350" Id="fde3c1878e004531928629a8338c5b24" Label="[UIModel]dcd1537dc422483485eaff82b61b7efa" Left="[float]4" TabIndex="[int]0" Top="[float]373" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ SRM}" Width="[float]190" p7:ControlDefinitionChecksum="NldGDyL0c9veK/dVHRZ8x8iV5eX3TG4VmL2yKywtzkk=" xmlns:p7="http://www.ni.com/PanelCommon">
 							<p7:p.TypeDefinitionTargets>
 								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype::ControlDefinition" />
@@ -108,8 +111,8 @@
 							</p7:Cluster>
 							<p7:Label Height="[float]16" Id="b347b95d05bc40f49ab2e5fb3b53e354" LabelOwner="[UIModel]86ecde535d7b455aadaba2ef7aa01f7a" Left="[float]7" Text="[string]Rainbow Sweep Type Selector" Top="[float]53" Width="[float]157" />
 						</Cluster>
-						<Label Id="dcd1537dc422483485eaff82b61b7efa" LabelOwner="[UIModel]fde3c1878e004531928629a8338c5b24" Left="[float]4" Text="[string]Rainbow Sweep Parameters SRM" Top="[float]353" />
-						<ArrayViewer ArrayElement="[UIModel]15a551b8a4cf4db682df91e87f6c2cd9" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]568" Id="92e939c6d1874155b5513b83c4ba3fd6" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]8b2faf031b6643e7ab47d3dca6dfea32" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]751" Value="{ClusterBinding FieldName=SRM\ Full\ IV\ data\ Array}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]373">
+						<Label Height="[float]16" Id="dcd1537dc422483485eaff82b61b7efa" LabelOwner="[UIModel]fde3c1878e004531928629a8338c5b24" Left="[float]4" Text="[string]Rainbow Sweep Parameters SRM" Top="[float]353" Width="[float]173" />
+						<ArrayViewer ArrayElement="[UIModel]15a551b8a4cf4db682df91e87f6c2cd9" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]568" Id="92e939c6d1874155b5513b83c4ba3fd6" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]8b2faf031b6643e7ab47d3dca6dfea32" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]751" Value="{ClusterBinding FieldName=SRM\ Full\ IV\ data\ Array}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]366">
 							<p.DefaultElementValue>
 								<Cluster>
 									<Field1>null</Field1>
@@ -165,7 +168,7 @@
 										<NumericText BaseName="[string]Numeric" Height="[float]24" Id="26ca40a36bfa42c9a8816ba73ea39b28" IsReadOnly="[bool]False" Label="[UIModel]2e94121a651d4a52abca496a20046167" Left="[float]4" TabIndex="[int]4" Top="[float]263" Value="{ClusterBinding FieldName=Light\ Power}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 										<p8:Label Height="[float]16" Id="13618ed0552349e2b855a79dae3c687e" LabelOwner="[UIModel]cd51dfb6b7694b44b1eb1bac9e71905f" Left="[float]4" Text="[string]Dividing Wavelength" Top="[float]196" Width="[float]110" />
 										<p8:Label Height="[float]16" Id="2e94121a651d4a52abca496a20046167" LabelOwner="[UIModel]26ca40a36bfa42c9a8816ba73ea39b28" Left="[float]4" Text="[string]Light Power" Top="[float]243" Width="[float]62" />
-										<p8:Label Height="[float]16" Id="bc1e2714784c46fca9e3a9cccc4d0690" IsVisualChild="[bool]False" LabelOwner="[UIModel]6241316b2569460a973f2ed24747665a" Left="[float]0" Text="[string]IV Array" Top="[float]-20" Width="[float]187" />
+										<p8:Label Height="[float]16" Id="bc1e2714784c46fca9e3a9cccc4d0690" IsVisualChild="[bool]False" LabelOwner="[UIModel]6241316b2569460a973f2ed24747665a" Left="[float]6" Text="[string]IV Array" Top="[float]-14" Width="[float]187" />
 									</p8:Cluster>
 								</p8:ArrayViewer>
 								<p8:Label Height="[float]16" Id="b4c580bd533a4ac8891456d3957b1a11" LabelOwner="[UIModel]d124621ec3e846fd94dfb48d68033a22" Left="[float]168" Text="[string]IV Measurements Array" Top="[float]4" Width="[float]123" />
@@ -227,20 +230,83 @@
 								<p8:Label Height="[float]16" Id="6a055ad74c4d46e6b6641ca2834d5e22" LabelOwner="[UIModel]8acb684a797d4876910d10727a3d566e" Left="[float]4" Text="[string]IV Refined Data" Top="[float]4" Width="[float]82" />
 							</Cluster>
 						</ArrayViewer>
-						<Label Id="8b2faf031b6643e7ab47d3dca6dfea32" LabelOwner="[UIModel]92e939c6d1874155b5513b83c4ba3fd6" Left="[float]4" Text="[string]SRM Full IV data Array" Top="[float]731" />
+						<Label Height="[float]16" Id="8b2faf031b6643e7ab47d3dca6dfea32" LabelOwner="[UIModel]92e939c6d1874155b5513b83c4ba3fd6" Left="[float]4" Text="[string]SRM Full IV data Array" Top="[float]731" Width="[float]118" />
+						<ArrayViewer ArrayElement="[UIModel]eb5a3d5f71704cc5895770408766198c" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Enabled="[bool]True" FirstIndex="[ArrayElementIndex]1" Height="[float]408" Id="f9a7784f4cf243abb070df31928febdf" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]484d6e65138b4898a61e8a20b52245e6" Left="[float]195" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]3" Top="[float]315" Value="{ClusterBinding FieldName=Full\ IV\ Curve\ Raw\ Data}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]201">
+							<p.DefaultElementValue>
+								<Cluster>
+									<Field1>0</Field1>
+									<Field2>null</Field2>
+								</Cluster>
+							</p.DefaultElementValue>
+							<Cluster AutoArrange="[AutoArrange]None" BaseName="[string]IV Full Raw Data" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@1a2ad37350f34a62b66095491051fd35" Height="[float]396" Id="eb5a3d5f71704cc5895770408766198c" IsTabStop="[bool]True" Label="[UIModel]8aabd22a01944c4a7604719e5eda4b1" LabelLinked="[bool]True" TabIndex="[int]0" Width="[float]169" p8:ControlDefinitionChecksum="p9ddZcTQwZllRJznGEwDnJcDaZ4jbKfw85HFCvRMo8M=" xmlns:p8="http://www.ni.com/PanelCommon">
+								<p8:p.TypeDefinitionTargets>
+									<p8:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::IV Calculations::IV Full Raw Data.gtype::ControlDefinition" />
+								</p8:p.TypeDefinitionTargets>
+								<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Rainbow Sweep Types" Height="[float]24" Id="85c7ae6dc1e84c7ebd16cf7517faa943" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]d6632bb4493a413bad97402347f7a2af" Left="[float]8" TabIndex="[int]0" Top="[float]359" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Types}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]140" p8:ControlDefinitionChecksum="aORrvFvlLWc+LjiIPkhUNbt66rrOpyRfkEQ+wIb6XUQ=" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+									<p8:p.TypeDefinitionTargets>
+										<p8:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Types.gtype::ControlDefinition" />
+									</p8:p.TypeDefinitionTargets>
+									<EnumSelectorInfo DisplayValue="[string]Red Sweep Closing" Value="[ushort]0" ValueType="[Type]UInt16" />
+									<EnumSelectorInfo DisplayValue="[string]Red Sweep Opening" Value="[ushort]1" ValueType="[Type]UInt16" />
+									<EnumSelectorInfo DisplayValue="[string]Blue Sweep Closing" Value="[ushort]2" ValueType="[Type]UInt16" />
+									<EnumSelectorInfo DisplayValue="[string]Blue Sweep Opening" Value="[ushort]3" ValueType="[Type]UInt16" />
+								</EnumSelector>
+								<p8:Label Height="[float]16" Id="d6632bb4493a413bad97402347f7a2af" LabelOwner="[UIModel]85c7ae6dc1e84c7ebd16cf7517faa943" Left="[float]8" Text="[string]Rainbow Sweep Types" Top="[float]339" Width="[float]117" />
+								<p8:ArrayViewer ArrayElement="[UIModel]3ed11e24c883430c87e7d1cf2e844ed6" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]315" Id="7a9074cae04a493f9d097e5f09550608" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]8f80fcd399ea494b80e0d94f9bb3cf1e" Left="[float]6" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]1" Top="[float]21" Value="{ClusterBinding FieldName=IV\ Raw\ Data\ Array}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]154">
+									<p.DefaultElementValue>
+										<Cluster>
+											<Field1>null</Field1>
+											<Field2>null</Field2>
+											<Field3>null</Field3>
+											<Field4>0x0</Field4>
+											<Field5>0x0</Field5>
+										</Cluster>
+									</p.DefaultElementValue>
+									<p8:Cluster BaseName="[string]IV Raw Single measurement Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4575faaf313c4edbb8bcd04917887fb0" Height="[float]303" Id="3ed11e24c883430c87e7d1cf2e844ed6" IsTabStop="[bool]True" Label="[UIModel]25e4663c6860449e82b35f542fb7d8e1" LabelLinked="[bool]True" TabIndex="[int]0" Width="[float]122" p8:ControlDefinitionChecksum="Mi2sn5LC8Uk1yPkSLcbj7akjhAqCZ5Qd35jh2cL1hSM=">
+										<p8:p.TypeDefinitionTargets>
+											<p8:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::IV Calculations::IV Single Measurement.gtype::ControlDefinition" />
+										</p8:p.TypeDefinitionTargets>
+										<p8:ArrayViewer ArrayElement="[UIModel]99cb0da069764ede8e79a11dc5393d29" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="f42a796203924b2e8117a9b60bd0175d" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]a8871264a69c4d259369422f1d4e34dc" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Voltage}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+											<p.DefaultElementValue>0x0</p.DefaultElementValue>
+											<NumericText BaseName="[string]Numeric" Height="[float]24" Id="99cb0da069764ede8e79a11dc5393d29" IsReadOnly="[bool]False" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+										</p8:ArrayViewer>
+										<p8:Label Height="[float]16" Id="a8871264a69c4d259369422f1d4e34dc" LabelOwner="[UIModel]f42a796203924b2e8117a9b60bd0175d" Left="[float]4" Text="[string]Voltage" Top="[float]4" Width="[float]40" />
+										<p8:ArrayViewer ArrayElement="[UIModel]447f529003864fce837e0bab2fb1b38b" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="34d58ef3acfc40e3a764ae9aaf66e526" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]1f92dc36327440c19e7f098a98ad464a" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]88" Value="{ClusterBinding FieldName=Current}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+											<p.DefaultElementValue>0x0</p.DefaultElementValue>
+											<NumericText BaseName="[string]Numeric" Height="[float]24" Id="447f529003864fce837e0bab2fb1b38b" IsReadOnly="[bool]False" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+										</p8:ArrayViewer>
+										<p8:Label Height="[float]16" Id="1f92dc36327440c19e7f098a98ad464a" LabelOwner="[UIModel]34d58ef3acfc40e3a764ae9aaf66e526" Left="[float]4" Text="[string]Current" Top="[float]68" Width="[float]40" />
+										<p8:ArrayViewer ArrayElement="[UIModel]549d404142874a7288c96ff52d7cb523" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="77bfc97266ff4f75833e12f581906ebd" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]fa9fdf9180d342c0a9ad8a9df6ec93cc" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]152" Value="{ClusterBinding FieldName=Current\ Density}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+											<p.DefaultElementValue>0x0</p.DefaultElementValue>
+											<NumericText BaseName="[string]Numeric" Height="[float]24" Id="549d404142874a7288c96ff52d7cb523" IsReadOnly="[bool]False" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+										</p8:ArrayViewer>
+										<p8:Label Height="[float]16" Id="fa9fdf9180d342c0a9ad8a9df6ec93cc" LabelOwner="[UIModel]77bfc97266ff4f75833e12f581906ebd" Left="[float]4" Text="[string]Current Density" Top="[float]132" Width="[float]82" />
+										<NumericText BaseName="[string]Numeric" Height="[float]24" Id="2dc72cabdd654f26bf5674befcd9ffe8" IsReadOnly="[bool]False" Label="[UIModel]5837e00dadb74d0382d1cef09c447951" Left="[float]4" TabIndex="[int]3" Top="[float]216" Value="{ClusterBinding FieldName=Dividing\ Wavelength}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+										<NumericText BaseName="[string]Numeric" Height="[float]24" Id="feec813408e74a149ff6dadfdf7b8b26" IsReadOnly="[bool]False" Label="[UIModel]547efcd29d694b5cb5c689961f8a9a95" Left="[float]4" TabIndex="[int]4" Top="[float]263" Value="{ClusterBinding FieldName=Light\ Power}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+										<p8:Label Height="[float]16" Id="5837e00dadb74d0382d1cef09c447951" LabelOwner="[UIModel]2dc72cabdd654f26bf5674befcd9ffe8" Left="[float]4" Text="[string]Dividing Wavelength" Top="[float]196" Width="[float]110" />
+										<p8:Label Height="[float]16" Id="547efcd29d694b5cb5c689961f8a9a95" LabelOwner="[UIModel]feec813408e74a149ff6dadfdf7b8b26" Left="[float]4" Text="[string]Light Power" Top="[float]243" Width="[float]62" />
+										<p8:Label Height="[float]16" Id="25e4663c6860449e82b35f542fb7d8e1" IsVisualChild="[bool]False" LabelOwner="[UIModel]3ed11e24c883430c87e7d1cf2e844ed6" Left="[float]6" Text="[string]IV Raw Data Cluster" Top="[float]-14" Width="[float]187" />
+									</p8:Cluster>
+								</p8:ArrayViewer>
+								<p8:Label Height="[float]16" Id="8f80fcd399ea494b80e0d94f9bb3cf1e" LabelOwner="[UIModel]7a9074cae04a493f9d097e5f09550608" Left="[float]6" Text="[string]IV Raw Data Array" Top="[float]1" Width="[float]95" />
+								<p8:Label Height="[float]16" Id="8aabd22a01944c4a7604719e5eda4b1" IsVisualChild="[bool]False" LabelOwner="[UIModel]eb5a3d5f71704cc5895770408766198c" Left="[float]6" Text="[string]IV Full Raw Data" Top="[float]-14" Width="[float]86" />
+							</Cluster>
+						</ArrayViewer>
+						<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="484d6e65138b4898a61e8a20b52245e6" LabelOwner="[UIModel]f9a7784f4cf243abb070df31928febdf" Left="[float]195" Text="[string]Full IV Curve Raw Data" Top="[float]295" Width="[float]119" />
 					</Cluster>
-					<Label Id="86245ca3848d4c408602e6ae82c0e76b" LabelOwner="[UIModel]ad219c1c729c41dabb6fd60be818c283" Left="[float]100" Text="[string]Cluster" Top="[float]80" xmlns="http://www.ni.com/PanelCommon" />
+					<Label Height="[float]16" Id="86245ca3848d4c408602e6ae82c0e76b" LabelOwner="[UIModel]ad219c1c729c41dabb6fd60be818c283" Left="[float]100" Text="[string]Cluster" Top="[float]80" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="6b04263caa4249d286760bd65a70e7f5">
+		<p.TypeReference TypeId="84028030700844e187b712326ed6c5cb">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="SRM Specific Parameters" DataType="@bf297fbcba40425ab176e30e0b998a90" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Parameters SRM" DataType="@272a24b82a434ed896958e12904ae149" />
 					<Field FieldAccessPolicy="ReadWrite" Name="SRM Full IV data Array" DataType="@a5b9fe9cd9194fad94e8d7d356bb0425" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Full IV Curve Raw Data" DataType="@24e6f3cda8444682b9ec7fffd49a8cb0" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -286,8 +352,18 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
+		<p.TypeReference TypeId="1a2ad37350f34a62b66095491051fd35">
+			<Attributed AttributedType="@674c1a1ae135437ea68b2b00d9ef2a22">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::IV Calculations" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
 		<p.TypeReference TypeId="a5b9fe9cd9194fad94e8d7d356bb0425">
 			<VariableArray DereferenceType="@9166e54038164b5db10e7ac63fa59ee4" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="24e6f3cda8444682b9ec7fffd49a8cb0">
+			<VariableArray DereferenceType="@1a2ad37350f34a62b66095491051fd35" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="0ecf651b505849b8b892026ac6b2d3d4">
 			<Typedef TypedefName="SRM Specific Parameters.gtype" UnderlyingType="@f468ed36e8224d618b921dd6e5c6af1d" />
@@ -306,6 +382,9 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="2c03baf764a340b48c077cb38d32a921">
 			<Typedef TypedefName="IV Refined Full Sweep Data.gtype" UnderlyingType="@28f5bbcb9b284eb195d3cd1104607f14" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="674c1a1ae135437ea68b2b00d9ef2a22">
+			<Typedef TypedefName="IV Full Raw Data.gtype" UnderlyingType="@1771239744564f648756a345854cd50f" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="f468ed36e8224d618b921dd6e5c6af1d">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
@@ -373,6 +452,14 @@
 					<Field FieldAccessPolicy="ReadWrite" Name="Efficiency (%)" DataType="Double[]" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Dividing Wavelength (nm)" DataType="Double[]" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Light Power (W)" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1771239744564f648756a345854cd50f">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Types" DataType="@8d8d7bab4880447083786326c799ad41" />
+					<Field FieldAccessPolicy="ReadWrite" Name="IV Raw Data Array" DataType="@06a752e76d1b48158958ca83b4439e31" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
