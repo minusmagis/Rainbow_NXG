@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="AEC429A68C7423CE9213C7581E6F0DE87FDFFD7B99770CBDD46F326FF7E1461EB70132D0C316F1A57EA5DF13545B98E304B1DEC963A2368E166E72381B276889" Timestamp="1D72C7745D73695" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A5EE995ED677F6CF6235F5BB0781BEACCF64F648C1B97944007E6A04B18AE263532A983D37130FFA0F229287E88335EBC9232D572A7A03F54FED895CDC802D2C" Timestamp="1D72C7B2DE55E0A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -388,12 +388,6 @@
 			</DataAccessor>
 			<NodeLabel AttachedTo="55834c262b264b5889245df01c77e384" Bounds="282 85 123 14" Id="be599dba233a4b349f7fb4226eb53ae6" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Instrument Coms Info</p.Text>
-			</NodeLabel>
-			<DataAccessor Bounds="95 1275 40 15" DataItem="5c7d6e20b6b8434b826b5cbd5965af07" Id="68140f1536fe4f2bbc8d758768f18f64" Label="73c9122d94a2402db3f67f9fbe26ca61">
-				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="68140f1536fe4f2bbc8d758768f18f64" Bounds="-7 1275 97 14" Id="73c9122d94a2402db3f67f9fbe26ca61" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Photodetector Start Measurement</p.Text>
 			</NodeLabel>
 		</DiagramUnplacedItems>
 		<FrontPanelUnplacedItems Id="9265e0a0d45e4a169bc8e7e0241f2383" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
@@ -2059,6 +2053,12 @@
 							<p.Text>Queue Instruction In</p.Text>
 						</NodeLabel>
 						<Wire Facade="WireInvisibleFacade" Id="d699188b5aa7462bbb7b3e2ff5b50dd2" Joints="N(94ac2e26f6e84cd48e981ffb8e8b1206:Out)|(588,135) v(9) h(-203) v(26) h(-60) v(-35) N(bf90f06a25746ea90cb37cceca8ec5c:L1)|(335,135)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="270 30 40 15" DataItem="5c7d6e20b6b8434b826b5cbd5965af07" Id="68140f1536fe4f2bbc8d758768f18f64" Label="73c9122d94a2402db3f67f9fbe26ca61" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="68140f1536fe4f2bbc8d758768f18f64" Bounds="77 30 188 14" Id="73c9122d94a2402db3f67f9fbe26ca61" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Photodetector Start Measurement</p.Text>
+						</NodeLabel>
 					</EventStructure.EventCase>
 				</EventStructure>
 				<Wire Id="965873613b60469fb43a190a4d04894b" Joints="N(2307752c4fd6437397f3d666963b9341:i0)|(4,130) h(21) v(15) N(47dfb17773d4cbab22a5855033c8cbc:3cecc3476a4d470dbc1e218818d50c94)|(37,145)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -9806,7 +9806,7 @@
 											<p11:Label Height="[float]16" Id="bf5f391c2f874593ae3ebf77caa5d340" LabelOwner="[UIModel]dece5c88b3404f8c9a79c4005056a16d" Left="[float]4" Text="[string]Rainbow Sweep Types" Top="[float]168" Width="[float]117" />
 											<NumericText BaseName="[string]Numeric" Height="[float]24" Id="c4618f9aaa0049fd88983dd2692c084d" Label="[UIModel]fcf3f94d5cb4d1fb453c4d35272a07a" Left="[float]5" TabIndex="[int]2" Top="[float]238" Value="{ClusterBinding FieldName=Total\ Light\ Power}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 											<p11:Label Height="[float]16" Id="fcf3f94d5cb4d1fb453c4d35272a07a" LabelOwner="[UIModel]c4618f9aaa0049fd88983dd2692c084d" Left="[float]5" Text="[string]Total Light Power" Top="[float]218" Width="[float]91" />
-											<p11:Label Height="[float]16" Id="e13ce39569d34d3899d5a0e620476f5d" IsVisualChild="[bool]False" LabelOwner="[UIModel]6910698c33e4ff3b98667b8dd3795b7" Left="[float]0" Text="[string]Cluster" Top="[float]-20" Width="[float]37" />
+											<p11:Label Height="[float]16" Id="e13ce39569d34d3899d5a0e620476f5d" IsVisualChild="[bool]False" LabelOwner="[UIModel]6910698c33e4ff3b98667b8dd3795b7" Left="[float]6" Text="[string]Cluster" Top="[float]-14" Width="[float]37" />
 										</Cluster>
 									</ArrayViewer>
 									<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="2cf0f4b565b1468eb3de3f9d35f21661" LabelOwner="[UIModel]2ceceb476078467b8525a8891458836d" Left="[float]14" Text="[string]Light Power Calibration Data" Top="[float]12" Width="[float]151" xmlns="http://www.ni.com/PanelCommon" />
@@ -9904,7 +9904,7 @@
 												<p10:Label Height="[float]16" Id="2723aa16f9b148679b208fbeb9b264fe" LabelOwner="[UIModel]1b163749315a44229ce7d597d41dc304" Left="[float]4" Text="[string]Rainbow Sweep Types" Top="[float]168" Width="[float]117" />
 												<NumericText BaseName="[string]Numeric" Height="[float]24" Id="5446882c7d374bdebba5588b3da4f12f" Label="[UIModel]897ab86a416a4af38e7fb8ea639f1ab1" Left="[float]5" TabIndex="[int]2" Top="[float]238" Value="{ClusterBinding FieldName=Total\ Light\ Power}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 												<p10:Label Height="[float]16" Id="897ab86a416a4af38e7fb8ea639f1ab1" LabelOwner="[UIModel]5446882c7d374bdebba5588b3da4f12f" Left="[float]5" Text="[string]Total Light Power" Top="[float]218" Width="[float]91" />
-												<p10:Label Height="[float]16" Id="e98a4a2a1c344d00ba35de9b676223d1" IsVisualChild="[bool]False" LabelOwner="[UIModel]bcd4c6510e1e43caa1d2be0f6aa74f92" Left="[float]0" Text="[string]Cluster" Top="[float]-20" Width="[float]37" />
+												<p10:Label Height="[float]16" Id="e98a4a2a1c344d00ba35de9b676223d1" IsVisualChild="[bool]False" LabelOwner="[UIModel]bcd4c6510e1e43caa1d2be0f6aa74f92" Left="[float]6" Text="[string]Cluster" Top="[float]-14" Width="[float]37" />
 											</p10:Cluster>
 										</p10:ArrayViewer>
 										<p10:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="6e2ca36347844a278ded3d4334af3f81" LabelOwner="[UIModel]ea5702b7667c4f0daf11967e57a597bb" Left="[float]201" Text="[string]Light Power Calibration Data" Top="[float]87" Width="[float]151" />
@@ -9936,7 +9936,7 @@
 										<EnumSelectorInfo DisplayValue="[string]Access TXT File" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]13" ValueType="[Type]UInt16" />
 										<EnumSelectorInfo DisplayValue="[string]Stop App" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]14" ValueType="[Type]UInt16" />
 									</EnumSelector>
-									<Label Height="[float]16" Id="ca332840865c46a5ad5e1056e0d5e8c7" LabelOwner="[UIModel]c067de3e6a214ccf86af5c3500802f7b" Left="[float]510" Text="[string]Current State" Top="[float]83" Width="[float]100" xmlns="http://www.ni.com/PanelCommon" />
+									<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="ca332840865c46a5ad5e1056e0d5e8c7" LabelOwner="[UIModel]c067de3e6a214ccf86af5c3500802f7b" Left="[float]510" Text="[string]Current State" Top="[float]83" Width="[float]70" xmlns="http://www.ni.com/PanelCommon" />
 									<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="1c5ca7cbfe79450d9a2710517c4c7247" IsReadOnly="[bool]True" Label="[UIModel]269893ad4ffd4a81be64989c7d361afe" Left="[float]510" TabIndex="[int]2" Text="{DataItemBinding Id=b0be89b85ab947d79bd7f64c47ff0095}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]151" TypeToReplace="[bool]False" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]184" />
 									<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="269893ad4ffd4a81be64989c7d361afe" LabelOwner="[UIModel]1c5ca7cbfe79450d9a2710517c4c7247" Left="[float]510" Text="[string]Current Sub State" Top="[float]131" Width="[float]93" xmlns="http://www.ni.com/PanelCommon" />
 									<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]72" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="18759382579a4c1888fd223c40267954" IsReadOnly="[bool]True" Label="[UIModel]da2ae0a2c51d4012931f9127c88ad18f" Left="[float]510" TabIndex="[int]3" Text="{DataItemBinding Id=5d6d366a284b4923986494b1a73b8a26}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]203" TypeToReplace="[bool]False" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]232" />
@@ -10172,17 +10172,17 @@
 												<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="5ddc4f25bb51415fbec2489ffdb6dbe6" Label="[UIModel]695da686a72e441b910f696e1390e23a" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Main\ Tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 												<p10:Label Height="[float]16" Id="695da686a72e441b910f696e1390e23a" LabelOwner="[UIModel]5ddc4f25bb51415fbec2489ffdb6dbe6" Left="[float]4" Text="[string]Main Tab" Top="[float]4" Width="[float]48" />
 												<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="9b9bb2bc1e5748b69f539c20304e93ed" Label="[UIModel]d4dd5c9e50cd4a778122f26d1068c928" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=Rainbow\ Measurement\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-												<p10:Label Height="[float]16" Id="d4dd5c9e50cd4a778122f26d1068c928" LabelOwner="[UIModel]9b9bb2bc1e5748b69f539c20304e93ed" Left="[float]4" Text="[string]Rainbow Measurement tab" Top="[float]56" Width="[float]142" />
+												<p10:Label Height="[float]16" Id="d4dd5c9e50cd4a778122f26d1068c928" LabelOwner="[UIModel]9b9bb2bc1e5748b69f539c20304e93ed" Left="[float]4" Text="[string]Rainbow Measurement tab" Top="[float]56" Width="[float]143" />
 												<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="e1b0245101214a3795fa50fe0a40f12b" Label="[UIModel]47a797aab4774dc18d222728b1db7e1a" Left="[float]37" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]90" Value="{ClusterBinding FieldName=Configuration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-												<p10:Label Height="[float]16" Id="47a797aab4774dc18d222728b1db7e1a" LabelOwner="[UIModel]e1b0245101214a3795fa50fe0a40f12b" Left="[float]37" Text="[string]Configuration tab" Top="[float]70" Width="[float]93" />
+												<p10:Label Height="[float]16" Id="47a797aab4774dc18d222728b1db7e1a" LabelOwner="[UIModel]e1b0245101214a3795fa50fe0a40f12b" Left="[float]37" Text="[string]Configuration tab" Top="[float]70" Width="[float]94" />
 												<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="4f290ba2a6124f78bf02726b8b6056a0" Label="[UIModel]2c4c1fe7202f4f61809ee8d95e3272a3" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]3" Top="[float]136" Value="{ClusterBinding FieldName=Light\ Calibration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 												<p10:Label Height="[float]16" Id="2c4c1fe7202f4f61809ee8d95e3272a3" LabelOwner="[UIModel]4f290ba2a6124f78bf02726b8b6056a0" Left="[float]5" Text="[string]Light Calibration tab" Top="[float]116" Width="[float]108" />
 												<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="b17c745e824643329a5890fdd8bc0e80" Label="[UIModel]1343d3f80e74fd3b615077d99ca67e1" Left="[float]39" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@17542329b7a847f9973fd19856732c02`@17542329b7a847f9973fd19856732c02" TabIndex="[int]4" Top="[float]153" Value="{ClusterBinding FieldName=SRM\ Plot\ Parameter\ Selector}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-												<p10:Label Height="[float]16" Id="1343d3f80e74fd3b615077d99ca67e1" LabelOwner="[UIModel]b17c745e824643329a5890fdd8bc0e80" Left="[float]39" Text="[string]SRM Plot Parameter Selector" Top="[float]133" Width="[float]151" />
+												<p10:Label Height="[float]16" Id="1343d3f80e74fd3b615077d99ca67e1" LabelOwner="[UIModel]b17c745e824643329a5890fdd8bc0e80" Left="[float]39" Text="[string]SRM Plot Parameter Selector" Top="[float]133" Width="[float]152" />
 												<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="70b28eef0ef64868a7ff7adf6a931176" Label="[UIModel]40f3d21ec1da4c9eb149e5546355fbe1" Left="[float]59" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@cefcf7ae93254a189ea80326ec31676e`@cefcf7ae93254a189ea80326ec31676e" TabIndex="[int]5" Top="[float]22" Value="{ClusterBinding FieldName=Current\ State}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 												<p10:Label Height="[float]16" Id="40f3d21ec1da4c9eb149e5546355fbe1" LabelOwner="[UIModel]70b28eef0ef64868a7ff7adf6a931176" Left="[float]59" Text="[string]Current State" Top="[float]2" Width="[float]70" />
 											</p10:Cluster>
-											<p10:Label Height="[float]16" Id="9a9a3e70d4914da29723c99e654e885a" LabelOwner="[UIModel]71f9f6f50a1843529ec063dccd5ddaf0" Left="[float]4" Text="[string]Enum Reference Cluster" Top="[float]4" Width="[float]125" />
+											<p10:Label Height="[float]16" Id="9a9a3e70d4914da29723c99e654e885a" LabelOwner="[UIModel]71f9f6f50a1843529ec063dccd5ddaf0" Left="[float]4" Text="[string]Enum Reference Cluster" Top="[float]4" Width="[float]126" />
 											<p10:Cluster BaseName="[string]Boolean Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@5f35a9c276df47e0bdd52e31f1c5a3f6" Enabled="[bool]True" Height="[float]112" Id="ba712f0b52294717919084b90c6336aa" IsTabStop="[bool]True" Label="[UIModel]7ce6a84e14e74032a21ac8abed5d125e" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Boolean\ Reference\ Cluster}" Width="[float]137" p10:ControlDefinitionChecksum="mIDDS2NNXgS/j4GLGSLN43/Y7UQ1zXsG29vVb6+ssX8=">
 												<p10:p.TypeDefinitionTargets>
 													<p10:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Boolean Control Reference Cluster.gtype::ControlDefinition" />
@@ -10359,7 +10359,7 @@
 										</p10:Cluster>
 										<p10:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="6511f64dc7ac499992b528d1142edf89" LabelOwner="[UIModel]ff49e44f68f8499db96800699c0e165d" Left="[float]400" Text="[string]All Paths" Top="[float]3" Width="[float]46" />
 									</Cluster>
-									<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="45acac4a9004d0ba0e19331db72cd1d" LabelOwner="[UIModel]802801643e454f4f8cf4fa56fa44f9e6" Left="[float]14" Text="[string]Misc Data Mega Cluster" Top="[float]14" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+									<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="45acac4a9004d0ba0e19331db72cd1d" LabelOwner="[UIModel]802801643e454f4f8cf4fa56fa44f9e6" Left="[float]14" Text="[string]Misc Data Mega Cluster" Top="[float]14" Width="[float]126" xmlns="http://www.ni.com/PanelCommon" />
 								</LayoutPanel>
 							</TabItem>
 							<TabItem Header="[string]Photodetector Measurement" Id="99d5cadc4913413687c1261b11ecf5ab" Left="[float]0" Top="[float]0">
