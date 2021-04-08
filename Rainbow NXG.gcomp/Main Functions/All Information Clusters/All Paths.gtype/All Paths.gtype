@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="DCE16441EC1FA90975A3E6D207A6D039C59C4CA7651557515459A21CDE8AD70CCD94A954506D6E63B58A66253EFD6014E08E626235C5F231299A3C0C2E93A2D5" Timestamp="1D72BC30F6BAB6F" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@9671a766fb81401d8d44e26f09512303" Id="ad55a2b238fb411c91a2948a14d8ec80" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="9da81d08b46340f286ff4efdc63975ea" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="d7d4fae43dc74023994ac1212d227984" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="9a082f3a690471bbf4d0afce60b6cd5" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@9671a766fb81401d8d44e26f09512303" Id="96f5cb7b85a14210ae8cd56d6f1ecbf6" Name="All Paths">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>
+						<Path a="1" />
+					</Field1>
+					<Field2>
+						<Path a="1" />
+					</Field2>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="c6cc006ec71d43e2989f324c9f712584" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="a8d49d4992284f7cb6c446da381311a1" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="3536d09e8d614e18933a1817320e94aa" Name="All Paths.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="abc4596993904716a145ec053896c9f7" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="b0c814e889f44306938da7ad2bee85ec" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Paths Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@9671a766fb81401d8d44e26f09512303" Height="[float]106" Id="e4b6a8f4ae9a4d6ab77601e378abb86b" IsTabStop="[bool]True" Label="[UIModel]51da39f3ed9844aa869375f98935bd29" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=96f5cb7b85a14210ae8cd56d6f1ecbf6}" Width="[float]335" xmlns="http://www.ni.com/PanelCommon">
+						<PathSelector BaseName="[string]Path" Height="[float]24" Id="d99e3501169d471ea0d7353bc62bc3d0" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]e66d45fa65dc4d65b8d6e8b2a20dfc33" Left="[float]4" Path="{ClusterBinding FieldName=Thorlabs\ Motor\ Serial\ Number\ File\ Path}" TabIndex="[int]0" Top="[float]24" Width="[float]319" WrapText="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="e66d45fa65dc4d65b8d6e8b2a20dfc33" LabelOwner="[UIModel]d99e3501169d471ea0d7353bc62bc3d0" Left="[float]4" Text="[string]Thorlabs Motor Serial Number File Path" Top="[float]4" Width="[float]209" />
+						<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Height="[float]24" Id="1d146322e0934d1ab6824fe2e7ca1f27" Label="[UIModel]b7ea2489cdda4848bbd87ed77ba8d851" Left="[float]4" Path="{ClusterBinding FieldName=Default\ Data\ Saving\ Location}" TabIndex="[int]1" Top="[float]70" Width="[float]152" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="b7ea2489cdda4848bbd87ed77ba8d851" LabelOwner="[UIModel]1d146322e0934d1ab6824fe2e7ca1f27" Left="[float]4" Text="[string]Default Data Saving Location" Top="[float]50" Width="[float]153" />
+					</Cluster>
+					<Label Height="[float]16" Id="51da39f3ed9844aa869375f98935bd29" LabelOwner="[UIModel]e4b6a8f4ae9a4d6ab77601e378abb86b" Left="[float]100" Text="[string]All Paths" Top="[float]80" Width="[float]45" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="9671a766fb81401d8d44e26f09512303">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Thorlabs Motor Serial Number File Path" DataType="Path" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Default Data Saving Location" DataType="Path" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
