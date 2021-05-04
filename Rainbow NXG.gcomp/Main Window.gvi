@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="E25DDAB52EEFC41FBDF025807F276DA666B07B233FAC113348739564B35AEA4930D9536CFED68BCC589CD130BD4A405D5FE05AA4A64DBD3EF84F1CA630AC3E82" Timestamp="1D7382B58CE3803" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="9A066CF2395EEC1D335EA39BF59B40355B5FFAE4C035A140DC4C6FCA105FD4BFDBAE6B444910B22B7454845EF7D04600594DD2669E2162277F10F68D44475B56" Timestamp="1D73B412B7E922A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -400,6 +400,12 @@
 			</DataAccessor>
 			<NodeLabel AttachedTo="cbf6b6e9f21744d891b546d92ba20c1b" Bounds="45 0 30 15" Id="176f51843e2b4e4b909e577fac5be104" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>SRM Light Power Density (W/m^2)</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="-5655 -4095 40 15" DataItem="494f38f4821e4deaad9936fff03f4522" Id="3bcfbb1a633e498b93a1003b6f126116" Label="b73e8f3f1f684731abdb86bcb502e90a">
+				<Terminal DataType="@272a24b82a434ed896958e12904ae149" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="3bcfbb1a633e498b93a1003b6f126116" Bounds="-5873 -4095 213 14" Id="b73e8f3f1f684731abdb86bcb502e90a" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Rainbow Sweep Param Selector Beam PD</p.Text>
 			</NodeLabel>
 		</DiagramUnplacedItems>
 		<FrontPanelUnplacedItems Id="9265e0a0d45e4a169bc8e7e0241f2383" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
@@ -1279,7 +1285,7 @@
 			<WhileLoop Bounds="-4405 -5560 1160 345" DiagramId="1e4a4d1a2f4c429e9c062723792fb443" Id="f8943ce0ffb746e6a5da1408b2318a4d">
 				<LoopIteration Bounds="0 320 15 15" Id="f59d459e6a8645d7bfed5a61b41450bd" />
 				<LoopCondition Bounds="1135 320 15 15" Id="36bf79a172a949e191eb20572e8754f8" />
-				<EventStructure Bounds="39 47 1000 240" Id="3cecc3476a4d470dbc1e218818d50c94" Selected="9a272d3022f84897a79ab2db2703bcde" UserSelectorBounds="20 0 960 17">
+				<EventStructure Bounds="39 47 1000 240" Id="3cecc3476a4d470dbc1e218818d50c94" Selected="8d538fffb8434898a9eab74a8129e756" UserSelectorBounds="20 0 960 17">
 					<EventStructure.EventCase Bounds="21 18 958 214" Id="d3322a7bfc8415e92038adac78cf554">
 						<EventStructure.EventData Bounds="0 150 62 35" HasErrorTerminals="False" Id="a52d6e8cb83c4ab2a8d02ac4a4d96b1c" InstanceDataType="@bcc8c2e7cfd648899362fb905219fcad" Mode="InstanceProperties" PropertyPathsInSemanticOrder="Time,Index">
 							<EventPropertyItemTerminal DataType="UInt32" Hotspot="62 15" Id="c0t0v" Path="Time" PathElementMemberKinds="Field" Usage="Optional" />
@@ -4727,7 +4733,7 @@
 												<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 											</RangeLabeledDivisions>
 										</Axis>
-										<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" DisableMappingChanges="[bool]False" Id="c316eb5b65df4f4ea78eaf1a8619dfa4" IsInverted="[bool]False" Label="[string]Current Density (A/m^2)" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]e60eb8b87ab4435ba056b93abe358458" Orientation="[SMOrientation]Vertical" Range="[IRange]-140000, 150000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+										<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" DisableMappingChanges="[bool]False" Id="c316eb5b65df4f4ea78eaf1a8619dfa4" IsInverted="[bool]False" Label="[string]Current Density (A/m^2)" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]e60eb8b87ab4435ba056b93abe358458" Orientation="[SMOrientation]Vertical" Range="[IRange]-200, 200, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 											<RangeLabeledDivisions Id="e60eb8b87ab4435ba056b93abe358458">
 												<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 											</RangeLabeledDivisions>
@@ -7301,7 +7307,7 @@
 												<p.LabelPresenter Kind="LVRelativeSeconds" Format="0" />
 											</RangeLabeledDivisions>
 										</Axis>
-										<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" DisableMappingChanges="[bool]False" Id="975063a7bcf7452a9a1d1e9039ff5fef" IsInverted="[bool]False" Label="[string]Parameter Value" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]b73e5fbf336d45c7988718b883c5e5e1" Orientation="[SMOrientation]Vertical" Range="[IRange]1000, 1500, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+										<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" DisableMappingChanges="[bool]False" Id="975063a7bcf7452a9a1d1e9039ff5fef" IsInverted="[bool]False" Label="[string]Parameter Value" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]b73e5fbf336d45c7988718b883c5e5e1" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 6, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 											<RangeLabeledDivisions Id="b73e5fbf336d45c7988718b883c5e5e1">
 												<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
 											</RangeLabeledDivisions>
@@ -9868,9 +9874,9 @@
 				</TabItem>
 				<TabItem Header="[string]One Time Calibrations" Id="369a31e420e84362aeb4a74883c7d585" Left="[float]90" TabIndex="[int]0" Top="[float]22">
 					<LayoutPanel Height="[float]683" Id="d25bf3d3206d4a519439f0738bb08034" Left="[float]5" Top="[float]25" Width="[float]1174">
-						<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Enabled="[bool]True" Height="[float]623" Id="3bca6ba935304ad6b2d872b3c9357eac" IncludeInCapture="[bool]False" Label="[UIModel]85704156734b4fd8aa5abe3342656d75" Left="[float]6" SelectedIndex="{DataItemBinding Id=e54ff9355c744df7bcfe6bb0f2f7b07e}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Visible" TabStripPlacement="[Dock]Top" Top="[float]11" Width="[float]936">
+						<TabControl BaseName="[string]Tab" ControlResizeMode="[ControlResizeMode]Fixed" Enabled="[bool]True" Height="[float]623" Id="3bca6ba935304ad6b2d872b3c9357eac" IncludeInCapture="[bool]False" Label="[UIModel]85704156734b4fd8aa5abe3342656d75" Left="[float]6" SelectedIndex="{DataItemBinding Id=e54ff9355c744df7bcfe6bb0f2f7b07e}" TabIndex="[int]0" TabSelectorVisibility="[SMVisibility]Visible" TabStripPlacement="[Dock]Top" Top="[float]11" Width="[float]1016">
 							<TabItem Header="[string]Beam Power Density" Id="2db8b3ea33fc4b4bb565bd1e7c4982eb" Left="[float]0" TabIndex="[int]0" Top="[float]0">
-								<LayoutPanel Height="[float]593" Id="fa91f8f7603e47d69217fd1029841770" Left="[float]5" Top="[float]25" Width="[float]926">
+								<LayoutPanel Height="[float]593" Id="fa91f8f7603e47d69217fd1029841770" Left="[float]5" Top="[float]25" Width="[float]1006">
 									<IntensityGraph BaseName="[string]Intensity Graph" BorderThickness="[SMThickness]1,1,1,1" ControlResizeMode="[ControlResizeMode]Fixed" DataSource="{DataItemBinding Id=5f5436cc3ecf40b7897e0229385a4ac4}" Enabled="[bool]True" Height="[float]568" Id="ac8beeaebdce48a2a233503f63912fe3" Label="[UIModel]d666ea5ebe4e42e3809b8c4171adcbff" Left="[float]16" MetadataAlwaysOverridesPlotNames="[bool]True" TabIndex="[int]0" Top="[float]25" Width="[float]712">
 										<Axis Adjuster="[RangeAdjuster]FitExactly" Id="488ed1c5c9eb4943a2f88e7106421d29" IsInverted="[bool]False" Label="[string]X" MajorDivisions="[UIModel]dcae4e810ad448cca684901fea318d59" MajorGridLines="[UIModel]7aef027efb7b4ad4910c64a51f273a12" Orientation="[SMOrientation]Horizontal" Range="[IRange]50, 100, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double">
 											<RangeLabeledDivisions Id="dcae4e810ad448cca684901fea318d59">
@@ -9892,10 +9898,50 @@
 									</IntensityGraph>
 									<ScaleLegend Enabled="[bool]True" Graph="[UIModel]ac8beeaebdce48a2a233503f63912fe3" Height="[float]80" Id="cd81e39834d944f29f94103d2cabc30d" Left="[float]735" Top="[float]491" Visible="[bool]False" />
 									<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="d666ea5ebe4e42e3809b8c4171adcbff" LabelOwner="[UIModel]ac8beeaebdce48a2a233503f63912fe3" Left="[float]16" Text="[string]Beam Power Density" Top="[float]5" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
+									<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Rainbow Sweep Parameters" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@272a24b82a434ed896958e12904ae149" Enabled="[bool]True" Height="[float]350" Id="414f89fb80c54f3f9064bacf32fbc36e" IsTabStop="[bool]True" Label="[UIModel]faf1eba43e2441409a1f3d20a4e84e05" LabelLinked="[bool]True" Left="[float]760" TabIndex="[int]1" Top="[float]31" Value="{DataItemBinding Id=494f38f4821e4deaad9936fff03f4522}" Width="[float]190" p10:ControlDefinitionChecksum="NldGDyL0c9veK/dVHRZ8x8iV5eX3TG4VmL2yKywtzkk=" xmlns:p10="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+										<p10:p.TypeDefinitionTargets>
+											<p10:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype::ControlDefinition" />
+										</p10:p.TypeDefinitionTargets>
+										<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Enabled="[bool]True" Height="[float]24" Id="d2c6cefe953c4df3abbf8df6f6e10e96" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]de1b9b56f8df49328673236add5e75c5" LabelLinked="[bool]True" Left="[float]6" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Raibow\ Sweep\ Selector}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]132" p10:ControlDefinitionChecksum="QNktMWMZ+qT6uq3C3WYrT/lhJTZuZoLtevMHMHYZvOI=" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+											<p10:p.TypeDefinitionTargets>
+												<p10:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Raibow Sweep Selector.gtype::ControlDefinition" />
+											</p10:p.TypeDefinitionTargets>
+											<EnumSelectorInfo DisplayValue="[string]Red Sweep" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+											<EnumSelectorInfo DisplayValue="[string]Blue Sweep" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+											<EnumSelectorInfo DisplayValue="[string]Full Sweep Red First" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+											<EnumSelectorInfo DisplayValue="[string]Full Sweep Blue First" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
+										</EnumSelector>
+										<p10:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="de1b9b56f8df49328673236add5e75c5" LabelOwner="[UIModel]d2c6cefe953c4df3abbf8df6f6e10e96" Left="[float]6" Text="[string]Raibow Sweep Selector" Top="[float]4" Width="[float]123" />
+										<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="b4dd799ab9864451bb4eb9af1efaa546" Interval="[double]1" Label="[UIModel]b681820fe75340a9bf08ea950a657044" Left="[float]4" Maximum="[double]3000" Minimum="[double]200" TabIndex="[int]1" Top="[float]210" Value="{ClusterBinding FieldName=Max\ Wavelength\ (nm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+										<p10:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="b681820fe75340a9bf08ea950a657044" LabelOwner="[UIModel]b4dd799ab9864451bb4eb9af1efaa546" Left="[float]4" Text="[string]Max Wavelength (nm)" Top="[float]190" Width="[float]117" />
+										<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="6894f0536c714c218f5ce4e1c45a94e8" Interval="[double]1" Label="[UIModel]97ae598ffdfd4c89af377c3a4672138f" Left="[float]4" Maximum="[double]3000" Minimum="[double]200" TabIndex="[int]2" Top="[float]262" Value="{ClusterBinding FieldName=Min\ Wavelength\ (nm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+										<p10:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="97ae598ffdfd4c89af377c3a4672138f" LabelOwner="[UIModel]6894f0536c714c218f5ce4e1c45a94e8" Left="[float]4" Text="[string]Min Wavelength (nm)" Top="[float]242" Width="[float]115" />
+										<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="ab1d936a1d72422cba3f555c7b2abd6f" Interval="[double]1" Label="[UIModel]c7b6e4733665407ebc10c2f11f5bcaac" Left="[float]4" Maximum="[double]3000" Minimum="[double]0.1" TabIndex="[int]3" Top="[float]314" Value="{ClusterBinding FieldName=Wavelength\ Step\ (nm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+										<p10:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="c7b6e4733665407ebc10c2f11f5bcaac" LabelOwner="[UIModel]ab1d936a1d72422cba3f555c7b2abd6f" Left="[float]4" Text="[string]Wavelength Step (nm)" Top="[float]294" Width="[float]118" />
+										<p10:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Rainbow Sweep Type Selector" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b6606921c1ff403aa8281a1878492581" Enabled="[bool]True" Height="[float]109" Id="c61e6bf52ac342269f32a4e67a1ee73c" Label="[UIModel]925cf76428a14278b320490362c0a5fc" Left="[float]7" TabIndex="[int]4" Top="[float]73" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Type\ Selector}" Width="[float]171" p10:ControlDefinitionChecksum="LrCG4C/v+MgqJiPKcd2DJhFUjW1heRW1zm/4xYr34yQ=">
+											<p10:p.TypeDefinitionTargets>
+												<p10:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Type Selector.gtype::ControlDefinition" />
+											</p10:p.TypeDefinitionTargets>
+											<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Enabled="[bool]True" Height="[float]24" Id="d4cc5820c9b746b09290d9862740bc28" IsTypeAheadEnabled="[bool]True" Label="[UIModel]33561ddd95874e1098cd09c203e4e4f2" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Red\ Sweep\ Mode}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]155" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+												<EnumSelectorInfo DisplayValue="[string]Red Sweep Closing" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+												<EnumSelectorInfo DisplayValue="[string]Red Sweep Opening" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+												<EnumSelectorInfo DisplayValue="[string]Red Sweep Both Ways" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+											</EnumSelector>
+											<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Enabled="[bool]True" Height="[float]24" Id="48b7758597e3407e9a3b917a35907194" IsTypeAheadEnabled="[bool]True" Label="[UIModel]cadb04abb7d34c599d80cbab65cf4198" Left="[float]4" TabIndex="[int]1" Top="[float]73" Value="{ClusterBinding FieldName=Blue\ Sweep\ Mode}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]155" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+												<EnumSelectorInfo DisplayValue="[string]Blue Sweep Opening" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+												<EnumSelectorInfo DisplayValue="[string]Blue Sweep Closing" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+												<EnumSelectorInfo DisplayValue="[string]Blue Sweep Both Ways" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+											</EnumSelector>
+											<p10:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="33561ddd95874e1098cd09c203e4e4f2" LabelOwner="[UIModel]d4cc5820c9b746b09290d9862740bc28" Left="[float]4" Text="[string]Red Sweep Mode" Top="[float]4" Width="[float]93" />
+											<p10:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="cadb04abb7d34c599d80cbab65cf4198" LabelOwner="[UIModel]48b7758597e3407e9a3b917a35907194" Left="[float]4" Text="[string]Blue Sweep Mode" Top="[float]53" Width="[float]96" />
+										</p10:Cluster>
+										<p10:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="925cf76428a14278b320490362c0a5fc" LabelOwner="[UIModel]c61e6bf52ac342269f32a4e67a1ee73c" Left="[float]7" Text="[string]Rainbow Sweep Type Selector" Top="[float]53" Width="[float]158" />
+									</Cluster>
+									<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="faf1eba43e2441409a1f3d20a4e84e05" LabelOwner="[UIModel]414f89fb80c54f3f9064bacf32fbc36e" Left="[float]760" Text="[string]Rainbow Sweep Param Selector Beam PD" Top="[float]11" Width="[float]218" xmlns="http://www.ni.com/PanelCommon" />
 								</LayoutPanel>
 							</TabItem>
 							<TabItem Header="[string]Measuring Spot Spectrum" Id="e0d2bd35d5a2485ba3fe32bb181e307f" Left="[float]0" TabIndex="[int]0" Top="[float]0">
-								<LayoutPanel Height="[float]593" Id="d16e758116fc4a8cb464f53f9e544e23" Left="[float]5" Top="[float]25" Width="[float]926">
+								<LayoutPanel Height="[float]593" Id="d16e758116fc4a8cb464f53f9e544e23" Left="[float]5" Top="[float]25" Width="[float]1006">
 									<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" ControlResizeMode="[ControlResizeMode]Fixed" DataSource="{DataItemBinding Id=13a9bef66d304daf9b213c64a5379ab3}" Enabled="[bool]True" Height="[float]552" Id="59d5b3efe05e40e580b49e68c99157d5" Label="[UIModel]879adbe1ca7044739739a523fa915f3a" Left="[float]3" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]True" SuppressScaleLayout="[bool]False" TabIndex="[int]0" Top="[float]4" Width="[float]776">
 										<Axis Adjuster="[RangeAdjuster]FitLoosely" DisableMappingChanges="[bool]False" Id="cee325bfd61c4f508e1b9bba6f63a3b1" IsInverted="[bool]False" Label="[string]Wavelength" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]bab5f270cd0445b099f6da3ac2729bee" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 											<RangeLabeledDivisions Id="bab5f270cd0445b099f6da3ac2729bee">
@@ -9945,10 +9991,10 @@
 								</LayoutPanel>
 							</TabItem>
 							<TabItem Header="[string]Beam Spectral Density" Id="b59437450514614b7ab31d72c8f3eb1" Left="[float]0" TabIndex="[int]0" Top="[float]0">
-								<LayoutPanel Height="[float]593" Id="3570d0412e4547d9984e0b50b8aeb885" Left="[float]5" Top="[float]25" Width="[float]926" />
+								<LayoutPanel Height="[float]593" Id="3570d0412e4547d9984e0b50b8aeb885" Left="[float]5" Top="[float]25" Width="[float]1006" />
 							</TabItem>
 							<TabItem Header="[string]MSpot Dividing Wavelength Calibration" Id="47b1b2fb81954b6db8d8200f6c4f96cb" Left="[float]0" Top="[float]0">
-								<LayoutPanel Height="[float]593" Id="f8ba79854f414cdd81c5d29c4a9ccfa7" Left="[float]5" Top="[float]25" Width="[float]926">
+								<LayoutPanel Height="[float]593" Id="f8ba79854f414cdd81c5d29c4a9ccfa7" Left="[float]5" Top="[float]25" Width="[float]1006">
 									<Text BaseName="[string]Text" Foreground="[SMColor]#ff2b3033" Height="[float]79" Id="6b16352fc74149cd954e5604b33fa2d4" Left="[float]411" Text="[string]A new window will appear&#xA;guiding you through the process :)" TextWrapping="[TextWrapping]Wrap" Top="[float]87" Width="[float]448" xmlns="http://www.ni.com/PlatformFramework">
 										<FontSetting FontFamily="Segoe UI" FontSize="22" Id="d7fe9b59c6e842a8b3b38bfe2076df40" />
 									</Text>
@@ -11268,6 +11314,12 @@
 			<p.DefaultValue>0</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Arduino::Multiplexer Arduino::XZ Stage Cell.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem DataType="@272a24b82a434ed896958e12904ae149" Id="494f38f4821e4deaad9936fff03f4522" Name="Rainbow Sweep Param Selector Beam PD" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0_0x4091300000000000_0x4072C00000000000_0x3FF0000000000000_1_0_</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
 	</VirtualInstrument>
