@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B58592F6221390CC6F6DD228AA1B48AA77DA301C10FBAB9A3DD1EEAA957CD5308A8FB5D51CBC437400AF160A3D20F586A1ADF83CF844A9DBAE41D618EB377BD8" Timestamp="1D741CA7A616FDB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="71D78E7353739DB2EA137D70B8651FA202C2AB50ACB96D1BC7084309D4652EEB8965D815E0B044351207363DEB2D90836EF4E9A7E0C4BAD0234EBEBE060C3F5B" Timestamp="1D74332BFFC5C48" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,23 +7,25 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@6f428f692b1344ac94098e113fcd17d8" Id="643b2b0128574a69832637f6305ce643" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@6dabe5d0f4074898b6ce34a08ef04f55" Id="643b2b0128574a69832637f6305ce643" xmlns="http://www.ni.com/MocCommon">
 		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 			<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
-			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Instruction Queue::Queue Instructions Control.gtype" />
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::Plotting::SRM Refined Plot Parameter Selector.gtype" />
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Instruction Queue::Queue Instructions Control.gtype" />
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Arduino::Multiplexer Arduino::XZ Stage Cell.gtype" />
 		</p.TypeDefinitionTargets>
 		<Icon Id="c7fe1055ead344928dcd827677cf191e" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="871fd75ef205454aab35e608f4072e50" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="d3f9e7b94d44478e8397a4a6dc11d89e" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@6f428f692b1344ac94098e113fcd17d8" Id="4318f1c93cba4f6699e0379af4168e1d" Name="Enum Reference Cluster">
-			<p.DefaultValue>0_0_0_0_0_0_</p.DefaultValue>
+		<DataItem DataType="@6dabe5d0f4074898b6ce34a08ef04f55" Id="4318f1c93cba4f6699e0379af4168e1d" Name="Enum Reference Cluster">
+			<p.DefaultValue>0_0_0_0_0_0_0_0_</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
-				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Instruction Queue::Queue Instructions Control.gtype" />
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::Plotting::SRM Refined Plot Parameter Selector.gtype" />
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Instruction Queue::Queue Instructions Control.gtype" />
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Arduino::Multiplexer Arduino::XZ Stage Cell.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
 	</TypeDefinition>
@@ -32,44 +34,43 @@
 		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="e7021c4b0970473c8866eff62d09b599" Name="Enum Control Reference Cluster.gtype" NameTracksFileName="True">
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="6d51f98fab864606b2873d449a3ff666" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="b255b956a3d8426c902ee71e8bc46d49" xmlns="http://www.ni.com/MocCommon">
-					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6f428f692b1344ac94098e113fcd17d8" Height="[float]189" Id="271c07e287ed41a4a31d85780a549b14" Label="[UIModel]2b3b20a969b84a408875f2ca328426b4" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=4318f1c93cba4f6699e0379af4168e1d}" Width="[float]217" xmlns="http://www.ni.com/PanelCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6dabe5d0f4074898b6ce34a08ef04f55" Height="[float]194" Id="271c07e287ed41a4a31d85780a549b14" Label="[UIModel]2b3b20a969b84a408875f2ca328426b4" Left="[float]99" TabIndex="[int]0" Top="[float]94" Value="{DataItemBinding Id=4318f1c93cba4f6699e0379af4168e1d}" Width="[float]219" xmlns="http://www.ni.com/PanelCommon">
 						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="7a6d706c754c464583f9371fd5c3c161" Label="[UIModel]28e4b06d43242ef8b7ffea370b19e4b" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Main\ Tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="28e4b06d43242ef8b7ffea370b19e4b" LabelOwner="[UIModel]7a6d706c754c464583f9371fd5c3c161" Left="[float]4" Text="[string]Main Tab" Top="[float]4" Width="[float]48" />
-						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="fce026d817834fbfbd966469cc113f1e" Label="[UIModel]afe04c72553c48e396396171cb54a507" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=Rainbow\ Measurement\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Height="[float]16" Id="afe04c72553c48e396396171cb54a507" LabelOwner="[UIModel]fce026d817834fbfbd966469cc113f1e" Left="[float]4" Text="[string]Rainbow Measurement tab" Top="[float]56" Width="[float]142" />
-						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="71b3b0612eff43eea277d44f7a8b016a" Label="[UIModel]3344d135d0f541b1980744fba11bfd89" Left="[float]37" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]90" Value="{ClusterBinding FieldName=Configuration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Height="[float]16" Id="3344d135d0f541b1980744fba11bfd89" LabelOwner="[UIModel]71b3b0612eff43eea277d44f7a8b016a" Left="[float]37" Text="[string]Configuration tab" Top="[float]70" Width="[float]93" />
-						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="877d8b47a53741419cded90834b2558a" Label="[UIModel]fb4fb5b20b2a459799b469a369ba7b8a" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]3" Top="[float]136" Value="{ClusterBinding FieldName=Light\ Calibration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Height="[float]16" Id="fb4fb5b20b2a459799b469a369ba7b8a" LabelOwner="[UIModel]877d8b47a53741419cded90834b2558a" Left="[float]5" Text="[string]Light Calibration tab" Top="[float]116" Width="[float]108" />
-						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="865cc4d23c654f4ba751f9e9b640876e" Label="[UIModel]5ebef690072c4388afb06cae6b146dc9" Left="[float]62" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@21dc46308fde44deb4bf7a43bea0f121`@21dc46308fde44deb4bf7a43bea0f121" TabIndex="[int]4" Top="[float]23" Value="{ClusterBinding FieldName=Current\ State}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Height="[float]16" Id="5ebef690072c4388afb06cae6b146dc9" LabelOwner="[UIModel]865cc4d23c654f4ba751f9e9b640876e" Left="[float]62" Text="[string]Current State" Top="[float]3" Width="[float]69" />
-						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="5f439703b23b4fa3ba69bcd42dd49c27" Label="[UIModel]e046dcae6ca54337b6eda76fee0b5b55" Left="[float]34" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@8ece4b6fc84e435884248b5775977d2a`@8ece4b6fc84e435884248b5775977d2a" TabIndex="[int]5" Top="[float]152" Value="{ClusterBinding FieldName=SRM\ Plot\ Parameter\ Selector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Height="[float]16" Id="e046dcae6ca54337b6eda76fee0b5b55" LabelOwner="[UIModel]5f439703b23b4fa3ba69bcd42dd49c27" Left="[float]34" Text="[string]SRM Plot Parameter Selector Ref" Top="[float]132" Width="[float]172" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="fce026d817834fbfbd966469cc113f1e" Label="[UIModel]afe04c72553c48e396396171cb54a507" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]82" Value="{ClusterBinding FieldName=Rainbow\ Measurement\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="afe04c72553c48e396396171cb54a507" LabelOwner="[UIModel]fce026d817834fbfbd966469cc113f1e" Left="[float]5" Text="[string]Rainbow Measurement tab" Top="[float]62" Width="[float]142" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="71b3b0612eff43eea277d44f7a8b016a" Label="[UIModel]3344d135d0f541b1980744fba11bfd89" Left="[float]38" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]96" Value="{ClusterBinding FieldName=Configuration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="3344d135d0f541b1980744fba11bfd89" LabelOwner="[UIModel]71b3b0612eff43eea277d44f7a8b016a" Left="[float]38" Text="[string]Configuration tab" Top="[float]76" Width="[float]93" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="877d8b47a53741419cded90834b2558a" Label="[UIModel]fb4fb5b20b2a459799b469a369ba7b8a" Left="[float]6" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]3" Top="[float]142" Value="{ClusterBinding FieldName=Light\ Calibration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="fb4fb5b20b2a459799b469a369ba7b8a" LabelOwner="[UIModel]877d8b47a53741419cded90834b2558a" Left="[float]6" Text="[string]Light Calibration tab" Top="[float]122" Width="[float]108" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="5f439703b23b4fa3ba69bcd42dd49c27" Label="[UIModel]e046dcae6ca54337b6eda76fee0b5b55" Left="[float]35" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@8ece4b6fc84e435884248b5775977d2a`@8ece4b6fc84e435884248b5775977d2a" TabIndex="[int]4" Top="[float]158" Value="{ClusterBinding FieldName=SRM\ Plot\ Parameter\ Selector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="e046dcae6ca54337b6eda76fee0b5b55" LabelOwner="[UIModel]5f439703b23b4fa3ba69bcd42dd49c27" Left="[float]35" Text="[string]SRM Plot Parameter Selector Ref" Top="[float]138" Width="[float]172" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="f75154847a5042839adea93c2f5739e7" Label="[UIModel]f279cc8889b14aeeb4a93838a274ca6a" Left="[float]58" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@5f66b04efeb44759b859f48d5062a00e`@5f66b04efeb44759b859f48d5062a00e" TabIndex="[int]5" Top="[float]24" Value="{ClusterBinding FieldName=Current\ State\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="f279cc8889b14aeeb4a93838a274ca6a" LabelOwner="[UIModel]f75154847a5042839adea93c2f5739e7" Left="[float]58" Text="[string]Current State Ref" Top="[float]4" Width="[float]90" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="cffa508ad7574542b8ad973fc087b738" Label="[UIModel]d4eda49caffc4ce189052fb79008a856" Left="[float]175" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@c84aa0db260e415db7b2617852ad226e`@c84aa0db260e415db7b2617852ad226e" TabIndex="[int]6" Top="[float]70" Value="{ClusterBinding FieldName=MRM\ Cell\ Refined\ Plot\ Selector\ ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="76748925297a4a0f8c88de159c227f58" Label="[UIModel]4f7ab30662434fb2a009e26a69c95e8f" Left="[float]118" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@c84aa0db260e415db7b2617852ad226e`@c84aa0db260e415db7b2617852ad226e" TabIndex="[int]7" Top="[float]112" Value="{ClusterBinding FieldName=MRM\ Cell\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="d4eda49caffc4ce189052fb79008a856" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]cffa508ad7574542b8ad973fc087b738" Left="[float]16" Text="[string]MRM Cell Refined Plot Selector ref" Top="[float]50" Width="[float]182" />
+						<Label Height="[float]16" Id="4f7ab30662434fb2a009e26a69c95e8f" LabelAlignment="[PartAlignment]TopRight" LabelOwner="[UIModel]76748925297a4a0f8c88de159c227f58" Left="[float]70" Text="[string]MRM Cell Ref" Top="[float]92" Width="[float]72" />
 					</Cluster>
-					<Label Height="[float]16" Id="2b3b20a969b84a408875f2ca328426b4" LabelOwner="[UIModel]271c07e287ed41a4a31d85780a549b14" Left="[float]100" Text="[string]Enum Reference Cluster" Top="[float]80" Width="[float]125" xmlns="http://www.ni.com/PanelCommon" />
+					<Label Height="[float]16" Id="2b3b20a969b84a408875f2ca328426b4" LabelOwner="[UIModel]271c07e287ed41a4a31d85780a549b14" Left="[float]99" Text="[string]Enum Reference Cluster" Top="[float]74" Width="[float]125" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="6f428f692b1344ac94098e113fcd17d8">
+		<p.TypeReference TypeId="6dabe5d0f4074898b6ce34a08ef04f55">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Main Tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Measurement tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Configuration tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Light Calibration tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Current State" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@21dc46308fde44deb4bf7a43bea0f121`@21dc46308fde44deb4bf7a43bea0f121" />
 					<Field FieldAccessPolicy="ReadWrite" Name="SRM Plot Parameter Selector Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@8ece4b6fc84e435884248b5775977d2a`@8ece4b6fc84e435884248b5775977d2a" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current State Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@5f66b04efeb44759b859f48d5062a00e`@5f66b04efeb44759b859f48d5062a00e" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Cell Refined Plot Selector ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@c84aa0db260e415db7b2617852ad226e`@c84aa0db260e415db7b2617852ad226e" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Cell Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@c84aa0db260e415db7b2617852ad226e`@c84aa0db260e415db7b2617852ad226e" />
 				</Members>
 			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="21dc46308fde44deb4bf7a43bea0f121">
-			<Attributed AttributedType="@32d144d82476433baad2cef238facb10">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Instruction Queue" />
-				</AttributeValues>
-			</Attributed>
 		</p.TypeReference>
 		<p.TypeReference TypeId="8ece4b6fc84e435884248b5775977d2a">
 			<Attributed AttributedType="@e48efda834f04d14aecfbc17d2366471">
@@ -78,34 +79,28 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="32d144d82476433baad2cef238facb10">
-			<Typedef TypedefName="Queue Instructions Control.gtype" UnderlyingType="@292ea03bc43d4c4e8c3018b6f681d1bb" />
+		<p.TypeReference TypeId="5f66b04efeb44759b859f48d5062a00e">
+			<Attributed AttributedType="@b8fcc453f40644f3b1efa685f1040918">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Instruction Queue" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c84aa0db260e415db7b2617852ad226e">
+			<Attributed AttributedType="@3d03fbd21f8948de88c735f3144abd65">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Instrument Control::Arduino::Multiplexer Arduino" />
+				</AttributeValues>
+			</Attributed>
 		</p.TypeReference>
 		<p.TypeReference TypeId="e48efda834f04d14aecfbc17d2366471">
 			<Typedef TypedefName="SRM Refined Plot Parameter Selector.gtype" UnderlyingType="@369134f7e40945fd87561b0b98e76864" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="292ea03bc43d4c4e8c3018b6f681d1bb">
-			<Enumeration>
-				<Members>
-					<EnumerationMember Value="0" Name="Undefined State" />
-					<EnumerationMember Value="1" Name="Debug Check" />
-					<EnumerationMember Value="2" Name="Initialize App" />
-					<EnumerationMember Value="3" Name="Idle" />
-					<EnumerationMember Value="4" Name="Light Power Calibration" />
-					<EnumerationMember Value="5" Name="Rainbow Single Measurement" />
-					<EnumerationMember Value="6" Name="Light Calibration Irradiance" />
-					<EnumerationMember Value="7" Name="Light Calibration Spectral Density" />
-					<EnumerationMember Value="8" Name="Light Calibration Power Density" />
-					<EnumerationMember Value="9" Name="Stand Alone Photodetector Measurement" />
-					<EnumerationMember Value="10" Name="MSpot Spectrum Calibration" />
-					<EnumerationMember Value="11" Name="Move XZ Stage" />
-					<EnumerationMember Value="12" Name="Change Cell" />
-					<EnumerationMember Value="13" Name="Update All Info Meta Cluster" />
-					<EnumerationMember Value="14" Name="Access TXT File" />
-					<EnumerationMember Value="15" Name="Stop App" />
-				</Members>
-				<DataType>UInt16</DataType>
-			</Enumeration>
+		<p.TypeReference TypeId="b8fcc453f40644f3b1efa685f1040918">
+			<Typedef TypedefName="Queue Instructions Control.gtype" UnderlyingType="@2e094b2dd5b64a86a42a097de06fc1f2" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="3d03fbd21f8948de88c735f3144abd65">
+			<Typedef TypedefName="XZ Stage Cell.gtype" UnderlyingType="@1446c006ee3d4b13af8bc2e00483ba24" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="369134f7e40945fd87561b0b98e76864">
 			<Enumeration>
@@ -117,6 +112,65 @@
 					<EnumerationMember Value="4" Name="FF (%)" />
 					<EnumerationMember Value="5" Name="Rs (Ω · m^2)" />
 					<EnumerationMember Value="6" Name="Rsh (Ω · m^2)" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2e094b2dd5b64a86a42a097de06fc1f2">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Undefined State" />
+					<EnumerationMember Value="1" Name="Debug Check" />
+					<EnumerationMember Value="2" Name="Initialize App" />
+					<EnumerationMember Value="3" Name="Idle" />
+					<EnumerationMember Value="4" Name="Light Power Calibration" />
+					<EnumerationMember Value="5" Name="Rainbow Single Measurement" />
+					<EnumerationMember Value="6" Name="Rainbow Multiple Measurement" />
+					<EnumerationMember Value="7" Name="Light Calibration Irradiance" />
+					<EnumerationMember Value="8" Name="Light Calibration Spectral Density" />
+					<EnumerationMember Value="9" Name="Light Calibration Power Density" />
+					<EnumerationMember Value="10" Name="Stand Alone Photodetector Measurement" />
+					<EnumerationMember Value="11" Name="MSpot Spectrum Calibration" />
+					<EnumerationMember Value="12" Name="Move XZ Stage" />
+					<EnumerationMember Value="13" Name="Change Cell" />
+					<EnumerationMember Value="14" Name="Update All Info Meta Cluster" />
+					<EnumerationMember Value="15" Name="Access TXT File" />
+					<EnumerationMember Value="16" Name="Stop App" />
+					<EnumerationMember Value="17" Name="State 1" />
+					<EnumerationMember Value="18" Name="State 2 " />
+					<EnumerationMember Value="19" Name="State 3 " />
+					<EnumerationMember Value="20" Name="State 4" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1446c006ee3d4b13af8bc2e00483ba24">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="L.01" />
+					<EnumerationMember Value="1" Name="L.02" />
+					<EnumerationMember Value="2" Name="L.03" />
+					<EnumerationMember Value="3" Name="L.04" />
+					<EnumerationMember Value="4" Name="L.05" />
+					<EnumerationMember Value="5" Name="L.06" />
+					<EnumerationMember Value="6" Name="L.07" />
+					<EnumerationMember Value="7" Name="L.08" />
+					<EnumerationMember Value="8" Name="L.09" />
+					<EnumerationMember Value="9" Name="L.10" />
+					<EnumerationMember Value="10" Name="L.11" />
+					<EnumerationMember Value="11" Name="L.12" />
+					<EnumerationMember Value="12" Name="R.01" />
+					<EnumerationMember Value="13" Name="R.02" />
+					<EnumerationMember Value="14" Name="R.03" />
+					<EnumerationMember Value="15" Name="R.04" />
+					<EnumerationMember Value="16" Name="R.05" />
+					<EnumerationMember Value="17" Name="R.06" />
+					<EnumerationMember Value="18" Name="R.07" />
+					<EnumerationMember Value="19" Name="R.08" />
+					<EnumerationMember Value="20" Name="R.09" />
+					<EnumerationMember Value="21" Name="R.10" />
+					<EnumerationMember Value="22" Name="R.11" />
+					<EnumerationMember Value="23" Name="R.12" />
 				</Members>
 				<DataType>UInt16</DataType>
 			</Enumeration>

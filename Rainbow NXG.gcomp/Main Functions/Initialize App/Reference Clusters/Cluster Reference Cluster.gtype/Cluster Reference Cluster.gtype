@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DA54424652D53572961B40145BE3EB3912ED7FED765357B7F920B5A1D08B2DE641EE3458B6807022CFB1C704FB9C3C52AE0930E5962BA23F6E9F78BB0E3673C3" Timestamp="1D74283CFF8BEC5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="AA59B469C34A796CA2FE0A23D2E6CB515F0F5667BFA067B9F8E68EEB2A6A6B5EAE20327F9792AD412AA5FF1D0C285049A5E42F62BE6C12AB5B46CEA13C54A668" Timestamp="1D743561B2DD379" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,7 +7,7 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@1d7b586deb684d8fafa92828a841d1a0" Id="4e31e30007c44acd91b78e763e441141" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@e015a3eb0ffe455f8920d2d3167c1667" Id="4e31e30007c44acd91b78e763e441141" xmlns="http://www.ni.com/MocCommon">
 		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 			<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype" />
@@ -19,14 +19,15 @@
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Light Power Calibration::Light Power Calibration Data.gtype" />
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::Plotting::SRM Single Plot Cluster.gtype" />
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Multiple Rainbow Measurement::MRM Cell Selector::MRM Cell Selector.gtype" />
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Multiple Rainbow Measurement::MRM Specific Parameters.gtype" />
 		</p.TypeDefinitionTargets>
 		<Icon Id="2fd607470e7743e6869fb52a9ae3fa0c" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="43c1673a382244f98f3b724fd6550786" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="c7192730b61e4393b4f71940fc219b9a" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@1d7b586deb684d8fafa92828a841d1a0" Id="15df61717b444f7c97e033bf12e8e759" Name="Cluster Reference Cluster">
-			<p.DefaultValue>0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_</p.DefaultValue>
+		<DataItem DataType="@e015a3eb0ffe455f8920d2d3167c1667" Id="15df61717b444f7c97e033bf12e8e759" Name="Cluster Reference Cluster">
+			<p.DefaultValue>0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Rainbow Sweep::Rainbow Sweep Param Selector.gtype" />
@@ -38,6 +39,7 @@
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Light Power Calibration::Light Power Calibration Data.gtype" />
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::Plotting::SRM Single Plot Cluster.gtype" />
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Multiple Rainbow Measurement::MRM Cell Selector::MRM Cell Selector.gtype" />
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Multiple Rainbow Measurement::MRM Specific Parameters.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
 	</TypeDefinition>
@@ -46,7 +48,7 @@
 		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="56cbaed1bd704c6c8a141b9662c3d45f" Name="Cluster Reference Cluster.gtype" NameTracksFileName="True">
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="c601bd7c82bc4102a6234eff322a84f8" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="9a00297482394b76bd5f459c4a0089fd" xmlns="http://www.ni.com/MocCommon">
-					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@1d7b586deb684d8fafa92828a841d1a0" Height="[float]509" Id="9edb086212344c9381d62a71bbe038a9" Label="[UIModel]66ccd07fbff341ebb14c0fab9b4e85a0" Left="[float]97" TabIndex="[int]0" Top="[float]99" Value="{DataItemBinding Id=15df61717b444f7c97e033bf12e8e759}" Width="[float]265" xmlns="http://www.ni.com/PanelCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@e015a3eb0ffe455f8920d2d3167c1667" Height="[float]583" Id="9edb086212344c9381d62a71bbe038a9" Label="[UIModel]66ccd07fbff341ebb14c0fab9b4e85a0" Left="[float]97" TabIndex="[int]0" Top="[float]99" Value="{DataItemBinding Id=15df61717b444f7c97e033bf12e8e759}" Width="[float]265" xmlns="http://www.ni.com/PanelCommon">
 						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="85443bdcec884ce29a9e3e42a91306d6" Label="[UIModel]9e4977f8d73e4f968f606a08010c175e" Left="[float]7" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@15da5779ad7e43beadbe3a18f9bbd375`@15da5779ad7e43beadbe3a18f9bbd375" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Light\ Power\ Calibration}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="9e4977f8d73e4f968f606a08010c175e" LabelOwner="[UIModel]85443bdcec884ce29a9e3e42a91306d6" Left="[float]7" Text="[string]Light Power Calibration" Top="[float]4" Width="[float]123" />
 						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="1f8b212cb6fa4a73891bbcf99061f2ed" Label="[UIModel]281686275eb5442197a7d2d5b7a9d12e" Left="[float]9" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]2" Top="[float]89" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ RSM}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -93,8 +95,14 @@
 						<Label Height="[float]16" Id="60b6506944b4f56ba54c3c3db7e60db" LabelOwner="[UIModel]f62564c8cfc84b4eb5a4a978c8cb516e" Left="[float]40" Text="[string]Light Power Calibration Data Ref" Top="[float]20" Width="[float]171" />
 						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="d1f307e8d0be4459a68e99cdc3ab467b" Label="[UIModel]cde8af861b3a4552bfa5b4c6dc7021eb" Left="[float]137" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" TabIndex="[int]22" Top="[float]373" Value="{ClusterBinding FieldName=IV\ Plot\ Out\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="cde8af861b3a4552bfa5b4c6dc7021eb" LabelOwner="[UIModel]d1f307e8d0be4459a68e99cdc3ab467b" Left="[float]137" Text="[string]IV Plot Out Ref" Top="[float]353" Width="[float]78" />
-						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="5b556e1ffd2487f9f74ed294fd81d65" Label="[UIModel]c6066eb36c7e4ec69630efce8bc5e18b" Left="[float]130" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@e4039160d39a4982b2ab1aad4f36049c`@e4039160d39a4982b2ab1aad4f36049c" TabIndex="[int]23" Top="[float]473" Value="{ClusterBinding FieldName=MRM\ Cell\ Selector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="5b556e1ffd2487f9f74ed294fd81d65" Label="[UIModel]c6066eb36c7e4ec69630efce8bc5e18b" Left="[float]130" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@008b16de9d54474b8fcf992e1c19ba3a`@008b16de9d54474b8fcf992e1c19ba3a" TabIndex="[int]23" Top="[float]473" Value="{ClusterBinding FieldName=MRM\ Cell\ Selector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="c6066eb36c7e4ec69630efce8bc5e18b" LabelOwner="[UIModel]5b556e1ffd2487f9f74ed294fd81d65" Left="[float]130" Text="[string]MRM Cell Selector Ref" Top="[float]453" Width="[float]118" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="8ac8e41bd4634f15bc0c2c036b0a3375" Label="[UIModel]7e3467b36ec5471782a510279b21f6d1" Left="[float]7" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" TabIndex="[int]24" Top="[float]515" Value="{ClusterBinding FieldName=IV\ Plot\ Out\ Multiple\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="7e3467b36ec5471782a510279b21f6d1" LabelOwner="[UIModel]8ac8e41bd4634f15bc0c2c036b0a3375" Left="[float]7" Text="[string]IV Plot Out Multiple Reference" Top="[float]495" Width="[float]160" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="2bbd4e5051704e31b4bae75e38e3515a" Label="[UIModel]8c1a4901f9404f6488a858f13a472861" Left="[float]39" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]25" Top="[float]531" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ MRM\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="8c1a4901f9404f6488a858f13a472861" LabelOwner="[UIModel]2bbd4e5051704e31b4bae75e38e3515a" Left="[float]39" Text="[string]Rainbow Sweep Parameters MRM Ref" Top="[float]511" Width="[float]198" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="e9ed9496ace74c74a87320c312676dca" Label="[UIModel]d1b62603b09c4e33859a0dfe0b79273e" Left="[float]73" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@7270ce0862ee472f9d4c9879441d2a3e`@7270ce0862ee472f9d4c9879441d2a3e" TabIndex="[int]26" Top="[float]547" Value="{ClusterBinding FieldName=MRM\ Specific\ Parameters\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="d1b62603b09c4e33859a0dfe0b79273e" LabelOwner="[UIModel]e9ed9496ace74c74a87320c312676dca" Left="[float]73" Text="[string]MRM Specific Parameters Ref" Top="[float]527" Width="[float]155" />
 					</Cluster>
 					<Label Height="[float]16" Id="66ccd07fbff341ebb14c0fab9b4e85a0" LabelOwner="[UIModel]9edb086212344c9381d62a71bbe038a9" Left="[float]97" Text="[string]Cluster Reference Cluster" Top="[float]79" Width="[float]132" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
@@ -102,7 +110,7 @@
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="1d7b586deb684d8fafa92828a841d1a0">
+		<p.TypeReference TypeId="e015a3eb0ffe455f8920d2d3167c1667">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Light Power Calibration" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@15da5779ad7e43beadbe3a18f9bbd375`@15da5779ad7e43beadbe3a18f9bbd375" />
@@ -128,7 +136,10 @@
 					<Field FieldAccessPolicy="ReadWrite" Name="IV Extracted Parameter Plot " DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@6096faf833bd44a283c7b4989e3b7f16`@6096faf833bd44a283c7b4989e3b7f16" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Light Power Calibration Data Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ArrayViewerProxy, NationalInstruments.Controls.Runtime`@2d3965a242c74c429108c28c025d25e3`@2d3965a242c74c429108c28c025d25e3" />
 					<Field FieldAccessPolicy="ReadWrite" Name="IV Plot Out Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" />
-					<Field FieldAccessPolicy="ReadWrite" Name="MRM Cell Selector Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@e4039160d39a4982b2ab1aad4f36049c`@e4039160d39a4982b2ab1aad4f36049c" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Cell Selector Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@008b16de9d54474b8fcf992e1c19ba3a`@008b16de9d54474b8fcf992e1c19ba3a" />
+					<Field FieldAccessPolicy="ReadWrite" Name="IV Plot Out Multiple Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Parameters MRM Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Specific Parameters Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@7270ce0862ee472f9d4c9879441d2a3e`@7270ce0862ee472f9d4c9879441d2a3e" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -184,10 +195,17 @@
 		<p.TypeReference TypeId="bdcfac1e251d4277b76a5d43a5ed73f4">
 			<VariableArray DereferenceType="@1a55da2d90bd444d9a48bb8fea364dff" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="e4039160d39a4982b2ab1aad4f36049c">
-			<Attributed AttributedType="@03c0d4410b794ebdbd388575f4ead5ad">
+		<p.TypeReference TypeId="008b16de9d54474b8fcf992e1c19ba3a">
+			<Attributed AttributedType="@65257ec8817f46b58b4799e7802c75cb">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Multiple Rainbow Measurement::MRM Cell Selector" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="7270ce0862ee472f9d4c9879441d2a3e">
+			<Attributed AttributedType="@13ff30dfe8fc4ac882111b2785d7990d">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Multiple Rainbow Measurement" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
@@ -228,8 +246,11 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="03c0d4410b794ebdbd388575f4ead5ad">
-			<Typedef TypedefName="MRM Cell Selector.gtype" UnderlyingType="@6000079ab7da40bfb2561fd07aeee6b6" />
+		<p.TypeReference TypeId="65257ec8817f46b58b4799e7802c75cb">
+			<Typedef TypedefName="MRM Cell Selector.gtype" UnderlyingType="@f3dab49f1b4c4ea8a246ec9cba857273" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="13ff30dfe8fc4ac882111b2785d7990d">
+			<Typedef TypedefName="MRM Specific Parameters.gtype" UnderlyingType="@a9509dd6cb7a42eaad395a773966e1b0" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="6ad8281f78de4d33a92eb40a4c89a96c">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
@@ -295,36 +316,31 @@
 		<p.TypeReference TypeId="d506ddce8b734491ae5c1311ba83b457">
 			<Typedef TypedefName="SRM Single Plot Cluster.gtype" UnderlyingType="@79e9c82cb3bb4f3d9861e1a2e977db71" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="6000079ab7da40bfb2561fd07aeee6b6">
+		<p.TypeReference TypeId="f3dab49f1b4c4ea8a246ec9cba857273">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="All" DataType="Boolean" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Left" DataType="Boolean" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Right" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.01" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.01" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.02" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.02" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.03" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.03" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.04" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.04" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.05" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.05" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.06" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.06" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.07" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.07" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.08" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.08" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.09" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.09" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.10" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.10" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.11" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.11" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="L.12" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="R.12" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell Cluster" DataType="@efa5b80e4b4349ce96e25852ddfa0387" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Reset" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="a9509dd6cb7a42eaad395a773966e1b0">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Max (V)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Min (V)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="V Points" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Curr Range (A)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Dir" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Avg" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Max (A)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Integration Time" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell Area (m^2)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Autorange" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Full Spctr Ref" DataType="Boolean" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -380,6 +396,36 @@
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Voltage (V)" DataType="Double[]" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Current Density (A/m^2)" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="efa5b80e4b4349ce96e25852ddfa0387">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="L.01" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.01" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.02" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.02" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.03" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.03" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.04" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.04" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.05" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.05" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.06" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.06" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.07" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.07" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.08" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.08" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.09" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.09" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.10" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.10" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.11" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.11" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.12" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.12" DataType="Boolean" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
