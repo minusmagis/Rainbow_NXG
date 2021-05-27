@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="69B6FC8AA6AAAED16BE7EBF3FEF274D19B42C16C28C952A966F2FB6B672299B2607D9A5EEAF9F8418548E2D5CF6C722C4E7BCD34043C2880F09AFBB217D0A4D1" Timestamp="1D7472975F5E5ED" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="7C8466FEE679E001AC592FE53A05D7FD35150702E8DE83752BF1E60FEC38E522E5A10ACD634B1964C08BF18BC3575AF48F4CE8B2D075354675B9479AE1DB37B2" Timestamp="1D752D8E3623F20" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,14 +7,14 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@87c18a67970b4007aa3cd887d00dec24" Id="b556b46a020c456f97cfe51aa106ea35" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@7c530a27b3bf4abaa0ffec6d897c116d" Id="b556b46a020c456f97cfe51aa106ea35" xmlns="http://www.ni.com/MocCommon">
 		<Icon Id="813dd2eac1ad45a0b6580bcae13e72ea" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="1682b181ed0e42df8f73b434fe8064d8" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="c2cbf4a69a7a4a0e8b969c3105470beb" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@87c18a67970b4007aa3cd887d00dec24" Id="ea1d415e92e849afb6a372ccd911937d" Name="Approach Operation">
-			<p.DefaultValue>1</p.DefaultValue>
+		<DataItem DataType="@7c530a27b3bf4abaa0ffec6d897c116d" Id="d4ae9641b65a4ed1bde5659c9f488287" Name="Approach Operation">
+			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 	</TypeDefinition>
 	<EnvoyManagerFile Id="a6c5880b30a04473b266916bfeb55d47" xmlns="http://www.ni.com/PlatformFramework">
@@ -22,21 +22,25 @@
 		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="c07fd8543ada43b78c1539879deb6404" Name="XZ Approach Operation.gtype" NameTracksFileName="True">
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="23e902dea60d4ed6a4d74b6249d26f4a" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="237a652fbcba461e8fe1f41d7015972a" xmlns="http://www.ni.com/MocCommon">
-					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="6168b48b645d473ea884fdbe92ebb7fc" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]407b2af39c5e483eb375b11f94abcebc" Left="[float]98" TabIndex="[int]0" Top="[float]102" Value="{DataItemBinding Id=ea1d415e92e849afb6a372ccd911937d}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]108" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-						<EnumSelectorInfo DisplayValue="[string]Retract" Value="[ushort]0" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]Approach" Value="[ushort]1" ValueType="[Type]UInt16" />
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="dfd2fbbfcb6341cead23741bbc65586e" IsTypeAheadEnabled="[bool]True" Label="[UIModel]a0d752a95e424ecca388b01f993beb37" Left="[float]248" TabIndex="[int]0" Top="[float]164" Value="{DataItemBinding Id=d4ae9641b65a4ed1bde5659c9f488287}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]177" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Retract" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Approach Cell" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Approach Photodetector" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Approach Diffusor" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
 					</EnumSelector>
-					<Label Height="[float]16" Id="407b2af39c5e483eb375b11f94abcebc" LabelOwner="[UIModel]6168b48b645d473ea884fdbe92ebb7fc" Left="[float]98" Text="[string]Approach Operation" Top="[float]82" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
+					<Label Height="[float]16" Id="a0d752a95e424ecca388b01f993beb37" LabelOwner="[UIModel]dfd2fbbfcb6341cead23741bbc65586e" Left="[float]248" Text="[string]Approach Operation" Top="[float]144" Width="[float]109" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="87c18a67970b4007aa3cd887d00dec24">
+		<p.TypeReference TypeId="7c530a27b3bf4abaa0ffec6d897c116d">
 			<Enumeration>
 				<Members>
 					<EnumerationMember Value="0" Name="Retract" />
-					<EnumerationMember Value="1" Name="Approach" />
+					<EnumerationMember Value="1" Name="Approach Cell" />
+					<EnumerationMember Value="2" Name="Approach Photodetector" />
+					<EnumerationMember Value="3" Name="Approach Diffusor" />
 				</Members>
 				<DataType>UInt16</DataType>
 			</Enumeration>
