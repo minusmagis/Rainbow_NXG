@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2295780F4BADB8FF1965BB6002731A7386F055CE0EA397F384549CA21FE1C418F0D47F83431A964ABE40536563E8F9FCD7C41D9F9BA788438DDA435546C13DEF" Timestamp="1D714F9AA1D7281" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="732B5FA0ECE27B5D7E67313E2DC0706E4203B6082F848CA7FA4E405AFEDDEC35A4B92CB2621153F5DCCFE9259F909CA48E924C4A6D5E95F461AEBF00D5112484" Timestamp="1D75BADCBF40B3B" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -8,6 +8,43 @@
 	<DataIndexDefinition xmlns="http://www.ni.com/Data" />
 	<EnvoyManagerFile Id="e9bb2f3a1a0541a9a4acc08d1b41c00b" xmlns="http://www.ni.com/PlatformFramework">
 		<EnvoyManagerRootEnvoy Id="b1feee970983453e9cc24dd22bec6197" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
-		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="5734787cc744bc59efbc5d0b1b6ae9c" Name="data.xml" NameTracksFileName="True" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="5734787cc744bc59efbc5d0b1b6ae9c" Name="data.xml" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Id="d9599b22681044f3802f9ff9c2f33379" ModelDefinitionType="TDMSRootDefinition" Name="TDMS_Root">
+				<TDMSRootDefinition StoragePath="Data-2021-06-06 215823 939.tdms" xmlns="http://www.ni.com/Data" />
+				<EmbeddedDefinitionReference Id="ef3858b14c1e43168289212e8a2925f5" ModelDefinitionType="TDMSGroupDefinition" Name="TDMS_GROUP">
+					<TDMSGroupDefinition GroupName="Capture 1" Source="MSpot Mask Calibration.gvi" SourceType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Timestamp="06/06/2021 21:58:23" xmlns="http://www.ni.com/Data" />
+					<EmbeddedDefinitionReference Id="e0099566db054a789e54aeaf8801292f" ModelDefinitionType="TDMSDataItemDefinition" Name="MSpot Mask Data_2">
+						<TDMSDataItemDefinition DataName="MSpot Mask Data_2" DataType="@6a2036000ad641d8bca5df5c418927ff" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+				</EmbeddedDefinitionReference>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="c1e3688a5bb94bba9e8b36e5bdab037a" ModelDefinitionType="TDMSRootDefinition" Name="TDMS_Root_2">
+				<TDMSRootDefinition StoragePath="Data-2021-06-07 150003 862.tdms" xmlns="http://www.ni.com/Data" />
+				<EmbeddedDefinitionReference Id="88712910e8ba4e4eb908410c8560541e" ModelDefinitionType="TDMSGroupDefinition" Name="TDMS_GROUP_2">
+					<TDMSGroupDefinition GroupName="Capture 2" Source="MSpot Mask Calibration subroutine.gvi" SourceType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Timestamp="06/07/2021 15:00:03" xmlns="http://www.ni.com/Data" />
+					<EmbeddedDefinitionReference Id="f2b5aadc22b14c75bee06888bc701cde" ModelDefinitionType="TDMSDataItemDefinition" Name="message">
+						<TDMSDataItemDefinition DataName="message" DataType="String" xmlns="http://www.ni.com/Data" />
+					</EmbeddedDefinitionReference>
+				</EmbeddedDefinitionReference>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
 	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="6a2036000ad641d8bca5df5c418927ff">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="MSpot Spectrum" DataType="@73c710f25ec94c37878a393248dc4e19" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Slit Number" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="73c710f25ec94c37878a393248dc4e19">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Wavelenghts" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Counts" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
 </SourceFile>

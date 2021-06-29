@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="8F7A32D9A1B05AF3EAB78A3550F3530651DD7B50DF40E7B262EB1CAE703787251ABEA4E8C76141CF1D8DE79DCB566E8A7CA06827C3B28DBA24E688DE7285E0D4" Timestamp="1D75B1EC8926159" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@6a2036000ad641d8bca5df5c418927ff" Id="77039727a54041f78653c4402e6edf17" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="daa63d0526c643dd8e079c635aabcced" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="9d0853752950479a92f01b8f75d85d66" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="69f402eda1654b4ab072c94937bd86d0" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@6a2036000ad641d8bca5df5c418927ff" Id="546b2b373ee842fbaa616e3d3d512770" Name="MSpot Mask Calibration data">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>
+						<Cluster>
+							<Field1>null</Field1>
+							<Field2>null</Field2>
+						</Cluster>
+					</Field1>
+					<Field2>0x0</Field2>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="9c23d02e6b7f47fda216dec6c342ece2" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="ecec0999ff5d4727b150aad3f715bc4a" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="c21f145549d84c8391afceeb3f39899b" Name="MSpot Mask Data.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="4f7a39cc677042f0b76088c68f418044" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Indicator" Id="c263f33fc3844631ae20a0115d22d807" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6a2036000ad641d8bca5df5c418927ff" Height="[float]521" Id="b0b189f133194a9091eec71c957a9d2e" Label="[UIModel]e86005149d1c44589bdd5ae95d75f675" Left="[float]606" TabIndex="[int]0" Top="[float]103" Value="{DataItemBinding Id=546b2b373ee842fbaa616e3d3d512770}" Width="[float]225" xmlns="http://www.ni.com/PanelCommon">
+						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@73c710f25ec94c37878a393248dc4e19" Height="[float]332" Id="d6736f5b38db4b1db122ac20ccf1d89a" Label="[UIModel]3056c3de859d4879a6462177ea330a23" Left="[float]39" TabIndex="[int]0" Top="[float]39" Value="{ClusterBinding FieldName=MSpot\ Spectrum}" Width="[float]150">
+							<ArrayViewer ArrayElement="[UIModel]98e3f38eeba14f2a95f6dcca4e67cb15" BaseName="[string]Numeric Array Input" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="a8d4e63515744bd59cf92bc62b7e9e9f" IndexVisibility="[Visibility]Collapsed" Label="[UIModel]bf959b41b8bf4241b33345443d4886cd" Left="[float]17" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]0" Top="[float]35" Value="{ClusterBinding FieldName=Wavelenghts}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+								<p.DefaultElementValue>0x0</p.DefaultElementValue>
+								<NumericText Height="[float]24" Id="98e3f38eeba14f2a95f6dcca4e67cb15" IsReadOnly="[bool]True" Label="[UIModel]f4cade4e91b842158e7f1be869fe71b8" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+									<Label Id="f4cade4e91b842158e7f1be869fe71b8" IsVisualChild="[bool]False" LabelOwner="[UIModel]98e3f38eeba14f2a95f6dcca4e67cb15" Left="[float]6" Text="[string]Numeric" Top="[float]70" xmlns="http://www.ni.com/PanelCommon" />
+								</NumericText>
+							</ArrayViewer>
+							<Label Height="[float]16" Id="bf959b41b8bf4241b33345443d4886cd" LabelOwner="[UIModel]a8d4e63515744bd59cf92bc62b7e9e9f" Left="[float]17" Text="[string]Wavelenghts" Top="[float]15" Width="[float]68" />
+							<ArrayViewer ArrayElement="[UIModel]513b01d6771a47949e22ca242191318a" BaseName="[string]Numeric Array Input" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="50eda6868485458886bac95e160aaf58" IndexVisibility="[Visibility]Collapsed" Label="[UIModel]27807e2a82664c89afa148d2c424d4b8" Left="[float]23" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]1" Top="[float]187" Value="{ClusterBinding FieldName=Counts}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+								<p.DefaultElementValue>0x0</p.DefaultElementValue>
+								<NumericText Height="[float]24" Id="513b01d6771a47949e22ca242191318a" IsReadOnly="[bool]True" Label="[UIModel]2312ea7723b24f5ca62548dbe61bae1a" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+									<Label Id="2312ea7723b24f5ca62548dbe61bae1a" IsVisualChild="[bool]False" LabelOwner="[UIModel]513b01d6771a47949e22ca242191318a" Left="[float]6" Text="[string]Numeric" Top="[float]42" xmlns="http://www.ni.com/PanelCommon" />
+								</NumericText>
+							</ArrayViewer>
+							<Label Height="[float]16" Id="27807e2a82664c89afa148d2c424d4b8" LabelOwner="[UIModel]50eda6868485458886bac95e160aaf58" Left="[float]23" Text="[string]Counts" Top="[float]167" Width="[float]38" />
+						</Cluster>
+						<Label Height="[float]16" Id="3056c3de859d4879a6462177ea330a23" LabelOwner="[UIModel]d6736f5b38db4b1db122ac20ccf1d89a" Left="[float]39" Text="[string]MSpot Spectrum" Top="[float]19" Width="[float]90" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="7b8cd0f36f154f46b4779162a64cbf03" IsReadOnly="[bool]True" Label="[UIModel]3de4ec21b81f4b33a5b7397f4b8f0a32" Left="[float]51" TabIndex="[int]1" Top="[float]430" Value="{ClusterBinding FieldName=Slit\ Number}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="3de4ec21b81f4b33a5b7397f4b8f0a32" LabelOwner="[UIModel]7b8cd0f36f154f46b4779162a64cbf03" Left="[float]51" Text="[string]Slit Number" Top="[float]410" Width="[float]64" />
+					</Cluster>
+					<Label Height="[float]16" Id="e86005149d1c44589bdd5ae95d75f675" LabelOwner="[UIModel]b0b189f133194a9091eec71c957a9d2e" Left="[float]606" Text="[string]MSpot Mask Calibration data" Top="[float]83" Width="[float]154" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="6a2036000ad641d8bca5df5c418927ff">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="MSpot Spectrum" DataType="@73c710f25ec94c37878a393248dc4e19" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Slit Number" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="73c710f25ec94c37878a393248dc4e19">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Wavelenghts" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Counts" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
