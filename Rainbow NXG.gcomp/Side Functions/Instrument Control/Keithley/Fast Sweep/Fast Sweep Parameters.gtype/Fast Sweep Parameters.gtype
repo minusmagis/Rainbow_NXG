@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="CD254F30B54F55988EA0A903EC94F72E1144B214D24432A01CE44A081A29C800614BA003FA5F321197B117B208181CAE52AE4CEF5CD3250A2E96BF832019429A" Timestamp="1D7A8C1A53B4816" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@815e834ba5964f51ac972f8948103e22" Id="5b66bc0feb354ddeaf1d44c7a258fe19" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="edce234de7334ec78a88d6873f8cccc5" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="abf58a1d2f5f4419b4b23e7f20e65cc6" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="21fe32a1051141f9ae66bcc97fbc0ea0" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@815e834ba5964f51ac972f8948103e22" Id="b6bd9016e3014e38b0448b4782b7f2f6" Name="Fast Sweep Parameters">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False_0x0_0x0_0x0_0_</Field1>
+					<Field2>
+						<Cluster>
+							<Field1>null</Field1>
+							<Field2>null</Field2>
+							<Field3>0x0</Field3>
+						</Cluster>
+					</Field2>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="f1746f770a3f488796886ff7eb9041e3" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="41ba30523a1348349f3bb97e8857bbf3" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="35943adb597a4aa2b506fd4953b8783b" Name="Cluster Constant.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="f02a170b791d46fd95680b6b6976c562" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="7c3d5d7936ec4d9cb5c5d3b372f0509c" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@815e834ba5964f51ac972f8948103e22" Height="[float]377" Id="3a0bc55d7bdb4ba2a39b83af03dc82f1" Label="[UIModel]df00a112b2849bf831189e9b213fa19" Left="[float]99" TabIndex="[int]0" Top="[float]99" Value="{DataItemBinding Id=b6bd9016e3014e38b0448b4782b7f2f6}" Width="[float]300" xmlns="http://www.ni.com/PanelCommon">
+						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@8b0015baa0f14e7486fae62edeffb9f0" Height="[float]305" Id="ddb82c8470ce449c948c543ffffc0a30" Label="[UIModel]b1514729afc40f982b5cd1f7524fe13" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Parameters}" Width="[float]157">
+							<Switch BaseName="[string]Square LED" FalseContent="[string]-/+" Height="[float]72" Id="adb30a978b3e41c9a51005d9e0e06663" Label="[UIModel]9d675ad2ac4a45049722e72c310ebb81" Left="[float]0" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]0" Top="[float]225" TrueContent="[string]+/-" Value="{ClusterBinding FieldName=Sweep\ Direction}" Width="[float]41" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="338bbcdb637944fd862ede895df4fbe4" Label="[UIModel]6ace599362874e4f8aa4c638794dca3c" Left="[float]0" TabIndex="[int]1" Top="[float]20" Value="{ClusterBinding FieldName=Min\ Voltage\ (V)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="c0584479471343c38fe1893388f11d6b" Label="[UIModel]89a4b9d024054eb89f5dd489199e2674" Left="[float]0" TabIndex="[int]2" Top="[float]72" Value="{ClusterBinding FieldName=Max\ Voltage\ (V)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="313c6f65dfd648dd9fafe8033ce90034" Label="[UIModel]8dd2eda1d756463ea260d87ed6d37145" Left="[float]0" TabIndex="[int]3" Top="[float]122" Value="{ClusterBinding FieldName=Measurement\ Speed\ (1\ PLC)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="63081d9b61f94b279051cc1e80bdcbcd" Interval="[uint]1" Label="[UIModel]d3fe3c4cd6854bd0b2b833e82dd373bd" Left="[float]0" TabIndex="[int]4" Top="[float]174" Value="{ClusterBinding FieldName=Sweep\ Points}" ValueFormatter="[string]LV:0" ValueType="[Type]UInt32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="9d675ad2ac4a45049722e72c310ebb81" LabelOwner="[UIModel]adb30a978b3e41c9a51005d9e0e06663" Left="[float]0" Text="[string]Sweep Direction" Top="[float]205" Width="[float]86" />
+							<Label Height="[float]16" Id="6ace599362874e4f8aa4c638794dca3c" LabelOwner="[UIModel]338bbcdb637944fd862ede895df4fbe4" Left="[float]0" Text="[string]Min Voltage (V)" Top="[float]0" Width="[float]83" />
+							<Label Height="[float]16" Id="89a4b9d024054eb89f5dd489199e2674" LabelOwner="[UIModel]c0584479471343c38fe1893388f11d6b" Left="[float]0" Text="[string]Max Voltage (V)" Top="[float]52" Width="[float]85" />
+							<Label Height="[float]16" Id="8dd2eda1d756463ea260d87ed6d37145" LabelOwner="[UIModel]313c6f65dfd648dd9fafe8033ce90034" Left="[float]0" Text="[string]Measurement Speed (1 PLC)" Top="[float]102" Width="[float]149" />
+							<Label Height="[float]16" Id="d3fe3c4cd6854bd0b2b833e82dd373bd" LabelOwner="[UIModel]63081d9b61f94b279051cc1e80bdcbcd" Left="[float]0" Text="[string]Sweep Points" Top="[float]154" Width="[float]71" />
+						</Cluster>
+						<Label Height="[float]16" Id="b1514729afc40f982b5cd1f7524fe13" LabelOwner="[UIModel]ddb82c8470ce449c948c543ffffc0a30" Left="[float]4" Text="[string]Parameters" Top="[float]4" Width="[float]60" />
+						<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6d4036190ae648ecb59d7a159ebdd3eb" Height="[float]341" Id="dbf3717aed054b47b6b05a185108f761" Label="[UIModel]f7097b032384e4bb31ed31a2334e0c0" Left="[float]168" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Data}" Width="[float]120">
+							<ArrayViewer ArrayElement="[UIModel]9a031dd638524b93928c3c00759eb746" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="34524b73e05c4b7da534d93d3dd19b79" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]31b77da7d182478797efa7f66d4c098d" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Current\ Array\ (A)}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+								<p.DefaultElementValue>0x0</p.DefaultElementValue>
+								<NumericText BaseName="[string]Numeric" Height="[float]24" Id="9a031dd638524b93928c3c00759eb746" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							</ArrayViewer>
+							<ArrayViewer ArrayElement="[UIModel]450092e00f7648b3abcd159a20366372" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]120" Id="2577cac85b1e46989c714efc96667f97" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]1b562a6b45b24ac5891a2a1809510265" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]1" Top="[float]165" Value="{ClusterBinding FieldName=Voltage\ Array\ (V)}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+								<p.DefaultElementValue>0x0</p.DefaultElementValue>
+								<NumericText BaseName="[string]Numeric" Height="[float]24" Id="450092e00f7648b3abcd159a20366372" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							</ArrayViewer>
+							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="ca9ec4e0fa04cfe99eecb4f94da18bc" Label="[UIModel]3b3f3cd8416346279c1135cc53684055" Left="[float]4" TabIndex="[int]2" Top="[float]305" Value="{ClusterBinding FieldName=Isc\ (A)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="31b77da7d182478797efa7f66d4c098d" LabelOwner="[UIModel]34524b73e05c4b7da534d93d3dd19b79" Left="[float]4" Text="[string]Current Array (A)" Top="[float]4" Width="[float]89" />
+							<Label Height="[float]16" Id="1b562a6b45b24ac5891a2a1809510265" LabelOwner="[UIModel]2577cac85b1e46989c714efc96667f97" Left="[float]4" Text="[string]Voltage Array (V)" Top="[float]145" Width="[float]90" />
+							<Label Height="[float]16" Id="3b3f3cd8416346279c1135cc53684055" LabelOwner="[UIModel]ca9ec4e0fa04cfe99eecb4f94da18bc" Left="[float]4" Text="[string]Isc (A)" Top="[float]285" Width="[float]32" />
+						</Cluster>
+						<Label Height="[float]16" Id="f7097b032384e4bb31ed31a2334e0c0" LabelOwner="[UIModel]dbf3717aed054b47b6b05a185108f761" Left="[float]168" Text="[string]Data" Top="[float]4" Width="[float]25" />
+					</Cluster>
+					<Label Height="[float]16" Id="df00a112b2849bf831189e9b213fa19" LabelOwner="[UIModel]3a0bc55d7bdb4ba2a39b83af03dc82f1" Left="[float]99" Text="[string]Fast Sweep Parameters" Top="[float]79" Width="[float]122" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="815e834ba5964f51ac972f8948103e22">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Parameters" DataType="@8b0015baa0f14e7486fae62edeffb9f0" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Data" DataType="@6d4036190ae648ecb59d7a159ebdd3eb" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="8b0015baa0f14e7486fae62edeffb9f0">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Direction" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Min Voltage (V)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Max Voltage (V)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Measurement Speed (1 PLC)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Points" DataType="UInt32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6d4036190ae648ecb59d7a159ebdd3eb">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Array (A)" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Voltage Array (V)" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Isc (A)" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
