@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7AA24F6E12F4DB25596F482045A8B3A141CACBBE0E1FE741BE6532DFEDB360991FC48E1BABDBBCC79E76267F5EC0B991C875C2F32682FA5EBE26F026776F13A2" Timestamp="1D74CBD582B7186" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="766FD33ED0BE41D03C3E83353820762C244C80E8E1D9059E3D41F90C75B2545B789CB76379A501253138D79665B430197CC7902BECEDD86390EA56891F336BFD" Timestamp="1D7AE2ACA1C571F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,32 +7,23 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@93cf12b975e44c77a596bc728635b881" Id="31c007a79c8c48eeae15e76d2b0d9caf" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@092ac07aeca24eac9c0a5f41bb1c022f" Id="31c007a79c8c48eeae15e76d2b0d9caf" xmlns="http://www.ni.com/MocCommon">
 		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Full Reference Cluster.gtype" />
-			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Sample Naming::Cell Naming Cluster.gtype" />
 			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::XZ Stage Movements::XZ All Position Cluster.gtype" />
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Sample Naming::Cell Naming Cluster.gtype" />
 		</p.TypeDefinitionTargets>
 		<Icon Id="e2986908cc084bb793f2434fec8a605c" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="a978d865b2534c58bd477505356b9782" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="4498448b73d042f0b8de49156714fe1b" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@93cf12b975e44c77a596bc728635b881" Id="3948abfc859447289fd8a0f5edfbfa91" Name="Cluster">
+		<DataItem DataType="@092ac07aeca24eac9c0a5f41bb1c022f" Id="3948abfc859447289fd8a0f5edfbfa91" Name="Misc Data Mega Cluster">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_</Field1>
-					<Field2>
-						<Cluster>
-							<Field1>""</Field1>
-							<Field2>""</Field2>
-							<Field3>""</Field3>
-							<Field4>""</Field4>
-							<Field5>""</Field5>
-						</Cluster>
-					</Field2>
-					<Field3>0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_</Field3>
-					<Field4>
+					<Field2>0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_0x0_</Field2>
+					<Field3>
 						<Cluster>
 							<Field1>
 								<Path a="1" />
@@ -41,13 +32,22 @@
 								<Path a="1" />
 							</Field2>
 						</Cluster>
+					</Field3>
+					<Field4>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+							<Field3>""</Field3>
+							<Field4>""</Field4>
+							<Field5>""</Field5>
+						</Cluster>
 					</Field4>
 				</Cluster>
 			</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Full Reference Cluster.gtype" />
-				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Sample Naming::Cell Naming Cluster.gtype" />
 				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::XZ Stage Movements::XZ All Position Cluster.gtype" />
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Sample Naming::Cell Naming Cluster.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
 	</TypeDefinition>
@@ -56,160 +56,189 @@
 		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="afc0efda67444f0dba3996495bd47872" Name="Misc Data Mega Cluster.gtype" NameTracksFileName="True">
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="dc29a291abd4ffd9766f951c8c8c9cc" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="36376d1a30ba41ae8f1cebc097566793" xmlns="http://www.ni.com/MocCommon">
-					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@93cf12b975e44c77a596bc728635b881" Height="[float]481" Id="fba025ae1e3245e882544a18a41a9eeb" Label="[UIModel]69eec4a3d20f440c9042f49a221f2154" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=3948abfc859447289fd8a0f5edfbfa91}" Width="[float]743" xmlns="http://www.ni.com/PanelCommon">
-						<Cluster AutoArrange="[AutoArrange]None" BaseName="[string]Full Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b2df28e526e74449b4218018de07fa9f" Height="[float]449" Id="bc0c9fc1a4de4245a4c746136e184e9d" IsTabStop="[bool]True" Label="[UIModel]d3069dd2c6a64678a43cf870c1ae57d8" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Full\ Reference\ Cluster}" Width="[float]512" p7:ControlDefinitionChecksum="Zmh63jky9R5HPmw8pkJg3dcsZBnis8unJhYc1SSCml0=" xmlns:p7="http://www.ni.com/PanelCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@092ac07aeca24eac9c0a5f41bb1c022f" Height="[float]396" Id="fba025ae1e3245e882544a18a41a9eeb" Label="[UIModel]69eec4a3d20f440c9042f49a221f2154" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=3948abfc859447289fd8a0f5edfbfa91}" Width="[float]770" xmlns="http://www.ni.com/PanelCommon">
+						<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Full Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@267893a0fa1b47689d26d261afb36ec2" Height="[float]233" Id="bc0c9fc1a4de4245a4c746136e184e9d" IsTabStop="[bool]True" Label="[UIModel]d3069dd2c6a64678a43cf870c1ae57d8" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]0" Top="[float]19" Value="{ClusterBinding FieldName=Full\ Reference\ Cluster}" Width="[float]327" p7:ControlDefinitionChecksum="Na2+ogkzdbl/tc48Z9RyEbgebD+1+gb1Nkee9fKhSDY=" xmlns:p7="http://www.ni.com/PanelCommon">
 							<p7:p.TypeDefinitionTargets>
 								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Full Reference Cluster.gtype::ControlDefinition" />
 							</p7:p.TypeDefinitionTargets>
-							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Enum Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@cc8de200c7794764bd3bb9a05e72b133" Height="[float]194" Id="ba3b8f1189c748c7bb62849bef75e36e" IsTabStop="[bool]True" Label="[UIModel]6b5eff5c767747429185558063596f4c" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Enum\ Reference\ Cluster}" Width="[float]219" p7:ControlDefinitionChecksum="5n0qxkdSMveQ7LAEwgiNzB/If0x7vzP4AfyEm2Z/OpI=">
-								<p7:p.TypeDefinitionTargets>
-									<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Enum Control Reference Cluster.gtype::ControlDefinition" />
-								</p7:p.TypeDefinitionTargets>
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="8f398c63fd2845ca81bea937f3f27d92" Label="[UIModel]7d37be4855054e10852964f8d581d624" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Main\ Tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="7d37be4855054e10852964f8d581d624" LabelOwner="[UIModel]8f398c63fd2845ca81bea937f3f27d92" Left="[float]4" Text="[string]Main Tab" Top="[float]4" Width="[float]48" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="506404d26f384c53ae4da6e9ea0b5a94" Label="[UIModel]dd4bcc6988f442689c2d680d30a226b2" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]82" Value="{ClusterBinding FieldName=Rainbow\ Measurement\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="dd4bcc6988f442689c2d680d30a226b2" LabelOwner="[UIModel]506404d26f384c53ae4da6e9ea0b5a94" Left="[float]5" Text="[string]Rainbow Measurement tab" Top="[float]62" Width="[float]142" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="774105249da04bb98ad8b4bf15b26edf" Label="[UIModel]a6c5f932db11402ea478ffc2a3406765" Left="[float]38" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]96" Value="{ClusterBinding FieldName=Configuration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="a6c5f932db11402ea478ffc2a3406765" LabelOwner="[UIModel]774105249da04bb98ad8b4bf15b26edf" Left="[float]38" Text="[string]Configuration tab" Top="[float]76" Width="[float]93" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="5dfdb9d0221d4fc2983de344d2c16626" Label="[UIModel]8fa6a4aacb174fcda108815a79ed6696" Left="[float]6" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]3" Top="[float]142" Value="{ClusterBinding FieldName=Light\ Calibration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="8fa6a4aacb174fcda108815a79ed6696" LabelOwner="[UIModel]5dfdb9d0221d4fc2983de344d2c16626" Left="[float]6" Text="[string]Light Calibration tab" Top="[float]122" Width="[float]108" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="6a39da5c29894a1d9573c5e4257200ba" Label="[UIModel]c399dff46f7d4c04a22653435bd4a2ac" Left="[float]35" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@8ece4b6fc84e435884248b5775977d2a`@8ece4b6fc84e435884248b5775977d2a" TabIndex="[int]4" Top="[float]158" Value="{ClusterBinding FieldName=SRM\ Plot\ Parameter\ Selector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="c399dff46f7d4c04a22653435bd4a2ac" LabelOwner="[UIModel]6a39da5c29894a1d9573c5e4257200ba" Left="[float]35" Text="[string]SRM Plot Parameter Selector Ref" Top="[float]138" Width="[float]172" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="154e669f922f45b78b53f386512b6e17" Label="[UIModel]4feb8f04e0984570a33aa3e3da9c1b5c" Left="[float]58" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@5f66b04efeb44759b859f48d5062a00e`@5f66b04efeb44759b859f48d5062a00e" TabIndex="[int]5" Top="[float]24" Value="{ClusterBinding FieldName=Current\ State\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="4feb8f04e0984570a33aa3e3da9c1b5c" LabelOwner="[UIModel]154e669f922f45b78b53f386512b6e17" Left="[float]58" Text="[string]Current State Ref" Top="[float]4" Width="[float]90" />
+							<p7:Cluster BaseName="[string]Numeric Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@8c5b7b03926c42eab6d89a477ee93499" Height="[float]162" Id="273594afb55c495090127a11dcb1985e" IsTabStop="[bool]True" Label="[UIModel]e863d75ad63f4cfb9c8b64ea0a6ccb5e" LabelLinked="[bool]True" Left="[float]7" TabIndex="[int]0" Top="[float]55" Value="{ClusterBinding FieldName=SRM\ Reference\ Cluster}" Width="[float]281">
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="fb6822bd5d8843ef8940e393fe837cc8" Label="[UIModel]7e50d508d0834cf6ab5afff04650b8b3" Left="[float]2" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]0" Top="[float]20" Value="{ClusterBinding FieldName=SRM\ Light\ Power\ Density\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="7e50d508d0834cf6ab5afff04650b8b3" LabelOwner="[UIModel]fb6822bd5d8843ef8940e393fe837cc8" Left="[float]2" Text="[string]SRM Light Power Density Ref" Top="[float]0" Width="[float]153" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="ef19fc046feb40f2954c2cd8823d8fc7" Label="[UIModel]b314a66f6821446c9fc2cc800ade5a1f" Left="[float]32" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]1" Top="[float]34" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ RSM}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="b314a66f6821446c9fc2cc800ade5a1f" LabelOwner="[UIModel]ef19fc046feb40f2954c2cd8823d8fc7" Left="[float]32" Text="[string]Rainbow Sweep Parameters RSM" Top="[float]14" Width="[float]173" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="7e315d4bced54d869b57a86b9c5187d1" Label="[UIModel]b185bb573d734a35a769ee9fe2a2af61" Left="[float]62" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]48" Value="{ClusterBinding FieldName=SRM\ Refined\ Plot\ Rainbow\ Sweep\ Types}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="b185bb573d734a35a769ee9fe2a2af61" LabelOwner="[UIModel]7e315d4bced54d869b57a86b9c5187d1" Left="[float]62" Text="[string]SRM Refined Plot Rainbow Sweep Types" Top="[float]28" Width="[float]211" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="69fb0032ad44c30976adc9a713a0338" Label="[UIModel]8145ab88a11045d6a21b985319cfb01c" Left="[float]7" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@3fd0db488851439e98c0924fe9a9a2fd`@3fd0db488851439e98c0924fe9a9a2fd" TabIndex="[int]3" Top="[float]74" Value="{ClusterBinding FieldName=SRM\ Specific\ Parameters}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="8145ab88a11045d6a21b985319cfb01c" LabelOwner="[UIModel]69fb0032ad44c30976adc9a713a0338" Left="[float]7" Text="[string]SRM Specific Parameters" Top="[float]54" Width="[float]130" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="260915affef14b23a88e268ae2b22672" Label="[UIModel]73508cb62da241649be4b0b936101bf7" Left="[float]36" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@4c5276c4f49c4c0a9d6addde63798050`@4c5276c4f49c4c0a9d6addde63798050" TabIndex="[int]4" Top="[float]89" Value="{ClusterBinding FieldName=Sweep\ Live\ Parameters\ RSM}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="73508cb62da241649be4b0b936101bf7" LabelOwner="[UIModel]260915affef14b23a88e268ae2b22672" Left="[float]36" Text="[string]Sweep Live Parameters RSM" Top="[float]69" Width="[float]148" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="7656de9885f542b09281f8c98b6ed241" Label="[UIModel]c8128bedb81849b7a122d0fb4e1038c4" Left="[float]64" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]5" Top="[float]102" Value="{ClusterBinding FieldName=SRM\ Raw\ Plot\ Rainbow\ Sweep\ Selector}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="c8128bedb81849b7a122d0fb4e1038c4" LabelOwner="[UIModel]7656de9885f542b09281f8c98b6ed241" Left="[float]64" Text="[string]SRM Raw Plot Rainbow Sweep Selector" Top="[float]82" Width="[float]206" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="eafc949cf9da468db21a36c84a1220a6" Label="[UIModel]80948bcfb40a4afaac8f4d3aaac3b7a1" Left="[float]90" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@8ece4b6fc84e435884248b5775977d2a`@8ece4b6fc84e435884248b5775977d2a" TabIndex="[int]6" Top="[float]117" Value="{ClusterBinding FieldName=SRM\ Plot\ Parameter\ Selector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="80948bcfb40a4afaac8f4d3aaac3b7a1" LabelOwner="[UIModel]eafc949cf9da468db21a36c84a1220a6" Left="[float]90" Text="[string]SRM Plot Parameter Selector Ref" Top="[float]97" Width="[float]172" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="4d2bfa38eb7a40edb6d15bbd4f5c7f69" Label="[UIModel]393c8e64c24445339976efff69d3f91e" Left="[float]120" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" TabIndex="[int]7" Top="[float]130" Value="{ClusterBinding FieldName=IV\ Plot\ Out\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="393c8e64c24445339976efff69d3f91e" LabelOwner="[UIModel]4d2bfa38eb7a40edb6d15bbd4f5c7f69" Left="[float]120" Text="[string]IV Plot Out Ref" Top="[float]110" Width="[float]78" />
 							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="6b5eff5c767747429185558063596f4c" LabelOwner="[UIModel]ba3b8f1189c748c7bb62849bef75e36e" Left="[float]4" Text="[string]Enum Reference Cluster" Top="[float]4" Width="[float]125" />
-							<p7:Cluster BaseName="[string]Boolean Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@5f35a9c276df47e0bdd52e31f1c5a3f6" Height="[float]112" Id="784a5d12f9fe4edfbe1aacd759dfd421" IsTabStop="[bool]True" Label="[UIModel]f83dacff8ebf445e9c6da2fff4531381" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Boolean\ Reference\ Cluster}" Width="[float]137" p7:ControlDefinitionChecksum="mIDDS2NNXgS/j4GLGSLN43/Y7UQ1zXsG29vVb6+ssX8=">
-								<p7:p.TypeDefinitionTargets>
-									<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Boolean Control Reference Cluster.gtype::ControlDefinition" />
-								</p7:p.TypeDefinitionTargets>
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="e929e76debe440558cd34503920dc976" Label="[UIModel]f6cdba184e5f4791af3fc84fbb2bea1d" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.CheckBoxProxy, NationalInstruments.Controls.Runtime" Top="[float]24" Value="{ClusterBinding FieldName=Custom\ date}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="f6cdba184e5f4791af3fc84fbb2bea1d" LabelOwner="[UIModel]e929e76debe440558cd34503920dc976" Left="[float]4" Text="[string]Custom date" Top="[float]4" Width="[float]68" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="40d47d2c8e034b3bb1502806135d379a" Label="[UIModel]1ee8a432faf2454ab41f6b9c31076f9a" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" Top="[float]76" Value="{ClusterBinding FieldName=Label\ Info\ Missing\ Error}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="1ee8a432faf2454ab41f6b9c31076f9a" LabelOwner="[UIModel]40d47d2c8e034b3bb1502806135d379a" Left="[float]4" Text="[string]Label Info Missing Error" Top="[float]56" Width="[float]125" />
+							<p7:Label Height="[float]16" Id="e863d75ad63f4cfb9c8b64ea0a6ccb5e" LabelOwner="[UIModel]273594afb55c495090127a11dcb1985e" Left="[float]7" Text="[string]SRM Reference Cluster" Top="[float]30" Width="[float]120" />
+							<p7:Cluster BaseName="[string]Path Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@c7db3bc76dfc4259ba7063bbeb9c19fc" Height="[float]112" Id="27d213a3f59c47b1b765b8d7349f6e54" IsTabStop="[bool]True" Label="[UIModel]e9958d5c76624a609bac81124125a7d2" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]1" Top="[float]52" Value="{ClusterBinding FieldName=Path\ Reference\ Cluster}" Width="[float]165">
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="b49acab7ac8343c185e47d7bcb0f186a" Label="[UIModel]327f2c0018f641b991f9bee0e7ec16eb" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.PathSelectorProxy, NationalInstruments.Controls.Runtime" Top="[float]24" Value="{ClusterBinding FieldName=Calibration\ Files\ Path}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="327f2c0018f641b991f9bee0e7ec16eb" LabelOwner="[UIModel]b49acab7ac8343c185e47d7bcb0f186a" Left="[float]4" Text="[string]Calibration Files Path" Top="[float]4" Width="[float]110" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="292f6031f58c41149339b49582785eb1" Label="[UIModel]86141f89ac034d589610a732913683c1" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.PathSelectorProxy, NationalInstruments.Controls.Runtime" Top="[float]76" Value="{ClusterBinding FieldName=Default\ Data\ Saving\ Location}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="86141f89ac034d589610a732913683c1" LabelOwner="[UIModel]292f6031f58c41149339b49582785eb1" Left="[float]4" Text="[string]Default Data Saving Location" Top="[float]56" Width="[float]153" />
 							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="f83dacff8ebf445e9c6da2fff4531381" LabelOwner="[UIModel]784a5d12f9fe4edfbe1aacd759dfd421" Left="[float]4" Text="[string]Boolean Reference Cluster" Top="[float]4" Width="[float]139" />
-							<p7:Cluster BaseName="[string]Numeric Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b959561dd9b74453a783cd93e7f3c41d" Height="[float]167" Id="192d03cac7824285b0a77aa1c8f1f0b9" IsTabStop="[bool]True" Label="[UIModel]4f0f916ae9d3430db48a62a9b4862d09" LabelLinked="[bool]True" Left="[float]2" TabIndex="[int]2" Top="[float]24" Value="{ClusterBinding FieldName=Numeric\ Reference\ Cluster}" Width="[float]164" p7:ControlDefinitionChecksum="hTUTv7sABepJhthIr7cHDfOpJ6+T54RMuoi+nzmonSM=">
-								<p7:p.TypeDefinitionTargets>
-									<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Numeric Control Reference Cluster.gtype::ControlDefinition" />
-								</p7:p.TypeDefinitionTargets>
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="5ae7f5ce43eb42a496b1bf91be0e13dd" Label="[UIModel]eda1ef16f6754ff2b84b29ba0ce8e18c" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.IntensityGraphProxy, NationalInstruments.Controls.Runtime`Double[,]`Double[,]" Top="[float]24" Value="{ClusterBinding FieldName=Beam\ Power\ Density}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="eda1ef16f6754ff2b84b29ba0ce8e18c" LabelOwner="[UIModel]5ae7f5ce43eb42a496b1bf91be0e13dd" Left="[float]4" Text="[string]Beam Power Density" Top="[float]4" Width="[float]108" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="c691457d4e144769958841f1df40b9f3" Label="[UIModel]7ab4d2366be94616b348502d3096007d" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`Double[]`Double[]" Top="[float]76" Value="{ClusterBinding FieldName=Irradiance\ Calibration}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="7ab4d2366be94616b348502d3096007d" LabelOwner="[UIModel]c691457d4e144769958841f1df40b9f3" Left="[float]4" Text="[string]Irradiance Calibration" Top="[float]56" Width="[float]113" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="734b583f160b435bb0286f8fca62174b" Label="[UIModel]3b8ebec0bf8c494cbf7b2b6613fa1a87" Left="[float]3" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]123" Value="{ClusterBinding FieldName=SRM\ Light\ Power\ Density\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="3b8ebec0bf8c494cbf7b2b6613fa1a87" LabelOwner="[UIModel]734b583f160b435bb0286f8fca62174b" Left="[float]3" Text="[string]SRM Light Power Density Ref" Top="[float]103" Width="[float]153" />
+							<p7:Label Height="[float]16" Id="e9958d5c76624a609bac81124125a7d2" LabelOwner="[UIModel]27d213a3f59c47b1b765b8d7349f6e54" Left="[float]4" Text="[string]Path Reference Cluster" Top="[float]27" Width="[float]119" />
+							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Enum Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@8dd7e5d09a4447b5bc7dbec1e7a52289" Height="[float]131" Id="980f967dbb1e49699ebcbfa3d10a45bc" IsTabStop="[bool]True" Label="[UIModel]162a886fe853419db87322f62b86e183" LabelLinked="[bool]True" Left="[float]6" TabIndex="[int]2" Top="[float]43" Value="{ClusterBinding FieldName=Tab\ Reference\ Cluster}" Width="[float]159">
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="713a90fc3b0c481fb5adb8bbd5cf8879" Label="[UIModel]b202eb2befa44d1daf451410290b6bf0" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Main\ Tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="b202eb2befa44d1daf451410290b6bf0" LabelOwner="[UIModel]713a90fc3b0c481fb5adb8bbd5cf8879" Left="[float]4" Text="[string]Main Tab" Top="[float]4" Width="[float]48" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="44818e6e75624e57aacd77ba07836a37" Label="[UIModel]6e9cbc13a8b24568884eecba7e7d0f94" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]82" Value="{ClusterBinding FieldName=Rainbow\ Measurement\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="6e9cbc13a8b24568884eecba7e7d0f94" LabelOwner="[UIModel]44818e6e75624e57aacd77ba07836a37" Left="[float]5" Text="[string]Rainbow Measurement tab" Top="[float]62" Width="[float]142" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="fde1b3845b25491d9b9dd84f4f12aeeb" Label="[UIModel]e45021e205d848f39eea7d6dbf6aa581" Left="[float]32" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]39" Value="{ClusterBinding FieldName=Configuration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="e45021e205d848f39eea7d6dbf6aa581" LabelOwner="[UIModel]fde1b3845b25491d9b9dd84f4f12aeeb" Left="[float]32" Text="[string]Configuration tab" Top="[float]19" Width="[float]93" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="58245de8f9ac445cacdb3bdd8174e844" Label="[UIModel]3286619384554a5480be5e1978b49893" Left="[float]35" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]3" Top="[float]95" Value="{ClusterBinding FieldName=Light\ Calibration\ tab}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="3286619384554a5480be5e1978b49893" LabelOwner="[UIModel]58245de8f9ac445cacdb3bdd8174e844" Left="[float]35" Text="[string]Light Calibration tab" Top="[float]75" Width="[float]108" />
 							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="4f0f916ae9d3430db48a62a9b4862d09" LabelOwner="[UIModel]192d03cac7824285b0a77aa1c8f1f0b9" Left="[float]2" Text="[string]Numeric Reference Cluster" Top="[float]4" Width="[float]141" />
-							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Numeric Cluster Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@1b66508c51c3493389e7a3c0a5cab771" Height="[float]108" Id="2f04f51b9cfe4b26b20fadb75ab4e72b" IsTabStop="[bool]True" Label="[UIModel]f06c92fd82144a849a4f0763244071df" LabelLinked="[bool]True" Left="[float]3" TabIndex="[int]3" Top="[float]24" Value="{ClusterBinding FieldName=Numeric\ Cluster\ Reference\ Cluster}" Width="[float]178" p7:ControlDefinitionChecksum="n9ZR6z7TjBrtPFUYya4t5Z7l0Tvgo+sxDpzHGdIti3s=">
-								<p7:p.TypeDefinitionTargets>
-									<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Numeric Cluster Reference Cluster.gtype::ControlDefinition" />
-								</p7:p.TypeDefinitionTargets>
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="ab978bbfd6474578b5b91ee351d8843a" Label="[UIModel]e3e2bd21099d4f358db3091c5e6c27ea" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@64b3bcf93e79423abf8b3c9c8c92a660`@64b3bcf93e79423abf8b3c9c8c92a660" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=LPC\ Parameters\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="e3e2bd21099d4f358db3091c5e6c27ea" LabelOwner="[UIModel]ab978bbfd6474578b5b91ee351d8843a" Left="[float]4" Text="[string]LPC Parameters Ref" Top="[float]4" Width="[float]102" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="b8f347bac4d24e8b9797cd5710d0454f" Label="[UIModel]6aaaea9311ad477f814938c772864223" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@4db62f3f9730496287b944e5c8e494af`@4db62f3f9730496287b944e5c8e494af" TabIndex="[int]1" Top="[float]72" Value="{ClusterBinding FieldName=Sweep\ Live\ Parameters\ LPC\ ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="6aaaea9311ad477f814938c772864223" LabelOwner="[UIModel]b8f347bac4d24e8b9797cd5710d0454f" Left="[float]5" Text="[string]Sweep Live Parameters LPC ref" Top="[float]52" Width="[float]161" />
+							<p7:Label Height="[float]16" Id="162a886fe853419db87322f62b86e183" LabelOwner="[UIModel]980f967dbb1e49699ebcbfa3d10a45bc" Left="[float]6" Text="[string]Tab Reference Cluster" Top="[float]18" Width="[float]114" />
+							<p7:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@14126e62b2714c2b95ed47820ecef989" Height="[float]176" Id="54d706b053a948aa9a490c43133bfa8e" Label="[UIModel]b07b40fe48e34ab1a21d1ac53ce4d5c1" Left="[float]5" TabIndex="[int]3" Top="[float]40" Value="{ClusterBinding FieldName=Cell\ Naming\ Parameters\ Ref\ Cluster}" Width="[float]167">
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="69c6bfc94cab46e6b4523c53d4029a41" Label="[UIModel]b4d1d73945794679b6b5d6e113a4a080" Left="[float]6" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.CheckBoxProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]0" Top="[float]25" Value="{ClusterBinding FieldName=Custom\ date}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="b4d1d73945794679b6b5d6e113a4a080" LabelOwner="[UIModel]69c6bfc94cab46e6b4523c53d4029a41" Left="[float]6" Text="[string]Custom date" Top="[float]5" Width="[float]68" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="b7219bcf76e145db9b4a637b95e23c5d" Label="[UIModel]6804fe9f31e545ab83f8d1951f0a9170" Left="[float]35" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]40" Value="{ClusterBinding FieldName=Batch\ Name}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="6804fe9f31e545ab83f8d1951f0a9170" LabelOwner="[UIModel]b7219bcf76e145db9b4a637b95e23c5d" Left="[float]35" Text="[string]Batch Name" Top="[float]20" Width="[float]64" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="93662d35e81945aca89cc77db7f89773" Label="[UIModel]4dffa99d473843458d4e70a4d0a119c3" Left="[float]63" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]55" Value="{ClusterBinding FieldName=Author\ Initials}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="4dffa99d473843458d4e70a4d0a119c3" LabelOwner="[UIModel]93662d35e81945aca89cc77db7f89773" Left="[float]63" Text="[string]Author Initials" Top="[float]35" Width="[float]74" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="b9969168417b47b0bf4a95ab6c6789bb" Label="[UIModel]6f22ced22e7345fb94acb25dfd348d26" Left="[float]91" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]3" Top="[float]69" Value="{ClusterBinding FieldName=Cell\ Number}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="6f22ced22e7345fb94acb25dfd348d26" LabelOwner="[UIModel]b9969168417b47b0bf4a95ab6c6789bb" Left="[float]91" Text="[string]Cell Number" Top="[float]49" Width="[float]66" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="457812407d0a4cef8f27069af746e49a" Label="[UIModel]bff3d6f4ab6d44aab2d3d4c2fc703c52" Left="[float]6" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]4" Top="[float]80" Value="{ClusterBinding FieldName=Current\ Date}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="bff3d6f4ab6d44aab2d3d4c2fc703c52" LabelOwner="[UIModel]457812407d0a4cef8f27069af746e49a" Left="[float]6" Text="[string]Current Date" Top="[float]60" Width="[float]68" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="288d72b4d7e94136a532bec4478fd985" Label="[UIModel]732666e92dba45879a428d3974061385" Left="[float]34" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]5" Top="[float]93" Value="{ClusterBinding FieldName=Sample\ Comments}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="732666e92dba45879a428d3974061385" LabelOwner="[UIModel]288d72b4d7e94136a532bec4478fd985" Left="[float]34" Text="[string]Sample Comments" Top="[float]73" Width="[float]100" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="22601d2412a44fcd88d3d9ae903101de" Label="[UIModel]fdded76a71f542fca349fcdb6e18fb10" Left="[float]62" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]6" Top="[float]105" Value="{ClusterBinding FieldName=Sample\ Prefix}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="fdded76a71f542fca349fcdb6e18fb10" LabelOwner="[UIModel]22601d2412a44fcd88d3d9ae903101de" Left="[float]62" Text="[string]Sample Prefix" Top="[float]85" Width="[float]72" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="1ccd2ca5e63b4983ac76683df8cb648f" Label="[UIModel]c7dce606e4914817920e284a56d81e85" Left="[float]34" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]7" Top="[float]144" Value="{ClusterBinding FieldName=Label\ Info\ Missing\ Error}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="9433af2f4b5448519df5114669e4b463" Label="[UIModel]3f31495c8c9946d39fae054f6e958e80" Left="[float]6" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]8" Top="[float]132" Value="{ClusterBinding FieldName=Label\ Info\ Error\ Label}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="c7dce606e4914817920e284a56d81e85" LabelOwner="[UIModel]1ccd2ca5e63b4983ac76683df8cb648f" Left="[float]34" Text="[string]Label Info Missing Error" Top="[float]124" Width="[float]125" />
+								<p7:Label Height="[float]16" Id="3f31495c8c9946d39fae054f6e958e80" LabelOwner="[UIModel]9433af2f4b5448519df5114669e4b463" Left="[float]6" Text="[string]Label Info Error Label" Top="[float]112" Width="[float]112" />
 							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="f06c92fd82144a849a4f0763244071df" LabelOwner="[UIModel]2f04f51b9cfe4b26b20fadb75ab4e72b" Left="[float]3" Text="[string]Numeric Cluster Reference Cluster" Top="[float]4" Width="[float]181" />
-							<p7:Cluster BaseName="[string]Path Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@67233db5a0ff4467b1c118cd5d8594f9" Height="[float]112" Id="b82be541d9b43e885431d6dd5a00b64" IsTabStop="[bool]True" Label="[UIModel]feb3bd4f9e4941b4bdcc0499a01c97cc" LabelLinked="[bool]True" Left="[float]3" TabIndex="[int]4" Top="[float]164" Value="{ClusterBinding FieldName=Path\ Reference\ Cluster}" Width="[float]165" p7:ControlDefinitionChecksum="wVf3M5sjumJKhmLQAn4/VAb0q3QwWrlsXGQ2fNuMc2I=">
-								<p7:p.TypeDefinitionTargets>
-									<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Path Reference Cluster.gtype::ControlDefinition" />
-								</p7:p.TypeDefinitionTargets>
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="bf6fc1dca37a4019b2f808cae7c173fc" Label="[UIModel]ce2c6e444b624f7aafd97183bb233125" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.PathSelectorProxy, NationalInstruments.Controls.Runtime" Top="[float]24" Value="{ClusterBinding FieldName=Calibration\ Files\ Path}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="ce2c6e444b624f7aafd97183bb233125" LabelOwner="[UIModel]bf6fc1dca37a4019b2f808cae7c173fc" Left="[float]4" Text="[string]Calibration Files Path" Top="[float]4" Width="[float]110" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="d53c4e09c16f4a33b9e130161f488502" Label="[UIModel]8296deae51914a49baae9567dcc7cd7e" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.PathSelectorProxy, NationalInstruments.Controls.Runtime" Top="[float]76" Value="{ClusterBinding FieldName=Default\ Data\ Saving\ Location}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="8296deae51914a49baae9567dcc7cd7e" LabelOwner="[UIModel]d53c4e09c16f4a33b9e130161f488502" Left="[float]4" Text="[string]Default Data Saving Location" Top="[float]56" Width="[float]153" />
+							<p7:Label Height="[float]16" Id="b07b40fe48e34ab1a21d1ac53ce4d5c1" LabelOwner="[UIModel]54d706b053a948aa9a490c43133bfa8e" Left="[float]5" Text="[string]Cell Naming Parameters Ref Cluster" Top="[float]15" Width="[float]187" />
+							<p7:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b714083e8bad4430adce1460482b86bc" Height="[float]87" Id="ab2c4f305e5f4b9e8e7b92e7f2989b55" Label="[UIModel]3af5e591c5d64e449838c996bc131ec5" Left="[float]6" TabIndex="[int]4" Top="[float]31" Value="{ClusterBinding FieldName=One\ Time\ Calibrations\ Ref\ Cluster}" Width="[float]301">
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="81b9d785e88843b4a8527fe2980b725f" Label="[UIModel]ec42814fdcfd44a7afeb3e42c490405f" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.IntensityGraphProxy, NationalInstruments.Controls.Runtime`Double[,]`Double[,]" TabIndex="[int]0" Top="[float]21" Value="{ClusterBinding FieldName=Beam\ Power\ Density}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="ec42814fdcfd44a7afeb3e42c490405f" LabelOwner="[UIModel]81b9d785e88843b4a8527fe2980b725f" Left="[float]4" Text="[string]Beam Power Density" Top="[float]1" Width="[float]108" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="1ff239fd1209429f9f1c300732fa04ad" Label="[UIModel]d3b80214509b44ceb2a38a4846ea0370" Left="[float]32" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`Double[]`Double[]" TabIndex="[int]1" Top="[float]32" Value="{ClusterBinding FieldName=Irradiance\ Calibration}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="d3b80214509b44ceb2a38a4846ea0370" LabelOwner="[UIModel]1ff239fd1209429f9f1c300732fa04ad" Left="[float]32" Text="[string]Irradiance Calibration" Top="[float]12" Width="[float]113" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="67326fb268354ffcb2bc7f51920dd728" Label="[UIModel]2ae5194aeba648b7914c93253a49f8b1" Left="[float]60" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@56e85f7c85ca47a49f8778a55fd40833`@56e85f7c85ca47a49f8778a55fd40833" TabIndex="[int]2" Top="[float]43" Value="{ClusterBinding FieldName=MSpot\ Spectrum\ Calibration\ Parameters}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="2ae5194aeba648b7914c93253a49f8b1" LabelOwner="[UIModel]67326fb268354ffcb2bc7f51920dd728" Left="[float]60" Text="[string]MSpot Spectrum Calibration Parameters" Top="[float]23" Width="[float]212" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="630c3549a4bf4192bf3c21387a0c25b8" Label="[UIModel]2f65a034da0d4cc6be3c215af90f2543" Left="[float]88" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]3" Top="[float]55" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Param\ Selector\ MSpot}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="2f65a034da0d4cc6be3c215af90f2543" LabelOwner="[UIModel]630c3549a4bf4192bf3c21387a0c25b8" Left="[float]88" Text="[string]Rainbow Sweep Param Selector MSpot" Top="[float]35" Width="[float]204" />
 							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="feb3bd4f9e4941b4bdcc0499a01c97cc" LabelOwner="[UIModel]b82be541d9b43e885431d6dd5a00b64" Left="[float]3" Text="[string]Path Reference Cluster" Top="[float]144" Width="[float]119" />
-							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@852c7157074e4cb082464f7b6ac6ed8c" Height="[float]418" Id="57e51a3291bd470893c831e73298cdf6" IsTabStop="[bool]True" Label="[UIModel]1b4c310633cf409fb415a0818a2b7d7f" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]5" Top="[float]23" Value="{ClusterBinding FieldName=Cluster\ Reference\ Cluster}" Width="[float]500" p7:ControlDefinitionChecksum="rF+164PAOuuT6CspMkFNVOaZdjHjU+HdMbCDGvCOsuc=">
-								<p7:p.TypeDefinitionTargets>
-									<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::Cluster Reference Cluster.gtype::ControlDefinition" />
-								</p7:p.TypeDefinitionTargets>
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="63618dc5efa64767beff01ef0f46c252" Label="[UIModel]1843395671a64e6ea698d045f7c468bf" Left="[float]6" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@15da5779ad7e43beadbe3a18f9bbd375`@15da5779ad7e43beadbe3a18f9bbd375" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Light\ Power\ Calibration}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="1843395671a64e6ea698d045f7c468bf" LabelOwner="[UIModel]63618dc5efa64767beff01ef0f46c252" Left="[float]6" Text="[string]Light Power Calibration" Top="[float]4" Width="[float]123" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="ca5698b850544b219bab92dd1983111c" Label="[UIModel]f715b6df4d6c4c25b8c6698c20acec11" Left="[float]8" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]2" Top="[float]89" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ RSM}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="f715b6df4d6c4c25b8c6698c20acec11" LabelOwner="[UIModel]ca5698b850544b219bab92dd1983111c" Left="[float]8" Text="[string]Rainbow Sweep Parameters RSM" Top="[float]69" Width="[float]173" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="1fe0e57bddbf4aa2872ace815837d3ec" Label="[UIModel]28efa3cc3a1481c8c1227ce73a334c3" Left="[float]6" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]3" Top="[float]148" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Param\ Selector\ MSpot}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="28efa3cc3a1481c8c1227ce73a334c3" LabelOwner="[UIModel]1fe0e57bddbf4aa2872ace815837d3ec" Left="[float]6" Text="[string]Rainbow Sweep Param Selector MSpot" Top="[float]128" Width="[float]204" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="fb1d8a9f6c5447e1b9dc9c574c65043a" Label="[UIModel]4c9a7136fd4c474a8562ca16655b36c3" Left="[float]40" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@56e85f7c85ca47a49f8778a55fd40833`@56e85f7c85ca47a49f8778a55fd40833" TabIndex="[int]4" Top="[float]164" Value="{ClusterBinding FieldName=MSpot\ Spectrum\ Calibration\ Parameters}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="4c9a7136fd4c474a8562ca16655b36c3" LabelOwner="[UIModel]fb1d8a9f6c5447e1b9dc9c574c65043a" Left="[float]40" Text="[string]MSpot Spectrum Calibration Parameters" Top="[float]144" Width="[float]212" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="40085d121d04926815b60be640a277c" Label="[UIModel]23e76102686a4162b4d764f38d69c302" Left="[float]6" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]5" Top="[float]208" Value="{ClusterBinding FieldName=SRM\ Raw\ Plot\ Rainbow\ Sweep\ Selector}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="23e76102686a4162b4d764f38d69c302" LabelOwner="[UIModel]40085d121d04926815b60be640a277c" Left="[float]6" Text="[string]SRM Raw Plot Rainbow Sweep Selector" Top="[float]188" Width="[float]206" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="7250897b80734e4e87b5043e78e95a0e" Label="[UIModel]8286657c8ec147d9911d60d940b85d6e" Left="[float]38" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]6" Top="[float]223" Value="{ClusterBinding FieldName=SRM\ Refined\ Plot\ Rainbow\ Sweep\ Types}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="8286657c8ec147d9911d60d940b85d6e" LabelOwner="[UIModel]7250897b80734e4e87b5043e78e95a0e" Left="[float]38" Text="[string]SRM Refined Plot Rainbow Sweep Types" Top="[float]203" Width="[float]211" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="49fcceef00004edca8e2b71fda9d855f" Label="[UIModel]9658761210c94713be921b7f6ba37d12" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@05ca5e9b5ab14d5a912c6377960e8db2`@05ca5e9b5ab14d5a912c6377960e8db2" TabIndex="[int]7" Top="[float]266" Value="{ClusterBinding FieldName=SRM\ Specific\ Parameters}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="9658761210c94713be921b7f6ba37d12" LabelOwner="[UIModel]49fcceef00004edca8e2b71fda9d855f" Left="[float]5" Text="[string]SRM Specific Parameters" Top="[float]246" Width="[float]130" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="1b3efa48244d4c52b55da196c51ed0d2" Label="[UIModel]fbbd420b038e4717b71a9db84c78ddf4" Left="[float]104" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]8" Top="[float]313" Value="{ClusterBinding FieldName=Label\ Info\ Error\ Label}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="fbbd420b038e4717b71a9db84c78ddf4" LabelOwner="[UIModel]1b3efa48244d4c52b55da196c51ed0d2" Left="[float]104" Text="[string]Label Info Error Label" Top="[float]293" Width="[float]112" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="e9ebcda9d5af4074b6f62997e4483df6" Label="[UIModel]28424a438beb42f7ba331a005103d3c7" Left="[float]135" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]9" Top="[float]329" Value="{ClusterBinding FieldName=Sample\ Comments}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="28424a438beb42f7ba331a005103d3c7" LabelOwner="[UIModel]e9ebcda9d5af4074b6f62997e4483df6" Left="[float]135" Text="[string]Sample Comments" Top="[float]309" Width="[float]100" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="9781f8b827804cad87615a535fb255c5" Label="[UIModel]7da122a3f188424a9baebe22f0e84c62" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]10" Top="[float]326" Value="{ClusterBinding FieldName=Cell\ Number}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="7da122a3f188424a9baebe22f0e84c62" LabelOwner="[UIModel]9781f8b827804cad87615a535fb255c5" Left="[float]4" Text="[string]Cell Number" Top="[float]306" Width="[float]66" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="719e3574c81e49ab86af635d3148b943" Label="[UIModel]cf681f8fb74d4e4db44849dda2eb4b6e" Left="[float]36" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]11" Top="[float]354" Value="{ClusterBinding FieldName=Author\ Initials}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="cf681f8fb74d4e4db44849dda2eb4b6e" LabelOwner="[UIModel]719e3574c81e49ab86af635d3148b943" Left="[float]36" Text="[string]Author Initials" Top="[float]334" Width="[float]74" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="15d8451b058c4e3c9bb1a86088cdf28c" Label="[UIModel]96d7809786f54af8964e80cfcde67f96" Left="[float]66" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]12" Top="[float]369" Value="{ClusterBinding FieldName=Batch\ Name}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="96d7809786f54af8964e80cfcde67f96" LabelOwner="[UIModel]15d8451b058c4e3c9bb1a86088cdf28c" Left="[float]66" Text="[string]Batch Name" Top="[float]349" Width="[float]64" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="21d37fdf07f541ecbdbd950778d0f6c3" Label="[UIModel]764255344a95463391e842d336a5585a" Left="[float]39" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@4c5276c4f49c4c0a9d6addde63798050`@4c5276c4f49c4c0a9d6addde63798050" TabIndex="[int]0" Top="[float]281" Value="{ClusterBinding FieldName=Sweep\ Live\ Parameters\ RSM}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="764255344a95463391e842d336a5585a" LabelOwner="[UIModel]21d37fdf07f541ecbdbd950778d0f6c3" Left="[float]39" Text="[string]Sweep Live Parameters RSM" Top="[float]261" Width="[float]148" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="ee6d99c550d9431d910bea86f86f5f5b" Label="[UIModel]602fb9a0a9374f6dbe8ca7b8e9f0dd07" Left="[float]40" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]13" Top="[float]104" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ LPC}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="602fb9a0a9374f6dbe8ca7b8e9f0dd07" LabelOwner="[UIModel]ee6d99c550d9431d910bea86f86f5f5b" Left="[float]40" Text="[string]Rainbow Sweep Parameters LPC" Top="[float]84" Width="[float]169" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="17f25d9974a4d458d1d322316173446" Label="[UIModel]2eecfa46895a415db433b17b12cce7da" Left="[float]95" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]14" Top="[float]382" Value="{ClusterBinding FieldName=State}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="7c9a081e6d2e408ab14572c542d7bbf1" Label="[UIModel]eb570a9a7f55408a9f42fa42eaf39a17" Left="[float]301" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]15" Top="[float]285" Value="{ClusterBinding FieldName=Current\ Substate}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="2eecfa46895a415db433b17b12cce7da" LabelOwner="[UIModel]17f25d9974a4d458d1d322316173446" Left="[float]95" Text="[string]State" Top="[float]362" Width="[float]27" />
-								<p7:Label Height="[float]16" Id="eb570a9a7f55408a9f42fa42eaf39a17" LabelOwner="[UIModel]7c9a081e6d2e408ab14572c542d7bbf1" Left="[float]301" Text="[string]Current Substate" Top="[float]265" Width="[float]89" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="827042271c1b4b53948334b82f1365e2" Label="[UIModel]a1684b54e23c4553a2e4ca1f634dea33" Left="[float]240" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]16" Top="[float]258" Value="{ClusterBinding FieldName=Substate}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="a1684b54e23c4553a2e4ca1f634dea33" LabelOwner="[UIModel]827042271c1b4b53948334b82f1365e2" Left="[float]240" Text="[string]Substate" Top="[float]238" Width="[float]46" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="b495ba7346a241038e00ee352ceb00b3" Label="[UIModel]22e95bf2c4254cb489deccf27081744f" Left="[float]270" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]17" Top="[float]271" Value="{ClusterBinding FieldName=Current\ Date}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="22e95bf2c4254cb489deccf27081744f" LabelOwner="[UIModel]b495ba7346a241038e00ee352ceb00b3" Left="[float]270" Text="[string]Current Date" Top="[float]251" Width="[float]68" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="937a7e3c547d4468904c290646d61124" Label="[UIModel]f21a222b571f40d6b33f861aecab7963" Left="[float]218" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]18" Top="[float]179" Value="{ClusterBinding FieldName=Sample\ Prefix}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="f21a222b571f40d6b33f861aecab7963" LabelOwner="[UIModel]937a7e3c547d4468904c290646d61124" Left="[float]218" Text="[string]Sample Prefix" Top="[float]159" Width="[float]72" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="1928eecf7d4461ea7170e365f900cf3" Label="[UIModel]a62c95c7c234406fb902f0188be0ce9f" Left="[float]225" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@6096faf833bd44a283c7b4989e3b7f16`@6096faf833bd44a283c7b4989e3b7f16" TabIndex="[int]19" Top="[float]374" Value="{ClusterBinding FieldName=IV\ Extracted\ Parameter\ Plot\ }" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="a62c95c7c234406fb902f0188be0ce9f" LabelOwner="[UIModel]1928eecf7d4461ea7170e365f900cf3" Left="[float]225" Text="[string]IV Extracted Parameter Plot " Top="[float]354" Width="[float]147" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="19752582427467aaa61ff806c31026d" Label="[UIModel]68443aa5b6a54b5cad21dcd39267d964" Left="[float]39" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ArrayViewerProxy, NationalInstruments.Controls.Runtime`@2d3965a242c74c429108c28c025d25e3`@2d3965a242c74c429108c28c025d25e3" TabIndex="[int]20" Top="[float]40" Value="{ClusterBinding FieldName=Light\ Power\ Calibration\ Data\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="68443aa5b6a54b5cad21dcd39267d964" LabelOwner="[UIModel]19752582427467aaa61ff806c31026d" Left="[float]39" Text="[string]Light Power Calibration Data Ref" Top="[float]20" Width="[float]171" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="8a6ba57d58644b51829e626cc7e0db24" Label="[UIModel]6991eaee720648a4939d0150962e5709" Left="[float]211" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" TabIndex="[int]21" Top="[float]244" Value="{ClusterBinding FieldName=IV\ Plot\ Out\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="6991eaee720648a4939d0150962e5709" LabelOwner="[UIModel]8a6ba57d58644b51829e626cc7e0db24" Left="[float]211" Text="[string]IV Plot Out Ref" Top="[float]224" Width="[float]78" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="b4ce5b0f230483dab82719470a5daef" Label="[UIModel]2a43149713d94d6e8806f460532515c6" Left="[float]194" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@008b16de9d54474b8fcf992e1c19ba3a`@008b16de9d54474b8fcf992e1c19ba3a" TabIndex="[int]22" Top="[float]359" Value="{ClusterBinding FieldName=MRM\ Cell\ Selector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="2a43149713d94d6e8806f460532515c6" LabelOwner="[UIModel]b4ce5b0f230483dab82719470a5daef" Left="[float]194" Text="[string]MRM Cell Selector Ref" Top="[float]339" Width="[float]118" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="f577dfa9f4364c72a4864bef1bfccbf0" Label="[UIModel]dacbd0dcc6d74212a38b76600fb03d47" Left="[float]258" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" TabIndex="[int]23" Top="[float]194" Value="{ClusterBinding FieldName=IV\ Plot\ Out\ Multiple\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="dacbd0dcc6d74212a38b76600fb03d47" LabelOwner="[UIModel]f577dfa9f4364c72a4864bef1bfccbf0" Left="[float]258" Text="[string]IV Plot Out Multiple Reference" Top="[float]174" Width="[float]160" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="b2feb26c793f4f1ba5e131030478bf42" Label="[UIModel]47182025e33247dfb5444b3785e82a50" Left="[float]290" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]24" Top="[float]210" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ MRM\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="47182025e33247dfb5444b3785e82a50" LabelOwner="[UIModel]b2feb26c793f4f1ba5e131030478bf42" Left="[float]290" Text="[string]Rainbow Sweep Parameters MRM Ref" Top="[float]190" Width="[float]198" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="e77cd14d7bc74e918fd90bc79c509f2c" Label="[UIModel]f4d4746547a34b2dbddc1c1615e07f58" Left="[float]324" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@7270ce0862ee472f9d4c9879441d2a3e`@7270ce0862ee472f9d4c9879441d2a3e" TabIndex="[int]25" Top="[float]226" Value="{ClusterBinding FieldName=MRM\ Specific\ Parameters\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="f4d4746547a34b2dbddc1c1615e07f58" LabelOwner="[UIModel]e77cd14d7bc74e918fd90bc79c509f2c" Left="[float]324" Text="[string]MRM Specific Parameters Ref" Top="[float]206" Width="[float]155" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="60ff487ee76f42988123410d9855db1a" Label="[UIModel]d61e192cf5b8402391576f6debc7765c" Left="[float]220" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]26" Top="[float]38" Value="{ClusterBinding FieldName=MRM\ Cell\ Refined\ Plot\ Selector\ ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="d61e192cf5b8402391576f6debc7765c" LabelOwner="[UIModel]60ff487ee76f42988123410d9855db1a" Left="[float]220" Text="[string]MRM Cell Refined Plot Selector ref" Top="[float]18" Width="[float]182" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="269b795f48c946e894c6765523e84f5e" Label="[UIModel]b11eada9778247ddb053299ab2f6cada" Left="[float]251" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]27" Top="[float]52" Value="{ClusterBinding FieldName=MRM\ Current\ Raw\ Cell\ Plot}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="b11eada9778247ddb053299ab2f6cada" LabelOwner="[UIModel]269b795f48c946e894c6765523e84f5e" Left="[float]251" Text="[string]MRM Current Raw Cell Plot" Top="[float]32" Width="[float]144" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="39a4b804df6b48529d6e2ae056372abb" Label="[UIModel]d81554f2bd0245f495d8cc63c13c7557" Left="[float]164" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]28" Top="[float]345" Value="{ClusterBinding FieldName=MRM\ Raw\ Plot\ Rainbow\ Sweep\ Relector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="d81554f2bd0245f495d8cc63c13c7557" LabelOwner="[UIModel]39a4b804df6b48529d6e2ae056372abb" Left="[float]164" Text="[string]MRM Raw Plot Rainbow Sweep Relector Ref" Top="[float]325" Width="[float]231" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="e99925374eeb468b8bc2a41d29c005d1" Label="[UIModel]e95d82bf94894baa97c86dd0bdf91369" Left="[float]75" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@f214f0a8c6f4443290a13773103eb7b8`@f214f0a8c6f4443290a13773103eb7b8" TabIndex="[int]29" Top="[float]298" Value="{ClusterBinding FieldName=XZ\ All\ Position\ Cluster\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="e95d82bf94894baa97c86dd0bdf91369" LabelOwner="[UIModel]e99925374eeb468b8bc2a41d29c005d1" Left="[float]75" Text="[string]XZ All Position Cluster Ref" Top="[float]278" Width="[float]136" />
+							<p7:Label Height="[float]16" Id="3af5e591c5d64e449838c996bc131ec5" LabelOwner="[UIModel]ab2c4f305e5f4b9e8e7b92e7f2989b55" Left="[float]6" Text="[string]One Time Calibrations Ref Cluster" Top="[float]6" Width="[float]177" />
+							<p7:Cluster AutoArrange="[AutoArrange]None" BaseName="[string]Numeric Cluster Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4d2f0e3a56b9412182e1fd6b64a20896" Height="[float]112" Id="c10899bf912349e3963c835e9a2e3a49" IsTabStop="[bool]True" Label="[UIModel]6a3e70c8e00245eb832a50f0bd3f0003" LabelLinked="[bool]True" Left="[float]8" TabIndex="[int]5" Top="[float]40" Value="{ClusterBinding FieldName=LPC\ Controls\ Reference\ Cluster}" Width="[float]267">
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="1671e2850e404220b1f4f175a4439f74" Label="[UIModel]3c5aa44df37348739388e2da5fc60e29" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@64b3bcf93e79423abf8b3c9c8c92a660`@64b3bcf93e79423abf8b3c9c8c92a660" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=LPC\ Parameters\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="3c5aa44df37348739388e2da5fc60e29" LabelOwner="[UIModel]1671e2850e404220b1f4f175a4439f74" Left="[float]4" Text="[string]LPC Parameters Ref" Top="[float]4" Width="[float]102" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="22f2f4533dc34a81817e8249d58bac0e" Label="[UIModel]1b7b673e37844e98b7484046403a73b4" Left="[float]32" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@4db62f3f9730496287b944e5c8e494af`@4db62f3f9730496287b944e5c8e494af" TabIndex="[int]1" Top="[float]39" Value="{ClusterBinding FieldName=Sweep\ Live\ Parameters\ LPC\ ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="1b7b673e37844e98b7484046403a73b4" LabelOwner="[UIModel]22f2f4533dc34a81817e8249d58bac0e" Left="[float]32" Text="[string]Sweep Live Parameters LPC ref" Top="[float]19" Width="[float]161" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="c45ff51199e64d8c93873ad53581b3d9" Label="[UIModel]5b692e8e68854652bcb30e38364dae7d" Left="[float]60" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@15da5779ad7e43beadbe3a18f9bbd375`@15da5779ad7e43beadbe3a18f9bbd375" TabIndex="[int]2" Top="[float]53" Value="{ClusterBinding FieldName=Light\ Power\ Calibration}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="5b692e8e68854652bcb30e38364dae7d" LabelOwner="[UIModel]c45ff51199e64d8c93873ad53581b3d9" Left="[float]60" Text="[string]Light Power Calibration" Top="[float]33" Width="[float]123" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="28aa8c376ce945408f79d8061e20adc1" Label="[UIModel]2cc9f077657e438a97d3d7e7f241c4eb" Left="[float]88" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ArrayViewerProxy, NationalInstruments.Controls.Runtime`@2d3965a242c74c429108c28c025d25e3`@2d3965a242c74c429108c28c025d25e3" TabIndex="[int]3" Top="[float]67" Value="{ClusterBinding FieldName=Light\ Power\ Calibration\ Data\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="2cc9f077657e438a97d3d7e7f241c4eb" LabelOwner="[UIModel]28aa8c376ce945408f79d8061e20adc1" Left="[float]88" Text="[string]Light Power Calibration Data Ref" Top="[float]47" Width="[float]171" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="9b1edcf2d85d400c9206b4a5d7a1baea" Label="[UIModel]355c96b8dd1d44e78c9f65fb54be54f8" Left="[float]6" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]4" Top="[float]80" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ LPC}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="355c96b8dd1d44e78c9f65fb54be54f8" LabelOwner="[UIModel]9b1edcf2d85d400c9206b4a5d7a1baea" Left="[float]6" Text="[string]Rainbow Sweep Parameters LPC" Top="[float]60" Width="[float]169" />
 							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="1b4c310633cf409fb415a0818a2b7d7f" LabelOwner="[UIModel]57e51a3291bd470893c831e73298cdf6" Left="[float]4" Text="[string]Cluster Reference Cluster" Top="[float]3" Width="[float]132" />
-							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]XZ Stage Controls Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f2e98ba678aa4b6f9bcfaa068eb9f392" Height="[float]362" Id="f951d79293344ecaa7aaabc39956a366" IsTabStop="[bool]True" Label="[UIModel]95dcb24859254802836239c643349b58" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]6" Top="[float]24" Value="{ClusterBinding FieldName=XZ\ Stage\ Controls\ Reference\ Cluster}" Width="[float]141" p7:ControlDefinitionChecksum="nkRi4ZsSxJQXPie34KK07Q2IohnVxgUZYz6YdUbhzHo=">
-								<p7:p.TypeDefinitionTargets>
-									<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters::XZ Stage Controls Reference Cluster.gtype::ControlDefinition" />
-								</p7:p.TypeDefinitionTargets>
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="24d00d896b494a4aaf6119c3c952ef95" Label="[UIModel]e012707c83c549959e933c3030cf427e" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]0" Top="[float]170" Value="{ClusterBinding FieldName=Custom\ Position}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="e012707c83c549959e933c3030cf427e" LabelOwner="[UIModel]24d00d896b494a4aaf6119c3c952ef95" Left="[float]5" Text="[string]Custom Position" Top="[float]150" Width="[float]86" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="56eba7265958481eb5586d950f614eb9" Label="[UIModel]88faee265baa455cb67256e21192707f" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]222" Value="{ClusterBinding FieldName=Set\ Position}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="88faee265baa455cb67256e21192707f" LabelOwner="[UIModel]56eba7265958481eb5586d950f614eb9" Left="[float]5" Text="[string]Set Position" Top="[float]202" Width="[float]62" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="25ac7fabcfa845de9e8fafdefc19d249" Label="[UIModel]1ecb3e7f68c446528f15b5b49ffa77f9" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]274" Value="{ClusterBinding FieldName=XZ\ Stage\ Active}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="1ecb3e7f68c446528f15b5b49ffa77f9" LabelOwner="[UIModel]25ac7fabcfa845de9e8fafdefc19d249" Left="[float]5" Text="[string]XZ Stage Active" Top="[float]254" Width="[float]82" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="88c5d58f2fcf48b69afbacc7b0ee9136" Label="[UIModel]645d20d4374a24ac09b819f9eae38d" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]3" Top="[float]326" Value="{ClusterBinding FieldName=Release\ XZ\ Stage}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="645d20d4374a24ac09b819f9eae38d" LabelOwner="[UIModel]88c5d58f2fcf48b69afbacc7b0ee9136" Left="[float]5" Text="[string]Release XZ Stage" Top="[float]306" Width="[float]90" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="a61626f945964dfebf0da75ad7a541c9" Label="[UIModel]7476480c69c84ceaadaecc98ed2f04b3" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@fdaf31f5ce2c4625bb699c6ea2934c65`@fdaf31f5ce2c4625bb699c6ea2934c65" TabIndex="[int]4" Top="[float]71" Value="{ClusterBinding FieldName=XZ\ Coordinates}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="7476480c69c84ceaadaecc98ed2f04b3" LabelOwner="[UIModel]a61626f945964dfebf0da75ad7a541c9" Left="[float]4" Text="[string]XZ Coordinates" Top="[float]51" Width="[float]81" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="ccb8b681ad9c4b86a24cbc6aa82eafb9" Label="[UIModel]19ae71bbc41840f0b7f3b2075f59d29f" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]5" Top="[float]118" Value="{ClusterBinding FieldName=Activate\ XZ\ Stage}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="19ae71bbc41840f0b7f3b2075f59d29f" LabelOwner="[UIModel]ccb8b681ad9c4b86a24cbc6aa82eafb9" Left="[float]4" Text="[string]Activate XZ Stage" Top="[float]98" Width="[float]92" />
-								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="7e15020ebaa24ecb96efe790a2e144ec" Label="[UIModel]19b35de9437245a799aba7f72e0755a6" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@c84aa0db260e415db7b2617852ad226e`@c84aa0db260e415db7b2617852ad226e" TabIndex="[int]6" Top="[float]24" Value="{ClusterBinding FieldName=XZ\ Stage\ Cell\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="19b35de9437245a799aba7f72e0755a6" LabelOwner="[UIModel]7e15020ebaa24ecb96efe790a2e144ec" Left="[float]4" Text="[string]XZ Stage Cell Reference" Top="[float]4" Width="[float]125" />
+							<p7:Label Height="[float]16" Id="6a3e70c8e00245eb832a50f0bd3f0003" LabelOwner="[UIModel]c10899bf912349e3963c835e9a2e3a49" Left="[float]8" Text="[string]LPC Controls Reference Cluster" Top="[float]15" Width="[float]163" />
+							<p7:Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6751344ed9bc45918140dd4ec5f25a0c" Height="[float]95" Id="d1b9e2194c364ddca2bd3e02d932fb73" Label="[UIModel]4707e977ced640f4b693cba3b9390571" Left="[float]4" TabIndex="[int]6" Top="[float]35" Value="{ClusterBinding FieldName=System\ Parameters\ Ref\ Cluster}" Width="[float]127">
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="8b480ab602ec453aa126cdf8a9281fa2" Label="[UIModel]5b764a9006264e169779c7769d71817d" Left="[float]1" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@879f0e1014e04986b10e8f03f6754820`@879f0e1014e04986b10e8f03f6754820" TabIndex="[int]0" Top="[float]20" Value="{ClusterBinding FieldName=Current\ State\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="5b764a9006264e169779c7769d71817d" LabelOwner="[UIModel]8b480ab602ec453aa126cdf8a9281fa2" Left="[float]1" Text="[string]Current State Ref" Top="[float]0" Width="[float]90" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="9557c0fcdb6244ea99ff7339a68628ce" Label="[UIModel]e9339fbc3b684e399b7c19d7fdae34df" Left="[float]57" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]44" Value="{ClusterBinding FieldName=Substate}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="e9339fbc3b684e399b7c19d7fdae34df" LabelOwner="[UIModel]9557c0fcdb6244ea99ff7339a68628ce" Left="[float]57" Text="[string]Substate" Top="[float]24" Width="[float]46" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="4103a0fa5e0743868f657413beb91439" Label="[UIModel]244ef0bdc76947c78f165461aabe3f22" Left="[float]2" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]63" Value="{ClusterBinding FieldName=State}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="244ef0bdc76947c78f165461aabe3f22" LabelOwner="[UIModel]4103a0fa5e0743868f657413beb91439" Left="[float]2" Text="[string]State" Top="[float]43" Width="[float]27" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="7402f65d5dea49a6a93c0fb90cd8845c" Label="[UIModel]aa31cd9be5824088a215c9d9454058a8" Left="[float]30" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]3" Top="[float]33" Value="{ClusterBinding FieldName=Current\ Substate}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="aa31cd9be5824088a215c9d9454058a8" LabelOwner="[UIModel]7402f65d5dea49a6a93c0fb90cd8845c" Left="[float]30" Text="[string]Current Substate" Top="[float]13" Width="[float]89" />
 							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="95dcb24859254802836239c643349b58" LabelOwner="[UIModel]f951d79293344ecaa7aaabc39956a366" Left="[float]4" Text="[string]XZ Stage Controls Reference Cluster" Top="[float]4" Width="[float]190" />
+							<p7:Label Height="[float]16" Id="4707e977ced640f4b693cba3b9390571" LabelOwner="[UIModel]d1b9e2194c364ddca2bd3e02d932fb73" Left="[float]4" Text="[string]System Parameters Ref Cluster" Top="[float]10" Width="[float]160" />
+							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]XZ Stage Controls Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@0d2c635f34494e2aa5bb7eb2282fdbfc" Height="[float]158" Id="aaca4ad0cfc544d89c92203a37731341" IsTabStop="[bool]True" Label="[UIModel]d544c0a3baa84700b970988ba4026204" LabelLinked="[bool]True" Left="[float]8" TabIndex="[int]7" Top="[float]63" Value="{ClusterBinding FieldName=XZ\ Stage\ Controls\ Reference\ Cluster}" Width="[float]183">
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="5d58affdf81748769efbebf34ebc3f3c" Label="[UIModel]594a547c27344c09be1e3fab0f7b96d0" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]0" Top="[float]68" Value="{ClusterBinding FieldName=Custom\ Position}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="594a547c27344c09be1e3fab0f7b96d0" LabelOwner="[UIModel]5d58affdf81748769efbebf34ebc3f3c" Left="[float]4" Text="[string]Custom Position" Top="[float]48" Width="[float]86" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="9a8e56770b9e44dc8c41bf7b66a23114" Label="[UIModel]b355e5ceac514a248c99ef0eb6015a19" Left="[float]33" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]80" Value="{ClusterBinding FieldName=Set\ Position}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="b355e5ceac514a248c99ef0eb6015a19" LabelOwner="[UIModel]9a8e56770b9e44dc8c41bf7b66a23114" Left="[float]33" Text="[string]Set Position" Top="[float]60" Width="[float]62" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="f6e9a84a57e04ac0b4ff937e485fcde7" Label="[UIModel]ac08b20043f340bdba1eacec30d66727" Left="[float]61" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]2" Top="[float]91" Value="{ClusterBinding FieldName=XZ\ Stage\ Active}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="ac08b20043f340bdba1eacec30d66727" LabelOwner="[UIModel]f6e9a84a57e04ac0b4ff937e485fcde7" Left="[float]61" Text="[string]XZ Stage Active" Top="[float]71" Width="[float]82" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="34a1877efc6e4445b4f27d29c023f957" Label="[UIModel]f12f9ad95803485a832a428d14c2876b" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]3" Top="[float]111" Value="{ClusterBinding FieldName=Release\ XZ\ Stage}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="f12f9ad95803485a832a428d14c2876b" LabelOwner="[UIModel]34a1877efc6e4445b4f27d29c023f957" Left="[float]4" Text="[string]Release XZ Stage" Top="[float]91" Width="[float]90" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="db7f4985a965421daa2528cfb3e7e98a" Label="[UIModel]1d33363952cd4b33b01a405faee82209" Left="[float]31" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@fdaf31f5ce2c4625bb699c6ea2934c65`@fdaf31f5ce2c4625bb699c6ea2934c65" TabIndex="[int]4" Top="[float]38" Value="{ClusterBinding FieldName=XZ\ Coordinates}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="1d33363952cd4b33b01a405faee82209" LabelOwner="[UIModel]db7f4985a965421daa2528cfb3e7e98a" Left="[float]31" Text="[string]XZ Coordinates" Top="[float]18" Width="[float]81" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="fe4c054434ea46a6bb2cd99a3ccfe8d0" Label="[UIModel]a52d22c1f7eb4a7f9378dbec7a57e69a" Left="[float]59" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]5" Top="[float]49" Value="{ClusterBinding FieldName=Activate\ XZ\ Stage}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="a52d22c1f7eb4a7f9378dbec7a57e69a" LabelOwner="[UIModel]fe4c054434ea46a6bb2cd99a3ccfe8d0" Left="[float]59" Text="[string]Activate XZ Stage" Top="[float]29" Width="[float]92" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="1558a6eae28441e2aae5c36dc1bcd822" Label="[UIModel]de86f442749e4ec9a2386ca90728ba06" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@c84aa0db260e415db7b2617852ad226e`@c84aa0db260e415db7b2617852ad226e" TabIndex="[int]6" Top="[float]24" Value="{ClusterBinding FieldName=XZ\ Stage\ Cell\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="de86f442749e4ec9a2386ca90728ba06" LabelOwner="[UIModel]1558a6eae28441e2aae5c36dc1bcd822" Left="[float]4" Text="[string]XZ Stage Cell Reference" Top="[float]4" Width="[float]125" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="3e2fedba104342389936e85f52eed8c3" Label="[UIModel]d4520cf5ab4744cfaac54f9b6753efcb" Left="[float]35" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@e780a06d8d17433d9ea1c971b2390356`@e780a06d8d17433d9ea1c971b2390356" TabIndex="[int]7" Top="[float]122" Value="{ClusterBinding FieldName=XZ\ All\ Position\ Cluster\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="d4520cf5ab4744cfaac54f9b6753efcb" LabelOwner="[UIModel]3e2fedba104342389936e85f52eed8c3" Left="[float]35" Text="[string]XZ All Position Cluster Ref" Top="[float]102" Width="[float]136" />
+							</p7:Cluster>
+							<p7:Label Height="[float]16" Id="d544c0a3baa84700b970988ba4026204" LabelOwner="[UIModel]aaca4ad0cfc544d89c92203a37731341" Left="[float]8" Text="[string]XZ Stage Controls Reference Cluster" Top="[float]38" Width="[float]190" />
+							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster Reference Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@cbcc16fb33074d0e8fa1448240fd506b" Height="[float]160" Id="d975580a884d48b58de6a2dca5c74771" IsTabStop="[bool]True" Label="[UIModel]1ff9f0285fc94dcb9ece2aa5b4abc242" LabelLinked="[bool]True" Left="[float]4" TabIndex="[int]8" Top="[float]24" Value="{ClusterBinding FieldName=MRM\ Reference\ Cluster}" Width="[float]311">
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="98718269db0e4ceab296d59560078cc0" Label="[UIModel]3c577ba89a7342c3be7aaea620db228d" Left="[float]97" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@6096faf833bd44a283c7b4989e3b7f16`@6096faf833bd44a283c7b4989e3b7f16" TabIndex="[int]0" Top="[float]124" Value="{ClusterBinding FieldName=IV\ Extracted\ Parameter\ Plot\ }" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="3c577ba89a7342c3be7aaea620db228d" LabelOwner="[UIModel]98718269db0e4ceab296d59560078cc0" Left="[float]97" Text="[string]IV Extracted Parameter Plot " Top="[float]104" Width="[float]147" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="d8a9a2482d5f4e13b139e0ff617bbac9" Label="[UIModel]4ccbd7a4e45a4b82a1f2f3e33775df08" Left="[float]66" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@008b16de9d54474b8fcf992e1c19ba3a`@008b16de9d54474b8fcf992e1c19ba3a" TabIndex="[int]1" Top="[float]109" Value="{ClusterBinding FieldName=MRM\ Cell\ Selector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="4ccbd7a4e45a4b82a1f2f3e33775df08" LabelOwner="[UIModel]d8a9a2482d5f4e13b139e0ff617bbac9" Left="[float]66" Text="[string]MRM Cell Selector Ref" Top="[float]89" Width="[float]118" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="86bdfa2daf9f4e1e93001fa07d1e427b" Label="[UIModel]bdd5ee901d254c7299d3eef2d20631e6" Left="[float]5" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" TabIndex="[int]2" Top="[float]81" Value="{ClusterBinding FieldName=IV\ Plot\ Out\ Multiple\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="bdd5ee901d254c7299d3eef2d20631e6" LabelOwner="[UIModel]86bdfa2daf9f4e1e93001fa07d1e427b" Left="[float]5" Text="[string]IV Plot Out Multiple Reference" Top="[float]61" Width="[float]160" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="80f150655df744b98a955fceb8b5b9cc" Label="[UIModel]1b97afafcdfd45f684617f7894d5fb72" Left="[float]101" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" TabIndex="[int]3" Top="[float]69" Value="{ClusterBinding FieldName=Rainbow\ Sweep\ Parameters\ MRM\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="1b97afafcdfd45f684617f7894d5fb72" LabelOwner="[UIModel]80f150655df744b98a955fceb8b5b9cc" Left="[float]101" Text="[string]Rainbow Sweep Parameters MRM Ref" Top="[float]49" Width="[float]198" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="77b95c0a5164490fb46e51064a3adca9" Label="[UIModel]c879ada7cda4440ea5b57d22547b73a2" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]4" Top="[float]24" Value="{ClusterBinding FieldName=MRM\ Cell\ Refined\ Plot\ Selector\ ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="c879ada7cda4440ea5b57d22547b73a2" LabelOwner="[UIModel]77b95c0a5164490fb46e51064a3adca9" Left="[float]4" Text="[string]MRM Cell Refined Plot Selector ref" Top="[float]4" Width="[float]182" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="af72b86c84844cf8ab18ddba592e0935" Label="[UIModel]df89b6c90a814c7c981c87ad14d30b1b" Left="[float]35" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]5" Top="[float]38" Value="{ClusterBinding FieldName=MRM\ Current\ Raw\ Cell\ Plot}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="df89b6c90a814c7c981c87ad14d30b1b" LabelOwner="[UIModel]af72b86c84844cf8ab18ddba592e0935" Left="[float]35" Text="[string]MRM Current Raw Cell Plot" Top="[float]18" Width="[float]144" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="15d2899f619c4bd4b02742dff3a8917d" Label="[UIModel]3925cee1d0a34aa59bf0bb3d33ce5665" Left="[float]36" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]6" Top="[float]95" Value="{ClusterBinding FieldName=MRM\ Raw\ Plot\ Rainbow\ Sweep\ Relector\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="3925cee1d0a34aa59bf0bb3d33ce5665" LabelOwner="[UIModel]15d2899f619c4bd4b02742dff3a8917d" Left="[float]36" Text="[string]MRM Raw Plot Rainbow Sweep Relector Ref" Top="[float]75" Width="[float]231" />
+								<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="eb1ff6f6c4d34fffbcf0fd74d5cd2c9a" Label="[UIModel]62447158c400491592456e472a7db7fd" Left="[float]68" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]7" Top="[float]52" Value="{ClusterBinding FieldName=MRM\ Specific\ Parameters\ Ref}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="62447158c400491592456e472a7db7fd" LabelOwner="[UIModel]eb1ff6f6c4d34fffbcf0fd74d5cd2c9a" Left="[float]68" Text="[string]MRM Specific Parameters Ref" Top="[float]32" Width="[float]155" />
+							</p7:Cluster>
+							<p7:Label Height="[float]16" Id="1ff9f0285fc94dcb9ece2aa5b4abc242" LabelOwner="[UIModel]d975580a884d48b58de6a2dca5c74771" Left="[float]4" Text="[string]MRM Reference Cluster" Top="[float]-1" Width="[float]124" />
 						</Cluster>
 						<Label Height="[float]16" Id="d3069dd2c6a64678a43cf870c1ae57d8" LabelOwner="[UIModel]bc0c9fc1a4de4245a4c746136e184e9d" Left="[float]4" Text="[string]Full Reference Cluster" Top="[float]4" Width="[float]114" />
-						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@63f250b69f87453d96a3124bb9b8f942" Height="[float]268" Id="12d6bab14ca54c1d98d0c5d7ed460657" Label="[UIModel]b0ac88d901954009a55e6f23a0e7c91e" Left="[float]281" TabIndex="[int]1" Top="[float]23" Value="{ClusterBinding FieldName=Cell\ Naming\ Cluster}" Width="[float]116" p7:ControlDefinitionChecksum="F/8Rt3Sm5k9oFEy4QQdo+ytKWs2gYgWEOYGHb+Wt0tI=" xmlns:p7="http://www.ni.com/PanelCommon">
+						<Cluster BaseName="[string]XZ All Position Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@e780a06d8d17433d9ea1c971b2390356" Height="[float]357" Id="d385a115cb3d4c53a24eb8f5ac3aaf18" IsTabStop="[bool]True" Label="[UIModel]a84811cab9894a249cff28b795d66ace" LabelLinked="[bool]True" Left="[float]345" TabIndex="[int]1" Top="[float]25" Value="{ClusterBinding FieldName=All\ XZ\ Position\ Cluster}" Width="[float]293" p7:ControlDefinitionChecksum="mQKnEjBabMRU+pwq58MwAWxNfn8/VdxXcz5BzDkg2Ik=" xmlns:p7="http://www.ni.com/PanelCommon">
+							<p7:p.TypeDefinitionTargets>
+								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::XZ Stage Movements::XZ All Position Cluster.gtype::ControlDefinition" />
+							</p7:p.TypeDefinitionTargets>
+							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b6358221680f4db1bd83ceda49cd9dbe" Height="[float]151" Id="ca4ae84b6ef34e2ea20d35c1444d8784" Label="[UIModel]345de9dba2814be783a2815cbc014e9e" Left="[float]2" TabIndex="[int]0" Top="[float]196" Value="{ClusterBinding FieldName=Diffusor\ Coordinates}" Width="[float]127">
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="1a9498f2414d26b72e13b546ff79bf" Label="[UIModel]71457647b83d4906bb3fabf6c45d23cc" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="12f18b54897642feb11bffba9a691ed5" Label="[UIModel]c577ad840c9f4c53a1cad634b3280907" Left="[float]4" TabIndex="[int]1" Top="[float]69" Value="{ClusterBinding FieldName=Z\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="71457647b83d4906bb3fabf6c45d23cc" LabelOwner="[UIModel]1a9498f2414d26b72e13b546ff79bf" Left="[float]4" Text="[string]X Coordinate (mm)" Top="[float]4" Width="[float]100" />
+								<p7:Label Height="[float]16" Id="c577ad840c9f4c53a1cad634b3280907" LabelOwner="[UIModel]12f18b54897642feb11bffba9a691ed5" Left="[float]4" Text="[string]Z Coordinate (mm)" Top="[float]49" Width="[float]100" />
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="eec581f842304d9a9cf4da830c7ab916" IsReadOnly="[bool]False" Label="[UIModel]7f9dd64e907e48499e29c34432c23cec" Left="[float]4" TabIndex="[int]2" Top="[float]115" Value="{ClusterBinding FieldName=Aprch\ Distance\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="7f9dd64e907e48499e29c34432c23cec" LabelOwner="[UIModel]eec581f842304d9a9cf4da830c7ab916" Left="[float]4" Text="[string]Aprch Distance (mm)" Top="[float]95" Width="[float]111" />
+							</p7:Cluster>
+							<p7:Label Height="[float]16" Id="345de9dba2814be783a2815cbc014e9e" LabelOwner="[UIModel]ca4ae84b6ef34e2ea20d35c1444d8784" Left="[float]2" Text="[string]Diffusor Coordinates" Top="[float]176" Width="[float]109" />
+							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@b6358221680f4db1bd83ceda49cd9dbe" Height="[float]150" Id="8ea2e083ad5e4649b2bb0c73a702c77b" Label="[UIModel]2b3f4b3bdedd4049b430a16591a1cc15" Left="[float]0" TabIndex="[int]1" Top="[float]20" Value="{ClusterBinding FieldName=Photodetector\ Coordinates}" Width="[float]127">
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="9a602f38ee3c4200aaf878fb844c49a9" Label="[UIModel]caf5b56ae7ee48289538d2ceca15faaf" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="b2b825378dd24237b90b743c3b60b75e" Label="[UIModel]cc13bae4b033428493ef0c746de5d369" Left="[float]4" TabIndex="[int]1" Top="[float]69" Value="{ClusterBinding FieldName=Z\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="caf5b56ae7ee48289538d2ceca15faaf" LabelOwner="[UIModel]9a602f38ee3c4200aaf878fb844c49a9" Left="[float]4" Text="[string]X Coordinate (mm)" Top="[float]4" Width="[float]100" />
+								<p7:Label Height="[float]16" Id="cc13bae4b033428493ef0c746de5d369" LabelOwner="[UIModel]b2b825378dd24237b90b743c3b60b75e" Left="[float]4" Text="[string]Z Coordinate (mm)" Top="[float]49" Width="[float]100" />
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="ad5af9593e6440f2b3f75bb1648019a5" IsReadOnly="[bool]False" Label="[UIModel]4e92c14b12544528acdc1d946efec255" Left="[float]4" TabIndex="[int]2" Top="[float]114" Value="{ClusterBinding FieldName=Aprch\ Distance\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="4e92c14b12544528acdc1d946efec255" LabelOwner="[UIModel]ad5af9593e6440f2b3f75bb1648019a5" Left="[float]4" Text="[string]Aprch Distance (mm)" Top="[float]94" Width="[float]111" />
+							</p7:Cluster>
+							<p7:Label Height="[float]16" Id="2b3f4b3bdedd4049b430a16591a1cc15" LabelOwner="[UIModel]8ea2e083ad5e4649b2bb0c73a702c77b" Left="[float]0" Text="[string]Photodetector Coordinates" Top="[float]0" Width="[float]143" />
+							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@e8dd9b699684483988060db2d1697d60" Height="[float]248" Id="b18b1eb49f1b4fc1a247435ca742113c" Label="[UIModel]288e0e4990ac4f28a22694416f785638" Left="[float]132" TabIndex="[int]2" Top="[float]37" Value="{ClusterBinding FieldName=Cell\ R.01\ Coordinates}" Width="[float]137">
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="9384ce43039b4e57b977f89f60bf7cbd" Label="[UIModel]e037f90ad23c49459e5aaae9819a93b0" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="10dcd35d47854c5f8acaa36d9ad836ea" Label="[UIModel]261dbe36419748dc8d3ef75bbcc167ac" Left="[float]4" TabIndex="[int]1" Top="[float]69" Value="{ClusterBinding FieldName=Z\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="e037f90ad23c49459e5aaae9819a93b0" LabelOwner="[UIModel]9384ce43039b4e57b977f89f60bf7cbd" Left="[float]4" Text="[string]X Coordinate (mm)" Top="[float]4" Width="[float]100" />
+								<p7:Label Height="[float]16" Id="261dbe36419748dc8d3ef75bbcc167ac" LabelOwner="[UIModel]10dcd35d47854c5f8acaa36d9ad836ea" Left="[float]4" Text="[string]Z Coordinate (mm)" Top="[float]49" Width="[float]100" />
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="58a0fc0dfc854255891264117bbb6a41" Label="[UIModel]a9363b61d9434285873ea30e73dd593b" Left="[float]4" TabIndex="[int]2" Top="[float]118" Value="{ClusterBinding FieldName=Vertical\ Spacing\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="a9363b61d9434285873ea30e73dd593b" LabelOwner="[UIModel]58a0fc0dfc854255891264117bbb6a41" Left="[float]4" Text="[string]Vertical Spacing (mm)" Top="[float]98" Width="[float]115" />
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="48a99b42680c44d384b808e9dd37fbb4" IsReadOnly="[bool]False" Label="[UIModel]43328fd8178344568841ccbf8fe2bd74" Left="[float]4" TabIndex="[int]3" Top="[float]165" Value="{ClusterBinding FieldName=Aprch\ Distance\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="43328fd8178344568841ccbf8fe2bd74" LabelOwner="[UIModel]48a99b42680c44d384b808e9dd37fbb4" Left="[float]4" Text="[string]Aprch Distance (mm)" Top="[float]145" Width="[float]111" />
+								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="cef8fbcfd90749638aca5047882359ba" IsReadOnly="[bool]False" Label="[UIModel]e6a93df95b3f43109889965a7215d6e9" Left="[float]5" TabIndex="[int]4" Top="[float]212" Value="{ClusterBinding FieldName=Aprch\ Dstnc\ L.12\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								<p7:Label Height="[float]16" Id="e6a93df95b3f43109889965a7215d6e9" LabelOwner="[UIModel]cef8fbcfd90749638aca5047882359ba" Left="[float]5" Text="[string]Aprch Dstnc L.12 (mm)" Top="[float]192" Width="[float]120" />
+							</p7:Cluster>
+							<p7:Label Height="[float]16" Id="288e0e4990ac4f28a22694416f785638" LabelOwner="[UIModel]b18b1eb49f1b4fc1a247435ca742113c" Left="[float]132" Text="[string]Cell R.01 Coordinates" Top="[float]17" Width="[float]113" />
+						</Cluster>
+						<Label Height="[float]16" Id="a84811cab9894a249cff28b795d66ace" LabelOwner="[UIModel]d385a115cb3d4c53a24eb8f5ac3aaf18" Left="[float]345" Text="[string]All XZ Position Cluster" Top="[float]5" Width="[float]116" />
+						<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Paths Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@9671a766fb81401d8d44e26f09512303" Height="[float]106" Id="7e3a79891ed64bd59411936ba6b13dbc" IsTabStop="[bool]True" Label="[UIModel]1daa306f0e254302b678f7e0d4fb9cba" LabelLinked="[bool]True" Left="[float]3" TabIndex="[int]2" Top="[float]272" Value="{ClusterBinding FieldName=All\ Paths}" Width="[float]335">
+							<PathSelector BaseName="[string]Path" Height="[float]24" Id="1c3db9fa2e17464d978193ac691ef7b1" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]6699fed12bfe4689a99119cf835e541b" Left="[float]4" Path="{ClusterBinding FieldName=Thorlabs\ Motor\ Serial\ Number\ File\ Path}" TabIndex="[int]0" Top="[float]24" Width="[float]319" WrapText="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="6699fed12bfe4689a99119cf835e541b" LabelOwner="[UIModel]1c3db9fa2e17464d978193ac691ef7b1" Left="[float]4" Text="[string]Thorlabs Motor Serial Number File Path" Top="[float]4" Width="[float]209" />
+							<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Select Folder" BrowseOption="[BrowseOption]ExistingFolders" Height="[float]24" Id="8a020bce25864a758104c6559cedcfa8" Label="[UIModel]bb82c2a3ab5b41c0beee4df6ced866da" Left="[float]4" Path="{ClusterBinding FieldName=Default\ Data\ Saving\ Location}" TabIndex="[int]1" Top="[float]70" Width="[float]317" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="bb82c2a3ab5b41c0beee4df6ced866da" LabelOwner="[UIModel]8a020bce25864a758104c6559cedcfa8" Left="[float]4" Text="[string]Default Data Saving Location" Top="[float]50" Width="[float]153" />
+						</Cluster>
+						<Label Height="[float]16" Id="1daa306f0e254302b678f7e0d4fb9cba" LabelOwner="[UIModel]7e3a79891ed64bd59411936ba6b13dbc" Left="[float]3" Text="[string]All Paths" Top="[float]252" Width="[float]45" />
+						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@63f250b69f87453d96a3124bb9b8f942" Height="[float]268" Id="12d6bab14ca54c1d98d0c5d7ed460657" Label="[UIModel]b0ac88d901954009a55e6f23a0e7c91e" Left="[float]642" TabIndex="[int]3" Top="[float]26" Value="{ClusterBinding FieldName=Cell\ Naming\ Cluster}" Width="[float]116" p7:ControlDefinitionChecksum="F/8Rt3Sm5k9oFEy4QQdo+ytKWs2gYgWEOYGHb+Wt0tI=" xmlns:p7="http://www.ni.com/PanelCommon">
 							<p7:p.TypeDefinitionTargets>
 								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Sample Naming::Cell Naming Cluster.gtype::ControlDefinition" />
 							</p7:p.TypeDefinitionTargets>
@@ -233,73 +262,63 @@
 							<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="6b96e272c39746f6940bb4b752a51024" Label="[UIModel]6205a15bd1f54273bd09168f0b6b047a" Left="[float]4" Text="{ClusterBinding FieldName=Batch\ Name}" Top="[float]232" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 							<p7:Label Height="[float]16" Id="6205a15bd1f54273bd09168f0b6b047a" LabelOwner="[UIModel]6b96e272c39746f6940bb4b752a51024" Left="[float]4" Text="[string]Batch Name" Top="[float]212" Width="[float]64" />
 						</Cluster>
-						<Label Height="[float]16" Id="b0ac88d901954009a55e6f23a0e7c91e" LabelOwner="[UIModel]12d6bab14ca54c1d98d0c5d7ed460657" Left="[float]281" Text="[string]Cell Naming Cluster" Top="[float]3" Width="[float]105" />
-						<Cluster BaseName="[string]XZ All Position Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f214f0a8c6f4443290a13773103eb7b8" Height="[float]258" Id="d385a115cb3d4c53a24eb8f5ac3aaf18" IsTabStop="[bool]True" Label="[UIModel]a84811cab9894a249cff28b795d66ace" LabelLinked="[bool]True" Left="[float]399" TabIndex="[int]2" Top="[float]151" Value="{ClusterBinding FieldName=All\ XZ\ Position\ Cluster}" Width="[float]277" p7:ControlDefinitionChecksum="TJ7piVDmGloZITcfL4tbllBQ7ONO6UOrOwNnGxR7z1E=" xmlns:p7="http://www.ni.com/PanelCommon">
-							<p7:p.TypeDefinitionTargets>
-								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Main Functions::XZ Stage Movements::XZ All Position Cluster.gtype::ControlDefinition" />
-							</p7:p.TypeDefinitionTargets>
-							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@a6b83a64ee494dee89d55d1258051bc9" Height="[float]105" Id="10650440b5d04e42881a88bb4d4da9e5" Label="[UIModel]c5e7819528ba4b1cbfbdeddc1e4de4d4" Left="[float]3" TabIndex="[int]0" Top="[float]145" Value="{ClusterBinding FieldName=Diffusor\ Coordinates}" Width="[float]116">
-								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="47bf23af6042455f85db9745646ea8a7" Label="[UIModel]d4407024e655480aaa7443ae0102dd04" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="90a9eb87321e40f4937b09ce1677c384" Label="[UIModel]ba5ea6a346ff422e8686c953be3a8b1d" Left="[float]4" TabIndex="[int]1" Top="[float]69" Value="{ClusterBinding FieldName=Z\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="d4407024e655480aaa7443ae0102dd04" LabelOwner="[UIModel]47bf23af6042455f85db9745646ea8a7" Left="[float]4" Text="[string]X Coordinate (mm)" Top="[float]4" Width="[float]100" />
-								<p7:Label Height="[float]16" Id="ba5ea6a346ff422e8686c953be3a8b1d" LabelOwner="[UIModel]90a9eb87321e40f4937b09ce1677c384" Left="[float]4" Text="[string]Z Coordinate (mm)" Top="[float]49" Width="[float]100" />
-							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="c5e7819528ba4b1cbfbdeddc1e4de4d4" LabelOwner="[UIModel]10650440b5d04e42881a88bb4d4da9e5" Left="[float]3" Text="[string]Diffusor Coordinates" Top="[float]125" Width="[float]109" />
-							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@a6b83a64ee494dee89d55d1258051bc9" Height="[float]105" Id="bb98154b48ee48359a2062db889ddcce" Label="[UIModel]bd47d01f0649f285ce6716439c4f70" Left="[float]3" TabIndex="[int]1" Top="[float]20" Value="{ClusterBinding FieldName=Photodetector\ Coordinates}" Width="[float]116">
-								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="56ff11288ebc4dccb0721acc23714d7c" Label="[UIModel]64dea758057348deb415e1d0e5821dd5" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="ae6712ece5bb4362b307e8ebf9177b29" Label="[UIModel]9425a2e2b5bb440b9a08a13040a61599" Left="[float]4" TabIndex="[int]1" Top="[float]69" Value="{ClusterBinding FieldName=Z\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="64dea758057348deb415e1d0e5821dd5" LabelOwner="[UIModel]56ff11288ebc4dccb0721acc23714d7c" Left="[float]4" Text="[string]X Coordinate (mm)" Top="[float]4" Width="[float]100" />
-								<p7:Label Height="[float]16" Id="9425a2e2b5bb440b9a08a13040a61599" LabelOwner="[UIModel]ae6712ece5bb4362b307e8ebf9177b29" Left="[float]4" Text="[string]Z Coordinate (mm)" Top="[float]49" Width="[float]100" />
-							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="bd47d01f0649f285ce6716439c4f70" LabelOwner="[UIModel]bb98154b48ee48359a2062db889ddcce" Left="[float]3" Text="[string]Photodetector Coordinates" Top="[float]0" Width="[float]143" />
-							<p7:Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@a3e4a65817e4483d84ff3f93f5e8955d" Height="[float]154" Id="6b7fa3cb51d548f184e3ff16af6103d5" Label="[UIModel]3e1ce50416d54b54ae2d71861d8985eb" Left="[float]129" TabIndex="[int]2" Top="[float]37" Value="{ClusterBinding FieldName=Cell\ R.01\ Coordinates}" Width="[float]131">
-								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="aa6a8d51ca2c40ecbb9cf9b4ed33bf23" Label="[UIModel]4e074eb00c10485686acc1cd9746083d" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="6ae824fc504a2e8f34fc7ea03e3ad0" Label="[UIModel]591970cb293348f48c4938b061e5f5e9" Left="[float]4" TabIndex="[int]1" Top="[float]69" Value="{ClusterBinding FieldName=Z\ Coordinate\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="4e074eb00c10485686acc1cd9746083d" LabelOwner="[UIModel]aa6a8d51ca2c40ecbb9cf9b4ed33bf23" Left="[float]4" Text="[string]X Coordinate (mm)" Top="[float]4" Width="[float]100" />
-								<p7:Label Height="[float]16" Id="591970cb293348f48c4938b061e5f5e9" LabelOwner="[UIModel]6ae824fc504a2e8f34fc7ea03e3ad0" Left="[float]4" Text="[string]Z Coordinate (mm)" Top="[float]49" Width="[float]100" />
-								<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="44748668f064f3f9cec6cdb998665e6" Label="[UIModel]48bd68d1b18543819e9048f5551c5a1d" Left="[float]4" TabIndex="[int]2" Top="[float]118" Value="{ClusterBinding FieldName=Vertical\ Spacing\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<p7:Label Height="[float]16" Id="48bd68d1b18543819e9048f5551c5a1d" LabelOwner="[UIModel]44748668f064f3f9cec6cdb998665e6" Left="[float]4" Text="[string]Vertical Spacing (mm)" Top="[float]98" Width="[float]115" />
-							</p7:Cluster>
-							<p7:Label Height="[float]16" Id="3e1ce50416d54b54ae2d71861d8985eb" LabelOwner="[UIModel]6b7fa3cb51d548f184e3ff16af6103d5" Left="[float]129" Text="[string]Cell R.01 Coordinates" Top="[float]17" Width="[float]113" />
-							<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="994661c613f040b690b5b984f0a7a0d9" IsReadOnly="[bool]False" Label="[UIModel]60773540c4e6453e9089401e1358ae57" Left="[float]133" TabIndex="[int]3" Top="[float]219" Value="{ClusterBinding FieldName=Approach\ Distance\ (mm)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<p7:Label Height="[float]16" Id="60773540c4e6453e9089401e1358ae57" LabelOwner="[UIModel]994661c613f040b690b5b984f0a7a0d9" Left="[float]133" Text="[string]Approach Distance (mm)" Top="[float]199" Width="[float]131" />
-						</Cluster>
-						<Label Height="[float]16" Id="a84811cab9894a249cff28b795d66ace" LabelOwner="[UIModel]d385a115cb3d4c53a24eb8f5ac3aaf18" Left="[float]399" Text="[string]All XZ Position Cluster" Top="[float]131" Width="[float]116" />
-						<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Paths Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@9671a766fb81401d8d44e26f09512303" Height="[float]106" Id="7e3a79891ed64bd59411936ba6b13dbc" IsTabStop="[bool]True" Label="[UIModel]1daa306f0e254302b678f7e0d4fb9cba" LabelLinked="[bool]True" Left="[float]400" TabIndex="[int]3" Top="[float]23" Value="{ClusterBinding FieldName=All\ Paths}" Width="[float]335">
-							<PathSelector BaseName="[string]Path" Height="[float]24" Id="1c3db9fa2e17464d978193ac691ef7b1" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]6699fed12bfe4689a99119cf835e541b" Left="[float]4" Path="{ClusterBinding FieldName=Thorlabs\ Motor\ Serial\ Number\ File\ Path}" TabIndex="[int]0" Top="[float]24" Width="[float]319" WrapText="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<Label Height="[float]16" Id="6699fed12bfe4689a99119cf835e541b" LabelOwner="[UIModel]1c3db9fa2e17464d978193ac691ef7b1" Left="[float]4" Text="[string]Thorlabs Motor Serial Number File Path" Top="[float]4" Width="[float]209" />
-							<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Select Folder" BrowseOption="[BrowseOption]ExistingFolders" Height="[float]24" Id="8a020bce25864a758104c6559cedcfa8" Label="[UIModel]bb82c2a3ab5b41c0beee4df6ced866da" Left="[float]4" Path="{ClusterBinding FieldName=Default\ Data\ Saving\ Location}" TabIndex="[int]1" Top="[float]70" Width="[float]317" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<Label Height="[float]16" Id="bb82c2a3ab5b41c0beee4df6ced866da" LabelOwner="[UIModel]8a020bce25864a758104c6559cedcfa8" Left="[float]4" Text="[string]Default Data Saving Location" Top="[float]50" Width="[float]153" />
-						</Cluster>
-						<Label Height="[float]16" Id="1daa306f0e254302b678f7e0d4fb9cba" LabelOwner="[UIModel]7e3a79891ed64bd59411936ba6b13dbc" Left="[float]400" Text="[string]All Paths" Top="[float]3" Width="[float]45" />
+						<Label Height="[float]16" Id="b0ac88d901954009a55e6f23a0e7c91e" LabelOwner="[UIModel]12d6bab14ca54c1d98d0c5d7ed460657" Left="[float]642" Text="[string]Cell Naming Cluster" Top="[float]6" Width="[float]105" />
 					</Cluster>
-					<Label Height="[float]16" Id="69eec4a3d20f440c9042f49a221f2154" LabelOwner="[UIModel]fba025ae1e3245e882544a18a41a9eeb" Left="[float]100" Text="[string]Cluster" Top="[float]80" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+					<Label Height="[float]16" Id="69eec4a3d20f440c9042f49a221f2154" LabelOwner="[UIModel]fba025ae1e3245e882544a18a41a9eeb" Left="[float]100" Text="[string]Misc Data Mega Cluster" Top="[float]80" Width="[float]126" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="93cf12b975e44c77a596bc728635b881">
+		<p.TypeReference TypeId="092ac07aeca24eac9c0a5f41bb1c022f">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Full Reference Cluster" DataType="@b2df28e526e74449b4218018de07fa9f" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Cell Naming Cluster" DataType="@63f250b69f87453d96a3124bb9b8f942" />
-					<Field FieldAccessPolicy="ReadWrite" Name="All XZ Position Cluster" DataType="@f214f0a8c6f4443290a13773103eb7b8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Full Reference Cluster" DataType="@267893a0fa1b47689d26d261afb36ec2" />
+					<Field FieldAccessPolicy="ReadWrite" Name="All XZ Position Cluster" DataType="@e780a06d8d17433d9ea1c971b2390356" />
 					<Field FieldAccessPolicy="ReadWrite" Name="All Paths" DataType="@9671a766fb81401d8d44e26f09512303" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell Naming Cluster" DataType="@63f250b69f87453d96a3124bb9b8f942" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="b2df28e526e74449b4218018de07fa9f">
-			<Attributed AttributedType="@6888944d4d264f5a9b4735611f3abd65">
+		<p.TypeReference TypeId="267893a0fa1b47689d26d261afb36ec2">
+			<Attributed AttributedType="@39d07fd1c0e34a619f1232aca3191172">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="cc8de200c7794764bd3bb9a05e72b133">
-			<Attributed AttributedType="@896e2540bab346939e95571c6f8f11d3">
+		<p.TypeReference TypeId="8c5b7b03926c42eab6d89a477ee93499">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="SRM Light Power Density Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Parameters RSM" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" />
+					<Field FieldAccessPolicy="ReadWrite" Name="SRM Refined Plot Rainbow Sweep Types" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="SRM Specific Parameters" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@3fd0db488851439e98c0924fe9a9a2fd`@3fd0db488851439e98c0924fe9a9a2fd" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Live Parameters RSM" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@4c5276c4f49c4c0a9d6addde63798050`@4c5276c4f49c4c0a9d6addde63798050" />
+					<Field FieldAccessPolicy="ReadWrite" Name="SRM Raw Plot Rainbow Sweep Selector" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="SRM Plot Parameter Selector Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@8ece4b6fc84e435884248b5775977d2a`@8ece4b6fc84e435884248b5775977d2a" />
+					<Field FieldAccessPolicy="ReadWrite" Name="IV Plot Out Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="272a24b82a434ed896958e12904ae149">
+			<Attributed AttributedType="@173a3d5151fe4f45bd5d7efa3eb8a063">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Rainbow Sweep" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3fd0db488851439e98c0924fe9a9a2fd">
+			<Attributed AttributedType="@35caad1178184bca918130ffc6412cdb">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4c5276c4f49c4c0a9d6addde63798050">
+			<Attributed AttributedType="@1ec6f8d1e19f48319e215abda4a3d33e">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::SRM Live Parameters" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
@@ -310,33 +329,69 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="5f66b04efeb44759b859f48d5062a00e">
-			<Attributed AttributedType="@b8fcc453f40644f3b1efa685f1040918">
+		<p.TypeReference TypeId="bdcfac1e251d4277b76a5d43a5ed73f4">
+			<VariableArray DereferenceType="@1a55da2d90bd444d9a48bb8fea364dff" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="c7db3bc76dfc4259ba7063bbeb9c19fc">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Calibration Files Path" DataType=":DotNet:NationalInstruments.Controls.Runtime.PathSelectorProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Default Data Saving Location" DataType=":DotNet:NationalInstruments.Controls.Runtime.PathSelectorProxy, NationalInstruments.Controls.Runtime" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="8dd7e5d09a4447b5bc7dbec1e7a52289">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Main Tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Measurement tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Configuration tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Light Calibration tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="14126e62b2714c2b95ed47820ecef989">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Custom date" DataType=":DotNet:NationalInstruments.Controls.Runtime.CheckBoxProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Batch Name" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Author Initials" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell Number" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Date" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sample Comments" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sample Prefix" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Label Info Missing Error" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Label Info Error Label" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b714083e8bad4430adce1460482b86bc">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Beam Power Density" DataType=":DotNet:NationalInstruments.Controls.Runtime.IntensityGraphProxy, NationalInstruments.Controls.Runtime`Double[,]`Double[,]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Irradiance Calibration" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`Double[]`Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MSpot Spectrum Calibration Parameters" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@56e85f7c85ca47a49f8778a55fd40833`@56e85f7c85ca47a49f8778a55fd40833" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Param Selector MSpot" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="56e85f7c85ca47a49f8778a55fd40833">
+			<Attributed AttributedType="@88806032253c4d609476b0043e104e21">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Instruction Queue" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::One Time Calibrations::MSpot Spectrum" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="5f35a9c276df47e0bdd52e31f1c5a3f6">
-			<Attributed AttributedType="@31d20f3f1fce4ab192d51f955f391c94">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="b959561dd9b74453a783cd93e7f3c41d">
-			<Attributed AttributedType="@eace8fd3b1e1494296b80a6ea67581b1">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="1b66508c51c3493389e7a3c0a5cab771">
-			<Attributed AttributedType="@ffab1fe47151461ca45974d7aac20443">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters" />
-				</AttributeValues>
-			</Attributed>
+		<p.TypeReference TypeId="4d2f0e3a56b9412182e1fd6b64a20896">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="LPC Parameters Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@64b3bcf93e79423abf8b3c9c8c92a660`@64b3bcf93e79423abf8b3c9c8c92a660" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Live Parameters LPC ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@4db62f3f9730496287b944e5c8e494af`@4db62f3f9730496287b944e5c8e494af" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Light Power Calibration" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@15da5779ad7e43beadbe3a18f9bbd375`@15da5779ad7e43beadbe3a18f9bbd375" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Light Power Calibration Data Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ArrayViewerProxy, NationalInstruments.Controls.Runtime`@2d3965a242c74c429108c28c025d25e3`@2d3965a242c74c429108c28c025d25e3" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Parameters LPC" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" />
+				</Members>
+			</Composite>
 		</p.TypeReference>
 		<p.TypeReference TypeId="64b3bcf93e79423abf8b3c9c8c92a660">
 			<Attributed AttributedType="@4aa5de1082784b7b95b499e50c3433e1">
@@ -352,92 +407,42 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="67233db5a0ff4467b1c118cd5d8594f9">
-			<Attributed AttributedType="@6e2216fad72b4ed3a2a112feaace5d72">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="852c7157074e4cb082464f7b6ac6ed8c">
-			<Attributed AttributedType="@b20d09dfb1284cb1b44443114f5f3bcc">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
 		<p.TypeReference TypeId="15da5779ad7e43beadbe3a18f9bbd375">
 			<VariableArray DereferenceType="@a37b9b107a204902a0c6f748e7e11800" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="272a24b82a434ed896958e12904ae149">
-			<Attributed AttributedType="@173a3d5151fe4f45bd5d7efa3eb8a063">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Rainbow Sweep" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="56e85f7c85ca47a49f8778a55fd40833">
-			<Attributed AttributedType="@88806032253c4d609476b0043e104e21">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::One Time Calibrations::MSpot Spectrum" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="05ca5e9b5ab14d5a912c6377960e8db2">
-			<Attributed AttributedType="@408f0bda295f4c40bdc959cb1f9fe41f">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="4c5276c4f49c4c0a9d6addde63798050">
-			<Attributed AttributedType="@1ec6f8d1e19f48319e215abda4a3d33e">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::SRM Live Parameters" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="6096faf833bd44a283c7b4989e3b7f16">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Dividing Wavelength (nm)" DataType="Double[]" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Element 2" DataType="Double[]" />
-				</Members>
-			</Composite>
 		</p.TypeReference>
 		<p.TypeReference TypeId="2d3965a242c74c429108c28c025d25e3">
 			<VariableArray DereferenceType="@06977a40e696464699b092da816ae13f" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="bdcfac1e251d4277b76a5d43a5ed73f4">
-			<VariableArray DereferenceType="@1a55da2d90bd444d9a48bb8fea364dff" />
+		<p.TypeReference TypeId="6751344ed9bc45918140dd4ec5f25a0c">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Current State Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@879f0e1014e04986b10e8f03f6754820`@879f0e1014e04986b10e8f03f6754820" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Substate" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="State" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Substate" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+				</Members>
+			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="008b16de9d54474b8fcf992e1c19ba3a">
-			<Attributed AttributedType="@65257ec8817f46b58b4799e7802c75cb">
+		<p.TypeReference TypeId="879f0e1014e04986b10e8f03f6754820">
+			<Attributed AttributedType="@4cc02c8ec5624f7f886e36012ac36b93">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Multiple Rainbow Measurement::MRM Cell Selector" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Instruction Queue" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="7270ce0862ee472f9d4c9879441d2a3e">
-			<Attributed AttributedType="@13ff30dfe8fc4ac882111b2785d7990d">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Multiple Rainbow Measurement" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="f214f0a8c6f4443290a13773103eb7b8">
-			<Attributed AttributedType="@e67c8c202087469aa6394ade384fe296">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::XZ Stage Movements" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="f2e98ba678aa4b6f9bcfaa068eb9f392">
-			<Attributed AttributedType="@dab54f818c39481983180832709b7976">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Initialize App::Reference Clusters" />
-				</AttributeValues>
-			</Attributed>
+		<p.TypeReference TypeId="0d2c635f34494e2aa5bb7eb2282fdbfc">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Custom Position" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Set Position" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Active" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Release XZ Stage" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Coordinates" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@fdaf31f5ce2c4625bb699c6ea2934c65`@fdaf31f5ce2c4625bb699c6ea2934c65" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Activate XZ Stage" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Cell Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@c84aa0db260e415db7b2617852ad226e`@c84aa0db260e415db7b2617852ad226e" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ All Position Cluster Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@e780a06d8d17433d9ea1c971b2390356`@e780a06d8d17433d9ea1c971b2390356" />
+				</Members>
+			</Composite>
 		</p.TypeReference>
 		<p.TypeReference TypeId="fdaf31f5ce2c4625bb699c6ea2934c65">
 			<Attributed AttributedType="@7efe901a71854da494907d53ae08aeb2">
@@ -453,27 +458,59 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="63f250b69f87453d96a3124bb9b8f942">
-			<Attributed AttributedType="@0310c5013b97451d9084385f61d8742a">
+		<p.TypeReference TypeId="e780a06d8d17433d9ea1c971b2390356">
+			<Attributed AttributedType="@67f83814f50849f2b09850eac2e917ef">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Sample Naming" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::XZ Stage Movements" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="a6b83a64ee494dee89d55d1258051bc9">
+		<p.TypeReference TypeId="cbcc16fb33074d0e8fa1448240fd506b">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="IV Extracted Parameter Plot " DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@6096faf833bd44a283c7b4989e3b7f16`@6096faf833bd44a283c7b4989e3b7f16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Cell Selector Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@008b16de9d54474b8fcf992e1c19ba3a`@008b16de9d54474b8fcf992e1c19ba3a" />
+					<Field FieldAccessPolicy="ReadWrite" Name="IV Plot Out Multiple Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Parameters MRM Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Cell Refined Plot Selector ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Current Raw Cell Plot" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Raw Plot Rainbow Sweep Relector Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Specific Parameters Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6096faf833bd44a283c7b4989e3b7f16">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Dividing Wavelength (nm)" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 2" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="008b16de9d54474b8fcf992e1c19ba3a">
+			<Attributed AttributedType="@65257ec8817f46b58b4799e7802c75cb">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Multiple Rainbow Measurement::MRM Cell Selector" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b6358221680f4db1bd83ceda49cd9dbe">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="X Coordinate (mm)" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Z Coordinate (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Aprch Distance (mm)" DataType="Double" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="a3e4a65817e4483d84ff3f93f5e8955d">
+		<p.TypeReference TypeId="e8dd9b699684483988060db2d1697d60">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="X Coordinate (mm)" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Z Coordinate (mm)" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Vertical Spacing (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Aprch Distance (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Aprch Dstnc L.12 (mm)" DataType="Double" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -485,38 +522,43 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="6888944d4d264f5a9b4735611f3abd65">
-			<Typedef TypedefName="Full Reference Cluster.gtype" UnderlyingType="@7d96eba3503744479fe65e65c9facbed" />
+		<p.TypeReference TypeId="63f250b69f87453d96a3124bb9b8f942">
+			<Attributed AttributedType="@0310c5013b97451d9084385f61d8742a">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Sample Naming" />
+				</AttributeValues>
+			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="896e2540bab346939e95571c6f8f11d3">
-			<Typedef TypedefName="Enum Control Reference Cluster.gtype" UnderlyingType="@dcce85e1fac247c998d40639bcb95693" />
+		<p.TypeReference TypeId="39d07fd1c0e34a619f1232aca3191172">
+			<Typedef TypedefName="Full Reference Cluster.gtype" UnderlyingType="@1a372bf57b284911aec8f661768b5d80" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="173a3d5151fe4f45bd5d7efa3eb8a063">
+			<Typedef TypedefName="Rainbow Sweep Param Selector.gtype" UnderlyingType="@6ad8281f78de4d33a92eb40a4c89a96c" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="35caad1178184bca918130ffc6412cdb">
+			<Typedef TypedefName="SRM Specific Parameters.gtype" UnderlyingType="@724b280f68744dab8484f3e2f6382159" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="1ec6f8d1e19f48319e215abda4a3d33e">
+			<Typedef TypedefName="SRM Sweep Live Parameters.gtype" UnderlyingType="@aa5e2248d99d46e58cf78280e664b102" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="e48efda834f04d14aecfbc17d2366471">
 			<Typedef TypedefName="SRM Refined Plot Parameter Selector.gtype" UnderlyingType="@369134f7e40945fd87561b0b98e76864" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="b8fcc453f40644f3b1efa685f1040918">
-			<Typedef TypedefName="Queue Instructions Control.gtype" UnderlyingType="@2e094b2dd5b64a86a42a097de06fc1f2" />
+		<p.TypeReference TypeId="1a55da2d90bd444d9a48bb8fea364dff">
+			<Attributed AttributedType="@d506ddce8b734491ae5c1311ba83b457">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::Plotting" />
+				</AttributeValues>
+			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="31d20f3f1fce4ab192d51f955f391c94">
-			<Typedef TypedefName="Boolean Control Reference Cluster.gtype" UnderlyingType="@6f4c4cbab64843d1bff8100ca7097544" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="eace8fd3b1e1494296b80a6ea67581b1">
-			<Typedef TypedefName="Numeric Control Reference Cluster.gtype" UnderlyingType="@845be9e27496443b93f29f4f1623374c" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="ffab1fe47151461ca45974d7aac20443">
-			<Typedef TypedefName="Numeric Cluster Reference Cluster.gtype" UnderlyingType="@dd93ac8761724469ac2c9bcbfae81c10" />
+		<p.TypeReference TypeId="88806032253c4d609476b0043e104e21">
+			<Typedef TypedefName="MSpot Spectrum Calibration Parameters.gtype" UnderlyingType="@e121d3e24c73438fbefc77bcd000ad6c" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="4aa5de1082784b7b95b499e50c3433e1">
 			<Typedef TypedefName="Light power Calibration Parameters.gtype" UnderlyingType="@cab7b4a4d7a1406683ffd7b0ea61cb61" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="633af4c667384cb79084f7de160241cf">
 			<Typedef TypedefName="LPC Sweep Live Parameters.gtype" UnderlyingType="@6e389c0ff5d940aaacd091841e6239b5" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="6e2216fad72b4ed3a2a112feaace5d72">
-			<Typedef TypedefName="Path Reference Cluster.gtype" UnderlyingType="@c7db3bc76dfc4259ba7063bbeb9c19fc" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="b20d09dfb1284cb1b44443114f5f3bcc">
-			<Typedef TypedefName="Cluster Reference Cluster.gtype" UnderlyingType="@09a90ba7215b49718d1dde8d340fde24" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="a37b9b107a204902a0c6f748e7e11800">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
@@ -526,18 +568,6 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="173a3d5151fe4f45bd5d7efa3eb8a063">
-			<Typedef TypedefName="Rainbow Sweep Param Selector.gtype" UnderlyingType="@6ad8281f78de4d33a92eb40a4c89a96c" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="88806032253c4d609476b0043e104e21">
-			<Typedef TypedefName="MSpot Spectrum Calibration Parameters.gtype" UnderlyingType="@e121d3e24c73438fbefc77bcd000ad6c" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="408f0bda295f4c40bdc959cb1f9fe41f">
-			<Typedef TypedefName="SRM Specific Parameters.gtype" UnderlyingType="@6b4ba0ba10294a989f8fec82ed0b0ddf" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="1ec6f8d1e19f48319e215abda4a3d33e">
-			<Typedef TypedefName="SRM Sweep Live Parameters.gtype" UnderlyingType="@aa5e2248d99d46e58cf78280e664b102" />
-		</p.TypeReference>
 		<p.TypeReference TypeId="06977a40e696464699b092da816ae13f">
 			<Attributed AttributedType="@6a699057a350414a91d25aed6f9cfd36">
 				<AttributeValues>
@@ -545,24 +575,8 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="1a55da2d90bd444d9a48bb8fea364dff">
-			<Attributed AttributedType="@d506ddce8b734491ae5c1311ba83b457">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Main Functions::Rainbow Measurement::Cell Single Rainbow Measurement::Plotting" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="65257ec8817f46b58b4799e7802c75cb">
-			<Typedef TypedefName="MRM Cell Selector.gtype" UnderlyingType="@f3dab49f1b4c4ea8a246ec9cba857273" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="13ff30dfe8fc4ac882111b2785d7990d">
-			<Typedef TypedefName="MRM Specific Parameters.gtype" UnderlyingType="@a9509dd6cb7a42eaad395a773966e1b0" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="e67c8c202087469aa6394ade384fe296">
-			<Typedef TypedefName="XZ All Position Cluster.gtype" UnderlyingType="@abae768078f341028ffdb90f9be89297" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="dab54f818c39481983180832709b7976">
-			<Typedef TypedefName="XZ Stage Controls Reference Cluster.gtype" UnderlyingType="@233484b18ca34a708a524ab6236fda90" />
+		<p.TypeReference TypeId="4cc02c8ec5624f7f886e36012ac36b93">
+			<Typedef TypedefName="Queue Instructions Control.gtype" UnderlyingType="@c26bc652489142bfbc144be9cf38f916" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="7efe901a71854da494907d53ae08aeb2">
 			<Typedef TypedefName="XZ Coordinate Cluster In.gtype" UnderlyingType="@a6b83a64ee494dee89d55d1258051bc9" />
@@ -570,31 +584,66 @@
 		<p.TypeReference TypeId="3d03fbd21f8948de88c735f3144abd65">
 			<Typedef TypedefName="XZ Stage Cell.gtype" UnderlyingType="@1446c006ee3d4b13af8bc2e00483ba24" />
 		</p.TypeReference>
+		<p.TypeReference TypeId="67f83814f50849f2b09850eac2e917ef">
+			<Typedef TypedefName="XZ All Position Cluster.gtype" UnderlyingType="@421e798caf1b4f668641861544428515" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="65257ec8817f46b58b4799e7802c75cb">
+			<Typedef TypedefName="MRM Cell Selector.gtype" UnderlyingType="@f3dab49f1b4c4ea8a246ec9cba857273" />
+		</p.TypeReference>
 		<p.TypeReference TypeId="0310c5013b97451d9084385f61d8742a">
 			<Typedef TypedefName="Cell Naming Cluster.gtype" UnderlyingType="@f9be521eb8794c4eb69cfb0c65b9a60e" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="7d96eba3503744479fe65e65c9facbed">
+		<p.TypeReference TypeId="1a372bf57b284911aec8f661768b5d80">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Enum Reference Cluster" DataType="@cc8de200c7794764bd3bb9a05e72b133" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Boolean Reference Cluster" DataType="@5f35a9c276df47e0bdd52e31f1c5a3f6" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Numeric Reference Cluster" DataType="@b959561dd9b74453a783cd93e7f3c41d" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Numeric Cluster Reference Cluster" DataType="@1b66508c51c3493389e7a3c0a5cab771" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Path Reference Cluster" DataType="@67233db5a0ff4467b1c118cd5d8594f9" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Cluster Reference Cluster" DataType="@852c7157074e4cb082464f7b6ac6ed8c" />
-					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Controls Reference Cluster" DataType="@f2e98ba678aa4b6f9bcfaa068eb9f392" />
+					<Field FieldAccessPolicy="ReadWrite" Name="SRM Reference Cluster" DataType="@8c5b7b03926c42eab6d89a477ee93499" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Path Reference Cluster" DataType="@c7db3bc76dfc4259ba7063bbeb9c19fc" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Tab Reference Cluster" DataType="@8dd7e5d09a4447b5bc7dbec1e7a52289" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell Naming Parameters Ref Cluster" DataType="@14126e62b2714c2b95ed47820ecef989" />
+					<Field FieldAccessPolicy="ReadWrite" Name="One Time Calibrations Ref Cluster" DataType="@b714083e8bad4430adce1460482b86bc" />
+					<Field FieldAccessPolicy="ReadWrite" Name="LPC Controls Reference Cluster" DataType="@4d2f0e3a56b9412182e1fd6b64a20896" />
+					<Field FieldAccessPolicy="ReadWrite" Name="System Parameters Ref Cluster" DataType="@6751344ed9bc45918140dd4ec5f25a0c" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Controls Reference Cluster" DataType="@0d2c635f34494e2aa5bb7eb2282fdbfc" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MRM Reference Cluster" DataType="@cbcc16fb33074d0e8fa1448240fd506b" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="dcce85e1fac247c998d40639bcb95693">
+		<p.TypeReference TypeId="6ad8281f78de4d33a92eb40a4c89a96c">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Main Tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Measurement tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Configuration tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Light Calibration tab" DataType=":DotNet:NationalInstruments.Controls.Runtime.TabControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="SRM Plot Parameter Selector Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@8ece4b6fc84e435884248b5775977d2a`@8ece4b6fc84e435884248b5775977d2a" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Current State Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@5f66b04efeb44759b859f48d5062a00e`@5f66b04efeb44759b859f48d5062a00e" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Raibow Sweep Selector" DataType="@b8ccc46012754635997e5d9540a3bb54" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Max Wavelength (nm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Min Wavelength (nm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Wavelength Step (nm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Type Selector" DataType="@b6606921c1ff403aa8281a1878492581" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="724b280f68744dab8484f3e2f6382159">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Max (V)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Min (V)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="V Points" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Range (A)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Autorange" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Dir" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Averages" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Max (A)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Integration Time" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell Area (m^2)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Full Spctr Ref" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Smart Scan" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Fast Scan" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="aa5e2248d99d46e58cf78280e664b102">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Wavelength (nm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Types" DataType="@8d8d7bab4880447083786326c799ad41" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Finished Measurement?" DataType="Boolean" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -612,56 +661,18 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="2e094b2dd5b64a86a42a097de06fc1f2">
-			<Enumeration>
-				<Members>
-					<EnumerationMember Value="0" Name="Undefined State" />
-					<EnumerationMember Value="1" Name="Debug Check" />
-					<EnumerationMember Value="2" Name="Initialize App" />
-					<EnumerationMember Value="3" Name="Idle" />
-					<EnumerationMember Value="4" Name="Light Power Calibration" />
-					<EnumerationMember Value="5" Name="Rainbow Single Measurement" />
-					<EnumerationMember Value="6" Name="Rainbow Multiple Measurement" />
-					<EnumerationMember Value="7" Name="Light Calibration Irradiance" />
-					<EnumerationMember Value="8" Name="Light Calibration Spectral Density" />
-					<EnumerationMember Value="9" Name="Light Calibration Power Density" />
-					<EnumerationMember Value="10" Name="Stand Alone Photodetector Measurement" />
-					<EnumerationMember Value="11" Name="MSpot Spectrum Calibration" />
-					<EnumerationMember Value="12" Name="Move XZ Stage" />
-					<EnumerationMember Value="13" Name="Change Cell" />
-					<EnumerationMember Value="14" Name="Update All Info Meta Cluster" />
-					<EnumerationMember Value="15" Name="Access TXT File" />
-					<EnumerationMember Value="16" Name="Stop App" />
-					<EnumerationMember Value="17" Name="State 1" />
-					<EnumerationMember Value="18" Name="State 2 " />
-					<EnumerationMember Value="19" Name="State 3 " />
-					<EnumerationMember Value="20" Name="State 4" />
-				</Members>
-				<DataType>UInt16</DataType>
-			</Enumeration>
+		<p.TypeReference TypeId="d506ddce8b734491ae5c1311ba83b457">
+			<Typedef TypedefName="SRM Single Plot Cluster.gtype" UnderlyingType="@79e9c82cb3bb4f3d9861e1a2e977db71" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="6f4c4cbab64843d1bff8100ca7097544">
+		<p.TypeReference TypeId="e121d3e24c73438fbefc77bcd000ad6c">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Custom date" DataType=":DotNet:NationalInstruments.Controls.Runtime.CheckBoxProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Label Info Missing Error" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="845be9e27496443b93f29f4f1623374c">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Beam Power Density" DataType=":DotNet:NationalInstruments.Controls.Runtime.IntensityGraphProxy, NationalInstruments.Controls.Runtime`Double[,]`Double[,]" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Irradiance Calibration" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`Double[]`Double[]" />
-					<Field FieldAccessPolicy="ReadWrite" Name="SRM Light Power Density Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="dd93ac8761724469ac2c9bcbfae81c10">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="LPC Parameters Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@64b3bcf93e79423abf8b3c9c8c92a660`@64b3bcf93e79423abf8b3c9c8c92a660" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Live Parameters LPC ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@4db62f3f9730496287b944e5c8e494af`@4db62f3f9730496287b944e5c8e494af" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Min Position (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Max Position (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Position step size (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Manual Spectra?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Flame Integration Time (us)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Flame Scans to Average" DataType="UInt32" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -683,153 +694,42 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="c7db3bc76dfc4259ba7063bbeb9c19fc">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Calibration Files Path" DataType=":DotNet:NationalInstruments.Controls.Runtime.PathSelectorProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Default Data Saving Location" DataType=":DotNet:NationalInstruments.Controls.Runtime.PathSelectorProxy, NationalInstruments.Controls.Runtime" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="09a90ba7215b49718d1dde8d340fde24">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Light Power Calibration" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@15da5779ad7e43beadbe3a18f9bbd375`@15da5779ad7e43beadbe3a18f9bbd375" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Parameters RSM" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Param Selector MSpot" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" />
-					<Field FieldAccessPolicy="ReadWrite" Name="MSpot Spectrum Calibration Parameters" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@56e85f7c85ca47a49f8778a55fd40833`@56e85f7c85ca47a49f8778a55fd40833" />
-					<Field FieldAccessPolicy="ReadWrite" Name="SRM Raw Plot Rainbow Sweep Selector" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="SRM Refined Plot Rainbow Sweep Types" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="SRM Specific Parameters" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@05ca5e9b5ab14d5a912c6377960e8db2`@05ca5e9b5ab14d5a912c6377960e8db2" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Label Info Error Label" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Sample Comments" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Cell Number" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Author Initials" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Batch Name" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Live Parameters RSM" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@4c5276c4f49c4c0a9d6addde63798050`@4c5276c4f49c4c0a9d6addde63798050" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Parameters LPC" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" />
-					<Field FieldAccessPolicy="ReadWrite" Name="State" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Current Substate" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Substate" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Current Date" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Sample Prefix" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="IV Extracted Parameter Plot " DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@6096faf833bd44a283c7b4989e3b7f16`@6096faf833bd44a283c7b4989e3b7f16" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Light Power Calibration Data Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ArrayViewerProxy, NationalInstruments.Controls.Runtime`@2d3965a242c74c429108c28c025d25e3`@2d3965a242c74c429108c28c025d25e3" />
-					<Field FieldAccessPolicy="ReadWrite" Name="IV Plot Out Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" />
-					<Field FieldAccessPolicy="ReadWrite" Name="MRM Cell Selector Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@008b16de9d54474b8fcf992e1c19ba3a`@008b16de9d54474b8fcf992e1c19ba3a" />
-					<Field FieldAccessPolicy="ReadWrite" Name="IV Plot Out Multiple Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.GraphProxy, NationalInstruments.Controls.Runtime`@bdcfac1e251d4277b76a5d43a5ed73f4`@bdcfac1e251d4277b76a5d43a5ed73f4" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Parameters MRM Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@272a24b82a434ed896958e12904ae149`@272a24b82a434ed896958e12904ae149" />
-					<Field FieldAccessPolicy="ReadWrite" Name="MRM Specific Parameters Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@7270ce0862ee472f9d4c9879441d2a3e`@7270ce0862ee472f9d4c9879441d2a3e" />
-					<Field FieldAccessPolicy="ReadWrite" Name="MRM Cell Refined Plot Selector ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="MRM Current Raw Cell Plot" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="MRM Raw Plot Rainbow Sweep Relector Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ComboBoxSelectorProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="XZ All Position Cluster Ref" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@f214f0a8c6f4443290a13773103eb7b8`@f214f0a8c6f4443290a13773103eb7b8" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="6ad8281f78de4d33a92eb40a4c89a96c">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Raibow Sweep Selector" DataType="@b8ccc46012754635997e5d9540a3bb54" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Max Wavelength (nm)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Min Wavelength (nm)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Wavelength Step (nm)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Type Selector" DataType="@b6606921c1ff403aa8281a1878492581" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="e121d3e24c73438fbefc77bcd000ad6c">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Min Position (mm)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Max Position (mm)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Position step size (mm)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Manual Spectra?" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Flame Integration Time (us)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Flame Scans to Average" DataType="UInt32" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="6b4ba0ba10294a989f8fec82ed0b0ddf">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Max (V)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Min (V)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="V Points" DataType="UInt32" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Current Range (A)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Autorange" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Dir" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Current Averages" DataType="UInt32" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Max (A)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Integration Time" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Cell Area (m^2)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Full Spctr Ref" DataType="Boolean" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="aa5e2248d99d46e58cf78280e664b102">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Current Wavelength (nm)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Types" DataType="@8d8d7bab4880447083786326c799ad41" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Finished Measurement?" DataType="Boolean" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
 		<p.TypeReference TypeId="6a699057a350414a91d25aed6f9cfd36">
 			<Typedef TypedefName="Light Power Calibration Data.gtype" UnderlyingType="@6c59d08b268047d4a73e00a83a1fc12f" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="d506ddce8b734491ae5c1311ba83b457">
-			<Typedef TypedefName="SRM Single Plot Cluster.gtype" UnderlyingType="@79e9c82cb3bb4f3d9861e1a2e977db71" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="f3dab49f1b4c4ea8a246ec9cba857273">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+		<p.TypeReference TypeId="c26bc652489142bfbc144be9cf38f916">
+			<Enumeration>
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="All" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Left" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Right" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Cell Cluster" DataType="@efa5b80e4b4349ce96e25852ddfa0387" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Reset" DataType="Boolean" />
+					<EnumerationMember Value="0" Name="Undefined State" />
+					<EnumerationMember Value="1" Name="Debug Check" />
+					<EnumerationMember Value="2" Name="Initialize App" />
+					<EnumerationMember Value="3" Name="Idle" />
+					<EnumerationMember Value="4" Name="Light Power Calibration" />
+					<EnumerationMember Value="5" Name="Rainbow Single Measurement" />
+					<EnumerationMember Value="6" Name="Rainbow Multiple Measurement" />
+					<EnumerationMember Value="7" Name="Light Calibration Irradiance" />
+					<EnumerationMember Value="8" Name="Light Calibration Spectral Density" />
+					<EnumerationMember Value="9" Name="Light Calibration Power Density" />
+					<EnumerationMember Value="10" Name="Stand Alone Photodetector Measurement" />
+					<EnumerationMember Value="11" Name="MSpot Spectrum Calibration" />
+					<EnumerationMember Value="12" Name="Move XZ Stage" />
+					<EnumerationMember Value="13" Name="Mask Calibration" />
+					<EnumerationMember Value="14" Name="Change Cell" />
+					<EnumerationMember Value="15" Name="Update All Info Meta Cluster" />
+					<EnumerationMember Value="16" Name="Access TXT File" />
+					<EnumerationMember Value="17" Name="Stop App" />
+					<EnumerationMember Value="18" Name="State 2 " />
+					<EnumerationMember Value="19" Name="State 3 " />
+					<EnumerationMember Value="20" Name="State 4" />
 				</Members>
-			</Composite>
+				<DataType>UInt16</DataType>
+			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="a9509dd6cb7a42eaad395a773966e1b0">
+		<p.TypeReference TypeId="a6b83a64ee494dee89d55d1258051bc9">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Max (V)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Min (V)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="V Points" DataType="UInt32" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Curr Range (A)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Dir" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Current Avg" DataType="UInt32" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Max (A)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Integration Time" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Cell Area (m^2)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Autorange" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Full Spctr Ref" DataType="Boolean" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="abae768078f341028ffdb90f9be89297">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Diffusor Coordinates" DataType="@a6b83a64ee494dee89d55d1258051bc9" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Photodetector Coordinates" DataType="@a6b83a64ee494dee89d55d1258051bc9" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Cell R.01 Coordinates" DataType="@a3e4a65817e4483d84ff3f93f5e8955d" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Approach Distance (mm)" DataType="Double" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="233484b18ca34a708a524ab6236fda90">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Custom Position" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Set Position" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Active" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Release XZ Stage" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="XZ Coordinates" DataType=":DotNet:NationalInstruments.Controls.Runtime.ClusterProxy, NationalInstruments.Controls.Runtime`@fdaf31f5ce2c4625bb699c6ea2934c65`@fdaf31f5ce2c4625bb699c6ea2934c65" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Activate XZ Stage" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" />
-					<Field FieldAccessPolicy="ReadWrite" Name="XZ Stage Cell Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.EnumSelectorProxy, NationalInstruments.Controls.Runtime`@c84aa0db260e415db7b2617852ad226e`@c84aa0db260e415db7b2617852ad226e" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X Coordinate (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z Coordinate (mm)" DataType="Double" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -864,6 +764,26 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
+		<p.TypeReference TypeId="421e798caf1b4f668641861544428515">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Diffusor Coordinates" DataType="@b6358221680f4db1bd83ceda49cd9dbe" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Photodetector Coordinates" DataType="@b6358221680f4db1bd83ceda49cd9dbe" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell R.01 Coordinates" DataType="@e8dd9b699684483988060db2d1697d60" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f3dab49f1b4c4ea8a246ec9cba857273">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="All" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Left" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Right" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell Cluster" DataType="@efa5b80e4b4349ce96e25852ddfa0387" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Reset" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
 		<p.TypeReference TypeId="f9be521eb8794c4eb69cfb0c65b9a60e">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
@@ -874,13 +794,6 @@
 					<Field FieldAccessPolicy="ReadWrite" Name="Batch Name" DataType="String" />
 				</Members>
 			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="8d8d7bab4880447083786326c799ad41">
-			<Attributed AttributedType="@cb26bcd9a16d4f339fa1c95b75463f9c">
-				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Rainbow Sweep" />
-				</AttributeValues>
-			</Attributed>
 		</p.TypeReference>
 		<p.TypeReference TypeId="b8ccc46012754635997e5d9540a3bb54">
 			<Attributed AttributedType="@87aae43ce1dd4647b7e3d062629193dc">
@@ -896,20 +809,27 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="6c59d08b268047d4a73e00a83a1fc12f">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Single Light Calibration" DataType="@e7674fb120294bd793808a0072ee7990" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Types" DataType="@8d8d7bab4880447083786326c799ad41" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Total Light Power Density (W/m^2)" DataType="Double" />
-				</Members>
-			</Composite>
+		<p.TypeReference TypeId="8d8d7bab4880447083786326c799ad41">
+			<Attributed AttributedType="@cb26bcd9a16d4f339fa1c95b75463f9c">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Rainbow Sweep" />
+				</AttributeValues>
+			</Attributed>
 		</p.TypeReference>
 		<p.TypeReference TypeId="79e9c82cb3bb4f3d9861e1a2e977db71">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Voltage (V)" DataType="Double[]" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Current Density (A/m^2)" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6c59d08b268047d4a73e00a83a1fc12f">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Single Light Calibration" DataType="@e7674fb120294bd793808a0072ee7990" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rainbow Sweep Types" DataType="@8d8d7bab4880447083786326c799ad41" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Total Light Power Density (W/m^2)" DataType="Double" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -943,14 +863,14 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="cb26bcd9a16d4f339fa1c95b75463f9c">
-			<Typedef TypedefName="Rainbow Sweep Types.gtype" UnderlyingType="@ddd71e4459794372988289171abd37f2" />
-		</p.TypeReference>
 		<p.TypeReference TypeId="87aae43ce1dd4647b7e3d062629193dc">
 			<Typedef TypedefName="Raibow Sweep Selector.gtype" UnderlyingType="@eb8d2d0398bf47299a868d7d29c9a624" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="fc3f57741650458a94c58519f457841c">
 			<Typedef TypedefName="Rainbow Sweep Type Selector.gtype" UnderlyingType="@2dac1fece938402da376981957bcff8f" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="cb26bcd9a16d4f339fa1c95b75463f9c">
+			<Typedef TypedefName="Rainbow Sweep Types.gtype" UnderlyingType="@ddd71e4459794372988289171abd37f2" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="e7674fb120294bd793808a0072ee7990">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
@@ -960,17 +880,6 @@
 					<Field FieldAccessPolicy="ReadWrite" Name="Power Density Array" DataType="Double[]" />
 				</Members>
 			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="ddd71e4459794372988289171abd37f2">
-			<Enumeration>
-				<Members>
-					<EnumerationMember Value="0" Name="Red Sweep Closing" />
-					<EnumerationMember Value="1" Name="Red Sweep Opening" />
-					<EnumerationMember Value="2" Name="Blue Sweep Closing" />
-					<EnumerationMember Value="3" Name="Blue Sweep Opening" />
-				</Members>
-				<DataType>UInt16</DataType>
-			</Enumeration>
 		</p.TypeReference>
 		<p.TypeReference TypeId="eb8d2d0398bf47299a868d7d29c9a624">
 			<Enumeration>
@@ -990,6 +899,17 @@
 					<Field FieldAccessPolicy="ReadWrite" Name="Blue Sweep Mode" DataType="@9f196b7843d846ec8c4098af912b39ec" />
 				</Members>
 			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ddd71e4459794372988289171abd37f2">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Red Sweep Closing" />
+					<EnumerationMember Value="1" Name="Red Sweep Opening" />
+					<EnumerationMember Value="2" Name="Blue Sweep Closing" />
+					<EnumerationMember Value="3" Name="Blue Sweep Opening" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
 		</p.TypeReference>
 		<p.TypeReference TypeId="6508ec75025044dbb8208d2a5d010418">
 			<Enumeration>

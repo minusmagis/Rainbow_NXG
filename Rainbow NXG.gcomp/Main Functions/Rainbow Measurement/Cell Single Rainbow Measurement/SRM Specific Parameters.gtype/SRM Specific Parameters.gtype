@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="EA8CB76A5D0D3CB9922EF8FF636D849D493199CC9A172105DFFA79DF310C6B78F293B411F5EF4BBD8DEEEF8DC2E4C015D4E87030D7CCE862320824B022368C6D" Timestamp="1D7AA201FF663EC" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B729726CB0781EF5440F8913EDFA057DC1570043BA11FDA3E4B933EDE5098F5CC8A8BEEFCD536D1C700A8EB5AFBEC7EE9ACBF229F56883CB2F7DABA4B464C7F6" Timestamp="1D7AEC445F2CFA2" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -7,14 +7,20 @@
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@724b280f68744dab8484f3e2f6382159" Id="719b37b20dc3447e8d6cf6199953d0fa" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@ac6b25f83d6b498c868894a41cc30336" Id="719b37b20dc3447e8d6cf6199953d0fa" xmlns="http://www.ni.com/MocCommon">
+		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+			<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Keithley::Sweep Speed Selector.gtype" />
+		</p.TypeDefinitionTargets>
 		<Icon Id="99939d7bd4f74885b76cccdda9dfbaa6" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="867291d7bbdf4cf097bb6a7186e01e17" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="ac7e30ba59034e0aa0c0248ee37f1dd2" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@724b280f68744dab8484f3e2f6382159" Id="87864d80371c4efeb7b10e4601e441dd" Name="SRM Specific Parameters">
-			<p.DefaultValue>0x3FF3333333333333_0xBFE0000000000000_100_0x0_True_False_3_0x3FB999999999999A_0x3FE0000000000000_0x3EE0C6F7A0B5ED8D_True_False_False_</p.DefaultValue>
+		<DataItem DataType="@ac6b25f83d6b498c868894a41cc30336" Id="87864d80371c4efeb7b10e4601e441dd" Name="SRM Specific Parameters">
+			<p.DefaultValue>0x0_0x0_1_0x0_False_False_1_0x0_0x3F50624DD2F1A9FC_0x0_False_0_</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Keithley::Sweep Speed Selector.gtype" />
+			</p.TypeDefinitionTargets>
 		</DataItem>
 	</TypeDefinition>
 	<EnvoyManagerFile Id="b85b143de9764636b5f51a8c034b06ee" xmlns="http://www.ni.com/PlatformFramework">
@@ -22,7 +28,7 @@
 		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="b5bc495af0ef46969b50e52613134b3d" Name="SRM Specific Parameters.gtype" NameTracksFileName="True">
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="ecfabdfef9e54c66a7b81775b26c7c70" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="86112d919de74e5082ce97a14230ab79" xmlns="http://www.ni.com/MocCommon">
-					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@724b280f68744dab8484f3e2f6382159" Height="[float]354" Id="2cd598a8d9f94a3c8030e8f8ca1ef23c" Label="[UIModel]8ca8325887174b58b6cfd97f2efcd41f" Left="[float]563" TabIndex="[int]0" Top="[float]75" Value="{DataItemBinding Id=87864d80371c4efeb7b10e4601e441dd}" Width="[float]152" xmlns="http://www.ni.com/PanelCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@ac6b25f83d6b498c868894a41cc30336" Height="[float]354" Id="2cd598a8d9f94a3c8030e8f8ca1ef23c" Label="[UIModel]8ca8325887174b58b6cfd97f2efcd41f" Left="[float]563" TabIndex="[int]0" Top="[float]75" Value="{DataItemBinding Id=87864d80371c4efeb7b10e4601e441dd}" Width="[float]152" xmlns="http://www.ni.com/PanelCommon">
 						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="b1d1b2ca827a42c19c7207a5316f1cd4" Interval="[double]0.1" Label="[UIModel]6708df52a0f4473e91a63e468c188c26" Left="[float]2" Maximum="[double]200" Minimum="[double]-200" TabIndex="[int]0" Top="[float]20" Value="{ClusterBinding FieldName=Max\ (V)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="6708df52a0f4473e91a63e468c188c26" LabelOwner="[UIModel]b1d1b2ca827a42c19c7207a5316f1cd4" Left="[float]2" Text="[string]Max (V)" Top="[float]0" Width="[float]40" />
 						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="d2dcdbf2d33d44a1b62c02f6999df703" Interval="[double]0.1" Label="[UIModel]eb5e5d81a019412689bd9c1b048607b1" Left="[float]2" Maximum="[double]200" Minimum="[double]-200" TabIndex="[int]1" Top="[float]64" Value="{ClusterBinding FieldName=Min\ (V)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -41,28 +47,33 @@
 						<Label Height="[float]16" Id="8421c635c05e4a02b422f78054a32c75" LabelOwner="[UIModel]560808e278f443a69a84010aa9b13f49" Left="[float]1" Text="[string]Current Averages" Top="[float]180" Width="[float]91" />
 						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="5f6e6199039f496cb06783c34166bdbb" Interval="[double]0.01" Label="[UIModel]a5775a01afbd4a82a56e6737e338a8c8" Left="[float]47" Maximum="[double]5" Minimum="[double]0" TabIndex="[int]7" Top="[float]20" Value="{ClusterBinding FieldName=Max\ (A)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="a5775a01afbd4a82a56e6737e338a8c8" LabelOwner="[UIModel]5f6e6199039f496cb06783c34166bdbb" Left="[float]47" Text="[string]Max (A)" Top="[float]0" Width="[float]41" />
-						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="1cb0b42768d5438f8e01a5a752562b8f" Interval="[double]0.1" Label="[UIModel]34f80bc34c2b49048018401b713f4960" Left="[float]1" Maximum="[double]1000000" Minimum="[double]0.001" TabIndex="[int]8" Top="[float]245" Value="{ClusterBinding FieldName=Integration\ Time}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="1cb0b42768d5438f8e01a5a752562b8f" Interval="[double]0.1" Label="[UIModel]34f80bc34c2b49048018401b713f4960" Left="[float]1" Maximum="[double]1000000" Minimum="[double]0.001" TabIndex="[int]8" Top="[float]245" Value="{ClusterBinding FieldName=PLC\ Speed}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 							<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">Lower for faster and less accurate measurements</p.InfoTipDescription>
 						</NumericText>
-						<Label Height="[float]16" Id="34f80bc34c2b49048018401b713f4960" LabelOwner="[UIModel]1cb0b42768d5438f8e01a5a752562b8f" Left="[float]1" Text="[string]Integration Time" Top="[float]225" Width="[float]88" />
+						<Label Height="[float]16" Id="34f80bc34c2b49048018401b713f4960" LabelOwner="[UIModel]1cb0b42768d5438f8e01a5a752562b8f" Left="[float]1" Text="[string]PLC Speed" Top="[float]225" Width="[float]56" />
 						<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Height="[float]24" Id="b9670492762046c7a138dda4e89866db" Interval="[double]1E-08" Label="[UIModel]bd1492314bbe486e843e3e9241c964cf" Left="[float]49" Maximum="[double]10000" Minimum="[double]0" TabIndex="[int]9" Top="[float]108" Value="{ClusterBinding FieldName=Cell\ Area\ (m^2)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]49" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="bd1492314bbe486e843e3e9241c964cf" LabelOwner="[UIModel]b9670492762046c7a138dda4e89866db" Left="[float]49" Text="[string]Cell Area (m^2)" Top="[float]88" Width="[float]83" />
 						<LVCheckBox BaseName="[string]Checkbox" Content="[string]Off/On" Height="[float]16" Id="db989be71f9a4ff5b39000a101643f98" Label="[UIModel]a7427ac15e3641aa94736dc4000368f2" Left="[float]72" TabIndex="[int]10" Top="[float]291" Value="{ClusterBinding FieldName=Full\ Spctr\ Ref}" Width="[float]59" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 							<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework"></p.InfoTipDescription>
 						</LVCheckBox>
 						<Label Height="[float]16" Id="a7427ac15e3641aa94736dc4000368f2" LabelOwner="[UIModel]db989be71f9a4ff5b39000a101643f98" Left="[float]72" Text="[string]Full Spctr Ref" Top="[float]271" Width="[float]69" />
-						<LVCheckBox BaseName="[string]Checkbox" Content="[string]Off/On" Height="[float]16" Id="98bd789404a64319934d47dd6673ffa4" Label="[UIModel]8415c8be7003442194231ba7740c4fd4" Left="[float]7" TabIndex="[int]11" Top="[float]330" Value="{ClusterBinding FieldName=Smart\ Scan}" Width="[float]59" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Height="[float]16" Id="8415c8be7003442194231ba7740c4fd4" LabelOwner="[UIModel]98bd789404a64319934d47dd6673ffa4" Left="[float]7" Text="[string]Smart Scan" Top="[float]310" Width="[float]60" />
-						<LVCheckBox BaseName="[string]Checkbox" Content="[string]Off/On" Height="[float]16" Id="1c766fdec55a49ab88183444064ac946" Label="[UIModel]bc5449bc9ccd482d9d1e4049af7e91e8" Left="[float]73" TabIndex="[int]12" Top="[float]330" Value="{ClusterBinding FieldName=Fast\ Scan}" Width="[float]59" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Height="[float]16" Id="bc5449bc9ccd482d9d1e4049af7e91e8" LabelOwner="[UIModel]1c766fdec55a49ab88183444064ac946" Left="[float]73" Text="[string]Fast Scan" Top="[float]310" Width="[float]50" />
+						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Sweep Speed" Height="[float]24" Id="b9281acaa3df4869be1bcc981c6f2e98" IsTypeAheadEnabled="[bool]True" Label="[UIModel]17d5e68ec3ea4869bb3b929b7f93a905" Left="[float]4" TabIndex="[int]11" Top="[float]314" Value="{ClusterBinding FieldName=Sweep\ Speed}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]103" p7:ControlDefinitionChecksum="/pLR5iOjsf/RtPGwcTpEnNhfAwkENCBxWbDFrIXi124=" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<p7:p.TypeDefinitionTargets>
+								<p7:TypeDefinitionTarget TargetName="Rainbow Measurement Setup::Side Functions::Instrument Control::Keithley::Sweep Speed Selector.gtype::ControlDefinition" />
+							</p7:p.TypeDefinitionTargets>
+							<EnumSelectorInfo DisplayValue="[string]Smart Sweep" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]Fast Sweep" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]Normal Sweep" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+						</EnumSelector>
+						<Label Height="[float]0" Id="17d5e68ec3ea4869bb3b929b7f93a905" LabelOwner="[UIModel]b9281acaa3df4869be1bcc981c6f2e98" Left="[float]4" Text="[string]Sweep Speed" Top="[float]294" Visible="[bool]False" Width="[float]0" />
 					</Cluster>
-					<Label Height="[float]16" Id="8ca8325887174b58b6cfd97f2efcd41f" LabelOwner="[UIModel]2cd598a8d9f94a3c8030e8f8ca1ef23c" Left="[float]563" Text="[string]SRM Specific Parameters" Top="[float]55" Width="[float]131" xmlns="http://www.ni.com/PanelCommon" />
+					<Label Height="[float]16" Id="8ca8325887174b58b6cfd97f2efcd41f" LabelOwner="[UIModel]2cd598a8d9f94a3c8030e8f8ca1ef23c" Left="[float]563" Text="[string]SRM Specific Parameters" Top="[float]55" Width="[float]130" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="724b280f68744dab8484f3e2f6382159">
+		<p.TypeReference TypeId="ac6b25f83d6b498c868894a41cc30336">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Max (V)" DataType="Double" />
@@ -73,13 +84,32 @@
 					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Dir" DataType="Boolean" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Current Averages" DataType="UInt32" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Max (A)" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Integration Time" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="PLC Speed" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Cell Area (m^2)" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Full Spctr Ref" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Smart Scan" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Fast Scan" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sweep Speed" DataType="@e8011209b5324c0ca847695019835442" />
 				</Members>
 			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e8011209b5324c0ca847695019835442">
+			<Attributed AttributedType="@2cea1e3f2bea419e83053bc98bbacbf0">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Rainbow Measurement Setup::Side Functions::Instrument Control::Keithley" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2cea1e3f2bea419e83053bc98bbacbf0">
+			<Typedef TypedefName="Sweep Speed Selector.gtype" UnderlyingType="@3979f18c173a42e6a107365478fb4434" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="3979f18c173a42e6a107365478fb4434">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Smart Sweep" />
+					<EnumerationMember Value="1" Name="Fast Sweep" />
+					<EnumerationMember Value="2" Name="Normal Sweep" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 </SourceFile>

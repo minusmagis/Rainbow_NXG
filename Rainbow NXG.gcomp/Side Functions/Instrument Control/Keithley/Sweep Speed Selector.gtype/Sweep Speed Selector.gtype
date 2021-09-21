@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="D46DC940DF9939687369AE94516B26C3ED4AD8BFA02B73295161CE7D020BEF368240ED6AB51F49D556CE0BC08AA6059A9802335AED235CEF2CDBBBB02B0DE499" Timestamp="1D7AEC2910A55DF" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@3979f18c173a42e6a107365478fb4434" Id="fdc70f9894f647d7807b699efd03d4f3" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="e0a3c3cec2842019e0ac3cd453bd2e9" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="ae37641e5e84f169f5dee1e5b5c1ed5" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="6decde274db74542886707a57d058dae" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@3979f18c173a42e6a107365478fb4434" Id="c274b72fc93c440a8cfe8473e4ce9ee0" Name="Sweep Speed">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="63b7e1bbf25840cc893489172f17b620" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="2f725acc42ed48c682d2f1578e85fd36" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="6e000a15157f4e10a388f8999f29682c" Name="Sweep Speed Selector.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="66254f6a5f94494097e8a0953219095a" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="1b878f56acae42d69a6d494f4773c5cc" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="72c56411b15e45299ae0ffd2e00e1b87" IsTypeAheadEnabled="[bool]True" Label="[UIModel]c43bebd3034b435191fc85eb23a62cf6" Left="[float]484" TabIndex="[int]0" Top="[float]147" Value="{DataItemBinding Id=c274b72fc93c440a8cfe8473e4ce9ee0}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]103" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Smart Sweep" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Fast Sweep" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Normal Sweep" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]0" Id="c43bebd3034b435191fc85eb23a62cf6" LabelOwner="[UIModel]72c56411b15e45299ae0ffd2e00e1b87" Left="[float]484" Text="[string]Sweep Speed" Top="[float]127" Visible="[bool]False" Width="[float]0" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="3979f18c173a42e6a107365478fb4434">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Smart Sweep" />
+					<EnumerationMember Value="1" Name="Fast Sweep" />
+					<EnumerationMember Value="2" Name="Normal Sweep" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
